@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="/css/v3.1.css?3" />
+<link rel="stylesheet" type="text/css" href="/css/translate-1.css?5" />
+<link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css?1" />
+<style type="text/css">
+/*<![CDATA[*/
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+body, label, input, button, select, textarea {
+	font-size: 13px;
+	line-height: 18px;
+}
+#chat-box {
+	height: 300px;
+}.comments .comment .meta, .comments .comment .meta a, .translator .info, .translator .info a { color: #bbb; }
+.comments .comment:hover .meta, .comments .comment:hover .meta a, .translator tr:hover .info, .translator tr:hover .info a { color: #888; }
+/*]]>*/
+</style>
+<script type="text/javascript" src="/assets/bbeb3eca/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/6b5c0e82/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/global.js?16"></script>
+<script type="text/javascript" src="/js/user.js?3"></script>
+<script type="text/javascript" src="/js/chat.js?3"></script>
+<script type="text/javascript" src="/js/translate-1.js?11"></script>
+<script type="text/javascript" src="/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="/js/jquery.elastic.mod.js"></script>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.min.js?1"></script>
+<script type="text/javascript" src="/js/ff_comments.js?3"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var User = new CUser({id: 76, login: 'Keyten'});
+
+var Book = new CBook({
+	id: 39,
+	owner_id: 67,
+	facecontrol: 1,
+	s_lang: 2,
+	t_lang: 1,
+	n_verses: 2492,
+	n_vars: 1286,
+	d_vars: 1282,
+	typ: 'A',
+	s_title: '18.01SC Single Variable Calculus',
+	t_title: '18.01SC Анализ функций одной переменной',
+	membership: {status: 1}
+});
+
+var Chap = {
+	id: 131,
+	book_id: 39,
+	n_verses: 16,
+	n_vars: 16,
+	d_vars: 16,
+	title: '7. Derivatives of Sine and Cosine / Производные синуса и косинуса',
+	ac_read: '',
+	ac_gen: '',
+	ac_rate: '',
+	ac_comment: '',
+	ac_tr: '',
+};
+
+/*]]>*/
+</script>
+<title>Перевод 18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной: 7. Derivatives of Sine and Cosine / Производные синуса и косинуса :: КУРСОМИР.ПЕРЕВОДЫ</title>
+    <meta name="description" content="Коллективные переводы субтитров и книжек"/>
+    <meta name="language" content="ru"/>
+    <meta name="keywords"
+          content="перевод, translation, коллективный перевод, кино с субтитрами, кино по-английски с русскими субтитрами, кино по-немецки с русскими субтитрами, кино по-испански с русскими субтитрами, примеры перевода, краудсорсинг, crowdsourcing, нотабеноид"/>
+    <link rel='icon' href='/i/favicon.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='/i/favicon.ico' type='image/x-icon'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE]>
+    <script type="text/javascript" src="/js/jquery.input-placeholder.js"></script>
+    <link rel='stylesheet' href="/css/jquery.input-placeholder.css"/>
+    <script type="text/javascript">
+        $(function () {
+            $('input[placeholder]').inputDefault();
+        });
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container-fluid" style="background-color:#fff;">
+        <a href="/" id="header-logo">
+            <img src="/i/logo.png" width="124" height="130"
+                 style="padding-top: 50px;"
+                 alt="КУРСОМИР.ПЕРЕВОДЫ"
+                 title="3.3"/>
+        </a>
+        <nav>
+            <ul id="header-menu">
+                <li><a href="/catalog/1">ВИДЕО</a></li>
+                <li><a href="/catalog/2">ТЕКСТЫ</a></li>
+                <li><a href="/users">ПЕРЕВОДЧИКИ</a></li>
+                <li><a href="/blog">БЛОГ</a></li>
+                <li><a href="/announces">АНОНСЫ</a></li>
+                <li class="search">
+                    <form class="form-search" method="get" action="/search">
+                                                <input type="hidden" name="from" value="header">
+                        <input type="text" name="t" class="input-medium search-query span3"
+                               placeholder="Ищите и обрящете"
+                               title="Кстати, отсюда можно найти и переводчика, если собаку (@), а потом сразу его ник."/>
+                        <input type="submit" value="&raquo;" class="btn" style="border-radius: 20px;"/>
+                    </form>
+                </li>
+            </ul>
+            <ul id="header-submenu">
+                                    <li>
+                        <a href="/users/76" accesskey="i">
+                            <strong>Keyten</strong>
+                            Всё о вас
+                        </a>
+                    </li>
+                    <li id="hm-c">
+                        <a href="/my/comments" accesskey="c">
+                            <strong>Обсуждения  <b></b></strong>
+                            Места, где вы общались
+                        </a>
+                    </li>
+                    <li id="hm-n">
+                        <a href="/my/notices" accesskey="n">
+                            <strong>Оповещения  <b></b></strong>
+                            События для вас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#bookmarks" accesskey="b">
+                            <strong>Закладки</strong>
+                            На память
+                        </a>
+                    </li>
+                    <li><a href="/book/0/edit"><strong>Создать</strong> Перевод</a></li>
+                    <li><a href="/register/settings"><strong>Настройки</strong> Профиля</a></li>
+                    <li><a href="/register/logout"><strong>Выход</strong> До свидания :(</a></li>
+                            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <div id="bookmarks" class="modal hide">
+        <div class="modal-header" style='padding-bottom:0;'>
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Закладки</h3>
+            <div class="btn-toolbar">
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-sort">
+                    <button class="btn btn-mini" data-v="1" title="Сортировка по алфавиту">
+                        <i class="icon-text-height"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="2" title="Сортировка по вашей активности">
+                        <i class="icon-fire"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="3" title="Сортировка по времени вступления в перевод">
+                        <i class="icon-time"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="5" title="Сортировка по времени добавления закладки">
+                        <i class="icon-shopping-cart"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="4" title="Сортировка по готовности перевода">%</button>
+                    <button class="btn btn-mini" data-v="0" title="Ваша сортировка (таскайте закладки мышкой)">
+                        <i class="icon-random"></i>
+                    </button>
+                </div>
+
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-title">
+                    <button class="btn btn-mini" data-v="s" title="Показывать названия на языке оригинала">О</button>
+                    <button class="btn btn-mini" data-v="t" title="Показывать названия на языке перевода">П</button>
+                </div>
+                                <div class="btn-group pull-right">
+                    <button class="btn btn-mini" title="Удалить" id="bookmarks-tb-rm">
+                        <i class="icon-remove"></i>
+                    </button>
+                    <button class="btn btn-mini" title="Редактировать" id="bookmarks-tb-ed">
+                        <i class="icon-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body" style="max-height:350px">
+            <p class='loading'>минуточку...</p>
+        </div>
+    </div>
+
+
+<div class="container-fluid">
+    <div id="yw0"></div>
+<style type="text/css">
+        .translator.has-best td.t .best .text {
+        background-image: url(/i/corner-gray-t-r.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    </style>
+
+<h1><a href='/book/39'>18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной</a>: 7. Derivatives of Sine and Cosine / Производные синуса и косинуса</h1>
+
+<div id="tb-main">
+    <div>
+        <div class='group'><a
+                href="/book/39/131/go?nach=prev&ord=7"
+                title="Предыдущая глава"><i class="i icon-arrow-left"></i></a></div>
+
+        <div class="tb-index btn-group">
+            <a href="/book/39" class="btn btn-small"><i class="icon-list"></i> Оглавление</a>
+            <a class="btn btn-small dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+            <ul class="dropdown-menu" id="tb-chapter-list">
+                <li><a href="/book/39/members">Переводчики</a></li>
+                <li><a href="/book/39/blog">Блог</a></li>
+            </ul>
+        </div>
+
+        <div class='group'><a
+                href="/book/39/131/go?nach=next&ord=7"
+                title="Следующая глава"><i class="i icon-arrow-right"></i></a></div>
+
+        <div class="btn-group">
+                            <button type="button" class="btn btn-small tb-chat" title="Ctrl + ~"><i class="icon-bullhorn"></i> Чат
+                </button>
+            
+            <a href="#" class="btn btn-small tb-dict" accesskey="V"><i class="icon-book"></i> Словарь</a>
+
+            <div id="tb-filter">
+                <form method="get" class="form-inline" action="/book/39/131">
+                    <ul class='options'>
+                        <li><label><input type='radio' name='show' value='1' /> <a href='?show=1'>Непереведённое</a></label></li><li><label><input type='radio' name='show' value='7' /> <a href='?show=7'>С 2 и более версиями перевода</a></label></li><li><label><input type='radio' name='show' value='3' /> <a href='?show=3'>С комментариями</a></label></li><li><label><input type='radio' name='show' value='4' /> <a href='?show=4'>С новыми комментариями</a></label></li><li><label><input type='radio' name='show' value='2' />  <input type='text' name='show_user' placeholder='От переводчика' class='span3' value='' title='Ctrl+I: вставить ваш ник' /></label></li><li><label><input type='radio' name='show' value='5' />  <input type='text' name='to' placeholder='Оригинал содержит' class='span3' value='' /></label></li><li><label><input type='radio' name='show' value='6' />  <input type='text' name='tt' placeholder='Перевод содержит' class='span3' value='' /></label></li>                    </ul>
+                    <button type="submit" class="btn btn-mini btn-primary">Показать</button>
+                    <a href="/book/39/131"
+                       class="btn btn-mini">Сбросить всё</a>
+                </form>
+            </div>
+
+            <a href='#' class='btn btn-small tb-filter' accesskey='F'><i class='icon-filter'></i> Фильтр</a>        </div>
+
+        
+        
+
+        <div class="group">
+            <a href="/book/39/131/switchiface"><i class="icon-thumbs-down" title="Старый	интерфейс"></i></a>
+        </div>
+
+        <div class="tb-progress group"></div>
+
+            </div>
+</div>
+
+<div class="clear"></div>
+
+<table id="Tr" class="translator has-best translator-oe-hide">
+    <thead>
+    <tr>
+                    <th></th>        <th>
+            Английский оригинал
+        </th>
+                    <th></th>        <th>
+            Перевод на русский        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id='o33755'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Derivative of $\sin x$, Algebraic Proof</p><p class='info'><a href='/book/39/131/33755#1' class='ord'>#1</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t641' class='u76'><p class='text'>Производная $\sin x$, алгебраическое доказательство</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.16 в 21:46</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33756'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>A specific derivative formula tells us how to take the derivative of a specific function: if $f(x) = x^n$ then $f^\prime(x) = nx^{n-1}$. We’ll now compute a specific formula for the derivative of the function $\sin x$.</p><p class='info'><a href='/book/39/131/33756#2' class='ord'>#2</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t654' class='u76'><p class='text'>Конкретная формула производной говорит нам, как брать производную определённой функции: если $f(x) = x^n$, то $f'(x) = nx^{n-1}$. Сейчас мы вычислим формулу производной для функции $\sin x$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.16 в 22:33</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33757'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>As before, we begin with the definition of the derivative:<br />
+$$\frac{d}{dx} \, \sin x = \lim_{\Delta x \to 0} \frac{\sin (x+\Delta x)− \sin (x)}{\Delta x}$$</p><p class='info'><a href='/book/39/131/33757#3' class='ord'>#3</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t642' class='u76'><p class='text'>Начнём с определения производной:<br />
+$$\frac{d}{dx} \, \sin x = \lim_{\Delta x \to 0} \frac{\sin (x+\Delta x)− \sin (x)}{\Delta x}$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.16 в 21:49</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33758'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>You may remember the following angle sum formula from high school: $$\sin (a + b) = \sin (a) \cos (b) + \sin (b) \cos (a)$$</p><p class='info'><a href='/book/39/131/33758#4' class='ord'>#4</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t644' class='u76'><p class='text'>Вы можете помнить формулу синуса суммы углов: $$\sin (a + b) = \sin (a) \cos (b) + \sin (b) \cos (a)$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.16 в 21:51</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='icon-comment-new'></i> <b class='n'>+1</b></a></td></tr>
+<tr id='o33759'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This lets us untangle the $x$ from the $\Delta x$ as follows:<br />
+$$\frac{d}{dx} \, \sin x = \lim_{\Delta x \to 0} \frac{\sin (x) \cos (\Delta x) + \cos (x) \sin (\Delta x)− \sin (x)}{\Delta x}$$</p><p class='info'><a href='/book/39/131/33759#5' class='ord'>#5</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t647' class='u76'><p class='text'>Это позволяет нам отделить $x$ от $\Delta x$ следующим образом:<br />
+$$\frac{d}{dx} \, \sin x = \lim_{\Delta x \to 0} \frac{\sin (x) \cos (\Delta x) + \cos (x) \sin (\Delta x)− \sin (x)}{\Delta x}$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.16 в 21:53</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33760'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We can simplify this expression using some basic algebraic facts:<br />
+$$<br />
+\begin{align}<br />
+\frac{d}{dx} \, \sin x &amp;=  \lim_{\Delta x\to0} \left[\frac{\sin (x) \cos (\Delta x) − \sin (x)}{\Delta x} + \frac{\cos (x) \sin (\Delta x)}{\Delta x} \right] \\<br />
+&amp;= \lim_{\Delta x\to0}\left[\frac{\sin (x) (\cos (\Delta x) − 1)}{\Delta x} + \frac{\cos (x) \sin (\Delta x)}{\Delta x} \right] \\<br />
+&amp;= \lim_{\Delta x\to0}\left[\sin (x) \left( \frac{\cos (\Delta x) − 1}{\Delta x} \right) + \cos (x) \left( \frac{\sin (\Delta x)}{\Delta x} \right) \right]<br />
+\end{align}<br />
+$$<br />
+$$<br />
+\frac{d}{dx} \, \sin x = \lim_{\Delta x\to0} \sin (x) \left( \frac{\cos (\Delta x) − 1}{\Delta x} \right) + \lim_{\Delta x\to0} \cos (x) \left( \frac{\sin (\Delta x)}{\Delta x} \right)<br />
+$$</p><p class='info'><a href='/book/39/131/33760#6' class='ord'>#6</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t653' class='u76'><p class='text'>Мы можем упростить это выражение, используя некоторые базовые факты из алгебры:<br />
+$$<br />
+\begin{align}<br />
+\frac{d}{dx} \, \sin x &amp;=  \lim_{\Delta x\to0} \left[\frac{\sin (x) \cos (\Delta x) − \sin (x)}{\Delta x} + \frac{\cos (x) \sin (\Delta x)}{\Delta x} \right] \\<br />
+&amp;= \lim_{\Delta x\to0}\left[\frac{\sin (x) (\cos (\Delta x) − 1)}{\Delta x} + \frac{\cos (x) \sin (\Delta x)}{\Delta x} \right] \\<br />
+&amp;= \lim_{\Delta x\to0}\left[\sin (x) \frac{\cos (\Delta x) − 1}{\Delta x} + \cos (x) \frac{\sin (\Delta x)}{\Delta x} \right]<br />
+\end{align}<br />
+$$<br />
+$$<br />
+\frac{d}{dx} \, \sin x = \lim_{\Delta x\to0} \sin (x) \frac{\cos (\Delta x) − 1}{\Delta x} + \lim_{\Delta x\to0} \cos (x) \frac{\sin (\Delta x)}{\Delta x}<br />
+$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.16 в 22:30</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33761'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We now have two familiar functions $– \sin x$ and $\cos x$ – and two ugly looking fractions to deal with. The fractions may be familiar from our discussion of removable discontinuities.<br />
+$$<br />
+\begin{align*}<br />
+\lim_{\Delta x\to0} \frac{\cos \Delta x − 1}{\Delta x} = 0 \\ \\ \\<br />
+\lim_{\Delta x\to0} \frac{\sin \Delta x}{\Delta x} = 1<br />
+\end{align*}<br />
+$$</p><p class='info'><a href='/book/39/131/33761#7' class='ord'>#7</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t655' class='u76'><p class='text'>Теперь мы имеем две знакомые функции – $– \sin x$ и $\cos x$ – и две слишком уродливые, чтобы иметь с ними дело. Дроби могут быть знакомы из нашего разговора об устранимых разрывах.<br />
+$$\lim_{\Delta x\to0} \frac{\cos \Delta x − 1}{\Delta x} = 0$$<br />
+$$\lim_{\Delta x\to0} \frac{\sin \Delta x}{\Delta x} = 1$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.16 в 22:36</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='icon-comment-new'></i> <b class='n'>+1</b></a></td></tr>
+<tr id='o33762'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Using these (as yet unproven) facts, $$\frac{d}{dx} \, \sin x = \lim_{\Delta x\to0} \sin (x) \frac{\cos (\Delta x) − 1}{\Delta x} + \lim_{\Delta x\to0} \cos (x) \frac{\sin (\Delta x)}{\Delta x}$$ simplifies to $\sin x \cdot 0$ + $\cos x \cdot 1 = \cos x$.</p><p class='info'><a href='/book/39/131/33762#8' class='ord'>#8</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t656' class='u76'><p class='text'>Используя эти (ещё не доказанные) факты, $$\frac{d}{dx} \, \sin x = \lim_{\Delta x\to0} \sin (x) \frac{\cos (\Delta x) − 1}{\Delta x} + \lim_{\Delta x\to0} \cos (x) \frac{\sin (\Delta x)}{\Delta x}$$ упрощается до $\sin x \cdot 0$ + $\cos x \cdot 1 = \cos x$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.16 в 22:37</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33763'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We conclude: $\frac{d}{dx} \, \sin x = \cos x$.</p><p class='info'><a href='/book/39/131/33763#9' class='ord'>#9</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t657' class='u76'><p class='text'>Заключаем, что $\frac{d}{dx}\;\sin x = \cos x$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.16 в 22:37</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33764'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Derivative of $\cos x$.</p><p class='info'><a href='/book/39/131/33764#10' class='ord'>#10</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t648' class='u76'><p class='text'>Производная $\cos x$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.16 в 21:54</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33765'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>What is the specific formula for the derivative of the function $\cos x$?</p><p class='info'><a href='/book/39/131/33765#11' class='ord'>#11</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t658' class='u76'><p class='text'>Какова же определённая формула для производной $\cos x$?</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.16 в 22:38</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33766'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This calculation is very similar to that of the derivative of $\sin x$. If you get stuck on a step here it may help to go back and review the corresponding step there.</p><p class='info'><a href='/book/39/131/33766#12' class='ord'>#12</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t652' class='u76'><p class='text'>Это вычисление очень похоже на вычисление производной $\sin x$. Если вы застряли на каком-то из его шагов, это может помочь вам вернуться и пересмотреть соответствующий шаг.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.16 в 22:18</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33767'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>As in the calculation of $\sin x$, we begin with the definition of the derivative: $$\frac{d}{dx} \, \cos x =  \lim_{\Delta x\to0} \frac{\cos (x + \Delta x) − \cos(x)}{\Delta x}$$</p><p class='info'><a href='/book/39/131/33767#13' class='ord'>#13</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t651' class='u76'><p class='text'>Как и в вычислении $\sin x$, начнём с определения производной:<br />
+$$\frac{d}{dx}\; \cos x = \lim_{Δx→0} \frac{\cos(x + Δx) − \cos(x)}{Δx}$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.16 в 22:09</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33768'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Use the angle sum formula $\cos (a+b) = \cos (a) \cos (b)−\sin (a) \sin (b)$ and then simplify:<br />
+$$<br />
+\begin{align}<br />
+\frac{d}{dx} \, \cos x &amp;=  \lim_{\Delta x\to0} \frac{\cos x \cos \Delta x − \sin x \sin \Delta x - \cos x}{\Delta x} \\<br />
+&amp;=  \lim_{\Delta x\to0} \left[\frac{\cos x \cos \Delta x − \cos x}{\Delta x} + \frac{- \sin x \sin \Delta x}{\Delta x} \right] \\<br />
+&amp;= \lim_{\Delta x\to0}\left[\frac{\cos x (\cos \Delta x − 1)}{\Delta x} + \frac{- \sin x \sin \Delta x}{\Delta x} \right] \\<br />
+&amp;= \lim_{\Delta x\to0}\left[\cos (x) \left( \frac{\cos \Delta x − 1}{\Delta x} \right) + (- \sin x) \left( \frac{\sin \Delta x}{\Delta x} \right) \right] \\ \\ \\<br />
+\frac{d}{dx} \, \cos x &amp;= \lim_{\Delta x\to0} \cos x \left( \frac{\cos (\Delta x) − 1}{\Delta x} \right) + \lim_{\Delta x\to0} -(\sin x) \left( \frac{\sin \Delta x}{\Delta x} \right)<br />
+\end{align}<br />
+$$</p><p class='info'><a href='/book/39/131/33768#14' class='ord'>#14</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t659' class='u76'><p class='text'>Используем формулу для суммы углов $\cos(a+b) = \cos(a)\cos(b)-\sin(a)\sin(b)$ и упрощаем:<br />
+$$ \frac{d}{dx}\;\cos x = \lim_{Δx→0} \frac{\cos x \cos Δx - \sin x \sin Δx − \cos x}{Δx} = \\ \lim_{Δx→0} \left[\frac{\cos x \cos Δx − \cos x}{Δx}+\frac{-\sin x \sin Δx}{Δx}\right] = \\ \lim_{Δx→0} \left[\frac{\cos x(\cos Δx - 1)}{Δx}+\frac{(-\sin x) \sin Δx}{Δx}\right] = \\ \lim_{Δx→0} \left[\cos(x)\frac{\cos(Δx)-1}{Δx}+(-\sin(x))\frac{\sin(Δx)}{Δx}\right] $$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.16 в 22:47</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33769'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Once again we use the following (unproven) facts:<br />
+$$<br />
+\begin{align*}<br />
+\lim_{\Delta x\to0} \frac{\cos \Delta x − 1}{\Delta x} = 0 \\ \\ \\<br />
+\lim_{\Delta x\to0} \frac{\sin \Delta x}{\Delta x} = 1<br />
+\end{align*}<br />
+$$</p><p class='info'><a href='/book/39/131/33769#15' class='ord'>#15</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t660' class='u76'><p class='text'>Ещё раз используем следующие (недоказанные) факты:<br />
+$$\lim_{Δx→0} \frac{\cosΔx-1}{Δx} = 0$$<br />
+$$\lim_{Δx→0} \frac{\sin Δx}{Δx} = 1$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.16 в 22:54</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33770'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>And we conclude:<br />
+$$<br />
+\begin{align}<br />
+\frac{d}{dx} \, \cos x &amp;= \lim_{\Delta x\to0} \cos x \left( \frac{\cos (\Delta x) − 1}{\Delta x} \right) + \lim_{\Delta x\to0} -(\sin x) \left( \frac{\sin \Delta x}{\Delta x} \right) \\<br />
+&amp;= \cos x \cdot 0 + (-\sin x) \cdot 1 \\ \\ \\<br />
+\frac{d}{dx} \, \cos x &amp;= - \sin (x)<br />
+\end{align}<br />
+$$</p><p class='info'><a href='/book/39/131/33770#16' class='ord'>#16</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t661' class='u76'><p class='text'>И заключаем:<br />
+$$\frac{d}{dx}\;\cos x = \lim_{Δx→0}\cos(x)\frac{\cos(Δx)-1}{Δx}+\lim_{Δx→0}(-\sin(x))\frac{\sin(Δx)}{Δx}=\cos x \cdot 0 + (-\sin x) \cdot 1$$<br />
+$$\frac{d}{dx}\;\cos x = -\sin x$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.16 в 22:57</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+    </tbody>
+</table>
+
+<div id="pages-bottom">
+    </div>
+
+
+<div id="tr-sidebar">
+    <div id="dict" class='has-edit'>
+        <div id="dict-search">
+            <input type="text" placeholder="Поиск по словарю" class="search"/>
+            <a href="#" class="b"><i class="i icon-remove-sign"></i></a>
+        </div>
+        <div id="dict-body">
+            <div id="dict-body-content">
+                Минутку...
+            </div>
+        </div>
+                    <div id="dict-add">
+                <form method="post" action="/book/39/dict">
+                    <input type="text" name="term" placeholder="Оригинал"/>
+                    <input type="text" name="descr" placeholder="Перевод"/>
+                    <button type="submit" class="btn btn-mini btn-primary">Добавить</button>
+                    <button type="button" class="btn btn-mini cancel">Отмена</button>
+                </form>
+            </div>
+            <div id="dict-tools">
+                <i class="icon-plus"></i> <a href="#" class="add">Добавить слово</a>
+            </div>
+                    </div>
+</div>
+
+
+<div id="renum-modal" class="modal hide">
+    <form method="post" class="form-inline" action="/book/39/131/renum">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Перенумеровать субтитры</h3>
+        </div>
+        <div class="modal-body">
+            Номер субтитра, серая циферка рядом с его таймингом, в сущности, ни на что не влияет, субтитры сортируются
+            по времени.
+            Если вы добавляете новый титр, его номер может выбиваться из плавного течения номеров. Этот инструмент
+            расставит всем
+            титрам номера в хронологическом порядке.
+        </div>
+        <div class="modal-footer">
+            <input type="hidden" name="mode" value="1"/>
+            <button type="submit" class="btn btn-primary">Поехали</button>
+            <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $("#Tr").find("td.o").each(function () {
+        var $this = $(this);
+        $this.children("div").css("min-height", $this.height());
+    });
+</script>
+</div>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span6">
+                &copy; <a href="http://romakhin.ru/" rel="nofollow">Дмитрий Ромахин</a>
+                2008&ndash;2017                <br/>
+                <a href="/site/help">Справка</a> |
+                <a href="/blog?topic=65">Техподдержка</a> |
+                <a href="mailto:abuse@translate.kursomir.ru?subj=%2Fbook%2F39%2F131">Abuse</a> |
+                <a href="mailto:translate@kursomir.ru">E-mail для справок</a> |
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&locale=ru"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']]
+        },
+        asciimath2jax: {
+            delimiters: [['``', '``']]
+        }
+    });
+</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('a.tooltip').tooltip({'placement':'bottom'});
+jQuery('a[rel="popover"]').popover();
+jQuery('#yw0 .alert').alert();
+});
+/*]]>*/
+</script>
+</body>
+</html>

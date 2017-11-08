@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="/css/v3.1.css?3" />
+<link rel="stylesheet" type="text/css" href="/css/translate-1.css?5" />
+<link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css?1" />
+<style type="text/css">
+/*<![CDATA[*/
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+body, label, input, button, select, textarea {
+	font-size: 13px;
+	line-height: 18px;
+}
+#chat-box {
+	height: 300px;
+}.comments .comment .meta, .comments .comment .meta a, .translator .info, .translator .info a { color: #bbb; }
+.comments .comment:hover .meta, .comments .comment:hover .meta a, .translator tr:hover .info, .translator tr:hover .info a { color: #888; }
+/*]]>*/
+</style>
+<script type="text/javascript" src="/assets/bbeb3eca/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/6b5c0e82/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/global.js?16"></script>
+<script type="text/javascript" src="/js/user.js?3"></script>
+<script type="text/javascript" src="/js/chat.js?3"></script>
+<script type="text/javascript" src="/js/translate-1.js?11"></script>
+<script type="text/javascript" src="/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="/js/jquery.elastic.mod.js"></script>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.min.js?1"></script>
+<script type="text/javascript" src="/js/ff_comments.js?3"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var User = new CUser({id: 76, login: 'Keyten'});
+
+var Book = new CBook({
+	id: 39,
+	owner_id: 67,
+	facecontrol: 1,
+	s_lang: 2,
+	t_lang: 1,
+	n_verses: 2492,
+	n_vars: 1286,
+	d_vars: 1282,
+	typ: 'A',
+	s_title: '18.01SC Single Variable Calculus',
+	t_title: '18.01SC Анализ функций одной переменной',
+	membership: {status: 1}
+});
+
+var Chap = {
+	id: 126,
+	book_id: 39,
+	n_verses: 71,
+	n_vars: 71,
+	d_vars: 71,
+	title: '2. Examples of Derivatives / Примеры производных',
+	ac_read: '',
+	ac_gen: '',
+	ac_rate: '',
+	ac_comment: '',
+	ac_tr: '',
+};
+
+/*]]>*/
+</script>
+<title>Перевод 18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной: 2. Examples of Derivatives / Примеры производных :: КУРСОМИР.ПЕРЕВОДЫ</title>
+    <meta name="description" content="Коллективные переводы субтитров и книжек"/>
+    <meta name="language" content="ru"/>
+    <meta name="keywords"
+          content="перевод, translation, коллективный перевод, кино с субтитрами, кино по-английски с русскими субтитрами, кино по-немецки с русскими субтитрами, кино по-испански с русскими субтитрами, примеры перевода, краудсорсинг, crowdsourcing, нотабеноид"/>
+    <link rel='icon' href='/i/favicon.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='/i/favicon.ico' type='image/x-icon'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE]>
+    <script type="text/javascript" src="/js/jquery.input-placeholder.js"></script>
+    <link rel='stylesheet' href="/css/jquery.input-placeholder.css"/>
+    <script type="text/javascript">
+        $(function () {
+            $('input[placeholder]').inputDefault();
+        });
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container-fluid" style="background-color:#fff;">
+        <a href="/" id="header-logo">
+            <img src="/i/logo.png" width="124" height="130"
+                 style="padding-top: 50px;"
+                 alt="КУРСОМИР.ПЕРЕВОДЫ"
+                 title="3.3"/>
+        </a>
+        <nav>
+            <ul id="header-menu">
+                <li><a href="/catalog/1">ВИДЕО</a></li>
+                <li><a href="/catalog/2">ТЕКСТЫ</a></li>
+                <li><a href="/users">ПЕРЕВОДЧИКИ</a></li>
+                <li><a href="/blog">БЛОГ</a></li>
+                <li><a href="/announces">АНОНСЫ</a></li>
+                <li class="search">
+                    <form class="form-search" method="get" action="/search">
+                                                <input type="hidden" name="from" value="header">
+                        <input type="text" name="t" class="input-medium search-query span3"
+                               placeholder="Вы что-то потеряли?"
+                               title="Кстати, отсюда можно найти и переводчика, если собаку (@), а потом сразу его ник."/>
+                        <input type="submit" value="&raquo;" class="btn" style="border-radius: 20px;"/>
+                    </form>
+                </li>
+            </ul>
+            <ul id="header-submenu">
+                                    <li>
+                        <a href="/users/76" accesskey="i">
+                            <strong>Keyten</strong>
+                            Всё о вас
+                        </a>
+                    </li>
+                    <li id="hm-c">
+                        <a href="/my/comments" accesskey="c">
+                            <strong>Обсуждения  <b></b></strong>
+                            Места, где вы общались
+                        </a>
+                    </li>
+                    <li id="hm-n">
+                        <a href="/my/notices" accesskey="n">
+                            <strong>Оповещения  <b></b></strong>
+                            События для вас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#bookmarks" accesskey="b">
+                            <strong>Закладки</strong>
+                            На память
+                        </a>
+                    </li>
+                    <li><a href="/book/0/edit"><strong>Создать</strong> Перевод</a></li>
+                    <li><a href="/register/settings"><strong>Настройки</strong> Профиля</a></li>
+                    <li><a href="/register/logout"><strong>Выход</strong> До свидания :(</a></li>
+                            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <div id="bookmarks" class="modal hide">
+        <div class="modal-header" style='padding-bottom:0;'>
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Закладки</h3>
+            <div class="btn-toolbar">
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-sort">
+                    <button class="btn btn-mini" data-v="1" title="Сортировка по алфавиту">
+                        <i class="icon-text-height"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="2" title="Сортировка по вашей активности">
+                        <i class="icon-fire"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="3" title="Сортировка по времени вступления в перевод">
+                        <i class="icon-time"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="5" title="Сортировка по времени добавления закладки">
+                        <i class="icon-shopping-cart"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="4" title="Сортировка по готовности перевода">%</button>
+                    <button class="btn btn-mini" data-v="0" title="Ваша сортировка (таскайте закладки мышкой)">
+                        <i class="icon-random"></i>
+                    </button>
+                </div>
+
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-title">
+                    <button class="btn btn-mini" data-v="s" title="Показывать названия на языке оригинала">О</button>
+                    <button class="btn btn-mini" data-v="t" title="Показывать названия на языке перевода">П</button>
+                </div>
+                                <div class="btn-group pull-right">
+                    <button class="btn btn-mini" title="Удалить" id="bookmarks-tb-rm">
+                        <i class="icon-remove"></i>
+                    </button>
+                    <button class="btn btn-mini" title="Редактировать" id="bookmarks-tb-ed">
+                        <i class="icon-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body" style="max-height:350px">
+            <p class='loading'>минуточку...</p>
+        </div>
+    </div>
+
+
+<div class="container-fluid">
+    <div id="yw0"></div>
+<style type="text/css">
+        .translator.has-best td.t .best .text {
+        background-image: url(/i/corner-gray-t-r.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    </style>
+
+<h1><a href='/book/39'>18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной</a>: 2. Examples of Derivatives / Примеры производных</h1>
+
+<div id="tb-main">
+    <div>
+        <div class='group'><a
+                href="/book/39/126/go?nach=prev&ord=2"
+                title="Предыдущая глава"><i class="i icon-arrow-left"></i></a></div>
+
+        <div class="tb-index btn-group">
+            <a href="/book/39" class="btn btn-small"><i class="icon-list"></i> Оглавление</a>
+            <a class="btn btn-small dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+            <ul class="dropdown-menu" id="tb-chapter-list">
+                <li><a href="/book/39/members">Переводчики</a></li>
+                <li><a href="/book/39/blog">Блог</a></li>
+            </ul>
+        </div>
+
+        <div class='group'><a
+                href="/book/39/126/go?nach=next&ord=2"
+                title="Следующая глава"><i class="i icon-arrow-right"></i></a></div>
+
+        <div class="btn-group">
+                            <button type="button" class="btn btn-small tb-chat" title="Ctrl + ~"><i class="icon-bullhorn"></i> Чат
+                </button>
+            
+            <a href="#" class="btn btn-small tb-dict" accesskey="V"><i class="icon-book"></i> Словарь</a>
+
+            <div id="tb-filter">
+                <form method="get" class="form-inline" action="/book/39/126">
+                    <ul class='options'>
+                        <li><label><input type='radio' name='show' value='1' /> <a href='?show=1'>Непереведённое</a></label></li><li><label><input type='radio' name='show' value='7' /> <a href='?show=7'>С 2 и более версиями перевода</a></label></li><li><label><input type='radio' name='show' value='3' /> <a href='?show=3'>С комментариями</a></label></li><li><label><input type='radio' name='show' value='4' /> <a href='?show=4'>С новыми комментариями</a></label></li><li><label><input type='radio' name='show' value='2' />  <input type='text' name='show_user' placeholder='От переводчика' class='span3' value='' title='Ctrl+I: вставить ваш ник' /></label></li><li><label><input type='radio' name='show' value='5' />  <input type='text' name='to' placeholder='Оригинал содержит' class='span3' value='' /></label></li><li><label><input type='radio' name='show' value='6' />  <input type='text' name='tt' placeholder='Перевод содержит' class='span3' value='' /></label></li>                    </ul>
+                    <button type="submit" class="btn btn-mini btn-primary">Показать</button>
+                    <a href="/book/39/126"
+                       class="btn btn-mini">Сбросить всё</a>
+                </form>
+            </div>
+
+            <a href='#' class='btn btn-small tb-filter' accesskey='F'><i class='icon-filter'></i> Фильтр</a>        </div>
+
+        
+        
+
+        <div class="group">
+            <a href="/book/39/126/switchiface"><i class="icon-thumbs-down" title="Старый	интерфейс"></i></a>
+        </div>
+
+        <div class="tb-progress group"></div>
+
+        <div class='chic-pages'><span>&larr;</span><div class='blur left'></div> <ul class='selectable'><li class='active'><input type='text' name='Orig_page' value='1' accesskey='g' /></li><li><a href='?Orig_page=2'>2</a></li></ul> <div class='blur right'></div><a href='?Orig_page=2' class='pseudo' title='На следующую страницу'>&rarr;</a></div>    </div>
+</div>
+
+<div class="clear"></div>
+
+<table id="Tr" class="translator has-best translator-oe-hide">
+    <thead>
+    <tr>
+                    <th></th>        <th>
+            Английский оригинал
+        </th>
+                    <th></th>        <th>
+            Перевод на русский        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id='o33559'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Example 1. $f(x) = \frac{1}{x}$</p><p class='info'><a href='/book/39/126/33559#1' class='ord'>#1</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t571' class='u67'><p class='text'>Пример 1. $f(x) = \frac{1}{x}$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 1.05.16 в 15:33</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33560'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We’ll find the derivative of the function $f(x) = \frac{1}{x}$. To do this we will use the formula:  $$f'(x) = \lim_{\Delta x \to 0} \frac{f(x_0 + \Delta x) − f(x_0)}{\Delta x}$$</p><p class='info'><a href='/book/39/126/33560#2' class='ord'>#2</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t572' class='u67'><p class='text'>Найдем производную функции $f(x) = \frac{1}{x}$. Для этого мы будем использовать формулу $$f'(x_0) = \lim_{\Delta x \to 0} \frac{f(x_0 + \Delta x) − f(x_0)}{\Delta x}$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 1.05.16 в 15:34</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33561'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Graphically, we will be finding the slope of the tangent line at at an arbitrary point $(x_0, \frac{1}{x_0})$ on the graph of $y = \frac{1}{x}$.</p><p class='info'><a href='/book/39/126/33561#3' class='ord'>#3</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t573' class='u67'><p class='text'>Графически мы можем найти тангенс угла наклона касательной в произвольной точке $(x_0, \frac{1}{x_0})$ на графике $y = \frac{1}{x}$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 1.05.16 в 15:37</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33562'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>(The graph of $y = \frac{1}{x}$ is a hyperbola in the same way that the graph of $y = x^2$ is a parabola.)</p><p class='info'><a href='/book/39/126/33562#4' class='ord'>#4</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t574' class='u67'><p class='text'>(график $y = \frac{1}{x}$ представляет из себя гиперболу точно также, как график $y = x^2$ параболу)</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 1.05.16 в 15:38</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='icon-comment-new'></i> <b class='n'>+1</b></a></td></tr>
+<tr id='o33563'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: Graph of $\frac{1}{x}$</p><p class='info'><a href='/book/39/126/33563#5' class='ord'>#5</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t575' class='u67'><p class='text'>Рис. 1. График функции $y = \frac{1}{x}$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 1.05.16 в 15:39</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33564'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We start by computing the slope of the secant line:<br />
+$$<br />
+\begin{align}<br />
+\frac{\Delta f}{\Delta x} &amp;=  \frac{f(x_0 + \Delta x) − f(x_0)}{\Delta x} \\<br />
+&amp;= \frac{\frac{1}{x_0+ \Delta x_0} - \frac{1}{x_0}}{\Delta x} \\<br />
+&amp;= \frac{(x_0)(x_0 + \Delta x)}{(x_0)(x_0 + \Delta x)} \frac{\frac{1}{x_0 + \Delta x} - \frac{1}{x_0}}{\Delta x} \\<br />
+&amp;= \frac{\frac{(x_0)(x_0 + \Delta x)}{x_0 + \Delta x} - \frac{(x_0)(x_0 + \Delta x)}{\Delta x}}{(x_0)(x_0 + \Delta x) \Delta x)} \\<br />
+&amp;= \frac{1}{\Delta x} \frac{x_0 - (x_0 + \Delta x)}{(x_0)(x_0 + \Delta x)} \\<br />
+&amp;=\frac{1}{\Delta x} \frac{-\Delta x}{(x_0)(x_0 + \Delta x)} \\<br />
+&amp;=\frac{-1}{(x_0)(x_0 + \Delta x)}<br />
+\end{align}<br />
+$$</p><p class='info'><a href='/book/39/126/33564#6' class='ord'>#6</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t576' class='u67'><p class='text'>Начнем с вычисления угла наклона секущей:<br />
+$$<br />
+\begin{align}<br />
+\frac{\Delta f}{\Delta x} &amp;=  \frac{f(x_0 + \Delta x) − f(x_0)}{\Delta x} \\[6pt]<br />
+&amp;= \frac{\frac{1}{x_0+ \Delta x_0} - \frac{1}{x_0}}{\Delta x} \\[6pt]<br />
+&amp;= \frac{(x_0)(x_0 + \Delta x)}{(x_0)(x_0 + \Delta x)} \frac{\frac{1}{x_0 + \Delta x} - \frac{1}{x_0}}{\Delta x} \\[6pt]<br />
+&amp;= \frac{\frac{(x_0)(x_0 + \Delta x)}{x_0 + \Delta x} - \frac{(x_0)(x_0 + \Delta x)}{x_0}}{(x_0)(x_0 + \Delta x) \Delta x)} \\[6pt]<br />
+&amp;= \frac{1}{\Delta x} \frac{x_0 - (x_0 + \Delta x)}{(x_0)(x_0 + \Delta x)} \\[6pt]<br />
+&amp;=\frac{1}{\Delta x} \frac{-\Delta x}{(x_0)(x_0 + \Delta x)} \\[6pt]<br />
+&amp;=\frac{-1}{(x_0)(x_0 + \Delta x)}<br />
+\end{align}<br />
+$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 1.05.16 в 15:40</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33565'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Next, we see what happens to the slopes of the secant lines as $\Delta x$ tends to zero:  $$f'(x) = \lim_{\Delta x \to 0} \frac{\Delta f}{\Delta x} = \lim_{\Delta x \to 0} \frac {−1}{(x_0)(x_0 + \Delta x)} = \frac{-1}{{x_0}^2}$$</p><p class='info'><a href='/book/39/126/33565#7' class='ord'>#7</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t577' class='u67'><p class='text'>Далее мы видим, что происходит с наклоном секущей, когда $\Delta x$ устремляется к нулю:  $$f'(x_0) = \lim_{\Delta x \to 0} \frac{\Delta f}{\Delta x} = \lim_{\Delta x \to 0} \frac {−1}{(x_0)(x_0 + \Delta x)} = \frac{-1}{{x_0}^2}$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 1.05.16 в 15:41</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33566'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>One thing to keep in mind when working with derivatives: it may be tempting to plug in $\Delta x = 0$ right away. </p><p class='info'><a href='/book/39/126/33566#8' class='ord'>#8</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t578' class='u67'><p class='text'>При работе с производными важно помнить одну вещь: может казаться очень заманчивым приравнять $\Delta x$ сразу к $0$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 1.05.16 в 15:43</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33567'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>If you do this, however, you will always end up with $\frac{\Delta f}{\Delta x} = \frac{0}{0}$. You will always need to do some cancellation to get at the answer.</p><p class='info'><a href='/book/39/126/33567#9' class='ord'>#9</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24975' class='u67'><p class='text'>Если вы попадетесь на это, вы обязательно закончите неопределенностью $\frac{\Delta f}{\Delta x} = \frac{0}{0}$. Вам всегда придется делать некоторое сокращение, чтобы получить ответ.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 20.07.16 в 16:13</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33568'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We’ve computed that $f'(x) = \frac{−1}{{x_0}^2}$. Is this correct? How might we check our work? First of all, $f'(x_0)$ is negative — as is the slope of the tangent line on the graph of $y = \frac{1}{x}$. Secondly, as $x_0 \to \infty$ (i.e. as $x_0$ grows larger and larger), the tangent line is less and less steep. So $\frac{1}{{x_0}^2}$ should get closer to $0$ as $x_0$ increases, which it does.</p><p class='info'><a href='/book/39/126/33568#10' class='ord'>#10</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1116' class='u67'><p class='text'>Мы посчитали производную $f'(x) = \frac{−1}{{x_0}^2}$. Правильно ли это? Как мы можем это проверить? Во первых, значение $f'(x_0)$ отрицательно — так же, как и значение наклона касательной графика $y = \frac{1}{x}$. Во вторых, если $x_0 \to \infty$ (то есть $x_0$ становится все больше и больше), наклон касательной становится все менее и менее крутым. Так что, при возрастании $x_0$, значение $\frac{1}{{x_0}^2}$ должно становится все ближе к $0$, как это и происходит.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 5.05.16 в 4:58</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33569'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Question: Explain why $ \displaystyle{\lim_{\Delta x \to 0}} \frac{−1}{(x_0)(x_0 + \Delta x)} = \frac{−1}{{x_0}^2} $ again?</p><p class='info'><a href='/book/39/126/33569#11' class='ord'>#11</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1117' class='u67'><p class='text'>Вопрос: объясните еще раз, почему $ \displaystyle{\lim_{\Delta x \to 0}} \frac{−1}{(x_0)(x_0 + \Delta x)} = \frac{−1}{{x_0}^2} $.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 5.05.16 в 4:59</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33570'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Answer: The point $x_0$ could be any point; let’s suppose that $x_0 = 3$ so that we can look at this limit in a specific case.</p><p class='info'><a href='/book/39/126/33570#12' class='ord'>#12</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1118' class='u67'><p class='text'>Ответ: точка $x_0$ может быть любой; предположим, что $x_0 = 3$, чтобы можно было рассмотреть конкретный предел.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 5.05.16 в 5:00</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33571'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We want to know the value of $\frac{−1}{(3)(3+Δx)}$ as $Δx$ tends toward zero. As $\Delta x$ gets smaller and smaller $3 + \Delta x$ gets closer and closer to $3$, and so $\frac{−1}{(3)(3+\Delta x)}$ gets closer and closer to $\frac{−1}{(3)(3)} = \frac{−1}{9}$.</p><p class='info'><a href='/book/39/126/33571#13' class='ord'>#13</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1119' class='u67'><p class='text'>В таком случае мы хотим узнать значение выражения $\frac{−1}{(3)(3 + \Delta x)}$ при $\Delta x \to 0$. В том время как $\Delta x$ становится все меньше и меньше, $3 + \Delta x$ становится все ближе и ближе к $3$. Таким образом, $\frac{−1}{(3)(3+\Delta x)}$ становится все ближе и ближе $\frac{−1}{(3)(3)} = \frac{−1}{9}$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 5.05.16 в 5:03</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33572'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Question: Why is it that $\frac{\frac{1}{x_0 + \Delta x} − \frac{1}{x_0}}{\Delta x} = \frac{1}{\Delta x} \frac{x_0 − (x_0 + \Delta x)}{(x_0)(x_0 + \Delta x)}$?</p><p class='info'><a href='/book/39/126/33572#14' class='ord'>#14</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1120' class='u67'><p class='text'>Вопрос: почему $\frac{\frac{1}{x_0 + \Delta x} − \frac{1}{x_0}}{\Delta x} = \frac{1}{\Delta x} \frac{x_0 − (x_0 + \Delta x)}{(x_0)(x_0 + \Delta x)}$?</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 5.05.16 в 5:04</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33573'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Answer: There are two steps in this simplification. We factored out the $\Delta x$ that was in the denominator to become the $\frac{1}{Δx}$ “out front”. At the same time, we rewrote the difference of two fractions $\frac{1}{x_0 + \Delta x} - \frac{1}{x_0}$ using a common denominator.</p><p class='info'><a href='/book/39/126/33573#15' class='ord'>#15</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1121' class='u67'><p class='text'>Ответ: в этом упрощении есть два шага. Мы вынесли знаменатель $\Delta x$ и поставили $\frac{1}{\Delta x}$ на первое место. В то же время, мы привели разницу двух дробей $\frac{1}{x_0 + \Delta x} - \frac{1}{x_0}$ к общему знаменателю.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 5.05.16 в 5:07</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33574'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This common denominator was $(x_0)(x_0 + \Delta x)$, which is just the product of the denominators in $\frac{1}{x_0 + \Delta x} - \frac{1}{x_0}$.</p><p class='info'><a href='/book/39/126/33574#16' class='ord'>#16</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1122' class='u67'><p class='text'>Этим общим знаменателем был $(x_0)(x_0 + \Delta x)$, что является просто произведением знаменателей в выражении $\frac{1}{x_0 + \Delta x} - \frac{1}{x_0}$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 5.05.16 в 5:10</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33575'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>To get the common denominator, we multiply the first fraction by $\frac{(x_0)}{(x_0)} = 1$ and the second by $\frac{(x_0 + \Delta x)}{(x_0 + \Delta x)}$. (Multiplying by $1$ won’t change its value, but can change the algebraic expression we use to describe that value.) The denominators cancel, as intended, and we’re left with $\frac{x_0 - (x_0 + \Delta x)}{(x_0)(x_0 + \Delta x)}$.</p><p class='info'><a href='/book/39/126/33575#17' class='ord'>#17</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1123' class='u67'><p class='text'>Чтобы найти этот общий знаменатель, мы умножаем первую дробь на $\frac{(x_0)}{(x_0)} = 1$ и вторую на $\frac{(x_0 + \Delta x)}{(x_0 + \Delta x)}$ (умножая на $1$, мы не меняем значение, но можем изменить структуру выражения, которое мы используем для его описания). Как и предполагалось, мы получили две дроби с одинаковым знаменателем, так что наше выражение можно представить в виде $\frac{x_0 - (x_0 + \Delta x)}{(x_0)(x_0 + \Delta x)}$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 5.05.16 в 5:19</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33626'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>A “Harder” Problem</p><p class='info'><a href='/book/39/126/33626#18' class='ord'>#18</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1310' class='u67'><p class='text'>Более сложная задача</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 5.05.16 в 22:29</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33576'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>People say that calculus is hard, but the example we just saw — computing the derivative of $f(x) = \frac{1}{x}$ — was not very difficult. What makes calculus seem hard is the context calculus problems appear in. For example, the problem we are about to solve combines algebra, geometry and problem solving with calculus.</p><p class='info'><a href='/book/39/126/33576#19' class='ord'>#19</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1311' class='u67'><p class='text'>Часто говорят, что математический анализ сложен, но пример, который мы только что разобрали - вычисление производной $f(x) = \frac{1}{x}$, был довольно простым. Анализ кажется сложным в контексте многих задач, в которых он появляется. Например, задача, которую мы будем сейчас решать, вместе с анализом использует алгебру и геометрию.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 5.05.16 в 22:33</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33577'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Because we use calculus to solve it, it is “a calculus problem”. And although it is a harder problem, it’s not the calculus that makes it hard.</p><p class='info'><a href='/book/39/126/33577#20' class='ord'>#20</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1319' class='u67'><p class='text'>Поскольку мы используем математический анализ для решения задачи, то это «задача на анализ». И хоть она и более сложная, не анализ делает ее такой.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 6.05.16 в 1:10</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33578'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>So far all we’ve talked about is geometry, so our example problem must be geometric.</p><p class='info'><a href='/book/39/126/33578#21' class='ord'>#21</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1320' class='u67'><p class='text'>До сих пор мы рассматривали только геометрию, поэтому и наша задача будет геометрической.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 6.05.16 в 1:11</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33579'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Problem: Find the area of the triangle formed by the $x$ and $y$-axes and the tangent to the graph of $y = \frac{1}{x}$.</p><p class='info'><a href='/book/39/126/33579#22' class='ord'>#22</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1321' class='u67'><p class='text'>Задача: найти площадь треугольника, образованного осями $x$, $y$ и касательной к графику функции $y=\frac{1}{x}$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 6.05.16 в 1:13</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33580'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: Triangle formed by axes and tangent line</p><p class='info'><a href='/book/39/126/33580#23' class='ord'>#23</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1322' class='u67'><p class='text'>Рис. 1. Треугольник, образованный осями и касательной</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 6.05.16 в 1:14</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33581'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We start by drawing a picture. As we draw the picture, we realize we’ve assumed that the triangle lies in the first quadrant. The solution we find might or might not depend on this assumption — we’ll have to do some work later if we want to be sure it’s true when $x$ and $\frac{1}{x}$ are negative.</p><p class='info'><a href='/book/39/126/33581#24' class='ord'>#24</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1323' class='u67'><p class='text'>Начнем с рисунка. Нарисуем такой треугольник в предположении, что он лежит в первой четверти. Решение, которое мы пытаемся найти, может использовать, а может и не использовать это предположение —  в дальнейшем, нам понадобятся некоторые дополнительные усилия, чтобы понять, верно ли это для отрицательный значений $x$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 6.05.16 в 1:17</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33582'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Because the problem refers to a tangent line it is a calculus problem, but as you’ll see, the calculus is the easy part.</p><p class='info'><a href='/book/39/126/33582#25' class='ord'>#25</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1371' class='u67'><p class='text'>Поскольку по задаче присутствует касательно, это задача анализа, но как мы увидим, применение здесь именно анализа не вызывает трудностей.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 7.05.16 в 5:18</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33583'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The next step in our solution is labeling the picture. We label the graph $y = \frac{1}{x} $. We’d like to put some labels on the triangle, like the lengths of its sides, but we don’t know how to find those numbers.</p><p class='info'><a href='/book/39/126/33583#26' class='ord'>#26</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1372' class='u67'><p class='text'>Следующим шагом мы нанесен на график $y = \frac{1}{x}$ некоторые числа, такие как длины сторон треугольника, но мы пока не знаем как их найти.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 7.05.16 в 5:21</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33636'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>What we do know is that the hypotenuse of the triangle is tangent to the graph, and we can label the point of tangency $(x_0, \frac{1}{x_0})$ (which lets us label the points $(x_0, 0)$ and $(0, y_0)$ on the axes).</p><p class='info'><a href='/book/39/126/33636#27' class='ord'>#27</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1373' class='u67'><p class='text'>Что мы действительно знаем, так это то, что гипотенуза треугольника является касательной и мы можем обозначить точку касания $(x_0, \frac{1}{x_0})$ (а заодно и точки $(x_0, 0)$ и $(0, y_0)$ на осях).</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 7.05.16 в 5:23</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33584'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The area of a triangle is $\frac{1}{2} b \cdot h$, so we’d like to find the lengths of the base and height of this triangle.</p><p class='info'><a href='/book/39/126/33584#28' class='ord'>#28</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1374' class='u67'><p class='text'>Площадь треугольника равна $\frac{1}{2} b \cdot h$, поэтому нам бы хотелось найти длины основания и высоты этого треугольника.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 7.05.16 в 5:25</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33585'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>If we can find the $x$-coordinate of the point where the tangent line intersects the $x$-axis, we’ll know the length of the base of the triangle. Similarly, finding the $y$-intercept of the tangent line will give us the triangle’s height.</p><p class='info'><a href='/book/39/126/33585#29' class='ord'>#29</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1375' class='u67'><p class='text'>Если мы найдем $x$-координату точки, в которой касательная прямая пересекает ось $x$, мы узнаем длину основания треугольника. Аналогично, нахождение пересечение касательной с осью $y$ даст нам высоту треугольника.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 7.05.16 в 5:28</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33586'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In order to find the $x$- and $y$-intercepts of the tangent line, we first must find the equation of the line. We start by writing down the “point-slope” form of the equation for a line: $$y − y_0 = m(x − x_0).$$</p><p class='info'><a href='/book/39/126/33586#30' class='ord'>#30</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1376' class='u67'><p class='text'>Для того чтобы найти пересечения касательной с осями $x$ и $y$, сначала мы должны найти уравнение этой прямой. Напишем уравнение пучка прямых, проходящих через одну определенную точку $(x_0, y_0)$:</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 7.05.16 в 5:37</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33587'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The part of this problem that requires calculus is finding the slope $m$ of the tangent line. Luckily, we already did this calculation in the previous example: $m = \frac{−1}{{x_0}^2}$. $$y - y_0 = \frac{−1}{{x_0}^2}(x - x_0)$$</p><p class='info'><a href='/book/39/126/33587#31' class='ord'>#31</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1377' class='u67'><p class='text'>Часть этой задачи, которая требует математический анализ, это нахождение наклона $m$ касательной. К счастью, мы уже провели все необходимые вычисления в предыдущем примере: $m = \frac{-1}{{x_0}^2}$.<br />
+$$y - y_0 = \frac{-1}{{x_0}^2} (x - x_0)$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 7.05.16 в 5:40</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33588'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We’ve finished all the calculus in the problem, but we still need to do some work to find the area of the triangle. The point $(x_0, y_0)$ is the point where the hypotenuse is tangent to the graph of $y = \frac{1}{x}$. We leave $x_0$ as is, and replace $y_0$ by $\frac{1}{x_0}$. $$y - \frac{1}{x_0} = \frac{−1}{{x_0}^2} (x - x_0)$$</p><p class='info'><a href='/book/39/126/33588#32' class='ord'>#32</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1378' class='u67'><p class='text'>Мы уже произвели все основные вычисления, но нам необходимо сделать еще немного, чтобы найти площадь треугольника. Точка $(x_0, y_0)$ является точкой, в которой гипотенуза касается графика функции $y = \frac{1}{x}$. Мы оставим $x_0$  в выражении как есть, а $y_0$ заменим на $\frac{1}{{x_0}^2}$.<br />
+$$ y - \frac{1}{x_0} = \frac{-1}{{x_0}^2} (x - x_0)$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 7.05.16 в 5:44</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33589'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>First we calculate the $x$-intercept of the tangent line, which will give us the length of the base of the triangle. The line crosses the $x$-axis when $y = 0$.</p><p class='info'><a href='/book/39/126/33589#33' class='ord'>#33</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1394' class='u67'><p class='text'>Для начала мы вычислим координату пересечения касательной с осью $x$, которая является длиной основания треугольника. Прямая пересекается ось $x$ когда $y=0$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 7.05.16 в 14:06</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33590'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Setting $y = 0$ in the equation for the tangent line, we get:<br />
+$$<br />
+\begin{align*}<br />
+0 - \frac{1}{x_0} &amp;= \frac{-1}{{x_0}^2} (x - x_0) \\<br />
+\frac{-1}{x_0} &amp;= \frac{-1}{{x_0}^2} x + \frac{1}{x_0} \\<br />
+\frac{1}{{x_0}^2} x &amp;= \frac{2}{x_0} \\<br />
+x &amp;= {x_0}^2 (\frac{2}{x_0}) = 2x_0<br />
+\end{align*}<br />
+$$</p><p class='info'><a href='/book/39/126/33590#34' class='ord'>#34</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1395' class='u67'><p class='text'>Подставляя $y=0$ в выражение для касательной, получаем:<br />
+$$<br />
+\begin{align*}<br />
+0 - \frac{1}{x_0} &amp;= \frac{-1}{{x_0}^2} (x - x_0) \\<br />
+\frac{-1}{x_0} &amp;= \frac{-1}{{x_0}^2} x + \frac{1}{x_0} \\<br />
+\frac{1}{{x_0}^2} x &amp;= \frac{2}{x_0} \\<br />
+x &amp;= {x_0}^2 (\frac{2}{x_0}) = 2x_0<br />
+\end{align*}<br />
+$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 7.05.16 в 14:08</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33591'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>So, the $x$-intercept of this tangent line is at $x = 2x_0$.</p><p class='info'><a href='/book/39/126/33591#35' class='ord'>#35</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1396' class='u67'><p class='text'>Значит, координата пересечения с осью $x$ равна $2x_0$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 7.05.16 в 14:09</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33592'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Next we could find the $y$-intercept using a very similar calculation — replacing $x$ by $0$ and solving for $y$ (because the $y$-intercept is the point on the line with $x$ coordinate $0$). </p><p class='info'><a href='/book/39/126/33592#36' class='ord'>#36</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1397' class='u67'><p class='text'>Далее мы можем найти пересечение с осью $y$ проведя аналогичные вычисления − заменив $x$ на $0$ и решая уравнение относительно $y$ (поскольку координата пересечения кривой с осью $y$ по оси $x$ равна $0$).</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 7.05.16 в 14:14</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o57350'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>If we don’t want to do the calculation all over again, or if we like using clever tricks to make problems easier, we can use the symmetry of the graph to take a short cut.</p><p class='info'><a href='/book/39/126/57350#37' class='ord'>#37</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1398' class='u67'><p class='text'>Если мы не хотим проводить вычисления заново, или, если мы любим использовать умные приемы чтобы делать задачи легче, мы можем использовать симметрию графика, чтобы избрать кратчайший путь.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 7.05.16 в 14:16</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='icon-comment-new'></i> <b class='n'>+1</b></a></td></tr>
+<tr id='o33593'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Since $y = \frac{1}{x}$ and $x = \frac{1}{y}$ are identical equations, the graph of $y = \frac{1}{x}$ is symmetric when $x$ and $y$ are exchanged. By symmetry, then, we could swap the $x$’s in the calculation above with the $y$’s to conclude that the $y$-intercept is at $y = 2y_0 = \frac{2}{x_0}$.</p><p class='info'><a href='/book/39/126/33593#38' class='ord'>#38</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1601' class='u67'><p class='text'>Поскольку $y = \frac{1}{x}$ и $x = \frac{1}{y}$ — одинаковые выражения, график $y = \frac{1}{x}$ симметричен относительно замены $x$ на $y$. Тогда, благодаря симметрии, мы можем поменять $x$ в выражениях выше на $y$ и получить, что пересечение с осью $y$ находится в точке с координатой $y = 2y_0 = \frac{2}{x_0}$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 3:05</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33594'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 2: Triangle formed by axes and tangent line, labeled</p><p class='info'><a href='/book/39/126/33594#39' class='ord'>#39</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1602' class='u67'><p class='text'>Рис. 2. Треугольник, образованный осями и касательной с обозначениями</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 3:06</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33595'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Finally, $$\text{Area} = \frac{1}{2} b \cdot h = \frac{1}{2} (2x_0)(2y_0) = 2x_0 y_0 = 2x_0 (\frac{1}{x_0}) = 2 \text{ (see Fig. 2)}$$</p><p class='info'><a href='/book/39/126/33595#40' class='ord'>#40</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1603' class='u67'><p class='text'>В итоге,<br />
+$$\text{Площадь} = \frac{1}{2} b \cdot h = \frac{1}{2} (2x_0)(2y_0) = 2x_0 y_0 = 2x_0 (\frac{1}{x_0}) = 2 \text{ (смотреть рис. 2)}$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 3:06</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33596'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Curiously, the area of the triangle is $\textit{always}$ $2$, no matter where on the graph we draw the tangent line!</p><p class='info'><a href='/book/39/126/33596#41' class='ord'>#41</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1604' class='u67'><p class='text'>Любопытно, что площадь треугольника всегда равна $2$, не зависимо от того, в какой точке графика мы нарисуем касательную!</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 3:08</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33597'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Remark: We call it “one variable calculus”, but we just used four variables: $x$, $y$, $x_0$, and $y_0$. We could have had more! This makes things complicated, and it’s something that you’ll have to get used to.</p><p class='info'><a href='/book/39/126/33597#42' class='ord'>#42</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1605' class='u67'><p class='text'>Замечание: мы работает с «анализом функций одной переменной», но только что мы использовали переменные $x$, $y$, $x_0$, $y_0$. И могло быть и больше! Это, конечно, все запутывает и вам еще придется столкнуться с подобным.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 3:11</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33598'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Another complicated thing that we do is reuse variables. In this problem, there are (at least) three different possible interpretations of the variable y.</p><p class='info'><a href='/book/39/126/33598#43' class='ord'>#43</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1611' class='u67'><p class='text'>Другая вещь, которая все усложняет, это многократное использование одной и той же переменной. В этой задаче есть как минимум три разных контекста, в которых используется переменная $y$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 14:47</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33599'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>When we said $y = \frac{1}{x}$, we were thinking of $y$ as the vertical position of a point on the hyperbola. When we said $y − y_0 = \frac{−1}{{x_0}^2} (x − x_0)$ we were thinking of $y$ as the vertical position of a point on the tangent line. And when we said $y = 0$ we were talking about the vertical position of all the points on the $x$-axis.</p><p class='info'><a href='/book/39/126/33599#44' class='ord'>#44</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1612' class='u67'><p class='text'>Когда мы говорим, что $y = \frac{1}{x}$, мы имеем ввиду, что  $y$ - расстояние по вертикали до точки гиперболы. Когда говорим, что $y - y_0 = \frac{-1}{{x_0}^2} (x - x_0)$, мы думаем об $y$ как о расстоянии по вертикали до точки на касательной. А когда говорим $y=0$ имеем ввиду положение по вертикали всех точек на оси $x$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 14:50</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33600'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Once you’ve practiced calculus for a while you will know from context which meaning $y$ has, just as you can tell in conversation whether a person is saying “sea” or “see”.</p><p class='info'><a href='/book/39/126/33600#45' class='ord'>#45</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1613' class='u67'><p class='text'>Вместе с опытом применения математического анализа придет понимание о том, в каком контексте используется $y$ в каждом конкретном случае, примерно также, как в разговорной речи вы сможете отличить, говорит человек «луг» или «лук».</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 14:54</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='icon-comment-new'></i> <b class='n'>+1</b></a></td></tr>
+<tr id='o33637'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Until you reach that point, be sure you understand the meaning of an equation before using it in a calculation.</p><p class='info'><a href='/book/39/126/33637#46' class='ord'>#46</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1614' class='u67'><p class='text'>Поэтому, прежде чем прозводить выкладки, всегда старайтесь убедится, что вы правильно понимаете смысл выражения, с которым вы работаете.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 14:57</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33601'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Notations</p><p class='info'><a href='/book/39/126/33601#47' class='ord'>#47</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1615' class='u67'><p class='text'>Обозначения</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 14:57</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33602'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Calculus, rather like English or any other language, was developed by several people. As a result, just as there are many ways to express the same thing, there are many notations for the derivative.</p><p class='info'><a href='/book/39/126/33602#48' class='ord'>#48</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1616' class='u67'><p class='text'>Математический анализ, так же как английский или любой другой язык, был разработан не одним человеком. Это означает, что существует несколько способ описания одних и тех же вещей. например, производных.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 15:00</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33603'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Since $y = f(x)$, it’s natural to write $$\Delta y = \Delta f = f(x) − f(x_0) = f(x_0 + \Delta x) − f(x_0)$$ We say “Delta $y$” or “Delta $f$” or the “change in $y$”.</p><p class='info'><a href='/book/39/126/33603#49' class='ord'>#49</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1617' class='u67'><p class='text'>Если $y=f(x)$, то разумно записать<br />
+$$\Delta y = \Delta f = f(x) - f(x_0) = f(x_0 + \Delta x) - f(x_0)$$<br />
+Здесь мы говорим  «дельта $y$» или «дельта $\Delta f$»; или просто «изменение $y$».</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 15:03</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33604'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>If we divide both sides by $\Delta x = x − x_0$, we get two expressions for the difference quotient: $$\frac{\Delta y}{\Delta x} = \frac{\Delta f}{\Delta x}$$</p><p class='info'><a href='/book/39/126/33604#50' class='ord'>#50</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1618' class='u67'><p class='text'>Если мы разделим обе части на $\Delta x = x - x_0$, то получим два выражения для разделенной разности:<br />
+$$\frac{\Delta y}{\Delta x} = \frac{\Delta f}{\Delta x}$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 15:04</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+    </tbody>
+</table>
+
+<div id="pages-bottom">
+    <p class='n'><a href='?Orig_page=2'>Следующая страница &rarr;</a></p></div>
+
+
+<div id="tr-sidebar">
+    <div id="dict" class='has-edit'>
+        <div id="dict-search">
+            <input type="text" placeholder="Поиск по словарю" class="search"/>
+            <a href="#" class="b"><i class="i icon-remove-sign"></i></a>
+        </div>
+        <div id="dict-body">
+            <div id="dict-body-content">
+                Минутку...
+            </div>
+        </div>
+                    <div id="dict-add">
+                <form method="post" action="/book/39/dict">
+                    <input type="text" name="term" placeholder="Оригинал"/>
+                    <input type="text" name="descr" placeholder="Перевод"/>
+                    <button type="submit" class="btn btn-mini btn-primary">Добавить</button>
+                    <button type="button" class="btn btn-mini cancel">Отмена</button>
+                </form>
+            </div>
+            <div id="dict-tools">
+                <i class="icon-plus"></i> <a href="#" class="add">Добавить слово</a>
+            </div>
+                    </div>
+</div>
+
+
+<div id="renum-modal" class="modal hide">
+    <form method="post" class="form-inline" action="/book/39/126/renum">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Перенумеровать субтитры</h3>
+        </div>
+        <div class="modal-body">
+            Номер субтитра, серая циферка рядом с его таймингом, в сущности, ни на что не влияет, субтитры сортируются
+            по времени.
+            Если вы добавляете новый титр, его номер может выбиваться из плавного течения номеров. Этот инструмент
+            расставит всем
+            титрам номера в хронологическом порядке.
+        </div>
+        <div class="modal-footer">
+            <input type="hidden" name="mode" value="1"/>
+            <button type="submit" class="btn btn-primary">Поехали</button>
+            <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $("#Tr").find("td.o").each(function () {
+        var $this = $(this);
+        $this.children("div").css("min-height", $this.height());
+    });
+</script>
+</div>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span6">
+                &copy; <a href="http://romakhin.ru/" rel="nofollow">Дмитрий Ромахин</a>
+                2008&ndash;2017                <br/>
+                <a href="/site/help">Справка</a> |
+                <a href="/blog?topic=65">Техподдержка</a> |
+                <a href="mailto:abuse@translate.kursomir.ru?subj=%2Fbook%2F39%2F126">Abuse</a> |
+                <a href="mailto:translate@kursomir.ru">E-mail для справок</a> |
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&locale=ru"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']]
+        },
+        asciimath2jax: {
+            delimiters: [['``', '``']]
+        }
+    });
+</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('a.tooltip').tooltip({'placement':'bottom'});
+jQuery('a[rel="popover"]').popover();
+jQuery('#yw0 .alert').alert();
+});
+/*]]>*/
+</script>
+</body>
+</html>

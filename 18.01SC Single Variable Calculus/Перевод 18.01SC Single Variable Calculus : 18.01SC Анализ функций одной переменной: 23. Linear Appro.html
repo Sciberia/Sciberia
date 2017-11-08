@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="/css/v3.1.css?3" />
+<link rel="stylesheet" type="text/css" href="/css/translate-1.css?5" />
+<link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css?1" />
+<style type="text/css">
+/*<![CDATA[*/
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+body, label, input, button, select, textarea {
+	font-size: 13px;
+	line-height: 18px;
+}
+#chat-box {
+	height: 300px;
+}.comments .comment .meta, .comments .comment .meta a, .translator .info, .translator .info a { color: #bbb; }
+.comments .comment:hover .meta, .comments .comment:hover .meta a, .translator tr:hover .info, .translator tr:hover .info a { color: #888; }
+/*]]>*/
+</style>
+<script type="text/javascript" src="/assets/bbeb3eca/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/6b5c0e82/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/global.js?16"></script>
+<script type="text/javascript" src="/js/user.js?3"></script>
+<script type="text/javascript" src="/js/chat.js?3"></script>
+<script type="text/javascript" src="/js/translate-1.js?11"></script>
+<script type="text/javascript" src="/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="/js/jquery.elastic.mod.js"></script>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.min.js?1"></script>
+<script type="text/javascript" src="/js/ff_comments.js?3"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var User = new CUser({id: 76, login: 'Keyten'});
+
+var Book = new CBook({
+	id: 39,
+	owner_id: 67,
+	facecontrol: 1,
+	s_lang: 2,
+	t_lang: 1,
+	n_verses: 2492,
+	n_vars: 1286,
+	d_vars: 1282,
+	typ: 'A',
+	s_title: '18.01SC Single Variable Calculus',
+	t_title: '18.01SC Анализ функций одной переменной',
+	membership: {status: 1}
+});
+
+var Chap = {
+	id: 145,
+	book_id: 39,
+	n_verses: 39,
+	n_vars: 39,
+	d_vars: 39,
+	title: '23. Linear Approximation / Линейная аппроксимация',
+	ac_read: '',
+	ac_gen: '',
+	ac_rate: '',
+	ac_comment: '',
+	ac_tr: '',
+};
+
+/*]]>*/
+</script>
+<title>Перевод 18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной: 23. Linear Approximation / Линейная аппроксимация :: КУРСОМИР.ПЕРЕВОДЫ</title>
+    <meta name="description" content="Коллективные переводы субтитров и книжек"/>
+    <meta name="language" content="ru"/>
+    <meta name="keywords"
+          content="перевод, translation, коллективный перевод, кино с субтитрами, кино по-английски с русскими субтитрами, кино по-немецки с русскими субтитрами, кино по-испански с русскими субтитрами, примеры перевода, краудсорсинг, crowdsourcing, нотабеноид"/>
+    <link rel='icon' href='/i/favicon.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='/i/favicon.ico' type='image/x-icon'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE]>
+    <script type="text/javascript" src="/js/jquery.input-placeholder.js"></script>
+    <link rel='stylesheet' href="/css/jquery.input-placeholder.css"/>
+    <script type="text/javascript">
+        $(function () {
+            $('input[placeholder]').inputDefault();
+        });
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container-fluid" style="background-color:#fff;">
+        <a href="/" id="header-logo">
+            <img src="/i/logo.png" width="124" height="130"
+                 style="padding-top: 50px;"
+                 alt="КУРСОМИР.ПЕРЕВОДЫ"
+                 title="3.3"/>
+        </a>
+        <nav>
+            <ul id="header-menu">
+                <li><a href="/catalog/1">ВИДЕО</a></li>
+                <li><a href="/catalog/2">ТЕКСТЫ</a></li>
+                <li><a href="/users">ПЕРЕВОДЧИКИ</a></li>
+                <li><a href="/blog">БЛОГ</a></li>
+                <li><a href="/announces">АНОНСЫ</a></li>
+                <li class="search">
+                    <form class="form-search" method="get" action="/search">
+                                                <input type="hidden" name="from" value="header">
+                        <input type="text" name="t" class="input-medium search-query span3"
+                               placeholder="Вы что-то потеряли?"
+                               title="Кстати, отсюда можно найти и переводчика, если собаку (@), а потом сразу его ник."/>
+                        <input type="submit" value="&raquo;" class="btn" style="border-radius: 20px;"/>
+                    </form>
+                </li>
+            </ul>
+            <ul id="header-submenu">
+                                    <li>
+                        <a href="/users/76" accesskey="i">
+                            <strong>Keyten</strong>
+                            Всё о вас
+                        </a>
+                    </li>
+                    <li id="hm-c">
+                        <a href="/my/comments" accesskey="c">
+                            <strong>Обсуждения  <b></b></strong>
+                            Места, где вы общались
+                        </a>
+                    </li>
+                    <li id="hm-n">
+                        <a href="/my/notices" accesskey="n">
+                            <strong>Оповещения  <b></b></strong>
+                            События для вас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#bookmarks" accesskey="b">
+                            <strong>Закладки</strong>
+                            На память
+                        </a>
+                    </li>
+                    <li><a href="/book/0/edit"><strong>Создать</strong> Перевод</a></li>
+                    <li><a href="/register/settings"><strong>Настройки</strong> Профиля</a></li>
+                    <li><a href="/register/logout"><strong>Выход</strong> До свидания :(</a></li>
+                            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <div id="bookmarks" class="modal hide">
+        <div class="modal-header" style='padding-bottom:0;'>
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Закладки</h3>
+            <div class="btn-toolbar">
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-sort">
+                    <button class="btn btn-mini" data-v="1" title="Сортировка по алфавиту">
+                        <i class="icon-text-height"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="2" title="Сортировка по вашей активности">
+                        <i class="icon-fire"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="3" title="Сортировка по времени вступления в перевод">
+                        <i class="icon-time"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="5" title="Сортировка по времени добавления закладки">
+                        <i class="icon-shopping-cart"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="4" title="Сортировка по готовности перевода">%</button>
+                    <button class="btn btn-mini" data-v="0" title="Ваша сортировка (таскайте закладки мышкой)">
+                        <i class="icon-random"></i>
+                    </button>
+                </div>
+
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-title">
+                    <button class="btn btn-mini" data-v="s" title="Показывать названия на языке оригинала">О</button>
+                    <button class="btn btn-mini" data-v="t" title="Показывать названия на языке перевода">П</button>
+                </div>
+                                <div class="btn-group pull-right">
+                    <button class="btn btn-mini" title="Удалить" id="bookmarks-tb-rm">
+                        <i class="icon-remove"></i>
+                    </button>
+                    <button class="btn btn-mini" title="Редактировать" id="bookmarks-tb-ed">
+                        <i class="icon-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body" style="max-height:350px">
+            <p class='loading'>минуточку...</p>
+        </div>
+    </div>
+
+
+<div class="container-fluid">
+    <div id="yw0"></div>
+<style type="text/css">
+        .translator.has-best td.t .best .text {
+        background-image: url(/i/corner-gray-t-r.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    </style>
+
+<h1><a href='/book/39'>18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной</a>: 23. Linear Approximation / Линейная аппроксимация</h1>
+
+<div id="tb-main">
+    <div>
+        <div class='group'><a
+                href="/book/39/145/go?nach=prev&ord=21"
+                title="Предыдущая глава"><i class="i icon-arrow-left"></i></a></div>
+
+        <div class="tb-index btn-group">
+            <a href="/book/39" class="btn btn-small"><i class="icon-list"></i> Оглавление</a>
+            <a class="btn btn-small dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+            <ul class="dropdown-menu" id="tb-chapter-list">
+                <li><a href="/book/39/members">Переводчики</a></li>
+                <li><a href="/book/39/blog">Блог</a></li>
+            </ul>
+        </div>
+
+        <div class='group'><a
+                href="/book/39/145/go?nach=next&ord=21"
+                title="Следующая глава"><i class="i icon-arrow-right"></i></a></div>
+
+        <div class="btn-group">
+                            <button type="button" class="btn btn-small tb-chat" title="Ctrl + ~"><i class="icon-bullhorn"></i> Чат
+                </button>
+            
+            <a href="#" class="btn btn-small tb-dict" accesskey="V"><i class="icon-book"></i> Словарь</a>
+
+            <div id="tb-filter">
+                <form method="get" class="form-inline" action="/book/39/145">
+                    <ul class='options'>
+                        <li><label><input type='radio' name='show' value='1' /> <a href='?show=1'>Непереведённое</a></label></li><li><label><input type='radio' name='show' value='7' /> <a href='?show=7'>С 2 и более версиями перевода</a></label></li><li><label><input type='radio' name='show' value='3' /> <a href='?show=3'>С комментариями</a></label></li><li><label><input type='radio' name='show' value='4' /> <a href='?show=4'>С новыми комментариями</a></label></li><li><label><input type='radio' name='show' value='2' />  <input type='text' name='show_user' placeholder='От переводчика' class='span3' value='' title='Ctrl+I: вставить ваш ник' /></label></li><li><label><input type='radio' name='show' value='5' />  <input type='text' name='to' placeholder='Оригинал содержит' class='span3' value='' /></label></li><li><label><input type='radio' name='show' value='6' />  <input type='text' name='tt' placeholder='Перевод содержит' class='span3' value='' /></label></li>                    </ul>
+                    <button type="submit" class="btn btn-mini btn-primary">Показать</button>
+                    <a href="/book/39/145"
+                       class="btn btn-mini">Сбросить всё</a>
+                </form>
+            </div>
+
+            <a href='#' class='btn btn-small tb-filter' accesskey='F'><i class='icon-filter'></i> Фильтр</a>        </div>
+
+        
+        
+
+        <div class="group">
+            <a href="/book/39/145/switchiface"><i class="icon-thumbs-down" title="Старый	интерфейс"></i></a>
+        </div>
+
+        <div class="tb-progress group"></div>
+
+            </div>
+</div>
+
+<div class="clear"></div>
+
+<table id="Tr" class="translator has-best translator-oe-hide">
+    <thead>
+    <tr>
+                    <th></th>        <th>
+            Английский оригинал
+        </th>
+                    <th></th>        <th>
+            Перевод на русский        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id='o46548'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Introduction to Linear Approximation</p><p class='info'><a href='/book/39/145/46548#1' class='ord'>#1</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t986' class='u76'><p class='text'>Введение в линейную аппроксимацию</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:34</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46549'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We’re starting a new unit: applications of differentiation.</p><p class='info'><a href='/book/39/145/46549#2' class='ord'>#2</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t987' class='u76'><p class='text'>Мы начинаем новый блок: приложения дифференцирования</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:34</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46550'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We’re going to do two applications today. The first is linear approximations, which are encompassed by the single formula:<br />
+$$ f(x) \approx f(x_0) + f'(x_0)(x - x_0), $$ but it will take at least half an hour to explain how this formula is used.</p><p class='info'><a href='/book/39/145/46550#3' class='ord'>#3</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t989' class='u76'><p class='text'>Сегодня мы рассмотрим два приложения. Первое -- линейные аппроксимации, которые, хоть и охватываются единственной формулой:<br />
+$$ f(x) \approx f(x_0) + f'(x_0)(x - x_0), $$<br />
+но объяснение, как их использовать, займёт, как минимум, полчаса.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:37</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46551'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Linear Approximation to $\ln x$ at $x = 1$</p><p class='info'><a href='/book/39/145/46551#4' class='ord'>#4</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t990' class='u76'><p class='text'>Линейная аппроксимация $\ln x$ в $x=1$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:37</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46552'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>If you have a curve $y = f(x)$, it is approximately the same as its tangent line<br />
+$$y = f(x_0) + f'(x_0)(x-x_0)$$.</p><p class='info'><a href='/book/39/145/46552#5' class='ord'>#5</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t991' class='u76'><p class='text'>Если есть кривая $y = f(x)$, она приблизительно совпадает со своей касательной:<br />
+$$y = f(x_0) + f'(x_0)(x-x_0)$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:39</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46553'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: Tangent as a linear approximation to a curve</p><p class='info'><a href='/book/39/145/46553#6' class='ord'>#6</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t992' class='u76'><p class='text'>Рис. 1. Касательная как линейная аппроксимация кривой</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:39</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46554'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The tangent line approximates $f(x)$. It gives a good approximation near the tangent point $x_0$. As you move away from $x_0$, however, the approximation grows less accurate.<br />
+$$f(x) \approx f(x_0) + f'(x_0) (x-x_0)$$</p><p class='info'><a href='/book/39/145/46554#7' class='ord'>#7</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t994' class='u76'><p class='text'>Касательная прямая аппроксимирует $f(x)$. Она даёт хорошее приближение вблизи точки касания $x_0$. Но, чем дальше от $x_0$, тем аппроксимация хуже.<br />
+$$f(x) \approx f(x_0) + f'(x_0) (x-x_0)$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:41</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46555'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Example 1: Let $f(x) = \ln x$. Then $f'(x) = x^{-1}$. We’ll use the base point $x_0 = 1$ because we can easily evaluate $\ln 1 = 0$. Note also that $f'(x_0) = 1$.</p><p class='info'><a href='/book/39/145/46555#8' class='ord'>#8</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t995' class='u76'><p class='text'>Пример 1. Пусть $f(x) = \ln x$. Тогда $f'(x) = x^{-1}$. Используем базовую точку $x_0 = 1$, поскольку в ней легко вычислить значение $\ln 1 = 0$. Заметим также, что $f'(x_0) = 1$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:43</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46556'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Then the formula for linear approximation tells us that:<br />
+$$ \begin{align*} <br />
+f(x) &amp;\approx f(x_0) + f'(x_0) (x - x_0) \\<br />
+\ln x &amp;\approx \ln (1) + 1(x-1) \\<br />
+\ln x &amp;\approx 0 + (x - 1) \\<br />
+\ln x &amp;\approx (x - 1)<br />
+\end{align*} $$</p><p class='info'><a href='/book/39/145/46556#9' class='ord'>#9</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t997' class='u76'><p class='text'>Тогда формула линейной аппроксимации говорит нам:<br />
+$$ \begin{align*} <br />
+f(x) &amp;\approx f(x_0) + f'(x_0) (x - x_0) \\<br />
+\ln x &amp;\approx \ln 1 + 1(x-1) \\<br />
+\ln x &amp;\approx 0 + (x - 1) \\<br />
+\ln x &amp;\approx x - 1<br />
+\end{align*} $$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:47</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46557'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Graph the curve $y = \ln x$ and the line $y = x − 1$. You’ll see that the two graphs are very close together when $x = x_0 = 1$. You’ll also see that they’re only near each other when $x$ is near $1$.</p><p class='info'><a href='/book/39/145/46557#10' class='ord'>#10</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t998' class='u76'><p class='text'>Нарисуем кривую $y = \ln x$ и прямую $y = x - 1$. Вы увидите, что оба графика очень близки, когда $x = x_0 = 1$. Кроме этого, видно, что они близки лишь когда $x$ близко к $1$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:49</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46558'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The point of linear approximation is that the curve (in this case $y = \ln x$) is approximately the same as the tangent line ($y = x − 1$) when $x$ is close to the base point $x_0$.</p><p class='info'><a href='/book/39/145/46558#11' class='ord'>#11</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1315' class='u67'><p class='text'>Смысл линейной аппроксимации заключается в том, что кривая (в данном случае $y = \ln x$) примерно совпадает с касательной ($y = x - 1$) когда значение $x$ близко к $x_0$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 6.05.16 в 0:52</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46559'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Linear Approximation and the Definition of the Derivative</p><p class='info'><a href='/book/39/145/46559#12' class='ord'>#12</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t999' class='u76'><p class='text'>Линейная аппроксимация и определение производной</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:49</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46560'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Another way to understand the formula for linear approximation involves the definition of the derivative:<br />
+$$f'(x_0) = \lim_{\Delta x \to 0} \frac{\Delta f}{\Delta x}$$</p><p class='info'><a href='/book/39/145/46560#13' class='ord'>#13</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1000' class='u76'><p class='text'>Другой способ понимания формулы линейной аппроксимации включает определение производной:<br />
+$$f'(x_0) = \lim_{\Delta x \to 0} \frac{\Delta f}{\Delta x}$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:50</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46561'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Look at this backward:<br />
+$$\lim_{\Delta x \to 0} \frac{\Delta f}{\Delta x} = f'(x_0)$$</p><p class='info'><a href='/book/39/145/46561#14' class='ord'>#14</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1314' class='u67'><p class='text'>Перепишем выражение в обратном порядке:<br />
+$$\lim_{\Delta x \to 0} \frac{\Delta f}{\Delta x} = f'(x_0)$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 6.05.16 в 0:45</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46562'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We can interpret this to mean that:<br />
+$$\frac{\Delta f}{\Delta x} \approx f'(x_0)\text{ when }\Delta x \approx 0$$</p><p class='info'><a href='/book/39/145/46562#15' class='ord'>#15</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1001' class='u76'><p class='text'>Мы можем интерпретировать это как:<br />
+$$\frac{\Delta f}{\Delta x} \approx f'(x_0)\text{ когда }\Delta x \approx 0$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:52</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46563'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In other words, the average rate of change $\frac{\Delta f}{\Delta x}$ is nearly the same as the infinites­imal rate of change $f'(x_0)$.</p><p class='info'><a href='/book/39/145/46563#16' class='ord'>#16</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1316' class='u67'><p class='text'>Другими словами, средняя скорость изменения $\frac{\Delta f}{\Delta x}$ — это почти то же самое, что мгновенная скорость изменения $f'(x_0)$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 6.05.16 в 0:57</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46564'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We can see that this is the same as our original formula<br />
+$$f(x) \approx f(x_0) + f'(x_0) (x-x_0),$$<br />
+if we multiply both sides by $\Delta x$ and remind ourselves what $\Delta x$ and $\Delta f$ are abbreviations for:<br />
+$$\begin{align*}<br />
+\frac{\Delta f}{\Delta x} &amp;\approx f'(x_0) \\<br />
+\Delta x \cdot \frac{\Delta f}{\Delta x} &amp;\approx f'(x_0) \cdot \Delta x \\<br />
+\Delta f &amp;\approx f'(x_0) \cdot \Delta x \\<br />
+f(x) - f(x_0) &amp;\approx f'(x_0)(x-x_0) \\<br />
+f(x) &amp;\approx f(x_0) + f'(x_0)(x-x_0)<br />
+\end{align*}$$</p><p class='info'><a href='/book/39/145/46564#17' class='ord'>#17</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1003' class='u76'><p class='text'>Мы можем видеть, что это аналогично нашей изначальной формуле<br />
+$$f(x) \approx f(x_0) + f'(x_0)(x-x_0),$$<br />
+если мы умножим обе стороны на $\Delta x$ и вспомним, сокращениями чего являются $\Delta x$ и $\Delta f$:<br />
+$$\begin{align*}<br />
+\frac{\Delta f}{\Delta x} &amp;\approx f'(x_0) \\<br />
+\Delta x \cdot \frac{\Delta f}{\Delta x} &amp;\approx f'(x_0) \cdot \Delta x \\<br />
+\Delta f &amp;\approx f'(x_0) \cdot \Delta x \\<br />
+f(x) - f(x_0) &amp;\approx f'(x_0)(x-x_0) \\<br />
+f(x) &amp;\approx f(x_0) + f'(x_0)(x-x_0)<br />
+\end{align*}$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:57</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46838'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>So we have two different ways of writing a formula for linear approximation.</p><p class='info'><a href='/book/39/145/46838#18' class='ord'>#18</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1317' class='u67'><p class='text'>Получается, что у нас есть два способа записи формулы для линейной аппроксимации.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 6.05.16 в 0:58</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46565'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>When you’re solving linear approximation problems, try to choose the most<br />
+  appropriate formula for the problem you’re working on.</p><p class='info'><a href='/book/39/145/46565#19' class='ord'>#19</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1318' class='u67'><p class='text'>Когда вы решаете задачи на линейную аппроксимацию, старайтесь выбрать подходящую формулу для каждой конкретной задачи.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 6.05.16 в 0:59</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46566'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Approximations at $0$ for Sine, Cosine and Exponential Functions</p><p class='info'><a href='/book/39/145/46566#20' class='ord'>#20</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1004' class='u76'><p class='text'>Аппроксимации в $0$ для синуса, косинуса и экспоненты</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:57</p><div class='rating x'><a href='#' class='base current pos'>1</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46567'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Here is a list of several linear approximations which you may want to memorize.</p><p class='info'><a href='/book/39/145/46567#21' class='ord'>#21</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1024' class='u76'><p class='text'>Список некоторых линейных аппроксимаций, которые вы можете захотеть запомнить.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:27</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46568'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Half the work of memorizing a linear approximation is memorizing the derivative of a function at a base point, so memorizing these formulas should improve your knowledge of derivatives.</p><p class='info'><a href='/book/39/145/46568#22' class='ord'>#22</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1025' class='u76'><p class='text'>Половина работы по запоминанию линейной аппроксимации -- запоминание производной функции в базовой точке, так что запоминание этих формул должно улучшить ваши знания производных.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:28</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46569'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>To make things as simple as possible, we always use base point $x_0 = 0$ and assume that $x \approx 0$. Then our general formula becomes: $$f(x) \approx f(0) + f'(0) x$$</p><p class='info'><a href='/book/39/145/46569#23' class='ord'>#23</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1016' class='u76'><p class='text'>Чтобы всё было максимально просто, мы всегда будем выбирать базовую точку $x_0 = 0$ и полагать, что $x \approx 0$. Тогда наша основная формула становится:<br />
+$$f(x) \approx f(0) + f'(0) x$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 19:53</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46570'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Remember that when $x$ is not near zero, this approximation probably won’t work.</p><p class='info'><a href='/book/39/145/46570#24' class='ord'>#24</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1015' class='u76'><p class='text'>Помните, что когда $x$ не близко к $0$, аппроксимация может не работать.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 19:52</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46571'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>(Later we’ll discuss exactly how close $x$ has to be to zero; this is partly a matter of intuition and is very important in applications.)</p><p class='info'><a href='/book/39/145/46571#25' class='ord'>#25</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1017' class='u76'><p class='text'>(Позже мы обсудим, как близко $x$ должно быть к $0$; это отчасти дело интуиции, и очень важно в приложениях.)</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 19:54</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46572'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We want to find linear approximations for the functions $\sin x$, $\cos x$ and $e^x$ when $x$ is near $0$. We’ll start by building a table of values of $f'(x)$, $f(0)$, and $f'(0)$; from these we can “read off” the linear approximations.<br />
+$$\begin{array}{}<br />
+f(x) &amp; f'(x) &amp; f(0) &amp; f'(0) \\<br />
+\sin x &amp; \cos x &amp; 0 &amp; 1 \\<br />
+\cos x &amp; -\sin x &amp; 1 &amp; 0 \\<br />
+e^x &amp; e^x &amp; 1 &amp; 1<br />
+\end{array}$$</p><p class='info'><a href='/book/39/145/46572#26' class='ord'>#26</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1018' class='u76'><p class='text'>Мы хотим найти линейные аппроксимации для функций $\sin x$, $\cos x$, $e^x$, когда $x$ близко к $0$. Мы начнём строить таблицу значений $f'(x)$, $f(0)$ и $f'(0)$; из них мы сможем «прочитать» линейные аппроксимации.<br />
+$$\begin{array}{}<br />
+ f(x) &amp; f'(x) &amp; f(0) &amp; f'(0) \\<br />
+\sin x &amp; \cos x &amp; 0 &amp; 1 \\<br />
+\cos x &amp; -\sin x &amp; 1 &amp; 0 \\<br />
+e^x &amp; e^x &amp; 1 &amp; 1<br />
+\end{array}$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 19:58</p><div class='rating x'><a href='#' class='base current pos'>1</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46573'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We can now plug the values for $f(0)$ and $f'(0)$ into our formula $f(x) \approx f(0) +f'(0) x$ to get linear approximations for these functions:<br />
+1. $\sin x \approx x \text{ (if } x \approx 0 \text{)}$ (see part (a) of Fig. 1)<br />
+2. $\cos x \approx 1 \text{ (if } x \approx 0 \text{)}$ (see part (b) of Fig. 1)<br />
+3. $e^x \approx 1 + x \text{ (if } x \approx 0 \text{)}$</p><p class='info'><a href='/book/39/145/46573#27' class='ord'>#27</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1019' class='u76'><p class='text'>Теперь мы можем подставить значения $f(0)$ и $f'(0)$ в нашу формулу $f(x) \approx f(0) + f'(0)x$, чтобы получить линейные аппроксимации для следующих функций:<br />
+1. $\sin x \approx x \text{ (если } x \approx 0 \text{)}$ (см. часть (а) на рис. 1)<br />
+2. $\cos x \approx 1 \text{ (если } x \approx 0 \text{)}$ (см. часть (б) на рис. 1)<br />
+3. $e^x \approx 1 + x \text{ (если } x \approx 0 \text{)}$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:05</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46574'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: Linear approximations to sine and cosine at $x = 0$.</p><p class='info'><a href='/book/39/145/46574#28' class='ord'>#28</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1005' class='u76'><p class='text'>Рис. 1. Линейные аппроксимации синуса и косинуса в $x = 0$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:58</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46575'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Approximations at $0$ for $ln(1 + x)$ and $(1 + x)^r$</p><p class='info'><a href='/book/39/145/46575#29' class='ord'>#29</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1006' class='u76'><p class='text'>Аппроксимации в 0 для $\ln(1+x)$ и $(1+x)^r$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:58</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46576'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Next, we compute two linear approximations that are slightly more challenging.</p><p class='info'><a href='/book/39/145/46576#30' class='ord'>#30</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1007' class='u76'><p class='text'>Далее вычислим две более сложные линейные аппроксимации.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 18:59</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46577'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Here’s the table of values: <br />
+$$\begin{array}{}<br />
+\ln (1+x) &amp; \frac{1}{1+x} &amp; 0 &amp; 1 \\<br />
+(1+x)^r &amp; r(1+x)^{r-1} &amp; 1 &amp; r<br />
+\end{array}$$</p><p class='info'><a href='/book/39/145/46577#31' class='ord'>#31</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1020' class='u76'><p class='text'>Таблица значений:<br />
+$$\begin{array}{}<br />
+\ln(1+x) &amp; \frac{1}{1+x} &amp; 0 &amp; 1 \\<br />
+(1+x)^r &amp; r(1+x)^{r-1} &amp; 1 &amp; r<br />
+\end{array}$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:08</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46578'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>And here are the linear approximations we get from the table:<br />
+1. $\ln(1+x) \approx x\quad\text{ (if } x \approx 0 \text{)}$<br />
+2. $(1+x)^r \approx 1 + rx \quad\text{ (if } x \approx 0 \text{)}$</p><p class='info'><a href='/book/39/145/46578#32' class='ord'>#32</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1009' class='u76'><p class='text'>А вот и полученные из таблицы линейные аппроксимации:<br />
+1. $\ln(1+x) \approx x\quad\text{ (если } x \approx 0 \text{)}$<br />
+2. $(1+x)^r \approx 1 + rx \quad\text{ (если } x \approx 0 \text{)}$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 19:03</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46579'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Remember that we computed the linear approximation to $\ln x$ at $x_0 = 1$.</p><p class='info'><a href='/book/39/145/46579#33' class='ord'>#33</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1011' class='u76'><p class='text'>Вспомним, что мы вычислили линейную аппроксимацию для $\ln x$ в $x_0 = 1$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 19:08</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46580'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Since our base point wasn’t $0$ we couldn’t include that here. Because $\ln x \to \infty$ as $x \to 0$, a linear approximation of $\ln x$ near $x_0 = 0$ is useless to us.</p><p class='info'><a href='/book/39/145/46580#34' class='ord'>#34</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1021' class='u76'><p class='text'>Мы бы не смогли использовать $x_0 = 0$ в качестве базовой точки. Т.к. $\ln x \to -\infty$ при $x \to 0$, линейная аппроксимация $\ln x$ вблизи $x_0 = 0$ не имеет смысла.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:11</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46581'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Instead we have a linear approximation of the function $\ln (1+x)$ near our default base point $x_0 = 0$, which works out to nearly the same thing as a linear approximation of $\ln x$ near $x_0 = 1$.</p><p class='info'><a href='/book/39/145/46581#35' class='ord'>#35</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1022' class='u76'><p class='text'>Вместо этого у нас есть линейная аппроксимация функции $\ln(1+x)$, близкая к нашей обычной базовой точке $x_0 = 0$, которая работает точно так же, как линейная аппроксимация $\ln x$ вблизи $x_0 = 1$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:25</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46582'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Similarly, we found a linear approximation to $(1 + x)^r$; not to $x^r$. For some values of $r$, $x^r$ is not well behaved when $x = 0$. If we really need an approximation of $x^r$ we can get one by a change of variables.</p><p class='info'><a href='/book/39/145/46582#36' class='ord'>#36</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1023' class='u76'><p class='text'>Аналогично мы нашли линейную аппроксимацию $(1+x)^r$, а не $x^r$. Поскольку $x^r$ не очень хорошо себя ведёт для некоторых значений $r$ при $x = 0$. Если нам действительно понадобится аппроксимация $x^r$, её можно получить заменой переменных.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:27</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46583'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>For example, in a previous example we computed that $ln u \approx u−1$ for $u \approx 0$ (we’ve just replaced $x$ by $u$.)</p><p class='info'><a href='/book/39/145/46583#37' class='ord'>#37</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1012' class='u76'><p class='text'>Например, в прошлом примере мы посчитали, что $\ln u \approx u-1$ для $u \approx 0$ (мы просто заменили $x$ на $u$).</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 19:09</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46584'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Now we change variables by setting $u = 1 + x$. If we plug in $1 + x$ everywhere we had a u we get:<br />
+$$\ln(1+x) \approx (1+x)-1 = x,$$<br />
+which is exactly the formula we have above.</p><p class='info'><a href='/book/39/145/46584#38' class='ord'>#38</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1013' class='u76'><p class='text'>Теперь поменяем переменные, установив $u = 1 + x$. Если мы вставим $1+x$ везде вместо $u$, получим:<br />
+$$\ln(1+x) \approx (1+x)-1 = x,$$<br />
+что в точности совпадает с формулой выше.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 19:10</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46585'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>If you’ve memorized $\ln (1 + x) \approx x$ for $x \approx 0$ you can quickly find an approximation for $\ln u$ for $u \approx 1$ through the change of variables $x = u − 1$.</p><p class='info'><a href='/book/39/145/46585#39' class='ord'>#39</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1014' class='u76'><p class='text'>Если вы запомнили, что $\ln(1+x) \approx x$ для $x \approx 0$, вы можете быстро посчитать аппроксимацию для $\ln u$ в $u \approx 1$, заменив переменную: $x = u-1$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 19:11</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+    </tbody>
+</table>
+
+<div id="pages-bottom">
+    </div>
+
+
+<div id="tr-sidebar">
+    <div id="dict" class='has-edit'>
+        <div id="dict-search">
+            <input type="text" placeholder="Поиск по словарю" class="search"/>
+            <a href="#" class="b"><i class="i icon-remove-sign"></i></a>
+        </div>
+        <div id="dict-body">
+            <div id="dict-body-content">
+                Минутку...
+            </div>
+        </div>
+                    <div id="dict-add">
+                <form method="post" action="/book/39/dict">
+                    <input type="text" name="term" placeholder="Оригинал"/>
+                    <input type="text" name="descr" placeholder="Перевод"/>
+                    <button type="submit" class="btn btn-mini btn-primary">Добавить</button>
+                    <button type="button" class="btn btn-mini cancel">Отмена</button>
+                </form>
+            </div>
+            <div id="dict-tools">
+                <i class="icon-plus"></i> <a href="#" class="add">Добавить слово</a>
+            </div>
+                    </div>
+</div>
+
+
+<div id="renum-modal" class="modal hide">
+    <form method="post" class="form-inline" action="/book/39/145/renum">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Перенумеровать субтитры</h3>
+        </div>
+        <div class="modal-body">
+            Номер субтитра, серая циферка рядом с его таймингом, в сущности, ни на что не влияет, субтитры сортируются
+            по времени.
+            Если вы добавляете новый титр, его номер может выбиваться из плавного течения номеров. Этот инструмент
+            расставит всем
+            титрам номера в хронологическом порядке.
+        </div>
+        <div class="modal-footer">
+            <input type="hidden" name="mode" value="1"/>
+            <button type="submit" class="btn btn-primary">Поехали</button>
+            <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $("#Tr").find("td.o").each(function () {
+        var $this = $(this);
+        $this.children("div").css("min-height", $this.height());
+    });
+</script>
+</div>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span6">
+                &copy; <a href="http://romakhin.ru/" rel="nofollow">Дмитрий Ромахин</a>
+                2008&ndash;2017                <br/>
+                <a href="/site/help">Справка</a> |
+                <a href="/blog?topic=65">Техподдержка</a> |
+                <a href="mailto:abuse@translate.kursomir.ru?subj=%2Fbook%2F39%2F145">Abuse</a> |
+                <a href="mailto:translate@kursomir.ru">E-mail для справок</a> |
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&locale=ru"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']]
+        },
+        asciimath2jax: {
+            delimiters: [['``', '``']]
+        }
+    });
+</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('a.tooltip').tooltip({'placement':'bottom'});
+jQuery('a[rel="popover"]').popover();
+jQuery('#yw0 .alert').alert();
+});
+/*]]>*/
+</script>
+</body>
+</html>

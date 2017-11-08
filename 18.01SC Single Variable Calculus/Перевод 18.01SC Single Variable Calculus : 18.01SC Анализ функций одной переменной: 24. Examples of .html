@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="/css/v3.1.css?3" />
+<link rel="stylesheet" type="text/css" href="/css/translate-1.css?5" />
+<link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css?1" />
+<style type="text/css">
+/*<![CDATA[*/
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+body, label, input, button, select, textarea {
+	font-size: 13px;
+	line-height: 18px;
+}
+#chat-box {
+	height: 300px;
+}.comments .comment .meta, .comments .comment .meta a, .translator .info, .translator .info a { color: #bbb; }
+.comments .comment:hover .meta, .comments .comment:hover .meta a, .translator tr:hover .info, .translator tr:hover .info a { color: #888; }
+/*]]>*/
+</style>
+<script type="text/javascript" src="/assets/bbeb3eca/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/6b5c0e82/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/global.js?16"></script>
+<script type="text/javascript" src="/js/user.js?3"></script>
+<script type="text/javascript" src="/js/chat.js?3"></script>
+<script type="text/javascript" src="/js/translate-1.js?11"></script>
+<script type="text/javascript" src="/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="/js/jquery.elastic.mod.js"></script>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.min.js?1"></script>
+<script type="text/javascript" src="/js/ff_comments.js?3"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var User = new CUser({id: 76, login: 'Keyten'});
+
+var Book = new CBook({
+	id: 39,
+	owner_id: 67,
+	facecontrol: 1,
+	s_lang: 2,
+	t_lang: 1,
+	n_verses: 2492,
+	n_vars: 1286,
+	d_vars: 1282,
+	typ: 'A',
+	s_title: '18.01SC Single Variable Calculus',
+	t_title: '18.01SC Анализ функций одной переменной',
+	membership: {status: 1}
+});
+
+var Chap = {
+	id: 146,
+	book_id: 39,
+	n_verses: 55,
+	n_vars: 55,
+	d_vars: 55,
+	title: '24. Examples of Linear Approximation / Примеры линейной аппроксимации',
+	ac_read: '',
+	ac_gen: '',
+	ac_rate: '',
+	ac_comment: '',
+	ac_tr: '',
+};
+
+/*]]>*/
+</script>
+<title>Перевод 18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной: 24. Examples of Linear Approximation / Примеры линейной аппроксимации :: КУРСОМИР.ПЕРЕВОДЫ</title>
+    <meta name="description" content="Коллективные переводы субтитров и книжек"/>
+    <meta name="language" content="ru"/>
+    <meta name="keywords"
+          content="перевод, translation, коллективный перевод, кино с субтитрами, кино по-английски с русскими субтитрами, кино по-немецки с русскими субтитрами, кино по-испански с русскими субтитрами, примеры перевода, краудсорсинг, crowdsourcing, нотабеноид"/>
+    <link rel='icon' href='/i/favicon.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='/i/favicon.ico' type='image/x-icon'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE]>
+    <script type="text/javascript" src="/js/jquery.input-placeholder.js"></script>
+    <link rel='stylesheet' href="/css/jquery.input-placeholder.css"/>
+    <script type="text/javascript">
+        $(function () {
+            $('input[placeholder]').inputDefault();
+        });
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container-fluid" style="background-color:#fff;">
+        <a href="/" id="header-logo">
+            <img src="/i/logo.png" width="124" height="130"
+                 style="padding-top: 50px;"
+                 alt="КУРСОМИР.ПЕРЕВОДЫ"
+                 title="3.3"/>
+        </a>
+        <nav>
+            <ul id="header-menu">
+                <li><a href="/catalog/1">ВИДЕО</a></li>
+                <li><a href="/catalog/2">ТЕКСТЫ</a></li>
+                <li><a href="/users">ПЕРЕВОДЧИКИ</a></li>
+                <li><a href="/blog">БЛОГ</a></li>
+                <li><a href="/announces">АНОНСЫ</a></li>
+                <li class="search">
+                    <form class="form-search" method="get" action="/search">
+                                                <input type="hidden" name="from" value="header">
+                        <input type="text" name="t" class="input-medium search-query span3"
+                               placeholder="Ищите и обрящете"
+                               title="Кстати, отсюда можно найти и переводчика, если собаку (@), а потом сразу его ник."/>
+                        <input type="submit" value="&raquo;" class="btn" style="border-radius: 20px;"/>
+                    </form>
+                </li>
+            </ul>
+            <ul id="header-submenu">
+                                    <li>
+                        <a href="/users/76" accesskey="i">
+                            <strong>Keyten</strong>
+                            Всё о вас
+                        </a>
+                    </li>
+                    <li id="hm-c">
+                        <a href="/my/comments" accesskey="c">
+                            <strong>Обсуждения  <b></b></strong>
+                            Места, где вы общались
+                        </a>
+                    </li>
+                    <li id="hm-n">
+                        <a href="/my/notices" accesskey="n">
+                            <strong>Оповещения  <b></b></strong>
+                            События для вас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#bookmarks" accesskey="b">
+                            <strong>Закладки</strong>
+                            На память
+                        </a>
+                    </li>
+                    <li><a href="/book/0/edit"><strong>Создать</strong> Перевод</a></li>
+                    <li><a href="/register/settings"><strong>Настройки</strong> Профиля</a></li>
+                    <li><a href="/register/logout"><strong>Выход</strong> До свидания :(</a></li>
+                            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <div id="bookmarks" class="modal hide">
+        <div class="modal-header" style='padding-bottom:0;'>
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Закладки</h3>
+            <div class="btn-toolbar">
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-sort">
+                    <button class="btn btn-mini" data-v="1" title="Сортировка по алфавиту">
+                        <i class="icon-text-height"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="2" title="Сортировка по вашей активности">
+                        <i class="icon-fire"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="3" title="Сортировка по времени вступления в перевод">
+                        <i class="icon-time"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="5" title="Сортировка по времени добавления закладки">
+                        <i class="icon-shopping-cart"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="4" title="Сортировка по готовности перевода">%</button>
+                    <button class="btn btn-mini" data-v="0" title="Ваша сортировка (таскайте закладки мышкой)">
+                        <i class="icon-random"></i>
+                    </button>
+                </div>
+
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-title">
+                    <button class="btn btn-mini" data-v="s" title="Показывать названия на языке оригинала">О</button>
+                    <button class="btn btn-mini" data-v="t" title="Показывать названия на языке перевода">П</button>
+                </div>
+                                <div class="btn-group pull-right">
+                    <button class="btn btn-mini" title="Удалить" id="bookmarks-tb-rm">
+                        <i class="icon-remove"></i>
+                    </button>
+                    <button class="btn btn-mini" title="Редактировать" id="bookmarks-tb-ed">
+                        <i class="icon-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body" style="max-height:350px">
+            <p class='loading'>минуточку...</p>
+        </div>
+    </div>
+
+
+<div class="container-fluid">
+    <div id="yw0"></div>
+<style type="text/css">
+        .translator.has-best td.t .best .text {
+        background-image: url(/i/corner-gray-t-r.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    </style>
+
+<h1><a href='/book/39'>18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной</a>: 24. Examples of Linear Approximation / Примеры линейной аппроксимации</h1>
+
+<div id="tb-main">
+    <div>
+        <div class='group'><a
+                href="/book/39/146/go?nach=prev&ord=22"
+                title="Предыдущая глава"><i class="i icon-arrow-left"></i></a></div>
+
+        <div class="tb-index btn-group">
+            <a href="/book/39" class="btn btn-small"><i class="icon-list"></i> Оглавление</a>
+            <a class="btn btn-small dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+            <ul class="dropdown-menu" id="tb-chapter-list">
+                <li><a href="/book/39/members">Переводчики</a></li>
+                <li><a href="/book/39/blog">Блог</a></li>
+            </ul>
+        </div>
+
+        <div class='group'><a
+                href="/book/39/146/go?nach=next&ord=22"
+                title="Следующая глава"><i class="i icon-arrow-right"></i></a></div>
+
+        <div class="btn-group">
+                            <button type="button" class="btn btn-small tb-chat" title="Ctrl + ~"><i class="icon-bullhorn"></i> Чат
+                </button>
+            
+            <a href="#" class="btn btn-small tb-dict" accesskey="V"><i class="icon-book"></i> Словарь</a>
+
+            <div id="tb-filter">
+                <form method="get" class="form-inline" action="/book/39/146">
+                    <ul class='options'>
+                        <li><label><input type='radio' name='show' value='1' /> <a href='?show=1'>Непереведённое</a></label></li><li><label><input type='radio' name='show' value='7' /> <a href='?show=7'>С 2 и более версиями перевода</a></label></li><li><label><input type='radio' name='show' value='3' /> <a href='?show=3'>С комментариями</a></label></li><li><label><input type='radio' name='show' value='4' /> <a href='?show=4'>С новыми комментариями</a></label></li><li><label><input type='radio' name='show' value='2' />  <input type='text' name='show_user' placeholder='От переводчика' class='span3' value='' title='Ctrl+I: вставить ваш ник' /></label></li><li><label><input type='radio' name='show' value='5' />  <input type='text' name='to' placeholder='Оригинал содержит' class='span3' value='' /></label></li><li><label><input type='radio' name='show' value='6' />  <input type='text' name='tt' placeholder='Перевод содержит' class='span3' value='' /></label></li>                    </ul>
+                    <button type="submit" class="btn btn-mini btn-primary">Показать</button>
+                    <a href="/book/39/146"
+                       class="btn btn-mini">Сбросить всё</a>
+                </form>
+            </div>
+
+            <a href='#' class='btn btn-small tb-filter' accesskey='F'><i class='icon-filter'></i> Фильтр</a>        </div>
+
+        
+        
+
+        <div class="group">
+            <a href="/book/39/146/switchiface"><i class="icon-thumbs-down" title="Старый	интерфейс"></i></a>
+        </div>
+
+        <div class="tb-progress group"></div>
+
+        <div class='chic-pages'><span>&larr;</span><div class='blur left'></div> <ul class='selectable'><li class='active'><input type='text' name='Orig_page' value='1' accesskey='g' /></li><li><a href='?Orig_page=2'>2</a></li></ul> <div class='blur right'></div><a href='?Orig_page=2' class='pseudo' title='На следующую страницу'>&rarr;</a></div>    </div>
+</div>
+
+<div class="clear"></div>
+
+<table id="Tr" class="translator has-best translator-oe-hide">
+    <thead>
+    <tr>
+                    <th></th>        <th>
+            Английский оригинал
+        </th>
+                    <th></th>        <th>
+            Перевод на русский        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id='o46586'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Curves are Hard, Lines are Easy</p><p class='info'><a href='/book/39/146/46586#1' class='ord'>#1</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1589' class='u76'><p class='text'>Кривые сложны, прямые просты</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 9.05.16 в 19:35</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46587'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>How are linear approximations used? We’ll start with an example, then discuss.</p><p class='info'><a href='/book/39/146/46587#2' class='ord'>#2</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1590' class='u76'><p class='text'>Как используются линейные аппроксимации? Давайте начнём с примера, а затем обсудим.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 9.05.16 в 19:35</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46588'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Suppose I want to know the value of $\ln(1.1)$. If I’ve memorized the formula $\ln (1 + x) = x$ for $x \approx 0$ I know right away that $\ln(1.1) \approx 0.1$ just by plugging in $x = 0.1$. (This works because $0.1$ is “close enough” to zero.)</p><p class='info'><a href='/book/39/146/46588#3' class='ord'>#3</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1591' class='u76'><p class='text'>Допустим, я хочу узнать значение $\ln (1.1)$. Если я помню формулу $\ln(1 + x) \approx x$ для $x \approx 0$, я сразу могу сказать, что $\ln(1.1) \approx 0.1$, просто подставив $x = 0.1$ (это работает, т.к. $0.1$ &quot;достаточно близко&quot; к $0$).</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 9.05.16 в 19:40</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46589'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>So what? The value of $\ln (1.1)$ is hard to compute; the value of $0.1$ is easy.</p><p class='info'><a href='/book/39/146/46589#4' class='ord'>#4</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1592' class='u76'><p class='text'>Что же теперь? Значение $\ln(1.1)$ сложно вычислить, значение $0.1$ - просто.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 9.05.16 в 19:40</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46590'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We used linear approximation to make a “hard” value “easy” to understand.</p><p class='info'><a href='/book/39/146/46590#5' class='ord'>#5</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1593' class='u76'><p class='text'>Мы используем линейную аппроксимацию, чтобы сделать &quot;сложное&quot; значение &quot;простым&quot;.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 9.05.16 в 19:41</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46591'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In general, $f(x)$ is hard to compute and $f(x_0) + f'(x_0)(x − x_0)$ is easy to compute (even though $f(x_0) + f'(x_0)(x − x_0)$ looks uglier).</p><p class='info'><a href='/book/39/146/46591#6' class='ord'>#6</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1594' class='u76'><p class='text'>В общем, $f(x)$ сложно вычислить, но $f(x_0) + f'(x_0)(x - x_0)$ вычислить просто (хоть $f(x_0) + f'(x_0)(x-x_0)$ и выглядит не очень).</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 9.05.16 в 19:48</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46592'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Look at the list below; evaluating the expressions on the left is hard and evaluating the ones on the right is easy.<br />
+\begin{align} <br />
+\sin x &amp; \approx x \\ <br />
+\cos x &amp; \approx 1 \\ <br />
+e^x &amp; \approx 1 + x \\ <br />
+\ln(1+x) &amp; \approx x \\ <br />
+(1+x)^r &amp; \approx 1 + rx <br />
+\end{align}</p><p class='info'><a href='/book/39/146/46592#7' class='ord'>#7</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1595' class='u76'><p class='text'>Посмотрите на следующий список; вычисление значений слева сложно, а справа - просто.<br />
+$$\begin{align}<br />
+\sin x &amp; \approx x \\<br />
+\cos x &amp; \approx 1 \\<br />
+e^x &amp; \approx 1 + x \\<br />
+\ln(1+x) &amp; \approx x \\<br />
+(1+x)^r &amp; \approx 1 + rx<br />
+\end{align}$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 9.05.16 в 19:49</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46593'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>That’s the main advantage of linear approximation: it lets you work with expressions that are much easier to compute, which lets you make faster progress in solving problems.</p><p class='info'><a href='/book/39/146/46593#8' class='ord'>#8</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1596' class='u76'><p class='text'>Это главное преимущество линейной аппроксимации: она позволяет вам работать с выражениями, которые гораздо легче вычислить, что делает вас быстрее в решении проблем.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 9.05.16 в 19:51</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46594'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Linear Approximation of a Complicated Exponential</p><p class='info'><a href='/book/39/146/46594#9' class='ord'>#9</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1597' class='u76'><p class='text'>Линейная аппроксимации сложных степеней.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 9.05.16 в 19:52</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46595'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Example 3: Find the linear approximation of $f(x) = \sqrt{x}$ near $x = 0$.</p><p class='info'><a href='/book/39/146/46595#10' class='ord'>#10</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1598' class='u76'><p class='text'>Пример 3: Найти линейную аппроксимацию $f(x) = \sqrt x$ вблизи $x = 0$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 9.05.16 в 19:52</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46596'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We could calculate $f'(x)$ and find $f'(0)$. But instead, we will do this by algebraically combining the linear approximations we already have.</p><p class='info'><a href='/book/39/146/46596#11' class='ord'>#11</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1599' class='u76'><p class='text'>Мы могли бы вычислить $f'(x)$ и найти $f'(0)$. Но вместо этого мы вычислим её, алгебраически комбинируя линейные аппроксимации, которые у нас уже есть.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 9.05.16 в 19:53</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46597'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>From our list of linear approximations we have:<br />
+\begin{align}  <br />
+e^x &amp; \approx 1 + x \\  <br />
+(1+x)^r &amp; \approx 1 + rx  <br />
+\end{align}<br />
+So $\frac1{\sqrt{1+x}} = (1+x)^{-1/2} \approx 1 - \frac x2$.</p><p class='info'><a href='/book/39/146/46597#12' class='ord'>#12</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3655' class='u76'><p class='text'>Из нашего списка линейных аппроксимаций нам известно:<br />
+$$\begin{align} <br />
+e^x &amp; \approx 1 + x \\ <br />
+(1+x)^r &amp; \approx 1 + rx <br />
+\end{align}$$<br />
+Таким образом, $\frac1{\sqrt{1+x}} = (1+x)^{-1/2} \approx 1 - \frac x2$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.06.16 в 12:37</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46598'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We rewrite $\frac{e^{-3x}}{\sqrt{1+x}}$ as $e^{-3x} \cdot (1+x)^{-1/2}$ so that all we’ll \begin{align} <br />
+e^{-3x} &amp; \approx 1 + (-3x) \\ \frac{1}{\sqrt{1+x}} = (1+x)^{-1/2} &amp; \approx 1 - \frac{1}{2}x <br />
+\end{align}</p><p class='info'><a href='/book/39/146/46598#13' class='ord'>#13</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3656' class='u76'><p class='text'>Перепишем $\frac{e^{-3x}}{\sqrt{1+x}}$ как $e^{-3x} \cdot (1+x)^{-1/2}$ таким образом, что всё, что мы должны сделать для получения нашей аппроксимации, -- перемножить два линейных уравнения.<br />
+$$\begin{align}<br />
+e^{-3x} &amp; \approx 1 + (-3x) \\ \frac{1}{\sqrt{1+x}} = (1+x)^{-1/2} &amp; \approx 1 - \frac{1}{2}x<br />
+\end{align}$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.06.16 в 12:42</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46599'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Put these two approximations together to get:<br />
+\begin{align} <br />
+\frac{e^{-3x}}{\sqrt{1+x}} &amp; \quad \approx \quad (1-3x)(1-\frac{1}{2}x) \\ <br />
+&amp; \quad \approx \quad 1 - \frac12 x - 3x + \frac32 x^2 \\ <br />
+&amp; \quad \approx \quad 1 - \frac12 x - \frac62 x + \frac32 x^2 <br />
+\end{align}</p><p class='info'><a href='/book/39/146/46599#14' class='ord'>#14</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3658' class='u76'><p class='text'>Возьмём обе аппроксимации вместе, чтобы получить:<br />
+$$\begin{align}<br />
+\frac{e^{-3x}}{\sqrt{1+x}} &amp; \quad \approx \quad (1-3x)(1-\frac{1}{2}x) \\<br />
+&amp; \quad \approx \quad 1 - \frac12 x - 3x + \frac32 x^2 \\<br />
+&amp; \quad \approx \quad 1 - \frac12 x - \frac62 x + \frac32 x^2<br />
+\end{align}$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.06.16 в 12:48</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46600'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Remember that $x$ is a number close to $0$, so $x^2$ is a number very close to $0$.</p><p class='info'><a href='/book/39/146/46600#15' class='ord'>#15</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3659' class='u76'><p class='text'>Помним, что $x$ - число близкое к $0$, а потому $x^2$ - число, очень близкое к $0$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.06.16 в 12:49</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46601'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In fact, when working with linear approximations we assume that $x^2$ is so small that we can safely ignore it.</p><p class='info'><a href='/book/39/146/46601#16' class='ord'>#16</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3660' class='u76'><p class='text'>По факту, работая с линейными аппроксимациями, мы полагаем, что $x^2$ настолько маленькое, что мы можем безопасно проигнорировать его.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.06.16 в 12:50</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46602'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Our approximation then becomes:<br />
+$$\frac{e^{-3x}}{\sqrt{1+x}} \quad \approx \quad 1 - \frac72 x$$</p><p class='info'><a href='/book/39/146/46602#17' class='ord'>#17</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3661' class='u76'><p class='text'>Теперь наша аппроксимация становится:<br />
+$$\frac{e^{-3x}}{\sqrt{1+x}} \quad \approx \quad 1 - \frac72 x$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.06.16 в 12:51</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46603'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>When you’re allowed to ignore all the higher degree terms — $x^2$, $x^3$ and so on — this sort of algebra becomes very simple. Why are we allowed to do that here and not in our algebra classes?</p><p class='info'><a href='/book/39/146/46603#18' class='ord'>#18</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3829' class='u76'><p class='text'>Когда можно проигнорировать члены высокого порядка - $x^2$, $x^3$ и т.п. — такого рода алгебра становится очень простой. Почему можно это сделать здесь, и нельзя в обычной алгебре? </p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.06.16 в 22:38</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46604'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>For one thing, we’re not calculating exact values only approximations. We know that the graph of the tangent line probably isn’t the same as the graph of the function; we’ve already decided that finding an exact value is too hard.</p><p class='info'><a href='/book/39/146/46604#19' class='ord'>#19</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3830' class='u76'><p class='text'>С одной стороны, мы не считаем точные значения, а лишь аппроксимации. Мы знаем, что график касательной к функции может отличаться от графика самой функции; мы уже решили, что найти точное значение слишком сложно.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.06.16 в 22:40</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46605'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>For another thing, these approximations are only valid when $x$ is close to $0$. If $x$ is $1/100$ then $x^2$ is $1/10000$. The $\frac{3}{2} x^2$ we discarded has a value of $0.00015$ when $x = .01$.</p><p class='info'><a href='/book/39/146/46605#20' class='ord'>#20</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3831' class='u76'><p class='text'>С другой стороны, эти аппроксимации работают лишь если $x$ близко к $0$. Если $x = 1/100$, тогда $x^2 = 1/10000$. Отброшенное нами $\frac32 x^2$ имеет значение $0.00015$ при $x = 0.01$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.06.16 в 23:31</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46606'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>When $x$ is “small enough”, any terms involving $x^2$ are so small that they don’t significantly affect the final estimate.</p><p class='info'><a href='/book/39/146/46606#21' class='ord'>#21</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3832' class='u76'><p class='text'>Когда $x$ &quot;достаточно мало&quot;, любые члены, включающие $x^2$ настолько маленькие, что они не производят значимого эффекта на итоговый результат.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.06.16 в 23:32</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46607'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Question: Can we use the original formula?</p><p class='info'><a href='/book/39/146/46607#22' class='ord'>#22</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3826' class='u76'><p class='text'>Вопрос: можем ли мы использовать оригинальную формулу?</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.06.16 в 22:32</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46608'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Earlier, we found that:<br />
+$$f(x) = \frac{e^{-3x}}{\sqrt{1+x}} \approx 1 - \frac72 x$$</p><p class='info'><a href='/book/39/146/46608#23' class='ord'>#23</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3833' class='u76'><p class='text'>Ранее мы нашли:<br />
+$$f(x) = \frac{e^{-3x}}{\sqrt{1+x}} \approx 1 - \frac72 x$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.06.16 в 23:33</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46609'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Could we use a different method to get a linear approximation of the function $f(x)$?</p><p class='info'><a href='/book/39/146/46609#24' class='ord'>#24</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3827' class='u76'><p class='text'>Можем ли мы использовать иной метод, чтобы получить линейную аппроксимацию функции $f(x)$?</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.06.16 в 22:32</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46610'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Yes. We could calculate $f'$ and use the formula for linear approximation to find:<br />
+$$f(x) \approx f(0) + f'(0) x.$$<br />
+This must also be a linear approximation to $\frac{e^{-3x}}{\sqrt{1+x}}.$</p><p class='info'><a href='/book/39/146/46610#25' class='ord'>#25</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3834' class='u76'><p class='text'>Да. Мы можем вычислить $f'$ и использовать формулу для нахождения линейной аппроксимации:<br />
+$$f(x) \approx f(0) + f'(0) x$$<br />
+Должна получиться тоже аппроксимация для $\frac{e^{-3x}}{\sqrt{1+x}}.$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.06.16 в 23:35</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46611'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We can easily find that $f(0) = 1$. Computing $f'(x)$ by the product rule is an annoying, somewhat long computation. Because of what we’ve just done we know that $f'(0)$ must equal $−\frac72$ .</p><p class='info'><a href='/book/39/146/46611#26' class='ord'>#26</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3835' class='u76'><p class='text'>Мы можем легко найти, что $f(0) = 1$. Вычисление $f'(x)$ по правилу произведения неинтересно, немного длинные вычисления... Из того, что мы уже сделали, мы знаем, что $f'(0)$ должно быть равно $-\frac72$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.06.16 в 1:18</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46612'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We used linear approximation as a shortcut to avoid computing $f'(0)$ directly.</p><p class='info'><a href='/book/39/146/46612#27' class='ord'>#27</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3836' class='u76'><p class='text'>Мы использовали линейную аппроксимацию, чтобы &quot;сократить путь&quot;, избежав прямого вычисления $f'(0)$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.06.16 в 1:19</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46613'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>When we study quadratic approximation we’ll quickly see that combining approximations for complicated functions is far superior to differentiating them twice.</p><p class='info'><a href='/book/39/146/46613#28' class='ord'>#28</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3837' class='u76'><p class='text'>Изучая квадратичную аппроксимацию, мы вскоре увидим, что комбинирование аппроксимаций для сложных функций намного превосходит дифференцирование их дважды.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.06.16 в 1:20</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46614'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Question: If we find the linear approximation by differentiating, do we have to throw away an $x^2$ term?</p><p class='info'><a href='/book/39/146/46614#29' class='ord'>#29</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3838' class='u76'><p class='text'>Вопрос: находя линейную аппроксимацию дифференцированием, должны ли мы отбросить член при $x^2$?</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.06.16 в 1:45</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46615'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Answer: No. But remember that when $x$ is close to $0$ throwing away an $x^2$ term has very little influence on our final value.</p><p class='info'><a href='/book/39/146/46615#30' class='ord'>#30</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3839' class='u76'><p class='text'>Ответ: нет. Но помните, что, когда $x$ близко к $0$, отбрасывание члена при $x^2$ практически не повлияет на ответ.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.06.16 в 1:46</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46616'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Throwing away the $x^2$ was an easy way to simplify our expression; it’s not something we should be trying to avoid here.</p><p class='info'><a href='/book/39/146/46616#31' class='ord'>#31</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3840' class='u76'><p class='text'>Отбрасывание $x^2$ - это простой способ упростить наше выражение; это не что-то, чего следует избегать.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.06.16 в 1:55</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46617'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>(Linear approximation just captures the linear features of the<br />
+  function; we are not concerning ourselves with higher order terms here.)</p><p class='info'><a href='/book/39/146/46617#32' class='ord'>#32</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24979' class='u67'><p class='text'>(Линейная аппроксимация просто отражает линейные свойства функции; мы пока не беспокоимся о членах более высоких порядков.)</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 14:10</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46618'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Applications of Linear Approximation</p><p class='info'><a href='/book/39/146/46618#33' class='ord'>#33</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t3828' class='u76'><p class='text'>Применения линейной аппроксимаци</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.06.16 в 22:34</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46619'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In this unit we’re trying to learn about applications of the derivative to real problems. Here is one such example that involves math as well as physics.</p><p class='info'><a href='/book/39/146/46619#34' class='ord'>#34</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24980' class='u67'><p class='text'>В этом блоке мы попытаемся изучить некоторые применения дифференцирования для решения практических задач. Здесь представлен один из таких примеров, который использует как математику, так и физику.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 14:12</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46620'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Example 4: Planet Quirk</p><p class='info'><a href='/book/39/146/46620#35' class='ord'>#35</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24981' class='u67'><p class='text'>Пример 4. Странная планета</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 14:22</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46621'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: Illustration of Example 4: a satellite with velocity $v$ speeding past “me” on planet Quirk.</p><p class='info'><a href='/book/39/146/46621#36' class='ord'>#36</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24982' class='u67'><p class='text'>Рис. 1. Иллюстрация примера 4: пролетает мимо меня со скоростью $v$ на странной планете.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 14:23</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46622'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Let’s say I am on Planet Quirk, and that a satellite is whizzing overhead with a velocity $v$. The satellite has a clock on it that reports a time $T$. I have a watch that reports a time $T_m$. We want to calculate the time dilation (a concept from special relativity) that describes the difference between $T$ and $T_m$.</p><p class='info'><a href='/book/39/146/46622#37' class='ord'>#37</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24983' class='u67'><p class='text'>Скажем, я нахожусь на этой странной планете, а спутник пропорхнул над головой со скоростью $v$. На спутнике находятся часы, которые показывают время $T$. У меня есть часы, которые показывают время $T_m$. Мы хотим вычислить замедление времени (понятие из специальной теории относительности), которое является разницей между $T$ и $T_m$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 14:31</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46623'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We borrow the following equation from special relativity:<br />
+$$T_m = \frac{T}{\sqrt{1 - \frac{v^2}{c^2}}}.$$</p><p class='info'><a href='/book/39/146/46623#38' class='ord'>#38</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24984' class='u67'><p class='text'>Мы возьмем следующее уравнение из специальной теории относительности: $$T_m = \frac{T}{\sqrt{1 - \frac{v^2}{c^2}}}.$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 14:34</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46624'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Again, $T_m$ is the time I measure on my wristwatch, and $T$ is the time measured on board the satellite. How different are $T_m$ and $T$?</p><p class='info'><a href='/book/39/146/46624#39' class='ord'>#39</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24985' class='u67'><p class='text'>Повторим, что $T_m$ — время, которое показывают мои наручные часы, а $T$ — время на спутнике. Насколько отличаются $T_m$ и $T$?</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 14:36</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46625'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>To avoid dividing by a square root, we’ll once again use linear approximation:<br />
+$$\frac{T}{\sqrt{1 - \frac{v^2}{c^2}}} = \frac{T}{\sqrt{1 - u}} \approx T \left( 1 + \frac{1}{2} u \right),$$<br />
+where $u = \frac{v^2}{c^2}$.</p><p class='info'><a href='/book/39/146/46625#40' class='ord'>#40</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24986' class='u67'><p class='text'>Чтобы избежать деления на квадратный корень, мы будем снова использовать линейную аппроксимацию:<br />
+$$\frac{T}{\sqrt{1 - \frac{v^2}{c^2}}} = \frac{T}{\sqrt{1 - u}} \approx T \left( 1 + \frac{1}{2} u \right),$$<br />
+где $u = \frac{v^2}{c^2}$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 14:39</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46626'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>(If you’re wondering why we got $(1 + \frac{1}{2} u)$ and not $(1 - \frac{1}{2} u)$, try applying the change of variables $v = -u$ before approximating.)</p><p class='info'><a href='/book/39/146/46626#41' class='ord'>#41</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24987' class='u67'><p class='text'>(Если вы удивляетесь тому, что мы получили $(1 + \frac{1}{2} u)$, а не $(1 - \frac{1}{2} u)$, попробуйте использовать замену переменных $v = -u$ прежде чем аппроксимировать.)</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 14:42</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46627'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>And so, we find that:<br />
+$$T_m = \frac{T}{\sqrt{1 - \frac{v^2}{c^2}}} \approx T \left(1 + \frac{1}{2} \left( \frac{v^2}{c^2} \right) \right).$$</p><p class='info'><a href='/book/39/146/46627#42' class='ord'>#42</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24988' class='u67'><p class='text'>Тем самым, мы находим, что:<br />
+$$T_m = \frac{T}{\sqrt{1 - \frac{v^2}{c^2}}} \approx T \left(1 + \frac{1}{2} \left( \frac{v^2}{c^2} \right) \right).$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 14:44</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46628'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>How does this affect you in the real world? GPS transmitters are mounted<br />
+  on satellites, the satellites are moving, and you might be moving too.</p><p class='info'><a href='/book/39/146/46628#43' class='ord'>#43</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24989' class='u67'><p class='text'>Как этот результат влияет на вас в окружающем мире? GPS передатчики устанавливаются на спутниках, спутники движутся, да и вы тоже можете двигаться.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 14:47</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46629'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>According to special relativity, there will be a difference between the time on your GPS<br />
+  device and the time on the satellite. This time difference will affect the GPS<br />
+  device’s estimate of your position.</p><p class='info'><a href='/book/39/146/46629#44' class='ord'>#44</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24990' class='u67'><p class='text'>Согласно специальной теории относительности, между временем на вашем GPS устройстве и временем на спутнике возникнет разница. Эта разница будет влиять на оценку GPS устройство вашего местоположения.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 14:49</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46630'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The engineers who set up the GPS satellite system knew this and had to decide if they needed to take this into account when designing the system. It turns out that GPS satellites move at about $v = 4 \textrm{ kilometers per second (km/s)}$ and $c = 3 \times 10^5 \textrm{ km/sec}$, and so $\frac{v^2}{c^2} \approx {10}^{−10}$ and $T_m \approx T(1.00000000005)$.</p><p class='info'><a href='/book/39/146/46630#45' class='ord'>#45</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24991' class='u67'><p class='text'>Инженеры, которые разрабатывают систему GPS знают это и должны решить, нужно ли принимать эту поправку во внимание при проектировании. Оказывается, что GPS спутники движутся с приблизительной скоростью $v = 4\textrm{ километра в секунду (км/сек)}$, $c = 3 \times 10^5 \textrm{ км/сек}$, $\frac{v^2}{c^2} \approx {10}^{-10}$, а $T_m \approx T (1.00000000005)$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 14:56</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46631'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>There’s hardly any difference between the times measured on the ground and in the satellite.</p><p class='info'><a href='/book/39/146/46631#46' class='ord'>#46</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24992' class='u67'><p class='text'>Нет почти никакой разницы между временами, измеренными на земле и на спутнике.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 14:58</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46632'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Because $\frac{v^2}{c^2}$ is very close to zero, our linear approximation should be quite close to the actual value of $T_m$.</p><p class='info'><a href='/book/39/146/46632#47' class='ord'>#47</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24993' class='u67'><p class='text'>Поскольку значение $\frac{v^2}{c^2}$ близко к нулю, наше линейное приближение должно быть довольно близко к истинному значению $T_m$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 14:59</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46633'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Another good reason for using linear approximation here is that if the answer is “the difference is too small to matter”, the person doing the calculation has no use for a more precise answer which may be more difficult to calculate.</p><p class='info'><a href='/book/39/146/46633#48' class='ord'>#48</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24994' class='u67'><p class='text'>Другая хорошая причина использовать здесь линейное приближение состоит в том, что если бы ответ был «разница слишком мала, чтобы ее учитывать», человек, которых производит вычисления, не мог бы использовать более точный ответ, который, возможно, найти сложнее.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 15:02</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46634'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Nevertheless, engineers used this very approximation (along with several other such approximations) to calibrate the radio transmitters on GPS satellites. The satellites transmit at a slightly offset frequency.</p><p class='info'><a href='/book/39/146/46634#49' class='ord'>#49</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24995' class='u67'><p class='text'>Тем не менее, инженеры используют это грубое приближение (наравне с другими такими же приближениями) для калибровки радиопередатчиков на спутниках GPS. Спутники передают на слегка смещенных частотах.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 15:04</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46635'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Relative Error</p><p class='info'><a href='/book/39/146/46635#50' class='ord'>#50</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24996' class='u67'><p class='text'>Относительная ошибка</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 21.07.16 в 15:05</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+    </tbody>
+</table>
+
+<div id="pages-bottom">
+    <p class='n'><a href='?Orig_page=2'>Следующая страница &rarr;</a></p></div>
+
+
+<div id="tr-sidebar">
+    <div id="dict" class='has-edit'>
+        <div id="dict-search">
+            <input type="text" placeholder="Поиск по словарю" class="search"/>
+            <a href="#" class="b"><i class="i icon-remove-sign"></i></a>
+        </div>
+        <div id="dict-body">
+            <div id="dict-body-content">
+                Минутку...
+            </div>
+        </div>
+                    <div id="dict-add">
+                <form method="post" action="/book/39/dict">
+                    <input type="text" name="term" placeholder="Оригинал"/>
+                    <input type="text" name="descr" placeholder="Перевод"/>
+                    <button type="submit" class="btn btn-mini btn-primary">Добавить</button>
+                    <button type="button" class="btn btn-mini cancel">Отмена</button>
+                </form>
+            </div>
+            <div id="dict-tools">
+                <i class="icon-plus"></i> <a href="#" class="add">Добавить слово</a>
+            </div>
+                    </div>
+</div>
+
+
+<div id="renum-modal" class="modal hide">
+    <form method="post" class="form-inline" action="/book/39/146/renum">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Перенумеровать субтитры</h3>
+        </div>
+        <div class="modal-body">
+            Номер субтитра, серая циферка рядом с его таймингом, в сущности, ни на что не влияет, субтитры сортируются
+            по времени.
+            Если вы добавляете новый титр, его номер может выбиваться из плавного течения номеров. Этот инструмент
+            расставит всем
+            титрам номера в хронологическом порядке.
+        </div>
+        <div class="modal-footer">
+            <input type="hidden" name="mode" value="1"/>
+            <button type="submit" class="btn btn-primary">Поехали</button>
+            <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $("#Tr").find("td.o").each(function () {
+        var $this = $(this);
+        $this.children("div").css("min-height", $this.height());
+    });
+</script>
+</div>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span6">
+                &copy; <a href="http://romakhin.ru/" rel="nofollow">Дмитрий Ромахин</a>
+                2008&ndash;2017                <br/>
+                <a href="/site/help">Справка</a> |
+                <a href="/blog?topic=65">Техподдержка</a> |
+                <a href="mailto:abuse@translate.kursomir.ru?subj=%2Fbook%2F39%2F146">Abuse</a> |
+                <a href="mailto:translate@kursomir.ru">E-mail для справок</a> |
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&locale=ru"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']]
+        },
+        asciimath2jax: {
+            delimiters: [['``', '``']]
+        }
+    });
+</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('a.tooltip').tooltip({'placement':'bottom'});
+jQuery('a[rel="popover"]').popover();
+jQuery('#yw0 .alert').alert();
+});
+/*]]>*/
+</script>
+</body>
+</html>

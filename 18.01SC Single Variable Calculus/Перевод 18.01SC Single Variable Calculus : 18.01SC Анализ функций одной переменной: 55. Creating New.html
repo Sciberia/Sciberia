@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="/css/v3.1.css?3" />
+<link rel="stylesheet" type="text/css" href="/css/translate-1.css?5" />
+<link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css?1" />
+<style type="text/css">
+/*<![CDATA[*/
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+body, label, input, button, select, textarea {
+	font-size: 13px;
+	line-height: 18px;
+}
+#chat-box {
+	height: 300px;
+}.comments .comment .meta, .comments .comment .meta a, .translator .info, .translator .info a { color: #bbb; }
+.comments .comment:hover .meta, .comments .comment:hover .meta a, .translator tr:hover .info, .translator tr:hover .info a { color: #888; }
+/*]]>*/
+</style>
+<script type="text/javascript" src="/assets/bbeb3eca/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/6b5c0e82/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/global.js?16"></script>
+<script type="text/javascript" src="/js/user.js?3"></script>
+<script type="text/javascript" src="/js/chat.js?3"></script>
+<script type="text/javascript" src="/js/translate-1.js?11"></script>
+<script type="text/javascript" src="/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="/js/jquery.elastic.mod.js"></script>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.min.js?1"></script>
+<script type="text/javascript" src="/js/ff_comments.js?3"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var User = new CUser({id: 76, login: 'Keyten'});
+
+var Book = new CBook({
+	id: 39,
+	owner_id: 67,
+	facecontrol: 1,
+	s_lang: 2,
+	t_lang: 1,
+	n_verses: 2492,
+	n_vars: 1286,
+	d_vars: 1282,
+	typ: 'A',
+	s_title: '18.01SC Single Variable Calculus',
+	t_title: '18.01SC Анализ функций одной переменной',
+	membership: {status: 1}
+});
+
+var Chap = {
+	id: 175,
+	book_id: 39,
+	n_verses: 33,
+	n_vars: 29,
+	d_vars: 29,
+	title: '55. Creating New Functions Using the Second Fundamental Theorem / Построение новых функций, используя основную теорему анализа',
+	ac_read: '',
+	ac_gen: '',
+	ac_rate: '',
+	ac_comment: '',
+	ac_tr: '',
+};
+
+/*]]>*/
+</script>
+<title>Перевод 18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной: 55. Creating New Functions Using the Second Fundamental Theorem / Построение новых функций, используя основную теорему анализа :: КУРСОМИР.ПЕРЕВОДЫ</title>
+    <meta name="description" content="Коллективные переводы субтитров и книжек"/>
+    <meta name="language" content="ru"/>
+    <meta name="keywords"
+          content="перевод, translation, коллективный перевод, кино с субтитрами, кино по-английски с русскими субтитрами, кино по-немецки с русскими субтитрами, кино по-испански с русскими субтитрами, примеры перевода, краудсорсинг, crowdsourcing, нотабеноид"/>
+    <link rel='icon' href='/i/favicon.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='/i/favicon.ico' type='image/x-icon'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE]>
+    <script type="text/javascript" src="/js/jquery.input-placeholder.js"></script>
+    <link rel='stylesheet' href="/css/jquery.input-placeholder.css"/>
+    <script type="text/javascript">
+        $(function () {
+            $('input[placeholder]').inputDefault();
+        });
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container-fluid" style="background-color:#fff;">
+        <a href="/" id="header-logo">
+            <img src="/i/logo.png" width="124" height="130"
+                 style="padding-top: 50px;"
+                 alt="КУРСОМИР.ПЕРЕВОДЫ"
+                 title="3.3"/>
+        </a>
+        <nav>
+            <ul id="header-menu">
+                <li><a href="/catalog/1">ВИДЕО</a></li>
+                <li><a href="/catalog/2">ТЕКСТЫ</a></li>
+                <li><a href="/users">ПЕРЕВОДЧИКИ</a></li>
+                <li><a href="/blog">БЛОГ</a></li>
+                <li><a href="/announces">АНОНСЫ</a></li>
+                <li class="search">
+                    <form class="form-search" method="get" action="/search">
+                                                <input type="hidden" name="from" value="header">
+                        <input type="text" name="t" class="input-medium search-query span3"
+                               placeholder="Ищите и обрящете"
+                               title="Кстати, отсюда можно найти и переводчика, если собаку (@), а потом сразу его ник."/>
+                        <input type="submit" value="&raquo;" class="btn" style="border-radius: 20px;"/>
+                    </form>
+                </li>
+            </ul>
+            <ul id="header-submenu">
+                                    <li>
+                        <a href="/users/76" accesskey="i">
+                            <strong>Keyten</strong>
+                            Всё о вас
+                        </a>
+                    </li>
+                    <li id="hm-c">
+                        <a href="/my/comments" accesskey="c">
+                            <strong>Обсуждения  <b></b></strong>
+                            Места, где вы общались
+                        </a>
+                    </li>
+                    <li id="hm-n">
+                        <a href="/my/notices" accesskey="n">
+                            <strong>Оповещения  <b></b></strong>
+                            События для вас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#bookmarks" accesskey="b">
+                            <strong>Закладки</strong>
+                            На память
+                        </a>
+                    </li>
+                    <li><a href="/book/0/edit"><strong>Создать</strong> Перевод</a></li>
+                    <li><a href="/register/settings"><strong>Настройки</strong> Профиля</a></li>
+                    <li><a href="/register/logout"><strong>Выход</strong> До свидания :(</a></li>
+                            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <div id="bookmarks" class="modal hide">
+        <div class="modal-header" style='padding-bottom:0;'>
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Закладки</h3>
+            <div class="btn-toolbar">
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-sort">
+                    <button class="btn btn-mini" data-v="1" title="Сортировка по алфавиту">
+                        <i class="icon-text-height"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="2" title="Сортировка по вашей активности">
+                        <i class="icon-fire"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="3" title="Сортировка по времени вступления в перевод">
+                        <i class="icon-time"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="5" title="Сортировка по времени добавления закладки">
+                        <i class="icon-shopping-cart"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="4" title="Сортировка по готовности перевода">%</button>
+                    <button class="btn btn-mini" data-v="0" title="Ваша сортировка (таскайте закладки мышкой)">
+                        <i class="icon-random"></i>
+                    </button>
+                </div>
+
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-title">
+                    <button class="btn btn-mini" data-v="s" title="Показывать названия на языке оригинала">О</button>
+                    <button class="btn btn-mini" data-v="t" title="Показывать названия на языке перевода">П</button>
+                </div>
+                                <div class="btn-group pull-right">
+                    <button class="btn btn-mini" title="Удалить" id="bookmarks-tb-rm">
+                        <i class="icon-remove"></i>
+                    </button>
+                    <button class="btn btn-mini" title="Редактировать" id="bookmarks-tb-ed">
+                        <i class="icon-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body" style="max-height:350px">
+            <p class='loading'>минуточку...</p>
+        </div>
+    </div>
+
+
+<div class="container-fluid">
+    <div id="yw0"></div>
+<style type="text/css">
+        .translator.has-best td.t .best .text {
+        background-image: url(/i/corner-gray-t-r.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    </style>
+
+<h1><a href='/book/39'>18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной</a>: 55. Creating New Functions Using the Second Fundamental Theorem / Построение новых функций, используя основную теорему анализа</h1>
+
+<div id="tb-main">
+    <div>
+        <div class='group'><a
+                href="/book/39/175/go?nach=prev&ord=51"
+                title="Предыдущая глава"><i class="i icon-arrow-left"></i></a></div>
+
+        <div class="tb-index btn-group">
+            <a href="/book/39" class="btn btn-small"><i class="icon-list"></i> Оглавление</a>
+            <a class="btn btn-small dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+            <ul class="dropdown-menu" id="tb-chapter-list">
+                <li><a href="/book/39/members">Переводчики</a></li>
+                <li><a href="/book/39/blog">Блог</a></li>
+            </ul>
+        </div>
+
+        <div class='group'><a
+                href="/book/39/175/go?nach=next&ord=51"
+                title="Следующая глава"><i class="i icon-arrow-right"></i></a></div>
+
+        <div class="btn-group">
+                            <button type="button" class="btn btn-small tb-chat" title="Ctrl + ~"><i class="icon-bullhorn"></i> Чат
+                </button>
+            
+            <a href="#" class="btn btn-small tb-dict" accesskey="V"><i class="icon-book"></i> Словарь</a>
+
+            <div id="tb-filter">
+                <form method="get" class="form-inline" action="/book/39/175">
+                    <ul class='options'>
+                        <li><label><input type='radio' name='show' value='1' /> <a href='?show=1'>Непереведённое</a></label></li><li><label><input type='radio' name='show' value='7' /> <a href='?show=7'>С 2 и более версиями перевода</a></label></li><li><label><input type='radio' name='show' value='3' /> <a href='?show=3'>С комментариями</a></label></li><li><label><input type='radio' name='show' value='4' /> <a href='?show=4'>С новыми комментариями</a></label></li><li><label><input type='radio' name='show' value='2' />  <input type='text' name='show_user' placeholder='От переводчика' class='span3' value='' title='Ctrl+I: вставить ваш ник' /></label></li><li><label><input type='radio' name='show' value='5' />  <input type='text' name='to' placeholder='Оригинал содержит' class='span3' value='' /></label></li><li><label><input type='radio' name='show' value='6' />  <input type='text' name='tt' placeholder='Перевод содержит' class='span3' value='' /></label></li>                    </ul>
+                    <button type="submit" class="btn btn-mini btn-primary">Показать</button>
+                    <a href="/book/39/175"
+                       class="btn btn-mini">Сбросить всё</a>
+                </form>
+            </div>
+
+            <a href='#' class='btn btn-small tb-filter' accesskey='F'><i class='icon-filter'></i> Фильтр</a>        </div>
+
+        
+        
+
+        <div class="group">
+            <a href="/book/39/175/switchiface"><i class="icon-thumbs-down" title="Старый	интерфейс"></i></a>
+        </div>
+
+        <div class="tb-progress group"></div>
+
+            </div>
+</div>
+
+<div class="clear"></div>
+
+<table id="Tr" class="translator has-best translator-oe-hide">
+    <thead>
+    <tr>
+                    <th></th>        <th>
+            Английский оригинал
+        </th>
+                    <th></th>        <th>
+            Перевод на русский        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id='o77590'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The Area Under the Bell Curve</p><p class='info'><a href='/book/39/175/77590#1' class='ord'>#1</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32960' class='u76'><p class='text'>Площадь под графиком колокола</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:22</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77591'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Our last example of a definite integral is: $$F(x) = \int_0^x e^{-t^2} dt. $$</p><p class='info'><a href='/book/39/175/77591#2' class='ord'>#2</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32961' class='u76'><p class='text'>Наш последний пример определённого интеграла:<br />
+$$F(x) = \int_0^x e^{-t^2} dt.$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:23</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77592'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>As we’ve already remarked, this is a new function that we can’t express in terms of functions we already know. To begin to understand the properties of this function $F$ we’ll sketch its graph.</p><p class='info'><a href='/book/39/175/77592#3' class='ord'>#3</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32962' class='u76'><p class='text'>Как мы уже отмечали, это совершенно новая функция, которую нельзя выразить с помощью функций, с которыми мы уже знакомы. Чтобы понять свойства этой функции $F$, нарисуем график.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:24</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77593'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: Area under $e^{-t^2}.$</p><p class='info'><a href='/book/39/175/77593#4' class='ord'>#4</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32963' class='u76'><p class='text'>Рисунок 1. Площадь под $e^{-t^2}$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:24</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77594'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The fundamental theorem tells us right away that: $$F'(x) = e^{-x^2}.$$</p><p class='info'><a href='/book/39/175/77594#5' class='ord'>#5</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32964' class='u76'><p class='text'>Фундаментальная теорема говорит нам, что:<br />
+$$F'(x) = e^{-x^2}.$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:24</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77595'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>It’s easy to find the value of $F(0)$, because the “starting place” of the integral is $0$.<br />
+$$F(0) = \int_0^0 e^{-t^2} dt = 0.$$</p><p class='info'><a href='/book/39/175/77595#6' class='ord'>#6</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32965' class='u76'><p class='text'>Легко найти значение $F(0)$, поскольку интеграл &quot;стартует&quot; с $0$.<br />
+$$F(0) = \int_0^0 e^{-t^2} dt = 0.$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:25</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77596'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We can also compute the second derivative: $$F''(x) = -2x e^{-x^2}$$.<br />
+</p><p class='info'><a href='/book/39/175/77596#7' class='ord'>#7</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32966' class='u76'><p class='text'>Также мы можем посчитать вторую производную:<br />
+$$F''(x) = -2x e^{-x^2}$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:25</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77597'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The first derivative is always positive, so $F(x)$ is always increasing. Because the sign of $−2x e^{−x^2}$ is just the sign of $−2x$, its graph will be concave down when $x &gt; 0$ and concave up when $x &lt; 0$.</p><p class='info'><a href='/book/39/175/77597#8' class='ord'>#8</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32967' class='u76'><p class='text'>Первая производная всегда положительна, так что $F(x)$ всегда возрастает. Поскольку знак $-2xe^{-x^2}$ — это просто знак $-2x$, её график будет вогнут вниз, когда $x &gt; 0$, и вогнут вверх при $x &lt; 0$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:27</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77598'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>And finally, $F'(0) = e^{−0^2} = 1$. (We often define functions so that their graphs have slope $1$ in convenient locations.)</p><p class='info'><a href='/book/39/175/77598#9' class='ord'>#9</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32968' class='u76'><p class='text'>И, наконец, $F'(0) = e^{-0^2} = 1$. (Мы часто определяем функции так, что их графики имеют наклон $1$ в удобных точках.)</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:28</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77599'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>By combining all this information we get a pretty good idea of what the graph of the function looks like, even though we cannot write down a strictly algebraic equation for $F(x)$.</p><p class='info'><a href='/book/39/175/77599#10' class='ord'>#10</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32972' class='u76'><p class='text'>Комбинируя эту информацию, мы получаем довольно хорошее представление, как выглядит график этой функции, даже несмотря на то, что не можем выписать строгое алгебраическое равенство для $F(x)$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:30</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77600'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We want to know as much as possible about this function, so we’ll discuss a few more features before moving on.</p><p class='info'><a href='/book/39/175/77600#11' class='ord'>#11</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32973' class='u76'><p class='text'>Мы хотим знать столько, сколько возможно об этом функции, так что обсудим ещё пару возможностей, прежде чем двигаться дальше.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:31</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77601'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>First we show that $F(x)$ is odd. As mentioned in Figure 1, $F(x)$ is the area under the graph of $e−t^2$ between $0$ and $x$.</p><p class='info'><a href='/book/39/175/77601#12' class='ord'>#12</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32974' class='u76'><p class='text'>Сперва покажем, что $F(x)$ нечётна. Как упомянуто в рисунке 1, $F(x)$ — это площадь под графиком $e^{-t^2}$ между $0$ и $x$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:32</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77602'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>From the symmetry of the graph we see:<br />
+$$\int_{-x}^0 e^{-x^2} dx = \int_0^x e^{-x^2} dx,$$<br />
+so:<br />
+$$F(−x) = \int_0^{-x} e^{-x^2} dx = -\int_{-x}^0 e^{-x^2} dx = -\int_0^x e^{-x^2} dx = -F(x).$$</p><p class='info'><a href='/book/39/175/77602#13' class='ord'>#13</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32969' class='u76'><p class='text'>Из симметрии графика видно, что:<br />
+$$\int_{-x}^0 e^{-x^2} dx = \int_0^x e^{-x^2} dx,$$<br />
+Поэтому:<br />
+$$F(−x) = \int_0^{-x} e^{-x^2} dx = -\int_{-x}^0 e^{-x^2} dx = -\int_0^x e^{-x^2} dx = -F(x).$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:28</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77603'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 2: Graph of $F(x) = \int_0^x e^{-t^2} dt$.</p><p class='info'><a href='/book/39/175/77603#14' class='ord'>#14</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32970' class='u76'><p class='text'>Рисунок 2: График $F(x) = \int_0^x e^{-t^2} dt$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:28</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77604'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We conclude that $F(x)$ is an odd function.</p><p class='info'><a href='/book/39/175/77604#15' class='ord'>#15</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32971' class='u76'><p class='text'>Мы заключаем, что $F(x)$ — нечётная функция.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:29</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77605'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Because $F$ is odd we know that the part of its graph to the right of the $y$-axis is exactly a rotation of the part of its graph to the left of the $y$-axis. If we know the shape of one branch we immediately know the shape of the other branch.</p><p class='info'><a href='/book/39/175/77605#16' class='ord'>#16</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'></td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77606'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Our final step to understanding the graph is to figure out what happens at the ends. It turns out that the graph approaches a horizontal asymptote as $x$ approaches positive infinite and, by symmetry, as $x$ goes to negative infinity.</p><p class='info'><a href='/book/39/175/77606#17' class='ord'>#17</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'></td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77607'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>On the right, the graph rises to a certain level; on the left it falls to the negative of that level.</p><p class='info'><a href='/book/39/175/77607#18' class='ord'>#18</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'></td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77608'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>What is that level? It’s the area under the graph of $f(x) = e^{−t^2}$ between $0$ and infinity: $\sqrt{\pi}{2}$.</p><p class='info'><a href='/book/39/175/77608#19' class='ord'>#19</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'></td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77609'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>It took several years for mathematicians to discover the exact value of this area.<br />
+\begin{align}<br />
+\lim_{x \to \infty} F(x) &amp;= \frac{\sqrt{\pi}}{2} \\<br />
+\lim_{x \to -\infty} F(x) &amp;= -\frac{\sqrt{\pi}}{2}<br />
+\end{align}</p><p class='info'><a href='/book/39/175/77609#20' class='ord'>#20</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32988' class='u76'><p class='text'>Математики потратили много лет, чтобы выяснить точную величину этой площади:<br />
+$$\begin{align} <br />
+\lim_{x \to \infty} F(x) &amp;= \frac{\sqrt{\pi}}{2} \\ <br />
+\lim_{x \to -\infty} F(x) &amp;= -\frac{\sqrt{\pi}}{2} <br />
+\end{align}$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 7.05.17 в 14:51</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77610'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Because $1$ is a nicer number to work with than $\frac{\sqrt{\pi}}{2}$, people define the error<br />
+function to be: $$erf(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} dt = \frac{2}{\sqrt{\pi}} F(x).$$</p><p class='info'><a href='/book/39/175/77610#21' class='ord'>#21</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32986' class='u76'><p class='text'>Поскольку $1$ — более удобное для работы с ним число, чем $\frac{\sqrt\pi}2$, было решено определить функцию ошибки так:<br />
+$$\operatorname{erf}(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} dt = \frac{2}{\sqrt{\pi}} F(x).$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 7.05.17 в 14:47</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77611'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This is a famous function, as is its cousin the standard normal distribution.</p><p class='info'><a href='/book/39/175/77611#22' class='ord'>#22</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32987' class='u76'><p class='text'>Это известная функция, как и её родственник — стандартное нормальное распределение.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 7.05.17 в 14:47</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77612'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>More New Functions from Old</p><p class='info'><a href='/book/39/175/77612#23' class='ord'>#23</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32975' class='u76'><p class='text'>Ещё больше новых функций, сделанных из старых</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:33</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77613'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Using definite integrals, we can define many transcendental or “new” functions which cannot be expressed in elementary terms.</p><p class='info'><a href='/book/39/175/77613#24' class='ord'>#24</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32976' class='u76'><p class='text'>Используя определённые интегралы, можно определить много трансцендентных или &quot;новых&quot; функций, которые не могут быть выражены как элементарные.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:34</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77614'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Example: Fresnel Integrals<br />
+\begin{align}<br />
+C(x) &amp;= \int_0^x \cos(t^2) dt \\<br />
+S(x) &amp;= \int_0^x \sin(t^2) dt<br />
+\end{align}<br />
+These are named after Augustin-Jean Fresnel and are used in optics.</p><p class='info'><a href='/book/39/175/77614#25' class='ord'>#25</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32977' class='u76'><p class='text'>Пример: интегралы Френеля<br />
+$$\begin{align} <br />
+C(x) &amp;= \int_0^x \cos(t^2) dt \\ <br />
+S(x) &amp;= \int_0^x \sin(t^2) dt <br />
+\end{align}$$<br />
+Они названы в честь Огюстена Жана Френеля, и используются в оптике.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:35</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77615'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Example: From Fourier Analysis<br />
+$$H(x) = \int_0^x \frac{\sin t}{t} dt$$</p><p class='info'><a href='/book/39/175/77615#26' class='ord'>#26</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32978' class='u76'><p class='text'>Пример: из анализа Фурье<br />
+$$H(x) = \int_0^x \frac{\sin t}{t} dt$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:36</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77616'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Example: Logarithmic Integral<br />
+$$Li(x) = \int_2^x \frac{dt}{\ln t}$$</p><p class='info'><a href='/book/39/175/77616#27' class='ord'>#27</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32979' class='u76'><p class='text'>Пример: интегральный логарифм<br />
+$$\operatorname{Li}(x) = \int_2^x \frac{dt}{\ln t}$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:36</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77617'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This function is significant because it is approximately equal to the number of primes less than $x$. </p><p class='info'><a href='/book/39/175/77617#28' class='ord'>#28</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32980' class='u76'><p class='text'>Эта функция важна, поскольку она примерно равна количеству простых чисел, меньших $x$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:37</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77618'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>If you can describe precisely how close the value of $Li(x)$ is to the exact number of primes less than $x$ you’ll have proven the Riemann hypothesis; a task mathematicians have been working on for over a century</p><p class='info'><a href='/book/39/175/77618#29' class='ord'>#29</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32985' class='u76'><p class='text'>Если вы сможете описать точно, как близко значение $\operatorname{Li}(x)$ к точному числу простых чисел, меньших $x$, вы докажете гипотезу Римана; задачу, над которой математики работали более века.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:42</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77619'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Question: Are we supposed to understand this stuff?</p><p class='info'><a href='/book/39/175/77619#30' class='ord'>#30</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32981' class='u76'><p class='text'>Вопрос: должны ли мы понять все эти вещи?</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:37</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77620'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Answer: That’s a good question. We’re going to see a lot more of the function $F(x) = \int_0^x e^{−t^2} dt$ because it’s associated with the normal distribution</p><p class='info'><a href='/book/39/175/77620#31' class='ord'>#31</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32982' class='u76'><p class='text'>Ответ: это хороший вопрос. Мы рассмотрим функцию $F(x) = \int_0^x e^{−t^2} dt$ немного больше, поскольку она связана с нормальным распределением (прим. переводчика: теория вероятностей).</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:38</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77621'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The functions described in this segment are simply examples of other transcendental functions that are important and described by definite integrals.</p><p class='info'><a href='/book/39/175/77621#32' class='ord'>#32</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32983' class='u76'><p class='text'>Описанные здесь функции — простые примеры других трансцендентных функций, которые важны и выражаются определёнными интегралами.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:39</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o77622'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>For this class, the only thing that you’ll need to do with such functions are things like understanding the derivative, the second derivative, and sketching their graphs.</p><p class='info'><a href='/book/39/175/77622#33' class='ord'>#33</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32984' class='u76'><p class='text'>В этом курсе единственное, что нужно уметь делать с подобными функциями — вещи вроде понимать производную, вторую производную и рисовать графики.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.17 в 21:40</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+    </tbody>
+</table>
+
+<div id="pages-bottom">
+    </div>
+
+
+<div id="tr-sidebar">
+    <div id="dict" class='has-edit'>
+        <div id="dict-search">
+            <input type="text" placeholder="Поиск по словарю" class="search"/>
+            <a href="#" class="b"><i class="i icon-remove-sign"></i></a>
+        </div>
+        <div id="dict-body">
+            <div id="dict-body-content">
+                Минутку...
+            </div>
+        </div>
+                    <div id="dict-add">
+                <form method="post" action="/book/39/dict">
+                    <input type="text" name="term" placeholder="Оригинал"/>
+                    <input type="text" name="descr" placeholder="Перевод"/>
+                    <button type="submit" class="btn btn-mini btn-primary">Добавить</button>
+                    <button type="button" class="btn btn-mini cancel">Отмена</button>
+                </form>
+            </div>
+            <div id="dict-tools">
+                <i class="icon-plus"></i> <a href="#" class="add">Добавить слово</a>
+            </div>
+                    </div>
+</div>
+
+
+<div id="renum-modal" class="modal hide">
+    <form method="post" class="form-inline" action="/book/39/175/renum">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Перенумеровать субтитры</h3>
+        </div>
+        <div class="modal-body">
+            Номер субтитра, серая циферка рядом с его таймингом, в сущности, ни на что не влияет, субтитры сортируются
+            по времени.
+            Если вы добавляете новый титр, его номер может выбиваться из плавного течения номеров. Этот инструмент
+            расставит всем
+            титрам номера в хронологическом порядке.
+        </div>
+        <div class="modal-footer">
+            <input type="hidden" name="mode" value="1"/>
+            <button type="submit" class="btn btn-primary">Поехали</button>
+            <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $("#Tr").find("td.o").each(function () {
+        var $this = $(this);
+        $this.children("div").css("min-height", $this.height());
+    });
+</script>
+</div>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span6">
+                &copy; <a href="http://romakhin.ru/" rel="nofollow">Дмитрий Ромахин</a>
+                2008&ndash;2017                <br/>
+                <a href="/site/help">Справка</a> |
+                <a href="/blog?topic=65">Техподдержка</a> |
+                <a href="mailto:abuse@translate.kursomir.ru?subj=%2Fbook%2F39%2F175">Abuse</a> |
+                <a href="mailto:translate@kursomir.ru">E-mail для справок</a> |
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&locale=ru"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']]
+        },
+        asciimath2jax: {
+            delimiters: [['``', '``']]
+        }
+    });
+</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('a.tooltip').tooltip({'placement':'bottom'});
+jQuery('a[rel="popover"]').popover();
+jQuery('#yw0 .alert').alert();
+});
+/*]]>*/
+</script>
+</body>
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="/css/v3.1.css?3" />
+<link rel="stylesheet" type="text/css" href="/css/translate-1.css?5" />
+<link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css?1" />
+<style type="text/css">
+/*<![CDATA[*/
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+body, label, input, button, select, textarea {
+	font-size: 13px;
+	line-height: 18px;
+}
+#chat-box {
+	height: 300px;
+}.comments .comment .meta, .comments .comment .meta a, .translator .info, .translator .info a { color: #bbb; }
+.comments .comment:hover .meta, .comments .comment:hover .meta a, .translator tr:hover .info, .translator tr:hover .info a { color: #888; }
+/*]]>*/
+</style>
+<script type="text/javascript" src="/assets/bbeb3eca/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/6b5c0e82/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/global.js?16"></script>
+<script type="text/javascript" src="/js/user.js?3"></script>
+<script type="text/javascript" src="/js/chat.js?3"></script>
+<script type="text/javascript" src="/js/translate-1.js?11"></script>
+<script type="text/javascript" src="/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="/js/jquery.elastic.mod.js"></script>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.min.js?1"></script>
+<script type="text/javascript" src="/js/ff_comments.js?3"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var User = new CUser({id: 76, login: 'Keyten'});
+
+var Book = new CBook({
+	id: 39,
+	owner_id: 67,
+	facecontrol: 1,
+	s_lang: 2,
+	t_lang: 1,
+	n_verses: 2492,
+	n_vars: 1286,
+	d_vars: 1282,
+	typ: 'A',
+	s_title: '18.01SC Single Variable Calculus',
+	t_title: '18.01SC Анализ функций одной переменной',
+	membership: {status: 1}
+});
+
+var Chap = {
+	id: 155,
+	book_id: 39,
+	n_verses: 48,
+	n_vars: 44,
+	d_vars: 44,
+	title: '33. Newton\'s Method / Метод Ньютона',
+	ac_read: '',
+	ac_gen: '',
+	ac_rate: '',
+	ac_comment: '',
+	ac_tr: '',
+};
+
+/*]]>*/
+</script>
+<title>Перевод 18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной: 33. Newton's Method / Метод Ньютона :: КУРСОМИР.ПЕРЕВОДЫ</title>
+    <meta name="description" content="Коллективные переводы субтитров и книжек"/>
+    <meta name="language" content="ru"/>
+    <meta name="keywords"
+          content="перевод, translation, коллективный перевод, кино с субтитрами, кино по-английски с русскими субтитрами, кино по-немецки с русскими субтитрами, кино по-испански с русскими субтитрами, примеры перевода, краудсорсинг, crowdsourcing, нотабеноид"/>
+    <link rel='icon' href='/i/favicon.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='/i/favicon.ico' type='image/x-icon'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE]>
+    <script type="text/javascript" src="/js/jquery.input-placeholder.js"></script>
+    <link rel='stylesheet' href="/css/jquery.input-placeholder.css"/>
+    <script type="text/javascript">
+        $(function () {
+            $('input[placeholder]').inputDefault();
+        });
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container-fluid" style="background-color:#fff;">
+        <a href="/" id="header-logo">
+            <img src="/i/logo.png" width="124" height="130"
+                 style="padding-top: 50px;"
+                 alt="КУРСОМИР.ПЕРЕВОДЫ"
+                 title="3.3"/>
+        </a>
+        <nav>
+            <ul id="header-menu">
+                <li><a href="/catalog/1">ВИДЕО</a></li>
+                <li><a href="/catalog/2">ТЕКСТЫ</a></li>
+                <li><a href="/users">ПЕРЕВОДЧИКИ</a></li>
+                <li><a href="/blog">БЛОГ</a></li>
+                <li><a href="/announces">АНОНСЫ</a></li>
+                <li class="search">
+                    <form class="form-search" method="get" action="/search">
+                                                <input type="hidden" name="from" value="header">
+                        <input type="text" name="t" class="input-medium search-query span3"
+                               placeholder="Ищете что-нибудь?"
+                               title="Кстати, отсюда можно найти и переводчика, если собаку (@), а потом сразу его ник."/>
+                        <input type="submit" value="&raquo;" class="btn" style="border-radius: 20px;"/>
+                    </form>
+                </li>
+            </ul>
+            <ul id="header-submenu">
+                                    <li>
+                        <a href="/users/76" accesskey="i">
+                            <strong>Keyten</strong>
+                            Всё о вас
+                        </a>
+                    </li>
+                    <li id="hm-c">
+                        <a href="/my/comments" accesskey="c">
+                            <strong>Обсуждения  <b></b></strong>
+                            Места, где вы общались
+                        </a>
+                    </li>
+                    <li id="hm-n">
+                        <a href="/my/notices" accesskey="n">
+                            <strong>Оповещения  <b></b></strong>
+                            События для вас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#bookmarks" accesskey="b">
+                            <strong>Закладки</strong>
+                            На память
+                        </a>
+                    </li>
+                    <li><a href="/book/0/edit"><strong>Создать</strong> Перевод</a></li>
+                    <li><a href="/register/settings"><strong>Настройки</strong> Профиля</a></li>
+                    <li><a href="/register/logout"><strong>Выход</strong> До свидания :(</a></li>
+                            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <div id="bookmarks" class="modal hide">
+        <div class="modal-header" style='padding-bottom:0;'>
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Закладки</h3>
+            <div class="btn-toolbar">
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-sort">
+                    <button class="btn btn-mini" data-v="1" title="Сортировка по алфавиту">
+                        <i class="icon-text-height"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="2" title="Сортировка по вашей активности">
+                        <i class="icon-fire"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="3" title="Сортировка по времени вступления в перевод">
+                        <i class="icon-time"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="5" title="Сортировка по времени добавления закладки">
+                        <i class="icon-shopping-cart"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="4" title="Сортировка по готовности перевода">%</button>
+                    <button class="btn btn-mini" data-v="0" title="Ваша сортировка (таскайте закладки мышкой)">
+                        <i class="icon-random"></i>
+                    </button>
+                </div>
+
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-title">
+                    <button class="btn btn-mini" data-v="s" title="Показывать названия на языке оригинала">О</button>
+                    <button class="btn btn-mini" data-v="t" title="Показывать названия на языке перевода">П</button>
+                </div>
+                                <div class="btn-group pull-right">
+                    <button class="btn btn-mini" title="Удалить" id="bookmarks-tb-rm">
+                        <i class="icon-remove"></i>
+                    </button>
+                    <button class="btn btn-mini" title="Редактировать" id="bookmarks-tb-ed">
+                        <i class="icon-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body" style="max-height:350px">
+            <p class='loading'>минуточку...</p>
+        </div>
+    </div>
+
+
+<div class="container-fluid">
+    <div id="yw0"></div>
+<style type="text/css">
+        .translator.has-best td.t .best .text {
+        background-image: url(/i/corner-gray-t-r.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    </style>
+
+<h1><a href='/book/39'>18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной</a>: 33. Newton's Method / Метод Ньютона</h1>
+
+<div id="tb-main">
+    <div>
+        <div class='group'><a
+                href="/book/39/155/go?nach=prev&ord=31"
+                title="Предыдущая глава"><i class="i icon-arrow-left"></i></a></div>
+
+        <div class="tb-index btn-group">
+            <a href="/book/39" class="btn btn-small"><i class="icon-list"></i> Оглавление</a>
+            <a class="btn btn-small dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+            <ul class="dropdown-menu" id="tb-chapter-list">
+                <li><a href="/book/39/members">Переводчики</a></li>
+                <li><a href="/book/39/blog">Блог</a></li>
+            </ul>
+        </div>
+
+        <div class='group'><a
+                href="/book/39/155/go?nach=next&ord=31"
+                title="Следующая глава"><i class="i icon-arrow-right"></i></a></div>
+
+        <div class="btn-group">
+                            <button type="button" class="btn btn-small tb-chat" title="Ctrl + ~"><i class="icon-bullhorn"></i> Чат
+                </button>
+            
+            <a href="#" class="btn btn-small tb-dict" accesskey="V"><i class="icon-book"></i> Словарь</a>
+
+            <div id="tb-filter">
+                <form method="get" class="form-inline" action="/book/39/155">
+                    <ul class='options'>
+                        <li><label><input type='radio' name='show' value='1' /> <a href='?show=1'>Непереведённое</a></label></li><li><label><input type='radio' name='show' value='7' /> <a href='?show=7'>С 2 и более версиями перевода</a></label></li><li><label><input type='radio' name='show' value='3' /> <a href='?show=3'>С комментариями</a></label></li><li><label><input type='radio' name='show' value='4' /> <a href='?show=4'>С новыми комментариями</a></label></li><li><label><input type='radio' name='show' value='2' />  <input type='text' name='show_user' placeholder='От переводчика' class='span3' value='' title='Ctrl+I: вставить ваш ник' /></label></li><li><label><input type='radio' name='show' value='5' />  <input type='text' name='to' placeholder='Оригинал содержит' class='span3' value='' /></label></li><li><label><input type='radio' name='show' value='6' />  <input type='text' name='tt' placeholder='Перевод содержит' class='span3' value='' /></label></li>                    </ul>
+                    <button type="submit" class="btn btn-mini btn-primary">Показать</button>
+                    <a href="/book/39/155"
+                       class="btn btn-mini">Сбросить всё</a>
+                </form>
+            </div>
+
+            <a href='#' class='btn btn-small tb-filter' accesskey='F'><i class='icon-filter'></i> Фильтр</a>        </div>
+
+        
+        
+
+        <div class="group">
+            <a href="/book/39/155/switchiface"><i class="icon-thumbs-down" title="Старый	интерфейс"></i></a>
+        </div>
+
+        <div class="tb-progress group"></div>
+
+            </div>
+</div>
+
+<div class="clear"></div>
+
+<table id="Tr" class="translator has-best translator-oe-hide">
+    <thead>
+    <tr>
+                    <th></th>        <th>
+            Английский оригинал
+        </th>
+                    <th></th>        <th>
+            Перевод на русский        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id='o39694'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Newton’s Method</p><p class='info'><a href='/book/39/155/39694#1' class='ord'>#1</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1029' class='u76'><p class='text'>Метод Ньютона</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:42</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39695'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Newton’s method is a powerful tool for solving equations of the form $f(x) = 0$.</p><p class='info'><a href='/book/39/155/39695#2' class='ord'>#2</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1030' class='u76'><p class='text'>Метод Ньютона — это мощный инструмент для решения уравнений в форме $f(x) = 0$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:43</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39696'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Example: Solve $x^2 = 5$.</p><p class='info'><a href='/book/39/155/39696#3' class='ord'>#3</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1031' class='u76'><p class='text'>Пример: решить $x^2 = 5$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:43</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39697'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We’re going to use Newton’s method to find a numerical approximation for $\sqrt{5}$.</p><p class='info'><a href='/book/39/155/39697#4' class='ord'>#4</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1032' class='u76'><p class='text'>Мы собираемся использовать метод Ньютона, чтобы найти приближённое значение для $\sqrt 5$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:43</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39698'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>5. Any equation that you understand can be solved this way.</p><p class='info'><a href='/book/39/155/39698#5' class='ord'>#5</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1033' class='u76'><p class='text'>Любое уравнение может быть решено этим способом.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:44</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39699'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In order to use Newton’s method, we define $f(x) = x^2 − 5$.</p><p class='info'><a href='/book/39/155/39699#6' class='ord'>#6</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1034' class='u76'><p class='text'>Для использования метода Ньютона определим $f(x) = x^2 - 5$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:44</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39700'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>By finding the value of $x$ for which $f(x) = 0$ we solve the equation $x^2 = 5$.</p><p class='info'><a href='/book/39/155/39700#7' class='ord'>#7</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1035' class='u76'><p class='text'>Отыскивая значение $x$, для которого $f(x) = 0$, мы и решим уравнение $x^2 = 5$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:45</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39701'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Our goal is to discover where the graph crosses the $x$-axis. We start with an initial guess — we’ll guess $x_0 = 2$, since $\sqrt{5} \approx \sqrt{4} = 2$.</p><p class='info'><a href='/book/39/155/39701#8' class='ord'>#8</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1036' class='u76'><p class='text'>Наша цель — найти, где график пересекает ось x. Начнём с начального приближения — примем $x_0 = 2$, поскольку $\sqrt 5 \approx \sqrt 4 = 2$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:46</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39702'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This is not a very good guess; $f(2) = −1$, and we’re looking for a number $x$ for which $f(x) = 0$. We’ll try to improve our guess.</p><p class='info'><a href='/book/39/155/39702#9' class='ord'>#9</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1037' class='u76'><p class='text'>Это не очень хороший результат: $f(2) = -1$, мы же ищем такое число $x$, для которого $f(x) = 0$. Попробуем его улучшить.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:46</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39703'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We pretend that the function is linear, and look for the point where the<br />
+  tangent line to the function at x0 crosses the x-axis: see Fig. 1. This point<br />
+  (x1, 0) gives us a new guess at our solution: x1.</p><p class='info'><a href='/book/39/155/39703#10' class='ord'>#10</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1038' class='u76'><p class='text'>Притворимся, что функция линейная, и поищем точку, где касательная функции в точке $x_0$ пересекает ось x: см. рис. 1. Эта точка $(x_1, 0)$ даст нам новое приближение нашего решения: $x_1$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:48</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39704'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: Illustration of Newton’s Method</p><p class='info'><a href='/book/39/155/39704#11' class='ord'>#11</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1039' class='u76'><p class='text'>Рисунок 1: Иллюстрация метода Ньютона</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:48</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39705'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The equation for the tangent line is: $y − y_0 = m(x − x_0)$</p><p class='info'><a href='/book/39/155/39705#12' class='ord'>#12</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23350' class='u76'><p class='text'>Уравнение для касательной: $y - y_0 = m(x-x_0)$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 9.07.16 в 12:07</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39706'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>When the tangent line intercepts the $x$-axis $y = 0$, and the $x$ coordinate of that point is our new guess $x_1$.</p><p class='info'><a href='/book/39/155/39706#13' class='ord'>#13</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23351' class='u76'><p class='text'>Когда касательная пересекает ось $x$, $y = 0$, а координата $x$ — наше новое приближение $x_1$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 9.07.16 в 12:08</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39707'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In terms of $f$:<br />
+\begin{align} <br />
+y_0 &amp;= f(x_0) \\ m &amp;= f'(x_0), <br />
+\end{align}<br />
+because $m$ is the slope of the tangent line to $y = f(x)$ at the point $(x_0, y_0)$.</p><p class='info'><a href='/book/39/155/39707#14' class='ord'>#14</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t27245' class='u76'><p class='text'>Используя $f$, запишем:<br />
+$$\begin{align}<br />
+y_0 &amp;= f(x_0) \\ m &amp;= f'(x_0),<br />
+\end{align}$$<br />
+потому что $m$ - это крутизна касательной к $y = f(x)$ в точке $(x_0, y_0)$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 6.08.16 в 11:10</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39708'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Therefore, $$x_1 = x_0 - \frac{f(x_0)}{f'(x_0)}.$$</p><p class='info'><a href='/book/39/155/39708#15' class='ord'>#15</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t27246' class='u76'><p class='text'>Таким образом,<br />
+$$x_1 = x_0 - \frac{f(x_0)}{f'(x_0)}$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 6.08.16 в 11:10</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39709'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The point of Newton’s method is that we can improve our new guess by<br />
+  repeating this process. To get our (n + 1)st guess we apply this formula to our<br />
+  nth guess: f(xn) xn+1 = xn − f(xn).</p><p class='info'><a href='/book/39/155/39709#16' class='ord'>#16</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t27247' class='u76'><p class='text'>Смысл метода Ньютона в том, что мы можем улучшить наш результат, повторяя процесс. Чтобы получить $(n+1)$-ое приближение, применяем нашу формулу к $n$-му результату:<br />
+$$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 6.08.16 в 11:13</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39710'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In our example, x0 = 2 and f(x) = x2 − 5. We first calculate f(x) = 2x.</p><p class='info'><a href='/book/39/155/39710#17' class='ord'>#17</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t27248' class='u76'><p class='text'>В нашем примере $x_0 = 2$ и $f(x) = x^2 - 5$. Сначала вычислим $f'(x) = 2x$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 6.08.16 в 11:13</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39711'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Thus,<br />
+\begin{align}<br />
+x_1 &amp;= x_0 - \frac{{x_0}^2 - 5}{2x_0} = x_0 - \frac12x_0+\frac5{2x_0} \\<br />
+x_1 &amp;= \frac12x_0 + \frac5{2x_0}<br />
+\end{align}</p><p class='info'><a href='/book/39/155/39711#18' class='ord'>#18</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t27249' class='u76'><p class='text'>Тогда:<br />
+$$\begin{align}<br />
+x_1 &amp;= x_0 - \frac{{x_0}^2 - 5}{2x_0} = x_0 - \frac12x_0+\frac5{2x_0} \\<br />
+x_1 &amp;= \frac12x_0 + \frac5{2x_0}<br />
+\end{align}$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 6.08.16 в 11:20</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39712'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The main idea is to repeat (iterate) this process:<br />
+\begin{align} <br />
+x_2 &amp;= \frac12x_1 + \frac5{2x_1} \\ <br />
+x_3 &amp;= \frac12x_2 + \frac5{2x_2} <br />
+\end{align}<br />
+and so on. The procedure approximates $\sqrt{5}$ extremely well.</p><p class='info'><a href='/book/39/155/39712#19' class='ord'>#19</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t27251' class='u76'><p class='text'>Главная идея — повторять процесс снова и снова:<br />
+$$\begin{align}<br />
+x_2 &amp;= \frac12x_1 + \frac5{2x_1} \\<br />
+x_3 &amp;= \frac12x_2 + \frac5{2x_2}<br />
+\end{align}$$<br />
+и так далее. Эта процедура очень хорошо аппроксимирует $\sqrt 5$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 6.08.16 в 11:21</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39713'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Let’s see how well this works:</p><p class='info'><a href='/book/39/155/39713#20' class='ord'>#20</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t27252' class='u76'><p class='text'>Давайте посмотрим, как это работает:</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 6.08.16 в 11:21</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39714'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Notice that the number of digits of accuracy doubles with each iteration; x2<br />
+  is as good an approximation as you’ll ever need, and x3 is as good an approximation<br />
+  as the one displayed by your calculator.</p><p class='info'><a href='/book/39/155/39714#21' class='ord'>#21</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t27253' class='u76'><p class='text'>Заметьте, что количество точных цифр удваивается с каждой итерацией; $x_2$ — лучшее приближение, которое вам когда-либо может понадобиться, а $x_3$ — лучшее приближение, которое может показать ваш калькулятор.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 6.08.16 в 11:23</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39715'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Newton’s Method</p><p class='info'><a href='/book/39/155/39715#22' class='ord'>#22</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1041' class='u76'><p class='text'>Метод Ньютона</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:49</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39716'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Today we’ll discuss the accuracy of Newton’s Method.</p><p class='info'><a href='/book/39/155/39716#23' class='ord'>#23</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32740' class='u76'><p class='text'>Сегодня мы обсудим точность метода Ньютона.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 16.03.17 в 22:07</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39717'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Recall how Newton’s method works: to find the point at which a graph<br />
+  crosses the x-axis you make an initial guess x0 at the x-coordinate of that<br />
+  crossing.</p><p class='info'><a href='/book/39/155/39717#24' class='ord'>#24</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32741' class='u76'><p class='text'>Напомним, как метод Ньютона работает: чтобы найти точку, в которой график пересекает ось $x$, мы задаём начальное приближение $x_0$ как координату $x$ этого приближения.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 16.03.17 в 22:08</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39718'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>You then find the tangent line to the graph at x0 and use it to improve<br />
+  your guess: x1 is the x-coordinate at which the tangent line crosses the x-axis.</p><p class='info'><a href='/book/39/155/39718#25' class='ord'>#25</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32785' class='u76'><p class='text'>Затем находим касательную к графику в $x_0$ и используем её, чтобы улучшить нашу догадку: $x_1$ - координата $x$, в которой касательная пересекает ось $x$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 19.03.17 в 11:10</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39719'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>(See Fig. 1.) You can now draw the tangent line at x1 to get a new guess x2,<br />
+  and so on.</p><p class='info'><a href='/book/39/155/39719#26' class='ord'>#26</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1043' class='u76'><p class='text'>(См. рис. 1) Теперь можно провести касательную линию в $x_1$, чтобы получить новое приближение $x_2$ и так далее...</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:50</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39720'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: Illustration of Newton’s Method</p><p class='info'><a href='/book/39/155/39720#27' class='ord'>#27</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1042' class='u76'><p class='text'>Рисунок 1: Иллюстрация метода Ньютона</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:49</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39721'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In algebraic terms,<br />
+  f(x0) f(xk) x1 = x0 − f(x0)<br />
+  xk+1 = xk − f(xk)</p><p class='info'><a href='/book/39/155/39721#28' class='ord'>#28</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32786' class='u76'><p class='text'>Алгебраически выражаясь:<br />
+$$x_1 = x_0 - \frac{f(x_0)}{f'(x_0)} \\<br />
+x_{k+1} = x_k - \frac{f(x_k)}{f'(x_k)}$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 19.03.17 в 11:13</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39722'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 2 illustrates the kth iteration of Newton’s method.</p><p class='info'><a href='/book/39/155/39722#29' class='ord'>#29</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1044' class='u76'><p class='text'>Рисунок 2 изображает k-ю итерацию метода Ньютона.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:51</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39723'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>If we’re going to use this to get numerical approximations of solutions, we<br />
+  should know how accurate it is. If x is the exact value of the solution, then x1<br />
+  is E1 = |x − x1| away from the exact answer. The error in our approximation<br />
+  at step n is En = |x − xn|.</p><p class='info'><a href='/book/39/155/39723#30' class='ord'>#30</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32941' class='u76'><p class='text'>Чтобы использовать этот способ для получения численных приближений решений, мы должны знать, насколько он точен. Если $x$ — точный ответ, тогда $x_1$ отличается на $E_1 = |x - x_1|$ от точного ответа. Ошибка нашего приближения на шаге $n$ равна $E_n = |x - x_n|$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.17 в 20:03</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39724'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Last time we saw that error values of En = | quickly became very √5 − xn|<br />
+  close to zero. It turns out that E2 ∼ E1</p><p class='info'><a href='/book/39/155/39724#31' class='ord'>#31</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32942' class='u76'><p class='text'>В последний раз, когда мы использовали метод Ньютона, мы видели, что ошибка $E_n = |\sqrt 5 - x_n|$ быстро стала почти нулевой. Получается, $E_2 \,\text{~}\, E_1^2$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.17 в 20:09</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39725'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>2. So if E0 = 10−1, the size of the error<br />
+  E0 E1 E2 E3 E4 can be expected to decrease as follows: 10−16 10−1 10−2 10−4 10−8</p><p class='info'><a href='/book/39/155/39725#32' class='ord'>#32</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'></td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39726'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The number of digits of accuracy doubles at each step!</p><p class='info'><a href='/book/39/155/39726#33' class='ord'>#33</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32744' class='u76'><p class='text'>Количество верных цифр ответа удваивается с каждым шагом!</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 16.03.17 в 22:10</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39727'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 2: Illustration of Newton’s Method</p><p class='info'><a href='/book/39/155/39727#34' class='ord'>#34</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1040' class='u76'><p class='text'>Рисунок 2: Иллюстрация метода Ньютона</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 4.05.16 в 20:49</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39728'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Newton’s method works (very) well if |f| is not too small, |f| is not too big, and x0 starts near the solution x.</p><p class='info'><a href='/book/39/155/39728#35' class='ord'>#35</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32743' class='u76'><p class='text'>Метод Ньютона работает очень хорошо, если $|f|$ не очень маленькое, $|f|$ не очень большое, а $x_0$ находится вблизи решения $x$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 16.03.17 в 22:09</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39729'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Newton’s Method: What Could Go Wrong?</p><p class='info'><a href='/book/39/155/39729#36' class='ord'>#36</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32742' class='u76'><p class='text'>Метод Ньютона: Что может пойти не так?</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 16.03.17 в 22:09</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39730'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Newton’s method works (very) well if |f| is not too small, |f| is not too big, and x0 starts near the solution x.</p><p class='info'><a href='/book/39/155/39730#37' class='ord'>#37</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32745' class='u76'><p class='text'>Метод Ньютона работает очень хорошо, если $|f'|$ не очень маленькое, $|f''|$ не очень большое, а $x_0$ находится вблизи решения $x$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 16.03.17 в 22:10</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39731'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We’re not going to discuss these conditions in detail, but let’s see why they’re<br />
+  there. If f'' is too large the graph would be sharply curved, in which case the tangent line might not be a good approximation to the graph and x1 might not be close to the solution.</p><p class='info'><a href='/book/39/155/39731#38' class='ord'>#38</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32746' class='u76'><p class='text'>Мы не будем обсуждать эти условия в подробностях, но давайте посмотрим, зачем они нам. Если значение $f''$ слишком большое, график будет резко изогнут, и в этом случае касательная может не быть хорошим приближением графика, а $x_1$ может не оказаться близко к решению.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 16.03.17 в 22:13</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39732'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>There are a couple of things that can go wrong if x0 is too far from x1, which we’ll discuss now.</p><p class='info'><a href='/book/39/155/39732#39' class='ord'>#39</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32747' class='u76'><p class='text'>Кроме того, есть несколько вещей, которые могут пойти не так, если $x_0$ слишком далеко от $x_1$, которые мы сейчас и обсудим.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 16.03.17 в 22:14</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39733'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>If the error E0 = |x − x0| is greater than 1 and E1 ∼ E02, the error of your<br />
+  estimate could actually increase as you apply Newton’s method.</p><p class='info'><a href='/book/39/155/39733#40' class='ord'>#40</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32748' class='u76'><p class='text'>Если ошибка $E_0 = |x - x_0|$ больше, чем $1$, а $E_1 \,\text~\, E_0^2$, ошибка приближения будет возрастать по мере применения метода Ньютона.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 16.03.17 в 22:16</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39734'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In the example f(x) = x2 − 5, if we had chosen x0 = −2 we would have found the solution −<br />
+  √5 and not √5. This convergence to an unexpected root is illustrated in Fig. 1</p><p class='info'><a href='/book/39/155/39734#41' class='ord'>#41</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32749' class='u76'><p class='text'>В примере $f(x) = x^2 - 5$, если бы мы выбрали $x_0 = -2$, мы бы нашли решение $-\sqrt 5$, а не $\sqrt 5$. Эта сходимость к неожиданному корню показана на рис. 1.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 16.03.17 в 22:17</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39735'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: Newton’s method converging to an unexpected root.</p><p class='info'><a href='/book/39/155/39735#42' class='ord'>#42</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32750' class='u76'><p class='text'>Рисунок 1. Метод Ньютона сходится к неожиданному корню.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 16.03.17 в 22:17</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39736'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In the same example, if we chose x0 = 0 then f'(x0) = 0 and x1 = x0− ff((xx00)) is undefined.</p><p class='info'><a href='/book/39/155/39736#43' class='ord'>#43</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32751' class='u76'><p class='text'>В том же примере, если бы мы выбрали $x_0 = 0$, тогда $f'(x_0) = 0$, а $x_1 = x_0 - \frac{f(x_0)}{f'(x_0)}$ не определено.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 16.03.17 в 22:19</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39737'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Finally, there’s a chance that Newton’s method will cycle back and forth<br />
+  between two value and never converge at all. This failure is illustrated in Fig. 2;<br />
+  x2 = x0, x3 = x1, and so forth.</p><p class='info'><a href='/book/39/155/39737#44' class='ord'>#44</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'></td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39738'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Newton’s method is a good way of approximating solutions, but applying it<br />
+  requires some intelligence.</p><p class='info'><a href='/book/39/155/39738#45' class='ord'>#45</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32944' class='u76'><p class='text'>Метод Ньютона — хороший способ находить приближённые решения, однако его использование требует немного ума.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.17 в 20:14</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39739'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>You must beware of getting an unexpected result or<br />
+  no result at all.</p><p class='info'><a href='/book/39/155/39739#46' class='ord'>#46</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'></td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39740'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The better your initial guess at the solution, the more likely<br />
+  you are to get a correct result.</p><p class='info'><a href='/book/39/155/39740#47' class='ord'>#47</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'></td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o39741'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 2: Newton’s method cycling between x0 and x1.</p><p class='info'><a href='/book/39/155/39741#48' class='ord'>#48</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t32943' class='u76'><p class='text'>Рисунок 2. Метод Ньютона, зациклившийся между $x_0$ и $x_1$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 2.05.17 в 20:13</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+    </tbody>
+</table>
+
+<div id="pages-bottom">
+    </div>
+
+
+<div id="tr-sidebar">
+    <div id="dict" class='has-edit'>
+        <div id="dict-search">
+            <input type="text" placeholder="Поиск по словарю" class="search"/>
+            <a href="#" class="b"><i class="i icon-remove-sign"></i></a>
+        </div>
+        <div id="dict-body">
+            <div id="dict-body-content">
+                Минутку...
+            </div>
+        </div>
+                    <div id="dict-add">
+                <form method="post" action="/book/39/dict">
+                    <input type="text" name="term" placeholder="Оригинал"/>
+                    <input type="text" name="descr" placeholder="Перевод"/>
+                    <button type="submit" class="btn btn-mini btn-primary">Добавить</button>
+                    <button type="button" class="btn btn-mini cancel">Отмена</button>
+                </form>
+            </div>
+            <div id="dict-tools">
+                <i class="icon-plus"></i> <a href="#" class="add">Добавить слово</a>
+            </div>
+                    </div>
+</div>
+
+
+<div id="renum-modal" class="modal hide">
+    <form method="post" class="form-inline" action="/book/39/155/renum">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Перенумеровать субтитры</h3>
+        </div>
+        <div class="modal-body">
+            Номер субтитра, серая циферка рядом с его таймингом, в сущности, ни на что не влияет, субтитры сортируются
+            по времени.
+            Если вы добавляете новый титр, его номер может выбиваться из плавного течения номеров. Этот инструмент
+            расставит всем
+            титрам номера в хронологическом порядке.
+        </div>
+        <div class="modal-footer">
+            <input type="hidden" name="mode" value="1"/>
+            <button type="submit" class="btn btn-primary">Поехали</button>
+            <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $("#Tr").find("td.o").each(function () {
+        var $this = $(this);
+        $this.children("div").css("min-height", $this.height());
+    });
+</script>
+</div>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span6">
+                &copy; <a href="http://romakhin.ru/" rel="nofollow">Дмитрий Ромахин</a>
+                2008&ndash;2017                <br/>
+                <a href="/site/help">Справка</a> |
+                <a href="/blog?topic=65">Техподдержка</a> |
+                <a href="mailto:abuse@translate.kursomir.ru?subj=%2Fbook%2F39%2F155">Abuse</a> |
+                <a href="mailto:translate@kursomir.ru">E-mail для справок</a> |
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&locale=ru"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']]
+        },
+        asciimath2jax: {
+            delimiters: [['``', '``']]
+        }
+    });
+</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('a.tooltip').tooltip({'placement':'bottom'});
+jQuery('a[rel="popover"]').popover();
+jQuery('#yw0 .alert').alert();
+});
+/*]]>*/
+</script>
+</body>
+</html>

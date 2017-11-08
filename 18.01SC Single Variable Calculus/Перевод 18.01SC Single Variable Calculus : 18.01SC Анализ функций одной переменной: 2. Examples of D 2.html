@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="/css/v3.1.css?3" />
+<link rel="stylesheet" type="text/css" href="/css/translate-1.css?5" />
+<link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css?1" />
+<style type="text/css">
+/*<![CDATA[*/
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+body, label, input, button, select, textarea {
+	font-size: 13px;
+	line-height: 18px;
+}
+#chat-box {
+	height: 300px;
+}.comments .comment .meta, .comments .comment .meta a, .translator .info, .translator .info a { color: #bbb; }
+.comments .comment:hover .meta, .comments .comment:hover .meta a, .translator tr:hover .info, .translator tr:hover .info a { color: #888; }
+/*]]>*/
+</style>
+<script type="text/javascript" src="/assets/bbeb3eca/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/6b5c0e82/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/global.js?16"></script>
+<script type="text/javascript" src="/js/user.js?3"></script>
+<script type="text/javascript" src="/js/chat.js?3"></script>
+<script type="text/javascript" src="/js/translate-1.js?11"></script>
+<script type="text/javascript" src="/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="/js/jquery.elastic.mod.js"></script>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.min.js?1"></script>
+<script type="text/javascript" src="/js/ff_comments.js?3"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var User = new CUser({id: 76, login: 'Keyten'});
+
+var Book = new CBook({
+	id: 39,
+	owner_id: 67,
+	facecontrol: 1,
+	s_lang: 2,
+	t_lang: 1,
+	n_verses: 2492,
+	n_vars: 1286,
+	d_vars: 1282,
+	typ: 'A',
+	s_title: '18.01SC Single Variable Calculus',
+	t_title: '18.01SC Анализ функций одной переменной',
+	membership: {status: 1}
+});
+
+var Chap = {
+	id: 126,
+	book_id: 39,
+	n_verses: 71,
+	n_vars: 71,
+	d_vars: 71,
+	title: '2. Examples of Derivatives / Примеры производных',
+	ac_read: '',
+	ac_gen: '',
+	ac_rate: '',
+	ac_comment: '',
+	ac_tr: '',
+};
+
+/*]]>*/
+</script>
+<title>Перевод 18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной: 2. Examples of Derivatives / Примеры производных :: КУРСОМИР.ПЕРЕВОДЫ</title>
+    <meta name="description" content="Коллективные переводы субтитров и книжек"/>
+    <meta name="language" content="ru"/>
+    <meta name="keywords"
+          content="перевод, translation, коллективный перевод, кино с субтитрами, кино по-английски с русскими субтитрами, кино по-немецки с русскими субтитрами, кино по-испански с русскими субтитрами, примеры перевода, краудсорсинг, crowdsourcing, нотабеноид"/>
+    <link rel='icon' href='/i/favicon.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='/i/favicon.ico' type='image/x-icon'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE]>
+    <script type="text/javascript" src="/js/jquery.input-placeholder.js"></script>
+    <link rel='stylesheet' href="/css/jquery.input-placeholder.css"/>
+    <script type="text/javascript">
+        $(function () {
+            $('input[placeholder]').inputDefault();
+        });
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container-fluid" style="background-color:#fff;">
+        <a href="/" id="header-logo">
+            <img src="/i/logo.png" width="124" height="130"
+                 style="padding-top: 50px;"
+                 alt="КУРСОМИР.ПЕРЕВОДЫ"
+                 title="3.3"/>
+        </a>
+        <nav>
+            <ul id="header-menu">
+                <li><a href="/catalog/1">ВИДЕО</a></li>
+                <li><a href="/catalog/2">ТЕКСТЫ</a></li>
+                <li><a href="/users">ПЕРЕВОДЧИКИ</a></li>
+                <li><a href="/blog">БЛОГ</a></li>
+                <li><a href="/announces">АНОНСЫ</a></li>
+                <li class="search">
+                    <form class="form-search" method="get" action="/search">
+                                                <input type="hidden" name="from" value="header">
+                        <input type="text" name="t" class="input-medium search-query span3"
+                               placeholder="Ищите и обрящете"
+                               title="Кстати, отсюда можно найти и переводчика, если собаку (@), а потом сразу его ник."/>
+                        <input type="submit" value="&raquo;" class="btn" style="border-radius: 20px;"/>
+                    </form>
+                </li>
+            </ul>
+            <ul id="header-submenu">
+                                    <li>
+                        <a href="/users/76" accesskey="i">
+                            <strong>Keyten</strong>
+                            Всё о вас
+                        </a>
+                    </li>
+                    <li id="hm-c">
+                        <a href="/my/comments" accesskey="c">
+                            <strong>Обсуждения  <b></b></strong>
+                            Места, где вы общались
+                        </a>
+                    </li>
+                    <li id="hm-n">
+                        <a href="/my/notices" accesskey="n">
+                            <strong>Оповещения  <b></b></strong>
+                            События для вас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#bookmarks" accesskey="b">
+                            <strong>Закладки</strong>
+                            На память
+                        </a>
+                    </li>
+                    <li><a href="/book/0/edit"><strong>Создать</strong> Перевод</a></li>
+                    <li><a href="/register/settings"><strong>Настройки</strong> Профиля</a></li>
+                    <li><a href="/register/logout"><strong>Выход</strong> До свидания :(</a></li>
+                            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <div id="bookmarks" class="modal hide">
+        <div class="modal-header" style='padding-bottom:0;'>
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Закладки</h3>
+            <div class="btn-toolbar">
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-sort">
+                    <button class="btn btn-mini" data-v="1" title="Сортировка по алфавиту">
+                        <i class="icon-text-height"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="2" title="Сортировка по вашей активности">
+                        <i class="icon-fire"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="3" title="Сортировка по времени вступления в перевод">
+                        <i class="icon-time"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="5" title="Сортировка по времени добавления закладки">
+                        <i class="icon-shopping-cart"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="4" title="Сортировка по готовности перевода">%</button>
+                    <button class="btn btn-mini" data-v="0" title="Ваша сортировка (таскайте закладки мышкой)">
+                        <i class="icon-random"></i>
+                    </button>
+                </div>
+
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-title">
+                    <button class="btn btn-mini" data-v="s" title="Показывать названия на языке оригинала">О</button>
+                    <button class="btn btn-mini" data-v="t" title="Показывать названия на языке перевода">П</button>
+                </div>
+                                <div class="btn-group pull-right">
+                    <button class="btn btn-mini" title="Удалить" id="bookmarks-tb-rm">
+                        <i class="icon-remove"></i>
+                    </button>
+                    <button class="btn btn-mini" title="Редактировать" id="bookmarks-tb-ed">
+                        <i class="icon-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body" style="max-height:350px">
+            <p class='loading'>минуточку...</p>
+        </div>
+    </div>
+
+
+<div class="container-fluid">
+    <div id="yw0"></div>
+<style type="text/css">
+        .translator.has-best td.t .best .text {
+        background-image: url(/i/corner-gray-t-r.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    </style>
+
+<h1><a href='/book/39'>18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной</a>: 2. Examples of Derivatives / Примеры производных</h1>
+
+<div id="tb-main">
+    <div>
+        <div class='group'><a
+                href="/book/39/126/go?nach=prev&ord=2"
+                title="Предыдущая глава"><i class="i icon-arrow-left"></i></a></div>
+
+        <div class="tb-index btn-group">
+            <a href="/book/39" class="btn btn-small"><i class="icon-list"></i> Оглавление</a>
+            <a class="btn btn-small dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+            <ul class="dropdown-menu" id="tb-chapter-list">
+                <li><a href="/book/39/members">Переводчики</a></li>
+                <li><a href="/book/39/blog">Блог</a></li>
+            </ul>
+        </div>
+
+        <div class='group'><a
+                href="/book/39/126/go?nach=next&ord=2"
+                title="Следующая глава"><i class="i icon-arrow-right"></i></a></div>
+
+        <div class="btn-group">
+                            <button type="button" class="btn btn-small tb-chat" title="Ctrl + ~"><i class="icon-bullhorn"></i> Чат
+                </button>
+            
+            <a href="#" class="btn btn-small tb-dict" accesskey="V"><i class="icon-book"></i> Словарь</a>
+
+            <div id="tb-filter">
+                <form method="get" class="form-inline" action="/book/39/126">
+                    <ul class='options'>
+                        <li><label><input type='radio' name='show' value='1' /> <a href='?show=1'>Непереведённое</a></label></li><li><label><input type='radio' name='show' value='7' /> <a href='?show=7'>С 2 и более версиями перевода</a></label></li><li><label><input type='radio' name='show' value='3' /> <a href='?show=3'>С комментариями</a></label></li><li><label><input type='radio' name='show' value='4' /> <a href='?show=4'>С новыми комментариями</a></label></li><li><label><input type='radio' name='show' value='2' />  <input type='text' name='show_user' placeholder='От переводчика' class='span3' value='' title='Ctrl+I: вставить ваш ник' /></label></li><li><label><input type='radio' name='show' value='5' />  <input type='text' name='to' placeholder='Оригинал содержит' class='span3' value='' /></label></li><li><label><input type='radio' name='show' value='6' />  <input type='text' name='tt' placeholder='Перевод содержит' class='span3' value='' /></label></li>                    </ul>
+                    <button type="submit" class="btn btn-mini btn-primary">Показать</button>
+                    <a href="/book/39/126"
+                       class="btn btn-mini">Сбросить всё</a>
+                </form>
+            </div>
+
+            <a href='#' class='btn btn-small tb-filter' accesskey='F'><i class='icon-filter'></i> Фильтр</a>        </div>
+
+        
+        
+
+        <div class="group">
+            <a href="/book/39/126/switchiface"><i class="icon-thumbs-down" title="Старый	интерфейс"></i></a>
+        </div>
+
+        <div class="tb-progress group"></div>
+
+        <div class='chic-pages'><a href='?Orig_page=1' class='pseudo' title='На предыдущую страницу'>&larr;</a><div class='blur left'></div> <ul class='selectable'><li><a href='?Orig_page=1'>1</a></li><li class='active'><input type='text' name='Orig_page' value='2' accesskey='g' /></li></ul> <div class='blur right'></div><span>&rarr;</span></div>    </div>
+</div>
+
+<div class="clear"></div>
+
+<table id="Tr" class="translator has-best translator-oe-hide">
+    <thead>
+    <tr>
+                    <th></th>        <th>
+            Английский оригинал
+        </th>
+                    <th></th>        <th>
+            Перевод на русский        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id='o33605'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Taking the limit as $\Delta x \to 0$, we get $$\frac{\Delta y}{\Delta x} \to \frac{dy}{dx} \qquad \text{(Leibniz’ notation)}$$</p><p class='info'><a href='/book/39/126/33605#51' class='ord'>#51</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1619' class='u67'><p class='text'>Взяв предел при $\Delta x \to 0$ мы получим:<br />
+$$\frac{\Delta y}{\Delta x} \to \frac{dy}{dx} \qquad \text{(обозначение Лейбница)}$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 15:06</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33606'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>$$\frac{Δf}{Δx} \to f'(x_0) \qquad \text{(Newton’s notation)}$$</p><p class='info'><a href='/book/39/126/33606#52' class='ord'>#52</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1620' class='u67'><p class='text'>$$\frac{Δf}{Δx} \to f'(x_0) \qquad \text{(обозначение Ньютона)}$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 15:07</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33607'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In Leibniz’ notation we might also write $\frac{df}{dx}$,  $\frac{df}{dx} \, f$ or $\frac{d}{dx} \, y$. Notice that Leibniz’ notation doesn’t specify where you’re evaluating the derivative. In the example of $f(x) = \frac{1}{x}$ we were evaluating the derivative at $x = x_0$.</p><p class='info'><a href='/book/39/126/33607#53' class='ord'>#53</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1621' class='u67'><p class='text'>В обозначении Лейбница мы также можем написать $\frac{df}{dx}$, $\frac{df}{dx} \, f$ или $\frac{d}{dx} \, y$. Обратите внимание, что обозначение Лейбница не уточняет, в какой точке вы считает производную. В пример $f(x) = \frac{1}{x}$ мы считали производную в точке $x=x_0$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 15:12</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33608'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Other, equally valid notations for the derivative of a function $f$ include $f'$ and $D f$.</p><p class='info'><a href='/book/39/126/33608#54' class='ord'>#54</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1622' class='u67'><p class='text'>Еще возможны в такой же степени верные обозначения производной функции $f$: $f'$ и $D f$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 15:14</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33609'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Example 2. $f(x) = x^n$ where $n = 1, 2, 3...$</p><p class='info'><a href='/book/39/126/33609#55' class='ord'>#55</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1623' class='u67'><p class='text'>Пример 2. $f(x)=0$, где $n = 1, 2, 3...$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 15:15</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33610'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In this example we answer the question “What is $\frac{d}{dx} x^n$?” Once we know the answer we can use it to, for example, find the derivative of $f(x) = x^4$ by replacing $n$ by $4$.</p><p class='info'><a href='/book/39/126/33610#56' class='ord'>#56</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1624' class='u67'><p class='text'>В данном примере мы отвечаем на вопрос: «чему равна производная $\frac{d}{dx} x^n$»? Как только мы узнаем ответ, мы сможем использовать его, например, для нахождения производной $f(x) = x^4$, подставив $4$ вместо $n$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 15:35</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33611'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>At this point in our studies, we only know one tool for finding derivatives – the difference quotient. </p><p class='info'><a href='/book/39/126/33611#57' class='ord'>#57</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1625' class='u67'><p class='text'>Пока что мы знаем только один способ нахождения производных – через разделенную разность</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 15:36</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33612'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>So we plug $y = f(x)$ into the definition of the difference quotient:<br />
+$$\frac{\Delta y}{\Delta x} =  \frac{f(x_0 + \Delta x) − f(x_0)}{\Delta x} = \frac{(x_0 + \Delta x)^n − {x_0}^n}{\Delta x}$$</p><p class='info'><a href='/book/39/126/33612#58' class='ord'>#58</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1626' class='u67'><p class='text'>Так что мы подставим $y = f(x)$ в определение разделенной разности:<br />
+$$\frac{\Delta y}{\Delta x} =  \frac{f(x_0 + \Delta x) − f(x_0)}{\Delta x} = \frac{(x_0 + \Delta x)^n − {x_0}^n}{\Delta x}$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 15:38</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33613'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Because writing little zeros under all our $x$’s is a nuisance and a waste of chalk (or of photons?), and because there’s no other variable named $x$ to get confused with, from here on we’ll replace $x_0$ with $x$.<br />
+$$\frac{\Delta y}{\Delta x} =  \frac{(x + \Delta x)^n − x^n}{\Delta x}$$</p><p class='info'><a href='/book/39/126/33613#59' class='ord'>#59</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1627' class='u67'><p class='text'>Поскольку писать нулевые индексы под каждым $x$ довольно занудно и только тратит мел (или фотоны?), и поскольку нет другой переменной, обозначаемой за $x$ и которую мы могли бы спутать, далее мы будем вместо $x_0$ писать просто $x$:<br />
+$$\frac{\Delta y}{\Delta x} =  \frac{(x + \Delta x)^n − x^n}{\Delta x}$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 15:41</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33614'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Remember that when we use the difference quotient, we’re thinking of $x$ as fixed and of $\Delta x$ as getting closer to zero. We want to simplify this fraction so that we can plug in $0$ for $\Delta x$ without any danger of dividing by zero. To do this we must expand the expression $(x + \Delta x)^n$.</p><p class='info'><a href='/book/39/126/33614#60' class='ord'>#60</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1628' class='u67'><p class='text'>Помните, что когда мы используем разделенную разность, $x$ мы полагаем фиксированной, а $\Delta x$ стремящейся к нулю. Мы хотим упростить эту дробь, чтобы можно было безболезненно заменять $\Delta x$ на $0$, избегая опасностей, связанных с делением на $0$. Для этого нам нужно расписать выражение $(x + \Delta x)^n$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 15:45</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33615'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>A famous formula called the binomial theorem tells us that:<br />
+$$(x + \Delta x)^n = (x + \Delta x)(x + \Delta x)...(x + \Delta x) \qquad \text{$n$ times}$$</p><p class='info'><a href='/book/39/126/33615#61' class='ord'>#61</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1629' class='u67'><p class='text'>Известная формула для биномиальных коэффициентах говорит нам, что:<br />
+$$(x + \Delta x)^n = (x + \Delta x)(x + \Delta x)...(x + \Delta x) \qquad \text{$n$ раз}$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 15:46</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33616'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We can rewrite this as $$x^n + n(\Delta x) x^{n−1} + O((\Delta x)^2)$$ where $O((\Delta x)^2)$ is shorthand for “all of the terms with $(\Delta x)^2$, $(\Delta x)^3$, and so on up to $(\Delta x)^n$.”</p><p class='info'><a href='/book/39/126/33616#62' class='ord'>#62</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1630' class='u67'><p class='text'>Мы можем переписать это как $$x^n + n(\Delta x) x^{n−1} + O((\Delta x)^2)$$ где O((\Delta x)^2) является сокращением обозначения $все члены с $(\Delta x)^2$, $(\Delta x)^3$ и так далее до $(\Delta x)^n$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 15:48</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33617'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>One way to begin to understand this is to think about multiplying all the $x$’s together from $$(x + \Delta x)^n = (x + \Delta x)(x + \Delta x)...(x + \Delta x) \qquad \text{$n$ times}$$.</p><p class='info'><a href='/book/39/126/33617#63' class='ord'>#63</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1631' class='u67'><p class='text'>Один из способов понять это — подумать о перемножении всех $x$ в выражении<br />
+$$(x + \Delta x)^n = (x + \Delta x)(x + \Delta x)...(x + \Delta x) \qquad \text{$n$ times}$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 16:11</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33618'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>There are $n$ of these $x$’s, so multiplying them together gives you one term of $x^n$. What if you only multiply together $n-1$ of the $x$’s? Then you have one $(x + \Delta x)$ left that you haven’t taken an $x$ from, and you can multiply your $x^{n−1}$ by $\Delta x$.</p><p class='info'><a href='/book/39/126/33618#64' class='ord'>#64</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1632' class='u67'><p class='text'>Все есть $n$ таких $x$, поэтому их перемножении дает $x^n$. Если же перемножить только $n-1$ $x$-ов, то останется $(x + \Delta x)$, из которого мы еще не брали $\Delta$, и тогда можно умножить $x^{n-1}$ на $\Delta x$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 16:14</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33619'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>(If you multiplied by $x$, you’d just have the $x^n$ that you already got.)</p><p class='info'><a href='/book/39/126/33619#65' class='ord'>#65</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1633' class='u67'><p class='text'>(Если вы умножите просто на $x$, вы получите $x^n$, что было изначально.)</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 16:16</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33620'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>There were $n$ different $\Delta x$’s that you could have chosen to use, so you can get this result n different ways. That’s where the $n(\Delta x) x^{n−1}$ comes from.</p><p class='info'><a href='/book/39/126/33620#66' class='ord'>#66</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1634' class='u67'><p class='text'>Всего существует $n$ разных $\Delta x$, которые могут быть выбраны, чтобы получить результат $n$ разными способами. Отсюда берется $n (\Delta x)x^{n-1}$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 16:18</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33621'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We could keep going, and figure out how many different ways there are to multiply $n − 2$ $x$’s by two $\Delta x$’s, and so on, but it turns out we don’t need to. Every other way of multiplying together one thing from each $(x + \Delta x)$ gives you at least two $\Delta x$’s, and $\Delta x \cdot \Delta x$ is going to be too small to matter to us as $\Delta x \to 0$.</p><p class='info'><a href='/book/39/126/33621#67' class='ord'>#67</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1635' class='u67'><p class='text'>Мы можем продолжить и выяснить сколькими различными способами можно умножить $n-2$ на $2$ $\Delta x$ и так далее, но оказывается, что в этом нет необходимости. Любой другой путь перемножения из каждого $(x + \Delta x)$ дает нам по крайней мере $2$ $\Delta x$ и $\Delta x \cdot \Delta x$, что является не существенным для нас при $\Delta x \to 0$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 16:22</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33622'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Now that we have some idea of what $(x + \Delta x)^n$ is, let’s go back to our difference quotient.<br />
+ $$\frac{\Delta y}{\Delta x} = \frac{(x + \Delta x)^n − x^n}{\Delta x} = \frac{(x^n + n(\Delta x)(x^{n−1}) + O((\Delta x)^2) − x^n}{\Delta x} = n x^{n−1} + O(\Delta x)$$</p><p class='info'><a href='/book/39/126/33622#68' class='ord'>#68</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1636' class='u67'><p class='text'>Теперь, когда немного разобрались с $(x + \Delta x)^n$, вернемся обратно к нашей разделенной разности:<br />
+$$\frac{\Delta y}{\Delta x} = \frac{(x + \Delta x)^n − x^n}{\Delta x} = \frac{(x^n + n(\Delta x)(x^{n−1}) + O((\Delta x)^2) − x^n}{\Delta x} = n x^{n−1} + O(\Delta x)$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 16:23</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33623'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>As it turns out, we $\textit{can}$ simplify the quotient by canceling a $\Delta x$ in all of the terms in the numerator. When we divide a term that contains ${\Delta x}^2$ by $\Delta x$, the ${\Delta x}^2$ becomes $\Delta x$ and so our $O({\Delta x}^2)$ becomes $O(\Delta x)$.</p><p class='info'><a href='/book/39/126/33623#69' class='ord'>#69</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1637' class='u67'><p class='text'>Оказывается, что мы можем упростить выражение, сокращая $\Delta x$ в числителе. Когда мы делим член, содержащий $(\Delta x)^2$, на $\Delta x$, $(\Delta x)^2$ становится равным $\Delta x$, поэтому наше $O((\Delta x)^2)$ превращается в $O(\Delta x)$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 16:26</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33624'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>When we take the limit as $x$ approaches $0$ we get:<br />
+$$\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = n x^{n-1}$$ and therefore, $$\frac{d}{dx} x^n = n x^{n-1}$$.</p><p class='info'><a href='/book/39/126/33624#70' class='ord'>#70</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1638' class='u67'><p class='text'>Теперь мы можем найти предел при $x$ стремящемся к $0$:<br />
+$$\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = n x^{n-1},$$<br />
+а значит,<br />
+$$\frac{d}{dx} x^n = n x^{n-1}.$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 16:27</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33625'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This result is sometimes called the “power rule”. We will use it often to find derivatives of polynomials; for example, $$\frac{d}{dx} (x^2 + 3 x^{10}) = 2x + 30 x^9$$</p><p class='info'><a href='/book/39/126/33625#71' class='ord'>#71</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1639' class='u67'><p class='text'>Этот результат часто называют «правило производной степени». Мы будем часто использовать его для нахождения производных многочленов, например,<br />
+$$\frac{d}{dx} (x^2 + 3 x^{10}) = 2x + 30 x^9$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 16:30</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+    </tbody>
+</table>
+
+<div id="pages-bottom">
+    <p class='p'><a href='?Orig_page=1'>&larr; Предыдущая страница</a></p></div>
+
+
+<div id="tr-sidebar">
+    <div id="dict" class='has-edit'>
+        <div id="dict-search">
+            <input type="text" placeholder="Поиск по словарю" class="search"/>
+            <a href="#" class="b"><i class="i icon-remove-sign"></i></a>
+        </div>
+        <div id="dict-body">
+            <div id="dict-body-content">
+                Минутку...
+            </div>
+        </div>
+                    <div id="dict-add">
+                <form method="post" action="/book/39/dict">
+                    <input type="text" name="term" placeholder="Оригинал"/>
+                    <input type="text" name="descr" placeholder="Перевод"/>
+                    <button type="submit" class="btn btn-mini btn-primary">Добавить</button>
+                    <button type="button" class="btn btn-mini cancel">Отмена</button>
+                </form>
+            </div>
+            <div id="dict-tools">
+                <i class="icon-plus"></i> <a href="#" class="add">Добавить слово</a>
+            </div>
+                    </div>
+</div>
+
+
+<div id="renum-modal" class="modal hide">
+    <form method="post" class="form-inline" action="/book/39/126/renum">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Перенумеровать субтитры</h3>
+        </div>
+        <div class="modal-body">
+            Номер субтитра, серая циферка рядом с его таймингом, в сущности, ни на что не влияет, субтитры сортируются
+            по времени.
+            Если вы добавляете новый титр, его номер может выбиваться из плавного течения номеров. Этот инструмент
+            расставит всем
+            титрам номера в хронологическом порядке.
+        </div>
+        <div class="modal-footer">
+            <input type="hidden" name="mode" value="1"/>
+            <button type="submit" class="btn btn-primary">Поехали</button>
+            <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $("#Tr").find("td.o").each(function () {
+        var $this = $(this);
+        $this.children("div").css("min-height", $this.height());
+    });
+</script>
+</div>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span6">
+                &copy; <a href="http://romakhin.ru/" rel="nofollow">Дмитрий Ромахин</a>
+                2008&ndash;2017                <br/>
+                <a href="/site/help">Справка</a> |
+                <a href="/blog?topic=65">Техподдержка</a> |
+                <a href="mailto:abuse@translate.kursomir.ru?subj=%2Fbook%2F39%2F126%3FOrig_page%3D2">Abuse</a> |
+                <a href="mailto:translate@kursomir.ru">E-mail для справок</a> |
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&locale=ru"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']]
+        },
+        asciimath2jax: {
+            delimiters: [['``', '``']]
+        }
+    });
+</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('a.tooltip').tooltip({'placement':'bottom'});
+jQuery('a[rel="popover"]').popover();
+jQuery('#yw0 .alert').alert();
+});
+/*]]>*/
+</script>
+</body>
+</html>

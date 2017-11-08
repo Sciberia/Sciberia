@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="/css/v3.1.css?3" />
+<link rel="stylesheet" type="text/css" href="/css/translate-1.css?5" />
+<link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css?1" />
+<style type="text/css">
+/*<![CDATA[*/
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+body, label, input, button, select, textarea {
+	font-size: 13px;
+	line-height: 18px;
+}
+#chat-box {
+	height: 300px;
+}.comments .comment .meta, .comments .comment .meta a, .translator .info, .translator .info a { color: #bbb; }
+.comments .comment:hover .meta, .comments .comment:hover .meta a, .translator tr:hover .info, .translator tr:hover .info a { color: #888; }
+/*]]>*/
+</style>
+<script type="text/javascript" src="/assets/bbeb3eca/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/6b5c0e82/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/global.js?16"></script>
+<script type="text/javascript" src="/js/user.js?3"></script>
+<script type="text/javascript" src="/js/chat.js?3"></script>
+<script type="text/javascript" src="/js/translate-1.js?11"></script>
+<script type="text/javascript" src="/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="/js/jquery.elastic.mod.js"></script>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.min.js?1"></script>
+<script type="text/javascript" src="/js/ff_comments.js?3"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var User = new CUser({id: 76, login: 'Keyten'});
+
+var Book = new CBook({
+	id: 39,
+	owner_id: 67,
+	facecontrol: 1,
+	s_lang: 2,
+	t_lang: 1,
+	n_verses: 2492,
+	n_vars: 1286,
+	d_vars: 1282,
+	typ: 'A',
+	s_title: '18.01SC Single Variable Calculus',
+	t_title: '18.01SC Анализ функций одной переменной',
+	membership: {status: 1}
+});
+
+var Chap = {
+	id: 127,
+	book_id: 39,
+	n_verses: 35,
+	n_vars: 35,
+	d_vars: 35,
+	title: '3. Derivative as Rate of Change / Производная как скорость изменения',
+	ac_read: '',
+	ac_gen: '',
+	ac_rate: '',
+	ac_comment: '',
+	ac_tr: '',
+};
+
+/*]]>*/
+</script>
+<title>Перевод 18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной: 3. Derivative as Rate of Change / Производная как скорость изменения :: КУРСОМИР.ПЕРЕВОДЫ</title>
+    <meta name="description" content="Коллективные переводы субтитров и книжек"/>
+    <meta name="language" content="ru"/>
+    <meta name="keywords"
+          content="перевод, translation, коллективный перевод, кино с субтитрами, кино по-английски с русскими субтитрами, кино по-немецки с русскими субтитрами, кино по-испански с русскими субтитрами, примеры перевода, краудсорсинг, crowdsourcing, нотабеноид"/>
+    <link rel='icon' href='/i/favicon.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='/i/favicon.ico' type='image/x-icon'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE]>
+    <script type="text/javascript" src="/js/jquery.input-placeholder.js"></script>
+    <link rel='stylesheet' href="/css/jquery.input-placeholder.css"/>
+    <script type="text/javascript">
+        $(function () {
+            $('input[placeholder]').inputDefault();
+        });
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container-fluid" style="background-color:#fff;">
+        <a href="/" id="header-logo">
+            <img src="/i/logo.png" width="124" height="130"
+                 style="padding-top: 50px;"
+                 alt="КУРСОМИР.ПЕРЕВОДЫ"
+                 title="3.3"/>
+        </a>
+        <nav>
+            <ul id="header-menu">
+                <li><a href="/catalog/1">ВИДЕО</a></li>
+                <li><a href="/catalog/2">ТЕКСТЫ</a></li>
+                <li><a href="/users">ПЕРЕВОДЧИКИ</a></li>
+                <li><a href="/blog">БЛОГ</a></li>
+                <li><a href="/announces">АНОНСЫ</a></li>
+                <li class="search">
+                    <form class="form-search" method="get" action="/search">
+                                                <input type="hidden" name="from" value="header">
+                        <input type="text" name="t" class="input-medium search-query span3"
+                               placeholder="Вы что-то потеряли?"
+                               title="Кстати, отсюда можно найти и переводчика, если собаку (@), а потом сразу его ник."/>
+                        <input type="submit" value="&raquo;" class="btn" style="border-radius: 20px;"/>
+                    </form>
+                </li>
+            </ul>
+            <ul id="header-submenu">
+                                    <li>
+                        <a href="/users/76" accesskey="i">
+                            <strong>Keyten</strong>
+                            Всё о вас
+                        </a>
+                    </li>
+                    <li id="hm-c">
+                        <a href="/my/comments" accesskey="c">
+                            <strong>Обсуждения  <b></b></strong>
+                            Места, где вы общались
+                        </a>
+                    </li>
+                    <li id="hm-n">
+                        <a href="/my/notices" accesskey="n">
+                            <strong>Оповещения  <b></b></strong>
+                            События для вас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#bookmarks" accesskey="b">
+                            <strong>Закладки</strong>
+                            На память
+                        </a>
+                    </li>
+                    <li><a href="/book/0/edit"><strong>Создать</strong> Перевод</a></li>
+                    <li><a href="/register/settings"><strong>Настройки</strong> Профиля</a></li>
+                    <li><a href="/register/logout"><strong>Выход</strong> До свидания :(</a></li>
+                            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <div id="bookmarks" class="modal hide">
+        <div class="modal-header" style='padding-bottom:0;'>
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Закладки</h3>
+            <div class="btn-toolbar">
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-sort">
+                    <button class="btn btn-mini" data-v="1" title="Сортировка по алфавиту">
+                        <i class="icon-text-height"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="2" title="Сортировка по вашей активности">
+                        <i class="icon-fire"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="3" title="Сортировка по времени вступления в перевод">
+                        <i class="icon-time"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="5" title="Сортировка по времени добавления закладки">
+                        <i class="icon-shopping-cart"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="4" title="Сортировка по готовности перевода">%</button>
+                    <button class="btn btn-mini" data-v="0" title="Ваша сортировка (таскайте закладки мышкой)">
+                        <i class="icon-random"></i>
+                    </button>
+                </div>
+
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-title">
+                    <button class="btn btn-mini" data-v="s" title="Показывать названия на языке оригинала">О</button>
+                    <button class="btn btn-mini" data-v="t" title="Показывать названия на языке перевода">П</button>
+                </div>
+                                <div class="btn-group pull-right">
+                    <button class="btn btn-mini" title="Удалить" id="bookmarks-tb-rm">
+                        <i class="icon-remove"></i>
+                    </button>
+                    <button class="btn btn-mini" title="Редактировать" id="bookmarks-tb-ed">
+                        <i class="icon-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body" style="max-height:350px">
+            <p class='loading'>минуточку...</p>
+        </div>
+    </div>
+
+
+<div class="container-fluid">
+    <div id="yw0"></div>
+<style type="text/css">
+        .translator.has-best td.t .best .text {
+        background-image: url(/i/corner-gray-t-r.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    </style>
+
+<h1><a href='/book/39'>18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной</a>: 3. Derivative as Rate of Change / Производная как скорость изменения</h1>
+
+<div id="tb-main">
+    <div>
+        <div class='group'><a
+                href="/book/39/127/go?nach=prev&ord=3"
+                title="Предыдущая глава"><i class="i icon-arrow-left"></i></a></div>
+
+        <div class="tb-index btn-group">
+            <a href="/book/39" class="btn btn-small"><i class="icon-list"></i> Оглавление</a>
+            <a class="btn btn-small dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+            <ul class="dropdown-menu" id="tb-chapter-list">
+                <li><a href="/book/39/members">Переводчики</a></li>
+                <li><a href="/book/39/blog">Блог</a></li>
+            </ul>
+        </div>
+
+        <div class='group'><a
+                href="/book/39/127/go?nach=next&ord=3"
+                title="Следующая глава"><i class="i icon-arrow-right"></i></a></div>
+
+        <div class="btn-group">
+                            <button type="button" class="btn btn-small tb-chat" title="Ctrl + ~"><i class="icon-bullhorn"></i> Чат
+                </button>
+            
+            <a href="#" class="btn btn-small tb-dict" accesskey="V"><i class="icon-book"></i> Словарь</a>
+
+            <div id="tb-filter">
+                <form method="get" class="form-inline" action="/book/39/127">
+                    <ul class='options'>
+                        <li><label><input type='radio' name='show' value='1' /> <a href='?show=1'>Непереведённое</a></label></li><li><label><input type='radio' name='show' value='7' /> <a href='?show=7'>С 2 и более версиями перевода</a></label></li><li><label><input type='radio' name='show' value='3' /> <a href='?show=3'>С комментариями</a></label></li><li><label><input type='radio' name='show' value='4' /> <a href='?show=4'>С новыми комментариями</a></label></li><li><label><input type='radio' name='show' value='2' />  <input type='text' name='show_user' placeholder='От переводчика' class='span3' value='' title='Ctrl+I: вставить ваш ник' /></label></li><li><label><input type='radio' name='show' value='5' />  <input type='text' name='to' placeholder='Оригинал содержит' class='span3' value='' /></label></li><li><label><input type='radio' name='show' value='6' />  <input type='text' name='tt' placeholder='Перевод содержит' class='span3' value='' /></label></li>                    </ul>
+                    <button type="submit" class="btn btn-mini btn-primary">Показать</button>
+                    <a href="/book/39/127"
+                       class="btn btn-mini">Сбросить всё</a>
+                </form>
+            </div>
+
+            <a href='#' class='btn btn-small tb-filter' accesskey='F'><i class='icon-filter'></i> Фильтр</a>        </div>
+
+        
+        
+
+        <div class="group">
+            <a href="/book/39/127/switchiface"><i class="icon-thumbs-down" title="Старый	интерфейс"></i></a>
+        </div>
+
+        <div class="tb-progress group"></div>
+
+            </div>
+</div>
+
+<div class="clear"></div>
+
+<table id="Tr" class="translator has-best translator-oe-hide">
+    <thead>
+    <tr>
+                    <th></th>        <th>
+            Английский оригинал
+        </th>
+                    <th></th>        <th>
+            Перевод на русский        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id='o33638'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Introduction to Rates of Change</p><p class='info'><a href='/book/39/127/33638#1' class='ord'>#1</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t722' class='u67'><p class='text'>Производная как скорость изменения</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 3.05.16 в 4:31</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33639'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Last class, we defined the derivative as the slope of a tangent line. Today we’ll  see how to interpret the derivative as a rate of change, clarify the idea of a limit, and use this notion of limit to describe continuity – a property functions need to have in order for us to work with them.</p><p class='info'><a href='/book/39/127/33639#2' class='ord'>#2</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t723' class='u67'><p class='text'>В прошлый раз мы определили производную как наклон касательной. Сегодня мы посмотрим на производную как на скорость изменения, лучше разберемся в понятии предела и используем предел для описания непрерывности - свойства, которое функция должна иметь для того, чтобы мы могли с ней работать.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 3.05.16 в 4:36</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33640'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Rates of Change</p><p class='info'><a href='/book/39/127/33640#3' class='ord'>#3</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t724' class='u67'><p class='text'>Скорость изменения</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 3.05.16 в 4:36</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33641'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Last class we talked about the derivative as the slope of the tangent line to a graph. This class we’ll continue our discussion of derivatives by explaining how a derivative can be a rate of change. This some of the most important information presented in this class.</p><p class='info'><a href='/book/39/127/33641#4' class='ord'>#4</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1675' class='u70'><p class='text'>В прошлый раз мы говорили о производной как о наклоне касательной к графику. В этот раз мы продолжим наше обсуждение производной для объяснения того, как производная может быть скоростью изменения. Это одно из самых важных понятий в этом курсе.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:09</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33642'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Remember that when we talked about the slope of a graph $y = f(x)$ we started by talking about the change in $y$ and the change in $x$. If changing $x$ at a certain rate causes $y$ to change, we’re interested in the relative rate of change, $\frac{\Delta y}{\Delta x}$.</p><p class='info'><a href='/book/39/127/33642#5' class='ord'>#5</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1676' class='u70'><p class='text'>Вспомним, что когда мы говорили о наклоне графика $y=f(x)$ мы начали с обсуждения изменения $y$ и изменения $x$. Если изменение $x$ имеет определенную скорость вызывающее изменение $y$, то нас интересует относительная скорость изменения $\frac{\Delta y}{\Delta x}$</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:13</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33643'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: Graph of a generic function, with $\Delta x$ and $\Delta y$ marked on the graph</p><p class='info'><a href='/book/39/127/33643#6' class='ord'>#6</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1677' class='u70'><p class='text'>Рис. 1. График некоторой функции на котором отмечены изменения $\Delta x$ и $\Delta y$</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:18</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33644'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Another way to think about $\Delta y$ is as the average change in $y$ over an interval $\Delta x$  of size $\Delta x$. This comes up frequently in physics, in which $x$ is measuring time $\Delta y$ and $\Delta x$ is the average change in position over an interval of time – in other words, it’s the rate at which something is moving.</p><p class='info'><a href='/book/39/127/33644#7' class='ord'>#7</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1678' class='u70'><p class='text'>Другое определение $\Delta y$ - это среднее изменение $y$ на интервале $\Delta x$. Это определение часто встречается в физике, где $x$ это измеренное время, а $\Delta y$ и $\Delta x$ это среднее изменение координаты за интервал времени, другими словами - это скорость движущегося тела.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:22</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33645'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In this case, the limit $$\frac{dy}{dx} = \lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x}$$ measures the instantaneous rate of change, or the speed.</p><p class='info'><a href='/book/39/127/33645#8' class='ord'>#8</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1679' class='u70'><p class='text'>В этом случае предел<br />
+$$ \frac{dy}{dx} = \lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x}$$<br />
+есть мгновенная скорость изменения, или просто скорость.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:23</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33646'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Physical Interpretation of Derivatives</p><p class='info'><a href='/book/39/127/33646#9' class='ord'>#9</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1680' class='u70'><p class='text'>Физический смысл производных</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:25</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33647'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>You can think of the derivative as representing a rate of change (speed is one example of this). This makes it very useful for solving physics problems.</p><p class='info'><a href='/book/39/127/33647#10' class='ord'>#10</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1681' class='u70'><p class='text'>Можно думать о производной в значении скорости изменения (в примере выше это скорость). Это делает производную очень полезным инструментом для решения физических задач.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:28</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33648'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Here’s one example from physics: If $q$ is an amount of electric charge, the derivative $\frac{dq}{dt}$ is the change in that charge over time, or the electric current.</p><p class='info'><a href='/book/39/127/33648#11' class='ord'>#11</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1682' class='u70'><p class='text'>Еще один пример из физики: если $q$ это электрический заряд, то производная $\frac{\Delta q}{\Delta t}$ это изменение заряда с течением времени, то есть электрический ток.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:30</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33649'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>A second, more tangible example is to let s stand for distance; then the rate $\frac{ds}{dt}$ of change is what we call speed. Let’s investigate this second example in more detail to get a visceral sense of what instantaneous speed means.</p><p class='info'><a href='/book/39/127/33649#12' class='ord'>#12</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1683' class='u70'><p class='text'>Другой, более ясный пример. Пусть $s$ это расстояние. Тогда величина $\frac{\Delta s}{\Delta t}$ будет скоростью. Рассмотрим последний пример более детально, что бы получить интуитивное представление о том, что называют мгновенной скоростью.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:35</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33650'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>On Halloween, MIT students have a tradition of dropping pumpkins from the roof of the building this lecture was given in. Let’s say that the building is about $300\textsf{ feet}$ tall. We’ll use a slightly smaller value of $80\textsf{ meters}$ for the height because it makes the problem easier to solve.</p><p class='info'><a href='/book/39/127/33650#13' class='ord'>#13</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1685' class='u70'><p class='text'>На хэллоуин студенты MIT по традиции бросают с крыши тыквы в здание, где проходит эта лекция.  Допустим, что здание имеет 300 футов в длину. Высота будет чуть меньше 80 метров, что бы решение задачи было проще.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:39</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33651'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The equation of motion for objects near the earth’s surface (which we will just accept for now) says that the height above the ground $h$ of the pumpkin $t$ seconds after it’s dropped from the building is roughly: $h = 80 − 5 t^2$ meters.</p><p class='info'><a href='/book/39/127/33651#14' class='ord'>#14</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1687' class='u70'><p class='text'>Уравнение движения объектов над поверхностью земли (которое мы сейчас будем использовать) утверждает, что высота на которой находилась тыква после падения за время $t$ примерно $h = 80 - 5t^{2}$ метров.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:43</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33652'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Let’s think about this. The instant the pumpkin is dropped, $t = 0$ and $h = 80$ meters. When $t = 4$ seconds, $h = 80 − 5(42) = 0$, and the pumpkin has reached the ground.</p><p class='info'><a href='/book/39/127/33652#15' class='ord'>#15</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1688' class='u70'><p class='text'>Разберем этот пример. Тыква брошена в момент $t = 0$ с высоты $h = 80$ метров. Когда $t = 4$ секунды высота равна $h = 80 - 5(4^{2}) = 0$, то есть тыква достигла земли.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:45</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33653'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The average speed of the pumpkin over the time it’s falling is<br />
+$$\frac{\Delta h}{\Delta t} = \frac{\textsf{distance traveled}}{\textsf{time elapsed}} = \frac{0 − 80\textsf{ meters}}{4 − 0\textsf{ seconds}} = −20\textsf{ m/s}$$</p><p class='info'><a href='/book/39/127/33653#16' class='ord'>#16</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1684' class='u67'><p class='text'>Средняя скорость тыквы за все время падения равна<br />
+$$\frac{\Delta h}{\Delta t} = \frac{\textsf{прошедший путь}}{\textsf{время падения}} = \frac{0 − 80\textsf{ метров}}{4 − 0\textsf{ секунд}} = −20\textsf{ м/c}$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 19:38</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33654'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>(The numerator is $0 − 80$ and not $80 − 0$ because we must subtract the initial position from the final position, not the other way around.)</p><p class='info'><a href='/book/39/127/33654#17' class='ord'>#17</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1686' class='u67'><p class='text'>(числитель равен $0 - 80$, а не $80 - 0$ поскольку мы должны вычитать начальное положения от конечного положения, а не наоборот)</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 19:39</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33655'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The people watching the pumpkin drop probably don’t care about the average speed. They want to know how fast the pumpkin is going when it slams into the ground. That’s known as the instantaneous speed, and is the derivative $h'(t) = \frac{d}{dt} h$. To find the instantaneous velocity at $t = 5$, we evaluate $\frac{d}{dt} h$. $\frac{d}{dt} \, h = 0 − 10 t = −10 \, t dt$.</p><p class='info'><a href='/book/39/127/33655#18' class='ord'>#18</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1689' class='u70'><p class='text'>Людей, наблюдающих за падением тыквы, обычно не волнует средняя скорость. Они хотят знать - как быстро тыква ударится о поверхность земли. Это известно как мгновенная скорость или производная $h'(t) = \frac{d}{dt} h$. Что бы найти мгновенную скорость в момент $t = 5$, мы записываем $\frac{d}{dt} h$. $\frac{d}{dt} \, h = 0 − 10 t = −10 \, t dt$</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:49</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33656'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>If you’ve had calculus before, you’re probably able to find the derivative of the polynomial $80 − 5 t^2$ on your own. If not, you’ll have to take a few things on faith here.</p><p class='info'><a href='/book/39/127/33656#19' class='ord'>#19</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1690' class='u70'><p class='text'>Если вы изучали математический анализ ранее, то возможно сможете найти производную многочлена $80 - 5t^{2}$ самостоятельно. Если нет, то вам придется принять несколько утверждений на веру.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:51</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33657'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>First, the derivative of $80 − 5 t^2$ is just the derivative of $80$ minus the derivative of $5 t^2$.</p><p class='info'><a href='/book/39/127/33657#20' class='ord'>#20</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1691' class='u70'><p class='text'>Первое - производная от $80 - 5t^{2}$ это производная от $80$ минус производная от $5t^{2}$.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:52</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33658'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Next, the derivative of $80$ is the slope of the graph of $y = 80$ when $x = 0$; that graph is a horizontal line! And finally, since we know from last class that the derivative of $t^2$ is $2 t^{2−1} = 2t$ it should not surprise you that the derivative of $5 t^2$ is $10t$.</p><p class='info'><a href='/book/39/127/33658#21' class='ord'>#21</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1692' class='u70'><p class='text'>Далее - производная от $80$ это наклон графика $y = 80$, где $x = 0$, то есть горизонтальная линия! И наконец, как мы знаем из последней главы, производная от $t^{2}$ это $2t^{2-1} = 2t$, поэтому не должно быть сюрпризом, что производная от $5t^{2}$ это $10t$.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:55</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33659'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We know that the pumpkin hits the pavement $4$ seconds after it’s dropped, at time $t = 4$, so the pumpkin’s speed is:<br />
+$$h'(4) = (−10)(4) = −40 \textrm{ m/s} \textrm{ (about $90$ mph or $145$ kph)}$$</p><p class='info'><a href='/book/39/127/33659#22' class='ord'>#22</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1693' class='u70'><p class='text'>Мы знаем, что тыква удариться об асфальт спустя 4 секунды после того, как ее бросили, поэтому скорость тыквы в момент времен $$t = 4$ секунды: $h'(4) = (−10)(4) = −40 \textrm{ m/s} \textrm{ (about $90$ mph or $145$ kph)}$$</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:58</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33660'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The value of $\frac{d}{dt} h$ is negative because the pumpkin’s height is decreasing; it is moving downward.</p><p class='info'><a href='/book/39/127/33660#23' class='ord'>#23</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1695' class='u70'><p class='text'>Величина $\frac{d}{dt}h$ отрицательная, потому что высота тыквы уменьшается - она двигается вниз.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 19:59</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33661'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In actuality, the building is a little taller than $80\textrm{ meters}$ and there is air resistance. You may do a much more thorough study on your own if you wish.</p><p class='info'><a href='/book/39/127/33661#24' class='ord'>#24</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1697' class='u70'><p class='text'>На самом деле здание ниже 80 метров и на тыкву действует сопротивление воздуха. Вы можете попробовать самостоятельно изучить этот вопрос при желании.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 20:00</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33662'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Physical Interpretation of Derivatives, Continued</p><p class='info'><a href='/book/39/127/33662#25' class='ord'>#25</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1698' class='u70'><p class='text'>Физическое объяснение производной закончено.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 20:00</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33663'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Calculus is a good tool for studying how things change over time; we can also use it to investigate change with respect to variables other than time.</p><p class='info'><a href='/book/39/127/33663#26' class='ord'>#26</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1700' class='u70'><p class='text'>Математический анализ является хорошим инструментом для изучения изменений величин с течением времени, а так же используя математический анализ мы можем узнать об изменении величин относительно других переменных, не только времени.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 20:03</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33671'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Let’s look at a couple of examples that don’t involve time as a variable. If we let $T$ denote temperature and $x$ measure a distance or position, then $\frac{dT}{dx}$ is the rate the temperature changes as position changes.</p><p class='info'><a href='/book/39/127/33671#27' class='ord'>#27</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1703' class='u70'><p class='text'>Давайте рассмотрим два примера, которые не содержат время в качестве переменной. Если мы определим $T$ как температуру и $x$ как координату, тогда $\frac{dT}{dx}$ означает скорость изменения температуры в зависимости от координаты.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 20:05</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33672'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This quantity is called the temperature gradient. Temperature gradients are important in weather forecasting because it’s that temperature difference that causes air flows and weather changes.<br />
+$$T = \textrm{temperature }\frac{dT}{dx} = \textrm{temperature gradient}$$</p><p class='info'><a href='/book/39/127/33672#28' class='ord'>#28</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1704' class='u70'><p class='text'>Эта величина называется температурным градиентом. Температурные градиенты являются важной составляющей в прогнозах погоды, потому что это температурная разница, вызывающая потоки воздуха и изменения погоды.<br />
+$$T = \textrm{temperature }\frac{dT}{dx} = \textrm{temperature gradient}$$</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 20:06</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33664'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Another application of calculus is to “sensitivity of measurements”. In Problem Set 1 there’s a question about GPS and a satellite which explores sensitivity of measurements.</p><p class='info'><a href='/book/39/127/33664#29' class='ord'>#29</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1705' class='u70'><p class='text'>Другое применение математического анализа это &quot;погрешность приборов&quot;. В первом наборе задач есть вопрос о GPS и спутнике, который объясняет погрешность приборов.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 10.05.16 в 20:09</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33665'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In the problem set, you assume that the earth is flat and that you have a satellite above a known location. A traveler’s GPS device measures the distance $h$ between the traveler and the satellite and uses that information to compute the horizontal distance $L$ between the traveler and the point directly under the satellite. (See Fig. 1 and Fig. 2)</p><p class='info'><a href='/book/39/127/33665#30' class='ord'>#30</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1706' class='u67'><p class='text'>Решая задачи из набора, вы будете считать, что Земля плоская и что есть некоторый спутник с известным положением. GPS-устройство путешественника измеряет расстояние $h$ между спутником и путешественником и использует эту информацию для вычисления горизонтального расстояния $L$ между путешественником и точкой прямо под спутником. (см. рис. 1. и рис. 2)</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 20:09</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33666'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: The Global Positioning System Problem (GPS)</p><p class='info'><a href='/book/39/127/33666#31' class='ord'>#31</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1702' class='u67'><p class='text'>Рис. 1. Система глобального позиционирования (GPS)</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 20:04</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33667'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In other words, the GPS computes $L$ as a function of $h$. But there is usually some error $\Delta h$ in your measurement of $h$; given that, how accurately can we measure $L$? The error $\Delta L$ is estimated by looking at $$\frac{\Delta L}{\Delta h} \approx \frac{dL}{dh}$$</p><p class='info'><a href='/book/39/127/33667#32' class='ord'>#32</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1701' class='u67'><p class='text'>Другими словами, GPS считает $L$ как функцию $h$. Но обычно в измерении $h$ присутствует некоторая ошибка $\Delta h$. Исходя из этого, насколько точно мы можем измерить $L$? Ошибка $\Delta L$ считается глядя на следующее выражение: <br />
+$$\frac{\Delta L}{\Delta h} \approx \frac{dL}{dh}$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 20:04</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33668'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Why is this important? For one thing, it’s used all the time to land airplanes.</p><p class='info'><a href='/book/39/127/33668#33' class='ord'>#33</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1699' class='u67'><p class='text'>Почему это важно? По одной простой причине — это используется каждый раз при посадке самолетов.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 20:01</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33669'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 2: On problem set 1, you will look at this simplified “flat earth” model</p><p class='info'><a href='/book/39/127/33669#34' class='ord'>#34</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1696' class='u67'><p class='text'>Рис. 2. В 1 наборе задач вы увидите эту упрощенную модель «плоской Земли»</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 20:00</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33670'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This concludes our introduction to differentiation, although there will be plenty of opportunities throughout the course for you to improve your understanding.</p><p class='info'><a href='/book/39/127/33670#35' class='ord'>#35</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1694' class='u67'><p class='text'>Это заканчивает наше введение в дифференцирование, но в течение курса у вас еще будет множество возможностей, чтобы закрепить ваше понимание.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 10.05.16 в 19:58</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+    </tbody>
+</table>
+
+<div id="pages-bottom">
+    </div>
+
+
+<div id="tr-sidebar">
+    <div id="dict" class='has-edit'>
+        <div id="dict-search">
+            <input type="text" placeholder="Поиск по словарю" class="search"/>
+            <a href="#" class="b"><i class="i icon-remove-sign"></i></a>
+        </div>
+        <div id="dict-body">
+            <div id="dict-body-content">
+                Минутку...
+            </div>
+        </div>
+                    <div id="dict-add">
+                <form method="post" action="/book/39/dict">
+                    <input type="text" name="term" placeholder="Оригинал"/>
+                    <input type="text" name="descr" placeholder="Перевод"/>
+                    <button type="submit" class="btn btn-mini btn-primary">Добавить</button>
+                    <button type="button" class="btn btn-mini cancel">Отмена</button>
+                </form>
+            </div>
+            <div id="dict-tools">
+                <i class="icon-plus"></i> <a href="#" class="add">Добавить слово</a>
+            </div>
+                    </div>
+</div>
+
+
+<div id="renum-modal" class="modal hide">
+    <form method="post" class="form-inline" action="/book/39/127/renum">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Перенумеровать субтитры</h3>
+        </div>
+        <div class="modal-body">
+            Номер субтитра, серая циферка рядом с его таймингом, в сущности, ни на что не влияет, субтитры сортируются
+            по времени.
+            Если вы добавляете новый титр, его номер может выбиваться из плавного течения номеров. Этот инструмент
+            расставит всем
+            титрам номера в хронологическом порядке.
+        </div>
+        <div class="modal-footer">
+            <input type="hidden" name="mode" value="1"/>
+            <button type="submit" class="btn btn-primary">Поехали</button>
+            <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $("#Tr").find("td.o").each(function () {
+        var $this = $(this);
+        $this.children("div").css("min-height", $this.height());
+    });
+</script>
+</div>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span6">
+                &copy; <a href="http://romakhin.ru/" rel="nofollow">Дмитрий Ромахин</a>
+                2008&ndash;2017                <br/>
+                <a href="/site/help">Справка</a> |
+                <a href="/blog?topic=65">Техподдержка</a> |
+                <a href="mailto:abuse@translate.kursomir.ru?subj=%2Fbook%2F39%2F127">Abuse</a> |
+                <a href="mailto:translate@kursomir.ru">E-mail для справок</a> |
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&locale=ru"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']]
+        },
+        asciimath2jax: {
+            delimiters: [['``', '``']]
+        }
+    });
+</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('a.tooltip').tooltip({'placement':'bottom'});
+jQuery('a[rel="popover"]').popover();
+jQuery('#yw0 .alert').alert();
+});
+/*]]>*/
+</script>
+</body>
+</html>

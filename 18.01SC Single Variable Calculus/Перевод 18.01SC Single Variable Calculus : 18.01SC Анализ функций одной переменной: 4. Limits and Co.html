@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="/css/v3.1.css?3" />
+<link rel="stylesheet" type="text/css" href="/css/translate-1.css?5" />
+<link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css?1" />
+<style type="text/css">
+/*<![CDATA[*/
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+body, label, input, button, select, textarea {
+	font-size: 13px;
+	line-height: 18px;
+}
+#chat-box {
+	height: 300px;
+}.comments .comment .meta, .comments .comment .meta a, .translator .info, .translator .info a { color: #bbb; }
+.comments .comment:hover .meta, .comments .comment:hover .meta a, .translator tr:hover .info, .translator tr:hover .info a { color: #888; }
+/*]]>*/
+</style>
+<script type="text/javascript" src="/assets/bbeb3eca/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/6b5c0e82/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/global.js?16"></script>
+<script type="text/javascript" src="/js/user.js?3"></script>
+<script type="text/javascript" src="/js/chat.js?3"></script>
+<script type="text/javascript" src="/js/translate-1.js?11"></script>
+<script type="text/javascript" src="/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="/js/jquery.elastic.mod.js"></script>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.min.js?1"></script>
+<script type="text/javascript" src="/js/ff_comments.js?3"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var User = new CUser({id: 76, login: 'Keyten'});
+
+var Book = new CBook({
+	id: 39,
+	owner_id: 67,
+	facecontrol: 1,
+	s_lang: 2,
+	t_lang: 1,
+	n_verses: 2492,
+	n_vars: 1286,
+	d_vars: 1282,
+	typ: 'A',
+	s_title: '18.01SC Single Variable Calculus',
+	t_title: '18.01SC Анализ функций одной переменной',
+	membership: {status: 1}
+});
+
+var Chap = {
+	id: 128,
+	book_id: 39,
+	n_verses: 29,
+	n_vars: 29,
+	d_vars: 29,
+	title: '4. Limits and Continuity/ Пределы и непрерывность',
+	ac_read: '',
+	ac_gen: '',
+	ac_rate: '',
+	ac_comment: '',
+	ac_tr: '',
+};
+
+/*]]>*/
+</script>
+<title>Перевод 18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной: 4. Limits and Continuity/ Пределы и непрерывность :: КУРСОМИР.ПЕРЕВОДЫ</title>
+    <meta name="description" content="Коллективные переводы субтитров и книжек"/>
+    <meta name="language" content="ru"/>
+    <meta name="keywords"
+          content="перевод, translation, коллективный перевод, кино с субтитрами, кино по-английски с русскими субтитрами, кино по-немецки с русскими субтитрами, кино по-испански с русскими субтитрами, примеры перевода, краудсорсинг, crowdsourcing, нотабеноид"/>
+    <link rel='icon' href='/i/favicon.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='/i/favicon.ico' type='image/x-icon'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE]>
+    <script type="text/javascript" src="/js/jquery.input-placeholder.js"></script>
+    <link rel='stylesheet' href="/css/jquery.input-placeholder.css"/>
+    <script type="text/javascript">
+        $(function () {
+            $('input[placeholder]').inputDefault();
+        });
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container-fluid" style="background-color:#fff;">
+        <a href="/" id="header-logo">
+            <img src="/i/logo.png" width="124" height="130"
+                 style="padding-top: 50px;"
+                 alt="КУРСОМИР.ПЕРЕВОДЫ"
+                 title="3.3"/>
+        </a>
+        <nav>
+            <ul id="header-menu">
+                <li><a href="/catalog/1">ВИДЕО</a></li>
+                <li><a href="/catalog/2">ТЕКСТЫ</a></li>
+                <li><a href="/users">ПЕРЕВОДЧИКИ</a></li>
+                <li><a href="/blog">БЛОГ</a></li>
+                <li><a href="/announces">АНОНСЫ</a></li>
+                <li class="search">
+                    <form class="form-search" method="get" action="/search">
+                                                <input type="hidden" name="from" value="header">
+                        <input type="text" name="t" class="input-medium search-query span3"
+                               placeholder="Ищите и обрящете"
+                               title="Кстати, отсюда можно найти и переводчика, если собаку (@), а потом сразу его ник."/>
+                        <input type="submit" value="&raquo;" class="btn" style="border-radius: 20px;"/>
+                    </form>
+                </li>
+            </ul>
+            <ul id="header-submenu">
+                                    <li>
+                        <a href="/users/76" accesskey="i">
+                            <strong>Keyten</strong>
+                            Всё о вас
+                        </a>
+                    </li>
+                    <li id="hm-c">
+                        <a href="/my/comments" accesskey="c">
+                            <strong>Обсуждения  <b></b></strong>
+                            Места, где вы общались
+                        </a>
+                    </li>
+                    <li id="hm-n">
+                        <a href="/my/notices" accesskey="n">
+                            <strong>Оповещения  <b></b></strong>
+                            События для вас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#bookmarks" accesskey="b">
+                            <strong>Закладки</strong>
+                            На память
+                        </a>
+                    </li>
+                    <li><a href="/book/0/edit"><strong>Создать</strong> Перевод</a></li>
+                    <li><a href="/register/settings"><strong>Настройки</strong> Профиля</a></li>
+                    <li><a href="/register/logout"><strong>Выход</strong> До свидания :(</a></li>
+                            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <div id="bookmarks" class="modal hide">
+        <div class="modal-header" style='padding-bottom:0;'>
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Закладки</h3>
+            <div class="btn-toolbar">
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-sort">
+                    <button class="btn btn-mini" data-v="1" title="Сортировка по алфавиту">
+                        <i class="icon-text-height"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="2" title="Сортировка по вашей активности">
+                        <i class="icon-fire"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="3" title="Сортировка по времени вступления в перевод">
+                        <i class="icon-time"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="5" title="Сортировка по времени добавления закладки">
+                        <i class="icon-shopping-cart"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="4" title="Сортировка по готовности перевода">%</button>
+                    <button class="btn btn-mini" data-v="0" title="Ваша сортировка (таскайте закладки мышкой)">
+                        <i class="icon-random"></i>
+                    </button>
+                </div>
+
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-title">
+                    <button class="btn btn-mini" data-v="s" title="Показывать названия на языке оригинала">О</button>
+                    <button class="btn btn-mini" data-v="t" title="Показывать названия на языке перевода">П</button>
+                </div>
+                                <div class="btn-group pull-right">
+                    <button class="btn btn-mini" title="Удалить" id="bookmarks-tb-rm">
+                        <i class="icon-remove"></i>
+                    </button>
+                    <button class="btn btn-mini" title="Редактировать" id="bookmarks-tb-ed">
+                        <i class="icon-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body" style="max-height:350px">
+            <p class='loading'>минуточку...</p>
+        </div>
+    </div>
+
+
+<div class="container-fluid">
+    <div id="yw0"></div>
+<style type="text/css">
+        .translator.has-best td.t .best .text {
+        background-image: url(/i/corner-gray-t-r.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    </style>
+
+<h1><a href='/book/39'>18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной</a>: 4. Limits and Continuity/ Пределы и непрерывность</h1>
+
+<div id="tb-main">
+    <div>
+        <div class='group'><a
+                href="/book/39/128/go?nach=prev&ord=4"
+                title="Предыдущая глава"><i class="i icon-arrow-left"></i></a></div>
+
+        <div class="tb-index btn-group">
+            <a href="/book/39" class="btn btn-small"><i class="icon-list"></i> Оглавление</a>
+            <a class="btn btn-small dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+            <ul class="dropdown-menu" id="tb-chapter-list">
+                <li><a href="/book/39/members">Переводчики</a></li>
+                <li><a href="/book/39/blog">Блог</a></li>
+            </ul>
+        </div>
+
+        <div class='group'><a
+                href="/book/39/128/go?nach=next&ord=4"
+                title="Следующая глава"><i class="i icon-arrow-right"></i></a></div>
+
+        <div class="btn-group">
+                            <button type="button" class="btn btn-small tb-chat" title="Ctrl + ~"><i class="icon-bullhorn"></i> Чат
+                </button>
+            
+            <a href="#" class="btn btn-small tb-dict" accesskey="V"><i class="icon-book"></i> Словарь</a>
+
+            <div id="tb-filter">
+                <form method="get" class="form-inline" action="/book/39/128">
+                    <ul class='options'>
+                        <li><label><input type='radio' name='show' value='1' /> <a href='?show=1'>Непереведённое</a></label></li><li><label><input type='radio' name='show' value='7' /> <a href='?show=7'>С 2 и более версиями перевода</a></label></li><li><label><input type='radio' name='show' value='3' /> <a href='?show=3'>С комментариями</a></label></li><li><label><input type='radio' name='show' value='4' /> <a href='?show=4'>С новыми комментариями</a></label></li><li><label><input type='radio' name='show' value='2' />  <input type='text' name='show_user' placeholder='От переводчика' class='span3' value='' title='Ctrl+I: вставить ваш ник' /></label></li><li><label><input type='radio' name='show' value='5' />  <input type='text' name='to' placeholder='Оригинал содержит' class='span3' value='' /></label></li><li><label><input type='radio' name='show' value='6' />  <input type='text' name='tt' placeholder='Перевод содержит' class='span3' value='' /></label></li>                    </ul>
+                    <button type="submit" class="btn btn-mini btn-primary">Показать</button>
+                    <a href="/book/39/128"
+                       class="btn btn-mini">Сбросить всё</a>
+                </form>
+            </div>
+
+            <a href='#' class='btn btn-small tb-filter' accesskey='F'><i class='icon-filter'></i> Фильтр</a>        </div>
+
+        
+        
+
+        <div class="group">
+            <a href="/book/39/128/switchiface"><i class="icon-thumbs-down" title="Старый	интерфейс"></i></a>
+        </div>
+
+        <div class="tb-progress group"></div>
+
+            </div>
+</div>
+
+<div class="clear"></div>
+
+<table id="Tr" class="translator has-best translator-oe-hide">
+    <thead>
+    <tr>
+                    <th></th>        <th>
+            Английский оригинал
+        </th>
+                    <th></th>        <th>
+            Перевод на русский        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id='o33673'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Limits</p><p class='info'><a href='/book/39/128/33673#1' class='ord'>#1</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1406' class='u105'><p class='text'>Пределы</p><p class='info'><a href='/users/105' class='user'>HomoUniversalis</a> <i class='i icon-flag'></i> 7.05.16 в 22:59</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33674'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Last class we talked about a series of secant lines approaching the “limit” of a tangent line, and about how as $\Delta x$ approaches zero, $\frac{\Delta y}{\Delta x}$ approaches the “limit” $y' = \frac{dy}{dx}$. Now we want to talk about limits more carefully; this will include some of our first steps towards our goal of being able to differentiate every function you know.</p><p class='info'><a href='/book/39/128/33674#2' class='ord'>#2</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1409' class='u105'><p class='text'>На прошлом занятии мы говорили о последовательности секущих, которые в пределе сходятся к касательной, и о том, что при $\Delta x$, стремящемся к нулю, $\frac{\Delta y}{\Delta x} $ стремится к «пределу» $y' = \frac{dy}{dx}$. Теперь мы хотим поговорить о пределах более аккуратно. Здесь мы сделаем наши первые шаги к тому, чтобы уметь дифференцировать любую известную вам функцию.</p><p class='info'><a href='/users/105' class='user'>HomoUniversalis</a> <i class='i icon-flag'></i> 7.05.16 в 23:07</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33675'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Some limits are easy to compute: $$\lim_{x \to 3} \frac{x^2 + x}{x + 1} = \frac{3^2 + 3}{3 + 1} = \frac{12}{4} = 3$$</p><p class='info'><a href='/book/39/128/33675#3' class='ord'>#3</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1707' class='u67'><p class='text'>Некоторые пределы легко посчитать:<br />
+$$\lim_{x \to 3} \frac{x^2 + x}{x + 1} = \frac{3^2 + 3}{3 + 1} = \frac{12}{4} = 3$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 8:32</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33676'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>With an easy limit, you can get a meaningful answer just by plugging in the limiting value. This is because when $x$ is close to $3$, the value of the function $f(x) = \frac{x^2 + x}{x + 1}$ is close to $f(3)$.</p><p class='info'><a href='/book/39/128/33676#4' class='ord'>#4</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1708' class='u67'><p class='text'>В таких простых пределах, вы получите осмысленный ответ просто подставляя предельное значение переменной. Это происходит потому, что когда значение $x$ близко к $3$, значение функции $f(x) = \frac{x^2 + x}{x + 1}$ близко к $f(3)$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 8:35</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33677'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Some limits are not easy to compute. For example, the definition of the derivative: $$\lim_{x \to x_0} \frac{\Delta f}{\Delta x} = \lim_{x \to x_0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$$ is never an easy limit, because the denominator $\Delta x = 0$ is not allowed. (The limit $x \to x_0$ is computed under the implicit assumption that $x = x_0$.)</p><p class='info'><a href='/book/39/128/33677#5' class='ord'>#5</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1712' class='u67'><p class='text'>Другие пределы посчитать непросто. К примеру, определение производной: $$\lim_{x \to x_0} \frac{\Delta f}{\Delta x} = \lim_{x \to x_0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$$<br />
+всегда нелегкий предел, потому что нельзя просто положить  знаменатель $\Delta x=0$ (при вычислении предела $x \to x_0$ подразумевается, что $x=x_0$).</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:03</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33678'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We’ll always need to cancel $\Delta x$ before we can make sense out of the limit.</p><p class='info'><a href='/book/39/128/33678#6' class='ord'>#6</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1713' class='u67'><p class='text'>Чтобы разобраться с пределом, нам всегда придется сократить $\Delta x$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:04</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33679'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Other “hard” limits would be: $$\lim_{x \to -1} \frac{x^2 + x}{x + 1} \quad \textrm{and} \quad \lim_{x \to \infty} \frac{x^2 + x}{x + 1}$$</p><p class='info'><a href='/book/39/128/33679#7' class='ord'>#7</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1714' class='u67'><p class='text'>Другими непростыми пределами могут быть<br />
+$$\lim_{x \to -1} \frac{x^2 + x}{x + 1} \quad \textrm{и} \quad \lim_{x \to \infty} \frac{x^2 + x}{x + 1}.$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:05</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33680'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Any limit involving infinity or division by zero is going to be harder to compute; sometimes the answer will will be that there is no limit.</p><p class='info'><a href='/book/39/128/33680#8' class='ord'>#8</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1715' class='u67'><p class='text'>Любой предел, содержащий бесконечность или деление на нуль, будет не так просто вычислить. Иногда даже будет ответ, что предела не существует.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:06</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33681'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>To complete our discussion of limits, we need just one more piece of notation — the concepts of left hand and right hand limits.</p><p class='info'><a href='/book/39/128/33681#9' class='ord'>#9</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1716' class='u67'><p class='text'>Для завершения нашего обсуждения пределов, нам нужно ввести еще пару определений - понятия левостороннего и правостороннего пределов.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:07</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33682'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The limit $$\lim_{x \to x_0^+} f(x)$$ is known as the right-hand limit and means that you should use values of $x$ that are greater than $x_0$ (to the right of $x_0$ on the number line) to compute the limit.</p><p class='info'><a href='/book/39/128/33682#10' class='ord'>#10</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1717' class='u67'><p class='text'>Предел $$\lim_{x \to x_0^+} f(x)$$ называется правосторонним пределов и значит, что вы должны использовать значения $x$ большие, чем $x_0$ (правее $x_0$ на числовой оси) для вычисления предела.<br />
+</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:09</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33683'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Shown below is the graph of the function:<br />
+$$f(x) = <br />
+\begin{cases}<br />
+x + 1 &amp; x &gt; 0 \\<br />
+−x &amp; x \leq 0 \\<br />
+\end{cases}$$</p><p class='info'><a href='/book/39/128/33683#11' class='ord'>#11</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1709' class='u67'><p class='text'>Ниже показан график функции:<br />
+$$f(x) = <br />
+\begin{cases}<br />
+x + 1 &amp; x &gt; 0 \\<br />
+−x &amp; x \leqslant 0 \\<br />
+\end{cases}$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 8:55</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33684'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The right-hand limit $\displaystyle{\lim_{x \to 0^+} f(x)}$ equals $1$.</p><p class='info'><a href='/book/39/128/33684#12' class='ord'>#12</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1710' class='u67'><p class='text'>Правосторонний предел $\displaystyle{\lim_{x \to 0^+} f(x)}$ равен $1$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 8:58</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33685'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The left-hand limit $$\lim_{x \to x_0^−} f(x)$$ is found by looking at values of $f(x)$ when $x$ is less than $x_0$ (to the left of $x_0$ on the number line). For this function, $\displaystyle{\lim_{x \to 0^−} f(x) = 0}$.</p><p class='info'><a href='/book/39/128/33685#13' class='ord'>#13</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1718' class='u67'><p class='text'>Левосторонний предел $$\lim_{x \to x_0^−} f(x)$$ находится при помощи значений $f(x)$ при $x$ меньших, чем $x_0$ (левее $x_0$ на числовой оси). Для этой функции, $\displaystyle{\lim_{x \to 0^−} f(x) = 0}$.<br />
+</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:13</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33686'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: Graph of $f(x)$</p><p class='info'><a href='/book/39/128/33686#14' class='ord'>#14</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1711' class='u67'><p class='text'>Рис. 1. График функции $f(x)$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 8:58</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33687'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The notions of left- and right- hand limits will make things much easier for us as we discuss continuity, next.</p><p class='info'><a href='/book/39/128/33687#15' class='ord'>#15</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1719' class='u67'><p class='text'>Обозначения для левостороннего и правостороннего пределов станут нам гораздо понятнее, когда мы будем обсуждать непрерывность.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:17</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33688'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Let’s talk more about the example graphed above. To calculate $$\lim_{x \to x_0^+} f(x)$$ we use only values of $x$ that are greater than $0$. When $x &gt; 0$, $f(x)$ is defined to equal $x + 1$. So we plugged $x = 0$ into the expression $x + 1$ to calculate the right-hand limit.</p><p class='info'><a href='/book/39/128/33688#16' class='ord'>#16</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1720' class='u67'><p class='text'>Давайте рассмотрим подробнее пример, нарисованный ваше. Для вычисления $$\lim_{x \to x_0^+} f(x)$$ мы используем только значения $x$ большие, чем $0$. При $x&gt;0$, $f(x) = x+1$ по определению. Поэтому мы подставляем $x=0$ в $x+1$, чтобы посчитать правосторонний предел.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:26</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33689'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>When calculating $$\lim_{x \to x_0^-} f(x),$$ we have $x &lt; 0$. Here $f(x)$ is defined to equal $−x$; when we plug $x = 0$ into this expression we get $\displaystyle{\lim_{x \to x_0^-} f(x) = 0}$.</p><p class='info'><a href='/book/39/128/33689#17' class='ord'>#17</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1721' class='u67'><p class='text'>При вычислении $$\lim_{x \to x_0^-} f(x),$$ мы имеем $x &lt; 0$. Теперь $f(x)$ равна $-x$ и когда мы подставляем в это $x=0$, мы получим $\displaystyle{\lim_{x \to x_0^-} f(x) = 0}$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:28</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33690'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Notice that it doesn’t matter that $f(0) = 0$. Our calculations would have been exactly the same if $f(0)$ were $1$ or even if $f(0) = 2$.</p><p class='info'><a href='/book/39/128/33690#18' class='ord'>#18</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1722' class='u67'><p class='text'>Заметим, что нам не важно, что $f(0)=0$. Наши вычисления будут полностью таким же при $f(0) = 1$ или при $f(0) = 2$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:29</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33691'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Continuity</p><p class='info'><a href='/book/39/128/33691#19' class='ord'>#19</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1723' class='u67'><p class='text'>Непрерывность</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:37</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33692'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Continuous Functions</p><p class='info'><a href='/book/39/128/33692#20' class='ord'>#20</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1724' class='u67'><p class='text'>Непрерывные функции</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:37</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33693'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Definition: A function $f$ is continuous at $x_0$ if $\lim_{x \to x_0} f(x) = f(x_0)$.</p><p class='info'><a href='/book/39/128/33693#21' class='ord'>#21</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1725' class='u67'><p class='text'>Определение. Функция $f$ называется непрерывной в точке $x_0$, если $\displaystyle{\lim_{x \to x_0} f(x) = f(x_0)}$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:38</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33694'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>What is this definition saying? A function that’s continuous at $x_0$ has the following properties:</p><p class='info'><a href='/book/39/128/33694#22' class='ord'>#22</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1726' class='u67'><p class='text'>О чем говорит это определение? Функция, которая непрерывна в $x_0$, обладает следующими свойствами:</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:39</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33695'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>• $\lim_{x \to x_0^+} f(x) = \lim_{x \to x_0^-} f(x)$; in particular, both of these one sided limits exist.</p><p class='info'><a href='/book/39/128/33695#23' class='ord'>#23</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1727' class='u67'><p class='text'>• $\displaystyle{\lim_{x \to x_0^+} f(x) = \lim_{x \to x_0^-} f(x)}$; в частности, оба этих односторонних предела существуют;</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:41</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33696'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>• $f(x_0)$ is defined.</p><p class='info'><a href='/book/39/128/33696#24' class='ord'>#24</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1728' class='u67'><p class='text'>• значение $f(x_0)$ определено;</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:41</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33697'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>• $\lim_{x \to x_0^+} f(x) = \lim_{x \to x_0^-} f(x) = f(x_0)$</p><p class='info'><a href='/book/39/128/33697#25' class='ord'>#25</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1729' class='u67'><p class='text'>• $\displaystyle{\lim_{x \to x_0^+} f(x) = \lim_{x \to x_0^-} f(x) = f(x_0)}.$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:42</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33698'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This may look obvious, but remember that when you are calculating $\displaystyle{\lim_{x \to x_0} f(x)}$ you never allow $x$ to equal $x_0$. The value $\lim_{x \to x_0} f(x)$ is computed independently of, and in a different way than, the value of $f(x_0)$. If we aren’t careful to make this distinction, this definition has no meaning.</p><p class='info'><a href='/book/39/128/33698#26' class='ord'>#26</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1730' class='u67'><p class='text'>Это может казаться очевидным, но помните, что при вычислении предела $\displaystyle{\lim_{x \to x_0} f(x)}$ никогда нельзя $x$ приравнивать к $x_0$. Значение $\displaystyle{\lim_{x \to x_0} f(x)}$ независимо и другим путем, чем значение $f(x_0)$. Если мы не будем достаточно осторожными, чтобы помнить об этом различии, наше определение будет лишено смысла.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:46</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33699'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The limits for which $\displaystyle{\lim_{x \to x_0} f(x)} = f(x_0)$ are exactly the “easy limits” we discussed earlier. The “harder” limits only happen for functions that are not continuous.</p><p class='info'><a href='/book/39/128/33699#27' class='ord'>#27</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1731' class='u67'><p class='text'>Пределы, в которых $\displaystyle{\lim_{x \to x_0} f(x)} = f(x_0)$ — это как раз те самые «простые пределы», о которых мы говорили раньше. «Сложные пределы» возникают только для функций, которые не непрерывны.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:49</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33700'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Next we’ll see a tour of different types of discontinuous functions. The question of whether something is continuous or not may seem fussy, but it is something people have worried about a lot.</p><p class='info'><a href='/book/39/128/33700#28' class='ord'>#28</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1732' class='u67'><p class='text'>Далее мы столкнемся с большим количеством различных разрывных функций. Вопрос о том, непрерывно что-то или нет может казаться замысловатым, но это как раз то, что обычно очень важно знать.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:51</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33701'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Bob Merton, who was a professor at MIT when he did his work for the Nobel Prize in Economics, was interested in whether stock prices of various kinds are continuous from the left (past) or right (future) in a certain model. That was a serious consideration when developing a model that hedge funds now use all the time.</p><p class='info'><a href='/book/39/128/33701#29' class='ord'>#29</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1733' class='u67'><p class='text'>Боб Мертон, который был профессором в MIT, когда делал свою работу для Нобелевской премии по экономике, был заинтересован, являются ли цены на акции различных видов непрерывными слева (прошлое) или справа (будущее) в определенной модели. Это было важно рассмотреть при разработке модели, которую теперь постоянно используют хедж-фонды.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 11.05.16 в 9:56</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+    </tbody>
+</table>
+
+<div id="pages-bottom">
+    </div>
+
+
+<div id="tr-sidebar">
+    <div id="dict" class='has-edit'>
+        <div id="dict-search">
+            <input type="text" placeholder="Поиск по словарю" class="search"/>
+            <a href="#" class="b"><i class="i icon-remove-sign"></i></a>
+        </div>
+        <div id="dict-body">
+            <div id="dict-body-content">
+                Минутку...
+            </div>
+        </div>
+                    <div id="dict-add">
+                <form method="post" action="/book/39/dict">
+                    <input type="text" name="term" placeholder="Оригинал"/>
+                    <input type="text" name="descr" placeholder="Перевод"/>
+                    <button type="submit" class="btn btn-mini btn-primary">Добавить</button>
+                    <button type="button" class="btn btn-mini cancel">Отмена</button>
+                </form>
+            </div>
+            <div id="dict-tools">
+                <i class="icon-plus"></i> <a href="#" class="add">Добавить слово</a>
+            </div>
+                    </div>
+</div>
+
+
+<div id="renum-modal" class="modal hide">
+    <form method="post" class="form-inline" action="/book/39/128/renum">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Перенумеровать субтитры</h3>
+        </div>
+        <div class="modal-body">
+            Номер субтитра, серая циферка рядом с его таймингом, в сущности, ни на что не влияет, субтитры сортируются
+            по времени.
+            Если вы добавляете новый титр, его номер может выбиваться из плавного течения номеров. Этот инструмент
+            расставит всем
+            титрам номера в хронологическом порядке.
+        </div>
+        <div class="modal-footer">
+            <input type="hidden" name="mode" value="1"/>
+            <button type="submit" class="btn btn-primary">Поехали</button>
+            <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $("#Tr").find("td.o").each(function () {
+        var $this = $(this);
+        $this.children("div").css("min-height", $this.height());
+    });
+</script>
+</div>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span6">
+                &copy; <a href="http://romakhin.ru/" rel="nofollow">Дмитрий Ромахин</a>
+                2008&ndash;2017                <br/>
+                <a href="/site/help">Справка</a> |
+                <a href="/blog?topic=65">Техподдержка</a> |
+                <a href="mailto:abuse@translate.kursomir.ru?subj=%2Fbook%2F39%2F128">Abuse</a> |
+                <a href="mailto:translate@kursomir.ru">E-mail для справок</a> |
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&locale=ru"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']]
+        },
+        asciimath2jax: {
+            delimiters: [['``', '``']]
+        }
+    });
+</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('a.tooltip').tooltip({'placement':'bottom'});
+jQuery('a[rel="popover"]').popover();
+jQuery('#yw0 .alert').alert();
+});
+/*]]>*/
+</script>
+</body>
+</html>

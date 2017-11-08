@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="/css/v3.1.css?3" />
+<link rel="stylesheet" type="text/css" href="/css/translate-1.css?5" />
+<link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css?1" />
+<style type="text/css">
+/*<![CDATA[*/
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+body, label, input, button, select, textarea {
+	font-size: 13px;
+	line-height: 18px;
+}
+#chat-box {
+	height: 300px;
+}.comments .comment .meta, .comments .comment .meta a, .translator .info, .translator .info a { color: #bbb; }
+.comments .comment:hover .meta, .comments .comment:hover .meta a, .translator tr:hover .info, .translator tr:hover .info a { color: #888; }
+/*]]>*/
+</style>
+<script type="text/javascript" src="/assets/bbeb3eca/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/6b5c0e82/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/global.js?16"></script>
+<script type="text/javascript" src="/js/user.js?3"></script>
+<script type="text/javascript" src="/js/chat.js?3"></script>
+<script type="text/javascript" src="/js/translate-1.js?11"></script>
+<script type="text/javascript" src="/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="/js/jquery.elastic.mod.js"></script>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.min.js?1"></script>
+<script type="text/javascript" src="/js/ff_comments.js?3"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var User = new CUser({id: 76, login: 'Keyten'});
+
+var Book = new CBook({
+	id: 39,
+	owner_id: 67,
+	facecontrol: 1,
+	s_lang: 2,
+	t_lang: 1,
+	n_verses: 2492,
+	n_vars: 1286,
+	d_vars: 1282,
+	typ: 'A',
+	s_title: '18.01SC Single Variable Calculus',
+	t_title: '18.01SC Анализ функций одной переменной',
+	membership: {status: 1}
+});
+
+var Chap = {
+	id: 139,
+	book_id: 39,
+	n_verses: 46,
+	n_vars: 46,
+	d_vars: 46,
+	title: '15. Implicit Differentiation and Inverse Functions / Производная обратной функции',
+	ac_read: '',
+	ac_gen: '',
+	ac_rate: '',
+	ac_comment: '',
+	ac_tr: '',
+};
+
+/*]]>*/
+</script>
+<title>Перевод 18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной: 15. Implicit Differentiation and Inverse Functions / Производная обратной функции :: КУРСОМИР.ПЕРЕВОДЫ</title>
+    <meta name="description" content="Коллективные переводы субтитров и книжек"/>
+    <meta name="language" content="ru"/>
+    <meta name="keywords"
+          content="перевод, translation, коллективный перевод, кино с субтитрами, кино по-английски с русскими субтитрами, кино по-немецки с русскими субтитрами, кино по-испански с русскими субтитрами, примеры перевода, краудсорсинг, crowdsourcing, нотабеноид"/>
+    <link rel='icon' href='/i/favicon.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='/i/favicon.ico' type='image/x-icon'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE]>
+    <script type="text/javascript" src="/js/jquery.input-placeholder.js"></script>
+    <link rel='stylesheet' href="/css/jquery.input-placeholder.css"/>
+    <script type="text/javascript">
+        $(function () {
+            $('input[placeholder]').inputDefault();
+        });
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container-fluid" style="background-color:#fff;">
+        <a href="/" id="header-logo">
+            <img src="/i/logo.png" width="124" height="130"
+                 style="padding-top: 50px;"
+                 alt="КУРСОМИР.ПЕРЕВОДЫ"
+                 title="3.3"/>
+        </a>
+        <nav>
+            <ul id="header-menu">
+                <li><a href="/catalog/1">ВИДЕО</a></li>
+                <li><a href="/catalog/2">ТЕКСТЫ</a></li>
+                <li><a href="/users">ПЕРЕВОДЧИКИ</a></li>
+                <li><a href="/blog">БЛОГ</a></li>
+                <li><a href="/announces">АНОНСЫ</a></li>
+                <li class="search">
+                    <form class="form-search" method="get" action="/search">
+                                                <input type="hidden" name="from" value="header">
+                        <input type="text" name="t" class="input-medium search-query span3"
+                               placeholder="Поиск переводов"
+                               title="Кстати, отсюда можно найти и переводчика, если собаку (@), а потом сразу его ник."/>
+                        <input type="submit" value="&raquo;" class="btn" style="border-radius: 20px;"/>
+                    </form>
+                </li>
+            </ul>
+            <ul id="header-submenu">
+                                    <li>
+                        <a href="/users/76" accesskey="i">
+                            <strong>Keyten</strong>
+                            Всё о вас
+                        </a>
+                    </li>
+                    <li id="hm-c">
+                        <a href="/my/comments" accesskey="c">
+                            <strong>Обсуждения  <b></b></strong>
+                            Места, где вы общались
+                        </a>
+                    </li>
+                    <li id="hm-n">
+                        <a href="/my/notices" accesskey="n">
+                            <strong>Оповещения  <b></b></strong>
+                            События для вас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#bookmarks" accesskey="b">
+                            <strong>Закладки</strong>
+                            На память
+                        </a>
+                    </li>
+                    <li><a href="/book/0/edit"><strong>Создать</strong> Перевод</a></li>
+                    <li><a href="/register/settings"><strong>Настройки</strong> Профиля</a></li>
+                    <li><a href="/register/logout"><strong>Выход</strong> До свидания :(</a></li>
+                            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <div id="bookmarks" class="modal hide">
+        <div class="modal-header" style='padding-bottom:0;'>
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Закладки</h3>
+            <div class="btn-toolbar">
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-sort">
+                    <button class="btn btn-mini" data-v="1" title="Сортировка по алфавиту">
+                        <i class="icon-text-height"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="2" title="Сортировка по вашей активности">
+                        <i class="icon-fire"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="3" title="Сортировка по времени вступления в перевод">
+                        <i class="icon-time"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="5" title="Сортировка по времени добавления закладки">
+                        <i class="icon-shopping-cart"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="4" title="Сортировка по готовности перевода">%</button>
+                    <button class="btn btn-mini" data-v="0" title="Ваша сортировка (таскайте закладки мышкой)">
+                        <i class="icon-random"></i>
+                    </button>
+                </div>
+
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-title">
+                    <button class="btn btn-mini" data-v="s" title="Показывать названия на языке оригинала">О</button>
+                    <button class="btn btn-mini" data-v="t" title="Показывать названия на языке перевода">П</button>
+                </div>
+                                <div class="btn-group pull-right">
+                    <button class="btn btn-mini" title="Удалить" id="bookmarks-tb-rm">
+                        <i class="icon-remove"></i>
+                    </button>
+                    <button class="btn btn-mini" title="Редактировать" id="bookmarks-tb-ed">
+                        <i class="icon-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body" style="max-height:350px">
+            <p class='loading'>минуточку...</p>
+        </div>
+    </div>
+
+
+<div class="container-fluid">
+    <div id="yw0"></div>
+<style type="text/css">
+        .translator.has-best td.t .best .text {
+        background-image: url(/i/corner-gray-t-r.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    </style>
+
+<h1><a href='/book/39'>18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной</a>: 15. Implicit Differentiation and Inverse Functions / Производная обратной функции</h1>
+
+<div id="tb-main">
+    <div>
+        <div class='group'><a
+                href="/book/39/139/go?nach=prev&ord=15"
+                title="Предыдущая глава"><i class="i icon-arrow-left"></i></a></div>
+
+        <div class="tb-index btn-group">
+            <a href="/book/39" class="btn btn-small"><i class="icon-list"></i> Оглавление</a>
+            <a class="btn btn-small dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+            <ul class="dropdown-menu" id="tb-chapter-list">
+                <li><a href="/book/39/members">Переводчики</a></li>
+                <li><a href="/book/39/blog">Блог</a></li>
+            </ul>
+        </div>
+
+        <div class='group'><a
+                href="/book/39/139/go?nach=next&ord=15"
+                title="Следующая глава"><i class="i icon-arrow-right"></i></a></div>
+
+        <div class="btn-group">
+                            <button type="button" class="btn btn-small tb-chat" title="Ctrl + ~"><i class="icon-bullhorn"></i> Чат
+                </button>
+            
+            <a href="#" class="btn btn-small tb-dict" accesskey="V"><i class="icon-book"></i> Словарь</a>
+
+            <div id="tb-filter">
+                <form method="get" class="form-inline" action="/book/39/139">
+                    <ul class='options'>
+                        <li><label><input type='radio' name='show' value='1' /> <a href='?show=1'>Непереведённое</a></label></li><li><label><input type='radio' name='show' value='7' /> <a href='?show=7'>С 2 и более версиями перевода</a></label></li><li><label><input type='radio' name='show' value='3' /> <a href='?show=3'>С комментариями</a></label></li><li><label><input type='radio' name='show' value='4' /> <a href='?show=4'>С новыми комментариями</a></label></li><li><label><input type='radio' name='show' value='2' />  <input type='text' name='show_user' placeholder='От переводчика' class='span3' value='' title='Ctrl+I: вставить ваш ник' /></label></li><li><label><input type='radio' name='show' value='5' />  <input type='text' name='to' placeholder='Оригинал содержит' class='span3' value='' /></label></li><li><label><input type='radio' name='show' value='6' />  <input type='text' name='tt' placeholder='Перевод содержит' class='span3' value='' /></label></li>                    </ul>
+                    <button type="submit" class="btn btn-mini btn-primary">Показать</button>
+                    <a href="/book/39/139"
+                       class="btn btn-mini">Сбросить всё</a>
+                </form>
+            </div>
+
+            <a href='#' class='btn btn-small tb-filter' accesskey='F'><i class='icon-filter'></i> Фильтр</a>        </div>
+
+        
+        
+
+        <div class="group">
+            <a href="/book/39/139/switchiface"><i class="icon-thumbs-down" title="Старый	интерфейс"></i></a>
+        </div>
+
+        <div class="tb-progress group"></div>
+
+            </div>
+</div>
+
+<div class="clear"></div>
+
+<table id="Tr" class="translator has-best translator-oe-hide">
+    <thead>
+    <tr>
+                    <th></th>        <th>
+            Английский оригинал
+        </th>
+                    <th></th>        <th>
+            Перевод на русский        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id='o46444'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Derivative of the Inverse of a Function</p><p class='info'><a href='/book/39/139/46444#1' class='ord'>#1</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24263' class='u75'><p class='text'>Производная обратной функции</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:18</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46445'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>One very important application of implicit differentiation is to finding derivatives<br />
+  of inverse functions.</p><p class='info'><a href='/book/39/139/46445#2' class='ord'>#2</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24268' class='u75'><p class='text'>Одно из самых важных приложений неявного дифференцирования является нахождение производной обратной функции</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:19</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46446'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We start with a simple example. We might simplify the equation $y = \sqrt{x}$ $(x &gt; 0)$ by squaring both sides to get $y^2 = x$. We could use function notation here to say that $y = f(x) = \sqrt{x}$ and $x = g(y) = y^2$.</p><p class='info'><a href='/book/39/139/46446#3' class='ord'>#3</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24277' class='u75'><p class='text'>Начнем с простого пример. Мы можем упростить выражение $y = \sqrt{x} (x \gt 0)$, возведя в квадрат обе части выраженя, чтобы получить $y^2 = x$. Мы можем использовать запись функции здесь, чтобы сказать, что $y = f(x) = \sqrt{x}$ и $x = g(y) = y^2$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:22</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46447'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In general, we look for functions $y = f(x)$ and $g(y) = x$ for which $g(f(x)) = x$. If this is the case, then $g$ is the inverse of $f$ (we write $g = f^{−1}$) and $f$ is the inverse of $g$ (we write $f = g^{−1}$).</p><p class='info'><a href='/book/39/139/46447#4' class='ord'>#4</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24281' class='u75'><p class='text'>В общем случае, мы ищем функции $y=f(x)$ и $x=g(y)$, для которых $g(f(x)) = x$. Если это так, тогда $g$ - это обратная функция $f$ (мы пишем $g = f^{-1}$) и $f$ - это обратная функция $g$ (мы пишем $f = g^{-1}$)</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:24</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46448'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>How are the graphs of a function and its inverse related? We start by graphing $f(x) = \sqrt{x}$.</p><p class='info'><a href='/book/39/139/46448#5' class='ord'>#5</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24286' class='u75'><p class='text'>Как соостносятся графика функции и ей обратной? Мы начнем с графика $f(x) = <br />
+sqrt{x}$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:26</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46449'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Next we want to graph the inverse of $f$, which is $g(y) = x$.</p><p class='info'><a href='/book/39/139/46449#6' class='ord'>#6</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24289' class='u75'><p class='text'>Далее мы хотим нарисовать график функции, обратной к $f$, для которой $g(y) = x$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:26</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46450'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>But this is exactly the graph we just drew.</p><p class='info'><a href='/book/39/139/46450#7' class='ord'>#7</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24296' class='u75'><p class='text'>Но это такой график, как мы и нарисовали.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:27</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46451'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>To compare the graphs of the functions $f$ and $f^{−1}$ we have to exchange $x$ and $y$ in the equation for $f^{−1}$.</p><p class='info'><a href='/book/39/139/46451#8' class='ord'>#8</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24305' class='u75'><p class='text'>Чтобы сравнить графики функций $f$ и $f^{-1}$ мы должны обменять $x$ и $y$ в функции для $f^{-1}$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:29</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46452'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>So to compare $f(x) = \sqrt{x}$ to its inverse we replace $y$’s by $x$’s and graph $g(x) = x$.</p><p class='info'><a href='/book/39/139/46452#9' class='ord'>#9</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24312' class='u75'><p class='text'>Так для сравнения функции $f(x) = \sqrt{x}$ и её обратной мы заменим $y$ на $x$ и нарисуем $g(x) = x$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:31</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46453'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: The graph of $f^{−1}$ is the reflection of the graph of $f$ across the line $y = x$</p><p class='info'><a href='/book/39/139/46453#10' class='ord'>#10</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24314' class='u75'><p class='text'>Рисунок 1: График функции $f^{-1}$ является отражением графика функции $f$ относительно прямой $y=x$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:32</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46454'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In general, if you have the graph of a function $f$ you can find the graph of $f^{−1}$ by exchanging the $x$- and $y$-coordinates of all the points on the graph. In other words, the graph of $f^{−1}$ is the reflection of the graph of $f$ across the line $y = x$.</p><p class='info'><a href='/book/39/139/46454#11' class='ord'>#11</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24320' class='u75'><p class='text'>В общем случае, если у вас есть график функции $f$, вы можете найти график $f^{-1}$, поменяв $x-$ и $y-$координаты всех точек графика. Другими словами, график функции $f^{-1}$ - это отражение графика $f$ относительно прямой $y=x$. </p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:34</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46455'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This suggests that if $\frac{dy}{dx}$ is the slope of a line tangent to the graph of $f$, then $$\frac{dx}{dy} = \frac{1}{\frac{dy}{dx}}$$ is the slope of a line tangent to the graph of $f^{−1}$.</p><p class='info'><a href='/book/39/139/46455#12' class='ord'>#12</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24327' class='u75'><p class='text'>Это подсказывает нам, что если $\frac{dy}{dx}$ -угловой коэффициент касательной к графику $f$, то $$ \frac{dx}{dy} = \frac{1}{\frac{dy}{fx}}$$ - это угловой коэффициент касательной к графику $f^{-1}$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:38</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46456'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We could use the definition of the derivative and properties of inverse functions to turn this suggestion into a proof, but it’s easier to prove using implicit differentiation.</p><p class='info'><a href='/book/39/139/46456#13' class='ord'>#13</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24331' class='u75'><p class='text'>Мы можем использовать определение производной и свойства обратной функции, чтобы превратить это предположение в доказательство, однако легче доказать это, используя неявное диффференцирование.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:40</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46457'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Let’s use implicit differentiation to find the derivative of the inverse function:<br />
+\begin{align}<br />
+y &amp;= f(x) \\<br />
+f^{−1} (y) &amp;= x \\<br />
+\frac{d}{dx} (f^{−1} (y)) &amp;= \frac{d}{dx} (x) = 1<br />
+\end{align}</p><p class='info'><a href='/book/39/139/46457#14' class='ord'>#14</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24332' class='u75'><p class='text'>Давайте используем неявное дифференцирование для того, чтобы найти производную обратной функции:<br />
+\begin{align} <br />
+y &amp;= f(x) \\ <br />
+f^{−1} (y) &amp;= x \\ <br />
+\frac{d}{dx} (f^{−1} (y)) &amp;= \frac{d}{dx} (x) = 1 <br />
+\end{align}</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:41</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46458'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>By the chain rule: $$\frac{d}{dy} (f^{−1} (y)) \frac{dy}{dx} = 1$$ so $$\frac{d}{dy} (f^{−1} (y)) = \frac{1}{\dfrac{dy}{dx}}.$$</p><p class='info'><a href='/book/39/139/46458#15' class='ord'>#15</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24335' class='u75'><p class='text'>Используя цепное правило:<br />
+\frac{d}{dy} (f^{−1} (y)) \frac{dy}{dx} = 1<br />
+имеем<br />
+\frac{d}{dy} (f^{−1} (y)) = \frac{1}{\dfrac{dy}{dx}}.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:42</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46459'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Implicit differentiation allows us to find the derivative of the inverse function $x = f^{−1} (y)$ whenever we know the derivative of the original function $y = f(x)$.</p><p class='info'><a href='/book/39/139/46459#16' class='ord'>#16</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24337' class='u75'><p class='text'>Неявное дифференцирование дает нам возможность найти производную обратной функции $x=f^{-1}(y)$ в том случае, когда мы знаем производную оригинальной функции $y=f(x)$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:47</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46460'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Derivative of $\arctan (x)$</p><p class='info'><a href='/book/39/139/46460#17' class='ord'>#17</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24338' class='u75'><p class='text'>Производная от $ \mathrm{arctg} (x)$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:48</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46461'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Let’s use our formula for the derivative of an inverse function to find the derivative of the inverse of the tangent function: $y = \tan^{−1} x = \arctan x$.</p><p class='info'><a href='/book/39/139/46461#18' class='ord'>#18</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24339' class='u75'><p class='text'>Давайте используем нашу формулу для производной обратной функции для нахождения произвдной функции, обратной к тангенсу.<br />
+$y =  \mathrm{tg}^{−1} x = \mathrm{arctg} x$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:49</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46462'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We simplify the equation by taking the tangent of both sides:<br />
+\begin{align}<br />
+y &amp;= \tan^{−1} x \\<br />
+\tan y &amp;= \tan (\tan^{−1} x) \\<br />
+\tan y &amp;= x<br />
+\end{align}</p><p class='info'><a href='/book/39/139/46462#19' class='ord'>#19</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24340' class='u75'><p class='text'>Мы упрощаем выражения, применив тангенс с двух сторон:<br />
+\begin{align} <br />
+y &amp;=  \mathrm{tg}^{−1} x \\ <br />
+\mathrm{tg} y &amp;=\mathrm{tg} (\mathrm{tg}^{−1} x) \\ <br />
+\mathrm{tg} y &amp;= x <br />
+\end{align}</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:53</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46463'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>To get an idea what to expect, we start by graphing the tangent function (see Figure 1).</p><p class='info'><a href='/book/39/139/46463#20' class='ord'>#20</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24341' class='u75'><p class='text'>Чтобы понять, что нас ждет, мы начнем с построения графика тангенциальной функции (смотри Рисунок 1).</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:54</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46464'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The function $\tan (x)$ is defined for $−\pi &lt; x &lt; \pi$.</p><p class='info'><a href='/book/39/139/46464#21' class='ord'>#21</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24342' class='u75'><p class='text'>Функция $tg(x)$ определена для $-\pi &lt; x &lt; \pi$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 19:55</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46465'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>It’s graph 2 extends from negative infinity to positive infinity.</p><p class='info'><a href='/book/39/139/46465#22' class='ord'>#22</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24343' class='u75'><p class='text'>Это график 2, расширенный до промежутка от отрицательной бескнонечности до положительной бесконечности.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 20:00</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46466'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>If we reflect the graph of $\tan x$ across the line $y = x$ we get the graph of $y = \arctan x$ (Figure 2).</p><p class='info'><a href='/book/39/139/46466#23' class='ord'>#23</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24344' class='u75'><p class='text'>Если мы отразим график $\mathrm{tg} x$ относительно прямой $y=x$, мы получим график $y = \mathrm{arctg} x$ (Рисунок 2).</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 20:01</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46467'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Note that the function $\arctan x$ is defined for all values of $x$ from minus infinity to infinity, and $\lim_{x \to \infty} \tan^{−1} x = \frac{\pi}{2}$.</p><p class='info'><a href='/book/39/139/46467#24' class='ord'>#24</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24345' class='u75'><p class='text'>Следует заметить, что функция $arctg x$ определения на всех $x$ на числовой прямой и $lim_{x\to\infty} tg^{-1} x = \frac{\pi}{2}$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 20:03</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46468'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: Graph of the tangent function.</p><p class='info'><a href='/book/39/139/46468#25' class='ord'>#25</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24346' class='u75'><p class='text'>Рисунок 1: График тангенциальной функции.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 20:04</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46469'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>You may know that:<br />
+\begin{align}<br />
+\frac{d}{dy} \tan y &amp;= \frac{d}{dy} \sin y \cos y \\<br />
+&amp;\;\;\vdots \\<br />
+&amp;= \frac{1}{\cos^2 y} \\<br />
+&amp;= \sec^2 y<br />
+\end{align}</p><p class='info'><a href='/book/39/139/46469#26' class='ord'>#26</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24347' class='u75'><p class='text'>Вы знаете, что:<br />
+\begin{align} <br />
+\frac{d}{dy} \mathrm{tg} y &amp;= \frac{d}{dy} \sin y \cos y \\ <br />
+&amp;\;\;\vdots \\ <br />
+&amp;= \frac{1}{\cos^2 y} \\ <br />
+&amp;= \sec^2 y <br />
+\end{align}</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 20:12</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46470'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 2: Graph of $\tan^{−1} x$.</p><p class='info'><a href='/book/39/139/46470#27' class='ord'>#27</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24348' class='u75'><p class='text'>Рисунок 2: График $ \mathrm{tg}^{-1} x$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 16.07.16 в 20:13</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46471'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>(If you haven’t seen this before, it’s good exercise to use the quotient rule to verify it!)</p><p class='info'><a href='/book/39/139/46471#28' class='ord'>#28</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24536' class='u75'><p class='text'>(Если вы не видели этого раньше, то будет хорошим упражнением использовать правило &quot;производной от частного&quot;, чтобы проверить это!)</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:23</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46472'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We can now use implicit differentiation to take the derivative of both sides of our original equation to get:<br />
+\begin{align}<br />
+\tan y &amp;= x \\<br />
+\frac{d}{dx} (\tan(y)) &amp;= \frac{d}{dx} x \\<br />
+\textrm{(Chain Rule)} \quad \frac{d}{dy} (\tan(y)) \frac{dy}{dx} &amp;= 1 \\<br />
+\left( \frac{1}{\cos^ (y)} \right) \frac{dy}{dx} &amp;= 1 \\<br />
+\frac{dy}{dx} &amp;= \cos^2 (y)<br />
+\end{align}</p><p class='info'><a href='/book/39/139/46472#29' class='ord'>#29</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24537' class='u75'><p class='text'>Теперь мы можем использовать неявное дифферецирование для того, чтобы взять производную с обеих сторон оригинального выражения, для получения:<br />
+\begin{align} <br />
+\textrm{tg} y &amp;= x \\ <br />
+\frac{d}{dx} (\tg(y)) &amp;= \frac{d}{dx} x \\ <br />
+\textrm{(Цепное правило)} \quad \frac{d}{dy} (\textrm{tg}(y)) \frac{dy}{dx} &amp;= 1 \\ <br />
+\left( \frac{1}{\cos^ (y)} \right) \frac{dy}{dx} &amp;= 1 \\ <br />
+\frac{dy}{dx} &amp;= \cos^2 (y) <br />
+\end{align}</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:26</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46473'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Or equivalently, $y' = \cos^2 y$. Unfortunately, we want the derivative as a function of $x$, not of $y$. We must now plug in the original formula for $y$, which was $y = \tan^{−1} x$, to get $y' = \cos^2 (\arctan (x))$.</p><p class='info'><a href='/book/39/139/46473#30' class='ord'>#30</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24538' class='u75'><p class='text'>Или это равносильно $y' = cos^2y$. К сожалению, мы хотим найти производнуб функции от $x$, нет от $y$. Мы должны сейчас включить в оригинальную формулу для $y$, которая была $y = \mathrm{tg}^{-1}x$, чтобы получить $y' = cos^2(\mathrm{arctg}(x))$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:30</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46474'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This is a correct answer but it can be simplified tremendously. We’ll use some geometry to simplify it.</p><p class='info'><a href='/book/39/139/46474#31' class='ord'>#31</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24539' class='u75'><p class='text'>Это правильный ответ, но можно сильно упростить.<br />
+Используем немного геометрии для этого.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:31</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46475'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 3: Triangle with angles and lengths corresponding to those in the example.</p><p class='info'><a href='/book/39/139/46475#32' class='ord'>#32</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24540' class='u75'><p class='text'>Рисунок 3: Треугольники с углами и сторонами, соответствующими тем, что даны в примере.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:31</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46476'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In this triangle, $\tan (y) = x$ so $y = \arctan (x)$.</p><p class='info'><a href='/book/39/139/46476#33' class='ord'>#33</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24541' class='u75'><p class='text'>В этом треугольнике $\mathrm{tg}=x$, так что $y=\mathrm{arctg}(x)$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:32</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46477'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The Pythagorean theorem tells us the length of the hypotenuse:<br />
+$$h = \sqrt{1 + x^2}$$<br />
+and we can now compute:<br />
+$$\cos (y) = \frac{1}{\sqrt{1 + x^2}}.$$</p><p class='info'><a href='/book/39/139/46477#34' class='ord'>#34</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24542' class='u75'><p class='text'>Теорема Пифагора говорит нам, что длина гипотенузы равна :<br />
+$$h = \sqrt{1 + x^2}$$<br />
+и мы можем вычислить:<br />
+$$ cos(y) = \frac{1}{\sqrt{1+x^2}} $$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:33</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46478'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>From this, we get:<br />
+$$cos^2 (y) = \left( \frac{1}{\sqrt{1 + x^2}} \right)^2 = \frac{1}{1 + x^2}$$<br />
+so:<br />
+$$\frac{dy}{dx} = \frac{1}{1 + x^2}$$</p><p class='info'><a href='/book/39/139/46478#35' class='ord'>#35</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24543' class='u75'><p class='text'>Теперь мы получаем:<br />
+$$ cos^2 (y) = \left( \frac{1}{\sqrt{1 + x^2}} \right)^2 = \frac{1}{1 + x^2} $$<br />
+так что:<br />
+$$ \frac{dy}{dx} = \frac{1}{1+x^2} $$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:34</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46479'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In other words,<br />
+$$\frac{d}{dx} \arctan (x) = \frac{1}{1 + x^2}.$$</p><p class='info'><a href='/book/39/139/46479#36' class='ord'>#36</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24544' class='u75'><p class='text'>Другими словами,<br />
+$$ \frac{d}{dx} \mathrm{arctg} (x) = \frac{1}{1 + x^2}. $$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:35</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46480'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Derivative of $\arcsin (x)$</p><p class='info'><a href='/book/39/139/46480#37' class='ord'>#37</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24545' class='u75'><p class='text'>Производная $arcsin(x)$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:36</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46481'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>For a final example, we quickly find the derivative of $y = \sin^{−1} x = \arcsin x$.</p><p class='info'><a href='/book/39/139/46481#38' class='ord'>#38</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24546' class='u75'><p class='text'>Для последнего примера мы быстро найдем производную от $y = sin^{-1} = \mathrm{arcsin}(x)$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:37</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46482'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>As usual, we simplify the equation by taking the sine of both sides:<br />
+\begin{align}<br />
+y &amp;= \sin^{−1} x \\<br />
+\sin y &amp;= x<br />
+\end{align}</p><p class='info'><a href='/book/39/139/46482#39' class='ord'>#39</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24547' class='u75'><p class='text'>Как обычно, мы упростим выражение, взяв синус с двух сторон:<br />
+<br />
+\begin{align} <br />
+y &amp;= \sin^{−1} x \\ <br />
+\sin y &amp;= x <br />
+\end{align}</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:41</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46483'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We next take the derivative of both sides of the equation and solve for $y' = \frac{dy}{dx}$.<br />
+\begin{align}<br />
+\sin y &amp;= x \\<br />
+(\cos y) \cdot y' &amp;= 1 \\<br />
+y' &amp;= \frac{1}{\cos y}<br />
+\end{align}</p><p class='info'><a href='/book/39/139/46483#40' class='ord'>#40</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24548' class='u75'><p class='text'>Потом мы возьмем производную с обеих сторон выражения и решим для $y' = \frac{dy}{dx}$.<br />
+\begin{align} <br />
+\sin y &amp;= x \\ <br />
+(\cos y) \cdot y' &amp;= 1 \\ <br />
+y' &amp;= \frac{1}{\cos y} <br />
+\end{align}</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:46</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46484'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We want to rewrite this in terms of $x = \sin y$. Luckily there is a simple trig identity relating $\cos y$ to $\sin y$.</p><p class='info'><a href='/book/39/139/46484#41' class='ord'>#41</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24549' class='u75'><p class='text'>Мы хотим переписать это в терминах $x = \sin y$. К счастью, здесь есть простая связь между $\cos y$ и $\sin y$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:48</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46485'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We can solve it for $\cos y$ and “plug in”.<br />
+\begin{align}<br />
+\cos^2 y + \sin^2 y &amp;= 1 \\<br />
+\cos^2 y &amp;= 1 − \sin^2 y \\<br />
+\cos y &amp;= 1 − \sin^2 y \quad \textrm{($\cos y &gt; 0$ on the range of $y = \sin^{−1} x$)}<br />
+\end{align}</p><p class='info'><a href='/book/39/139/46485#42' class='ord'>#42</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24550' class='u75'><p class='text'>Мы можем решить это для $\cos y$ и &quot;вставить&quot;<br />
+\begin{align} <br />
+\cos^2 y + \sin^2 y &amp;= 1 \\ <br />
+\cos^2 y &amp;= 1 − \sin^2 y \\ <br />
+\cos y &amp;= 1 − \sin^2 y \quad \textrm{($\cos y &gt; 0$ on the range of $y = \sin^{−1} x$)} <br />
+\end{align}</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:48</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46486'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Plugging this in to our equation for $y' = \frac{d}{dx} \sin^{−1} x$ we get:<br />
+$$y' =  \frac{1}{\cos y} = \frac{1}{\sqrt{1 − \sin^2 y}} = \frac{1}{\sqrt{1 − x^2}}.$$</p><p class='info'><a href='/book/39/139/46486#43' class='ord'>#43</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24551' class='u75'><p class='text'>Вставляяя это в наше выражение для $y' = \frac{d}{dx}\sin^{-1}x$ получим:<br />
+$$y' =  \frac{1}{\cos y} = \frac{1}{\sqrt{1 − \sin^2 y}} = \frac{1}{\sqrt{1 − x^2}}.$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:51</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46487'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Notice that we made a choice between a positive and negative square root when solving for $\cos y$.</p><p class='info'><a href='/book/39/139/46487#44' class='ord'>#44</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24552' class='u75'><p class='text'>Обратите внимание, что сделали выбор между положительными и отрицательными корнями, когда решали уравнение для $\cos y$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:52</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46488'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We chose the positive square root because we usually define $\sin^{−1} x$ to have outputs between $−\pi/2$ and $\pi/2$, and the cosine function is always positive on this interval.</p><p class='info'><a href='/book/39/139/46488#45' class='ord'>#45</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24553' class='u75'><p class='text'>Мы выбрали положительный корень, потому что мы обычно определяем $\sin^{-1}x$, чтобы иметь выходные значения между $- \pi/2 $ и $\pi/2$, и косинус здесь всегда будет положительный.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:54</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46489'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>When dealing with inverse functions we are often faced with choices like this; when in doubt draw a graph and be sure your choices make sense in the context of your problem</p><p class='info'><a href='/book/39/139/46489#46' class='ord'>#46</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24554' class='u75'><p class='text'>Когда мы имеем дело с обратными функциями, мы часто встречаемся с похожим выбором; когда сомневаетесь, нарисуйте график и удостоверьтесь, что ваш выбор имеет смысл в контесте данной проблемы.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 17.07.16 в 16:56</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+    </tbody>
+</table>
+
+<div id="pages-bottom">
+    </div>
+
+
+<div id="tr-sidebar">
+    <div id="dict" class='has-edit'>
+        <div id="dict-search">
+            <input type="text" placeholder="Поиск по словарю" class="search"/>
+            <a href="#" class="b"><i class="i icon-remove-sign"></i></a>
+        </div>
+        <div id="dict-body">
+            <div id="dict-body-content">
+                Минутку...
+            </div>
+        </div>
+                    <div id="dict-add">
+                <form method="post" action="/book/39/dict">
+                    <input type="text" name="term" placeholder="Оригинал"/>
+                    <input type="text" name="descr" placeholder="Перевод"/>
+                    <button type="submit" class="btn btn-mini btn-primary">Добавить</button>
+                    <button type="button" class="btn btn-mini cancel">Отмена</button>
+                </form>
+            </div>
+            <div id="dict-tools">
+                <i class="icon-plus"></i> <a href="#" class="add">Добавить слово</a>
+            </div>
+                    </div>
+</div>
+
+
+<div id="renum-modal" class="modal hide">
+    <form method="post" class="form-inline" action="/book/39/139/renum">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Перенумеровать субтитры</h3>
+        </div>
+        <div class="modal-body">
+            Номер субтитра, серая циферка рядом с его таймингом, в сущности, ни на что не влияет, субтитры сортируются
+            по времени.
+            Если вы добавляете новый титр, его номер может выбиваться из плавного течения номеров. Этот инструмент
+            расставит всем
+            титрам номера в хронологическом порядке.
+        </div>
+        <div class="modal-footer">
+            <input type="hidden" name="mode" value="1"/>
+            <button type="submit" class="btn btn-primary">Поехали</button>
+            <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $("#Tr").find("td.o").each(function () {
+        var $this = $(this);
+        $this.children("div").css("min-height", $this.height());
+    });
+</script>
+</div>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span6">
+                &copy; <a href="http://romakhin.ru/" rel="nofollow">Дмитрий Ромахин</a>
+                2008&ndash;2017                <br/>
+                <a href="/site/help">Справка</a> |
+                <a href="/blog?topic=65">Техподдержка</a> |
+                <a href="mailto:abuse@translate.kursomir.ru?subj=%2Fbook%2F39%2F139">Abuse</a> |
+                <a href="mailto:translate@kursomir.ru">E-mail для справок</a> |
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&locale=ru"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']]
+        },
+        asciimath2jax: {
+            delimiters: [['``', '``']]
+        }
+    });
+</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('a.tooltip').tooltip({'placement':'bottom'});
+jQuery('a[rel="popover"]').popover();
+jQuery('#yw0 .alert').alert();
+});
+/*]]>*/
+</script>
+</body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="/css/v3.1.css?3" />
+<link rel="stylesheet" type="text/css" href="/css/translate-1.css?5" />
+<link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css?1" />
+<style type="text/css">
+/*<![CDATA[*/
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+body, label, input, button, select, textarea {
+	font-size: 13px;
+	line-height: 18px;
+}
+#chat-box {
+	height: 300px;
+}.comments .comment .meta, .comments .comment .meta a, .translator .info, .translator .info a { color: #bbb; }
+.comments .comment:hover .meta, .comments .comment:hover .meta a, .translator tr:hover .info, .translator tr:hover .info a { color: #888; }
+/*]]>*/
+</style>
+<script type="text/javascript" src="/assets/bbeb3eca/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/6b5c0e82/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/global.js?16"></script>
+<script type="text/javascript" src="/js/user.js?3"></script>
+<script type="text/javascript" src="/js/chat.js?3"></script>
+<script type="text/javascript" src="/js/translate-1.js?11"></script>
+<script type="text/javascript" src="/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="/js/jquery.elastic.mod.js"></script>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.min.js?1"></script>
+<script type="text/javascript" src="/js/ff_comments.js?3"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var User = new CUser({id: 76, login: 'Keyten'});
+
+var Book = new CBook({
+	id: 39,
+	owner_id: 67,
+	facecontrol: 1,
+	s_lang: 2,
+	t_lang: 1,
+	n_verses: 2492,
+	n_vars: 1286,
+	d_vars: 1282,
+	typ: 'A',
+	s_title: '18.01SC Single Variable Calculus',
+	t_title: '18.01SC Анализ функций одной переменной',
+	membership: {status: 1}
+});
+
+var Chap = {
+	id: 142,
+	book_id: 39,
+	n_verses: 37,
+	n_vars: 37,
+	d_vars: 37,
+	title: '18. Derivatives of other Exponential Functions / Производные других показательных функций',
+	ac_read: '',
+	ac_gen: '',
+	ac_rate: '',
+	ac_comment: '',
+	ac_tr: '',
+};
+
+/*]]>*/
+</script>
+<title>Перевод 18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной: 18. Derivatives of other Exponential Functions / Производные других показательных функций :: КУРСОМИР.ПЕРЕВОДЫ</title>
+    <meta name="description" content="Коллективные переводы субтитров и книжек"/>
+    <meta name="language" content="ru"/>
+    <meta name="keywords"
+          content="перевод, translation, коллективный перевод, кино с субтитрами, кино по-английски с русскими субтитрами, кино по-немецки с русскими субтитрами, кино по-испански с русскими субтитрами, примеры перевода, краудсорсинг, crowdsourcing, нотабеноид"/>
+    <link rel='icon' href='/i/favicon.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='/i/favicon.ico' type='image/x-icon'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE]>
+    <script type="text/javascript" src="/js/jquery.input-placeholder.js"></script>
+    <link rel='stylesheet' href="/css/jquery.input-placeholder.css"/>
+    <script type="text/javascript">
+        $(function () {
+            $('input[placeholder]').inputDefault();
+        });
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container-fluid" style="background-color:#fff;">
+        <a href="/" id="header-logo">
+            <img src="/i/logo.png" width="124" height="130"
+                 style="padding-top: 50px;"
+                 alt="КУРСОМИР.ПЕРЕВОДЫ"
+                 title="3.3"/>
+        </a>
+        <nav>
+            <ul id="header-menu">
+                <li><a href="/catalog/1">ВИДЕО</a></li>
+                <li><a href="/catalog/2">ТЕКСТЫ</a></li>
+                <li><a href="/users">ПЕРЕВОДЧИКИ</a></li>
+                <li><a href="/blog">БЛОГ</a></li>
+                <li><a href="/announces">АНОНСЫ</a></li>
+                <li class="search">
+                    <form class="form-search" method="get" action="/search">
+                                                <input type="hidden" name="from" value="header">
+                        <input type="text" name="t" class="input-medium search-query span3"
+                               placeholder="Вы что-то потеряли?"
+                               title="Кстати, отсюда можно найти и переводчика, если собаку (@), а потом сразу его ник."/>
+                        <input type="submit" value="&raquo;" class="btn" style="border-radius: 20px;"/>
+                    </form>
+                </li>
+            </ul>
+            <ul id="header-submenu">
+                                    <li>
+                        <a href="/users/76" accesskey="i">
+                            <strong>Keyten</strong>
+                            Всё о вас
+                        </a>
+                    </li>
+                    <li id="hm-c">
+                        <a href="/my/comments" accesskey="c">
+                            <strong>Обсуждения  <b></b></strong>
+                            Места, где вы общались
+                        </a>
+                    </li>
+                    <li id="hm-n">
+                        <a href="/my/notices" accesskey="n">
+                            <strong>Оповещения  <b></b></strong>
+                            События для вас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#bookmarks" accesskey="b">
+                            <strong>Закладки</strong>
+                            На память
+                        </a>
+                    </li>
+                    <li><a href="/book/0/edit"><strong>Создать</strong> Перевод</a></li>
+                    <li><a href="/register/settings"><strong>Настройки</strong> Профиля</a></li>
+                    <li><a href="/register/logout"><strong>Выход</strong> До свидания :(</a></li>
+                            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <div id="bookmarks" class="modal hide">
+        <div class="modal-header" style='padding-bottom:0;'>
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Закладки</h3>
+            <div class="btn-toolbar">
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-sort">
+                    <button class="btn btn-mini" data-v="1" title="Сортировка по алфавиту">
+                        <i class="icon-text-height"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="2" title="Сортировка по вашей активности">
+                        <i class="icon-fire"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="3" title="Сортировка по времени вступления в перевод">
+                        <i class="icon-time"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="5" title="Сортировка по времени добавления закладки">
+                        <i class="icon-shopping-cart"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="4" title="Сортировка по готовности перевода">%</button>
+                    <button class="btn btn-mini" data-v="0" title="Ваша сортировка (таскайте закладки мышкой)">
+                        <i class="icon-random"></i>
+                    </button>
+                </div>
+
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-title">
+                    <button class="btn btn-mini" data-v="s" title="Показывать названия на языке оригинала">О</button>
+                    <button class="btn btn-mini" data-v="t" title="Показывать названия на языке перевода">П</button>
+                </div>
+                                <div class="btn-group pull-right">
+                    <button class="btn btn-mini" title="Удалить" id="bookmarks-tb-rm">
+                        <i class="icon-remove"></i>
+                    </button>
+                    <button class="btn btn-mini" title="Редактировать" id="bookmarks-tb-ed">
+                        <i class="icon-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body" style="max-height:350px">
+            <p class='loading'>минуточку...</p>
+        </div>
+    </div>
+
+
+<div class="container-fluid">
+    <div id="yw0"></div>
+<style type="text/css">
+        .translator.has-best td.t .best .text {
+        background-image: url(/i/corner-gray-t-r.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    </style>
+
+<h1><a href='/book/39'>18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной</a>: 18. Derivatives of other Exponential Functions / Производные других показательных функций</h1>
+
+<div id="tb-main">
+    <div>
+        <div class='group'><a
+                href="/book/39/142/go?nach=prev&ord=18"
+                title="Предыдущая глава"><i class="i icon-arrow-left"></i></a></div>
+
+        <div class="tb-index btn-group">
+            <a href="/book/39" class="btn btn-small"><i class="icon-list"></i> Оглавление</a>
+            <a class="btn btn-small dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+            <ul class="dropdown-menu" id="tb-chapter-list">
+                <li><a href="/book/39/members">Переводчики</a></li>
+                <li><a href="/book/39/blog">Блог</a></li>
+            </ul>
+        </div>
+
+        <div class='group'><a
+                href="/book/39/142/go?nach=next&ord=18"
+                title="Следующая глава"><i class="i icon-arrow-right"></i></a></div>
+
+        <div class="btn-group">
+                            <button type="button" class="btn btn-small tb-chat" title="Ctrl + ~"><i class="icon-bullhorn"></i> Чат
+                </button>
+            
+            <a href="#" class="btn btn-small tb-dict" accesskey="V"><i class="icon-book"></i> Словарь</a>
+
+            <div id="tb-filter">
+                <form method="get" class="form-inline" action="/book/39/142">
+                    <ul class='options'>
+                        <li><label><input type='radio' name='show' value='1' /> <a href='?show=1'>Непереведённое</a></label></li><li><label><input type='radio' name='show' value='7' /> <a href='?show=7'>С 2 и более версиями перевода</a></label></li><li><label><input type='radio' name='show' value='3' /> <a href='?show=3'>С комментариями</a></label></li><li><label><input type='radio' name='show' value='4' /> <a href='?show=4'>С новыми комментариями</a></label></li><li><label><input type='radio' name='show' value='2' />  <input type='text' name='show_user' placeholder='От переводчика' class='span3' value='' title='Ctrl+I: вставить ваш ник' /></label></li><li><label><input type='radio' name='show' value='5' />  <input type='text' name='to' placeholder='Оригинал содержит' class='span3' value='' /></label></li><li><label><input type='radio' name='show' value='6' />  <input type='text' name='tt' placeholder='Перевод содержит' class='span3' value='' /></label></li>                    </ul>
+                    <button type="submit" class="btn btn-mini btn-primary">Показать</button>
+                    <a href="/book/39/142"
+                       class="btn btn-mini">Сбросить всё</a>
+                </form>
+            </div>
+
+            <a href='#' class='btn btn-small tb-filter' accesskey='F'><i class='icon-filter'></i> Фильтр</a>        </div>
+
+        
+        
+
+        <div class="group">
+            <a href="/book/39/142/switchiface"><i class="icon-thumbs-down" title="Старый	интерфейс"></i></a>
+        </div>
+
+        <div class="tb-progress group"></div>
+
+            </div>
+</div>
+
+<div class="clear"></div>
+
+<table id="Tr" class="translator has-best translator-oe-hide">
+    <thead>
+    <tr>
+                    <th></th>        <th>
+            Английский оригинал
+        </th>
+                    <th></th>        <th>
+            Перевод на русский        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id='o46490'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The Functions $10^x$ and $2^x$</p><p class='info'><a href='/book/39/142/46490#1' class='ord'>#1</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24756' class='u75'><p class='text'>Функции $10^x$ и $2^x$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:28</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46491'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We computed that $\frac{d}{dx} a^x = (\ln a) a^x$.</p><p class='info'><a href='/book/39/142/46491#2' class='ord'>#2</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24757' class='u75'><p class='text'>Мы вычислили, что $\frac{d}{dx}a^x = (\ln a)a^x$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:29</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o96539'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>So<br />
+$$\frac{d}{dx} 2^x = (\ln 2) 2^x$$<br />
+and<br />
+$$\frac{d}{dx} {10}^x = (\ln 10) {10}^x.$$</p><p class='info'><a href='/book/39/142/96539#3' class='ord'>#3</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24758' class='u75'><p class='text'>Так что<br />
+$$ \frac{d}{dx}2^x = (\ln 2)2^x $$<br />
+и<br />
+$$ \frac{d}{dx}10^x = (\ln 10)10^x $$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:29</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46492'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Even if we insist on starting with another base, like $2$ or $10$, the natural logarithm appears. They come up naturally, independent of our human preferences like base $2$ or base $10$.</p><p class='info'><a href='/book/39/142/46492#4' class='ord'>#4</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24759' class='u75'><p class='text'>Даже если мы настоим на старте с другим основанием, таким как $2$ или $10$, появится натуральный логарифм. Он придет естественным путем, независимо от наших человеческих предпочтений к основаниям $2$ или $10$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:32</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46493'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The base $e$ may seem strange at first, but it comes up everywhere. After a while you’ll learn to appreciate just how natural it is.</p><p class='info'><a href='/book/39/142/46493#5' class='ord'>#5</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24760' class='u75'><p class='text'>Основание $e$ выглядит странным поначалу, но оно появляется везде. Через некоторое время вы научитесь ценить эту естественность.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:34</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46494'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>$\displaystyle{\frac{d}{dx} a^x}$, part 2</p><p class='info'><a href='/book/39/142/46494#6' class='ord'>#6</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24761' class='u75'><p class='text'>$\frac{d}{dx}a^x$, часть 2</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:34</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46495'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We’re learning to differentiate any exponential $a^x$. This is the second of two possible methods.</p><p class='info'><a href='/book/39/142/46495#7' class='ord'>#7</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24762' class='u75'><p class='text'>Мы научимся дифференцировать любую экспоненциальную функцию $a^x$. Сейчас рассмотрим второй из двух возможных методов.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:35</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46496'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Method 2: Logarithmic differentiation</p><p class='info'><a href='/book/39/142/46496#8' class='ord'>#8</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24763' class='u75'><p class='text'>Метод 2: логарифмическое дифференцирование.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:35</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46497'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>It turns out that sometimes it is hard to differentiate a function $u$ and easier to differentiate $\ln u$ (for example, $u = e^{x^2 +6}$.) We’d like to be able to use $\frac{d}{dx} \ln u$ to find $\frac{d}{dx} u$.</p><p class='info'><a href='/book/39/142/46497#9' class='ord'>#9</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24764' class='u75'><p class='text'>Метод основан на том предположении, что иногда функцию $u$ дифференцировать тяжело, а $\ln u$ - легко (для примера, $u = e^{x^2 + 6}.$). Мы хотели бы использовать $\frac{d}{dx}\ln u$ для того, чтобы найти $\frac{d}{dx} u$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:38</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46498'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The chain rule tells us that $\frac{d}{dx} \ln u = \frac{d \ln u}{du} \frac{du}{dx}$, and we know that $\frac{d}{du} \ln u = \frac{1}{u} \frac{du}{dx}, so $$(ln u)' = u'/u.$$</p><p class='info'><a href='/book/39/142/46498#10' class='ord'>#10</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24765' class='u75'><p class='text'>Цепное правило говорит нам, что $\frac{d}{dx}\ln u = \frac{d \ln u}{du} \frac{du}{dx}$, и мы знаем, что $\frac{d}{du} \ln u = \frac{1}{u} \frac{du}{dx}$, так что $(\ln u)' = u' / u.$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:40</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46499'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>How does this help us compute $\frac{d}{dx} a^x$?<br />
+\begin{align*}<br />
+u &amp;= a^x \\[2pt]<br />
+\ln u &amp;= \ln (ax) \\[2pt]<br />
+\ln u &amp;= x \ln a<br />
+\end{align*}</p><p class='info'><a href='/book/39/142/46499#11' class='ord'>#11</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24766' class='u75'><p class='text'>Как это поможет нам вычислить $\frac{d}{dx}a^x$?<br />
+$$<br />
+\begin{align*} <br />
+u &amp;= a^x \\[2pt] <br />
+\ln u &amp;= \ln (ax) \\[2pt] <br />
+\ln u &amp;= x \ln a <br />
+\end{align*}<br />
+$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:41</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46500'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This is pretty easy to differentiate because $\ln a$ is a constant: $$(\ln u)' = \ln a.$$</p><p class='info'><a href='/book/39/142/46500#12' class='ord'>#12</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24767' class='u75'><p class='text'>Это очень легко дифференцировать, так как $\ln a$ - константа:<br />
+$$<br />
+(\ln u)' = ln a.<br />
+$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:42</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46501'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Since $(\ln u)' = u'/u$, $u' = u(\ln u)'$. So $\frac{d}{dx} a^x = a^x \ln a = (\ln a) a^x$.</p><p class='info'><a href='/book/39/142/46501#13' class='ord'>#13</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24768' class='u75'><p class='text'>С тех пор, как $(\ln u) = (u' / u)$, $u' = u (\ln u)'$. Так что $\frac{d}{dx}a^x = a^x \ln a = (\ln a) a^x.$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:44</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46502'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This uses the same arithmetic as the first method, but we don’t have to convert to base $e$.</p><p class='info'><a href='/book/39/142/46502#14' class='ord'>#14</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24769' class='u75'><p class='text'>Этот метод использует такую арфиметику, как и первый, но у нас нет необходимости преобразовывать к основанию $e$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:45</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46503'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Another Example of Logarithmic Differentiation</p><p class='info'><a href='/book/39/142/46503#15' class='ord'>#15</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24770' class='u75'><p class='text'>Еще один пример логарифмического дифференцирования.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:45</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46504'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This example could be done equally well by converting to base $e$, but we’re going to do it using logarithmic differentiation. Recall that the rule we use for logarithmic differentiation is $(\ln u)' = u'/u$.</p><p class='info'><a href='/book/39/142/46504#16' class='ord'>#16</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24771' class='u75'><p class='text'>Этот пример может быть использован с использованием преобразования к основанию $e$, но мы собираемся использовать логарифмическое дифференцирование. Вспомним, что правило логарифмического дифференцирования - $(\ln u)' = u' / u$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:47</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46505'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Here we have a “moving” (non-constant) exponent and a moving base.</p><p class='info'><a href='/book/39/142/46505#17' class='ord'>#17</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24772' class='u75'><p class='text'>Здесь у нас есть &quot;двигающаяся&quot; (не-константная) степень и двигающееся основнание.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:49</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46506'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Example: Let $v = x^x$. Find $v'$.</p><p class='info'><a href='/book/39/142/46506#18' class='ord'>#18</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24773' class='u75'><p class='text'>Пример: пусть $v = x^x$. Найдем $v'$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:49</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46507'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>First, we take the natural log of both sides to see that $\ln v = \ln (x^x) = x \ln x$.</p><p class='info'><a href='/book/39/142/46507#19' class='ord'>#19</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24774' class='u75'><p class='text'>Сначала, мы возьмем натуральный логарифм от обеих частей, чтобы увидеть, что $\ln v = \ln(x^x) = x \ln x$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:54</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46508'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Next, we differentiate both sides of the equation, using the product rule and the rule for the derivative of $\ln x$ on the right hand side: $$(\ln v)'= \ln x + x \cdot \frac{1}{x}.$$</p><p class='info'><a href='/book/39/142/46508#20' class='ord'>#20</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24775' class='u75'><p class='text'>Потом, мы продифференцируем обе части равенства, используя производную произведения и производную $\ln x$ в правой части:<br />
+$$ (\ln v)' = \ln x + x \dot \frac{1}{x} $$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 9:56</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46509'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Now apply the formula $(\ln u)' = u'/u$ to get: $$v'/v = 1 + ln x.$$</p><p class='info'><a href='/book/39/142/46509#21' class='ord'>#21</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24776' class='u75'><p class='text'>Теперь применим формулу $(ln u)' = u' / u$, чтобы получить:<br />
+$$ v' / v = 1 + \ln x $$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 10:01</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46510'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Plugging in $x^x$ for $v$ and solving for $v'$, we get:<br />
+\begin{align*}<br />
+\frac{v'}{x^x} &amp;= 1 + \ln x \\<br />
+v' &amp;= x^x (1 + \ln x) \\<br />
+\frac{d}{dx} x^x &amp;= x^x (1 + \ln x)<br />
+\end{align*}</p><p class='info'><a href='/book/39/142/46510#22' class='ord'>#22</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24777' class='u75'><p class='text'>Вставляя $x^x$ вместо $v$ и решая $v'$, мы получаем:<br />
+$$<br />
+\begin{align*} <br />
+\frac{v'}{x^x} &amp;= 1 + \ln x \\ <br />
+v' &amp;= x^x (1 + \ln x) \\ <br />
+\frac{d}{dx} x^x &amp;= x^x (1 + \ln x) <br />
+\end{align*}<br />
+$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 10:02</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46511'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The Power Rule</p><p class='info'><a href='/book/39/142/46511#23' class='ord'>#23</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24778' class='u75'><p class='text'>Степенное правило</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 10:03</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46512'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>What is the derivative of $\frac{d}{dx} x^r$? We answered this question first for positive integer values of $r$, for all integers, and then for rational values of $r$:<br />
+$$\frac{d}{dx} x^r = r x^{r-1}.$$</p><p class='info'><a href='/book/39/142/46512#24' class='ord'>#24</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24779' class='u75'><p class='text'>Какова производная от $\frac{d}{dx} x^r$ Мы ответим на этот вопрос сначала для положительных значений $r$, для всех целых, а потом и для рациональных $r$:<br />
+$$<br />
+\frac{d}{dx} x^r = r x^{r-1}.<br />
+$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 10:04</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46513'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We’ll now prove that this is true for any real number $r$. We can do this two ways:</p><p class='info'><a href='/book/39/142/46513#25' class='ord'>#25</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24780' class='u75'><p class='text'>Мы сейчас докажем это для любых действительных чисел. Мы можем сделать это двумя способами:</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 10:05</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46514'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>1st method: base $e$</p><p class='info'><a href='/book/39/142/46514#26' class='ord'>#26</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24781' class='u75'><p class='text'>Первый метод: основание $e$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 10:05</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46515'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Since $x = e^{\ln x}$, we can say:<br />
+\begin{align*}<br />
+x^r &amp;= (e^{\ln x})^r \\[2pt]<br />
+x^r &amp;= e^{r \ln x}<br />
+\end{align*}</p><p class='info'><a href='/book/39/142/46515#27' class='ord'>#27</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24782' class='u75'><p class='text'>Принимая $x = e^{\ln x}$, мы можем сказать:<br />
+$$<br />
+\begin{align*} <br />
+x^r &amp;= (e^{\ln x})^r \\[2pt] <br />
+x^r &amp;= e^{r \ln x} <br />
+\end{align*}<br />
+$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 10:06</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46516'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We take the derivative of both sides to get:<br />
+\begin{align*}<br />
+\frac{d}{dx} x^r &amp;= \frac{d}{dx} e^{r \ln x} = e^{r \ln x} \frac{d}{dx} (r \ln x) \quad \textrm{(by the chain rule)} \\[2pt]<br />
+&amp;= e^{r \ln x} \left( \frac{r}{x} \right) \quad \textrm{(remember $r$ is constant)} \\[2pt]<br />
+&amp;=x^r \left( \frac{r}{x} \right) \quad \textrm{(because $x^r = e^{r \ln x}$)} \\[2pt]<br />
+\frac{d}{dx} x^r &amp;= r x^{r-1}<br />
+\end{align*}</p><p class='info'><a href='/book/39/142/46516#28' class='ord'>#28</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24783' class='u75'><p class='text'>Мы берем производную от обеих частей, чтобы получить:<br />
+$$<br />
+\begin{align*} <br />
+\frac{d}{dx} x^r &amp;= \frac{d}{dx} e^{r \ln x} = e^{r \ln x} \frac{d}{dx} (r \ln x) \quad \textrm{(по цепному правилу)} \\[2pt] <br />
+&amp;= e^{r \ln x} \left( \frac{r}{x} \right) \quad \textrm{(помним, что $r$ - константа)} \\[2pt] <br />
+&amp;=x^r \left( \frac{r}{x} \right) \quad \textrm{(потому что $x^r = e^{r \ln x}$)} \\[2pt] <br />
+\frac{d}{dx} x^r &amp;= r x^{r-1} <br />
+\end{align*}<br />
+$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 10:07</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46517'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>2nd method: logarithmic differentiation</p><p class='info'><a href='/book/39/142/46517#29' class='ord'>#29</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24784' class='u75'><p class='text'>Второй метод: логарифмическое дифференцирование</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 10:07</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46518'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We define $f(x) = x^r$, and take the natural log of both sides to get $\ln f = r \ln x$.</p><p class='info'><a href='/book/39/142/46518#30' class='ord'>#30</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24785' class='u75'><p class='text'>Мы определяем $f(x) = x^r$ и берем натуральный логарифм от обеих сторон, чтобы получить $\ln f = r \ln x$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 10:08</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46519'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The technique of logarithmic differentiation requires us to we plug our function into the formula:<br />
+$$(\ln f)' = \frac{f'}{f}.$$</p><p class='info'><a href='/book/39/142/46519#31' class='ord'>#31</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24786' class='u75'><p class='text'>Техника логарифмического дифференцирования требует от нас вставить нашу функцию в формулу:<br />
+$$<br />
+(\ln f)' = \frac{f'}{f}.<br />
+$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 10:09</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46520'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>So we first compute:<br />
+\begin{align*}<br />
+\ln f &amp;= \ln x^r \\[2pt]<br />
+\ln f &amp;= r \ln x<br />
+\end{align*}</p><p class='info'><a href='/book/39/142/46520#32' class='ord'>#32</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24787' class='u75'><p class='text'>Сначала мы вычислим:<br />
+$$<br />
+\begin{align*} <br />
+\ln f &amp;= \ln x^r \\[2pt] <br />
+\ln f &amp;= r \ln x <br />
+\end{align*}<br />
+$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 10:10</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46521'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>And then take the derivative of both sides to get: $$(\ln f)' = \frac{r}{x}.$$</p><p class='info'><a href='/book/39/142/46521#33' class='ord'>#33</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24788' class='u75'><p class='text'>А затем возьмем производную с двух сторон, чтобы получить:<br />
+$$<br />
+(\ln f)' = \frac{r}{x}.<br />
+$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 10:10</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46522'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Since $(\ln f)' = \frac{f'}{f}$, we have: $$f' = f(\ln f)' \quad =  \quad x^r \left( \frac{x}{r} \right) = r x^{r−1}.$$</p><p class='info'><a href='/book/39/142/46522#34' class='ord'>#34</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24789' class='u75'><p class='text'>Так как $(\ln f)' = \frac{f'}{f}$, мы имеем:<br />
+$$<br />
+f' = f(\ln f)' \quad =  \quad x^r \left( \frac{x}{r} \right) = r x^{r−1}.<br />
+$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 10:11</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46523'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Look over the two methods again – the calculations are almost the same. This is typical.</p><p class='info'><a href='/book/39/142/46523#35' class='ord'>#35</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24790' class='u75'><p class='text'>Посмотрите на эти два метода еще раз - вычисления почти одинаковые. Это типичная ситуация.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 10:12</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46524'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>To use the second method we had to introduce a new symbol like $u$ or $f$.</p><p class='info'><a href='/book/39/142/46524#36' class='ord'>#36</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24791' class='u75'><p class='text'>Чтобы использовать второй метод, мы должны ввести новый символ типа $u$ или $f$,</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 10:13</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o46525'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In the first method we had to deal with exponents. It’s worthwhile know both methods.</p><p class='info'><a href='/book/39/142/46525#37' class='ord'>#37</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24792' class='u75'><p class='text'>В первом методы мы имели дело с экспонентой. Знать оба метода имеет смысл.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 10:13</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+    </tbody>
+</table>
+
+<div id="pages-bottom">
+    </div>
+
+
+<div id="tr-sidebar">
+    <div id="dict" class='has-edit'>
+        <div id="dict-search">
+            <input type="text" placeholder="Поиск по словарю" class="search"/>
+            <a href="#" class="b"><i class="i icon-remove-sign"></i></a>
+        </div>
+        <div id="dict-body">
+            <div id="dict-body-content">
+                Минутку...
+            </div>
+        </div>
+                    <div id="dict-add">
+                <form method="post" action="/book/39/dict">
+                    <input type="text" name="term" placeholder="Оригинал"/>
+                    <input type="text" name="descr" placeholder="Перевод"/>
+                    <button type="submit" class="btn btn-mini btn-primary">Добавить</button>
+                    <button type="button" class="btn btn-mini cancel">Отмена</button>
+                </form>
+            </div>
+            <div id="dict-tools">
+                <i class="icon-plus"></i> <a href="#" class="add">Добавить слово</a>
+            </div>
+                    </div>
+</div>
+
+
+<div id="renum-modal" class="modal hide">
+    <form method="post" class="form-inline" action="/book/39/142/renum">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Перенумеровать субтитры</h3>
+        </div>
+        <div class="modal-body">
+            Номер субтитра, серая циферка рядом с его таймингом, в сущности, ни на что не влияет, субтитры сортируются
+            по времени.
+            Если вы добавляете новый титр, его номер может выбиваться из плавного течения номеров. Этот инструмент
+            расставит всем
+            титрам номера в хронологическом порядке.
+        </div>
+        <div class="modal-footer">
+            <input type="hidden" name="mode" value="1"/>
+            <button type="submit" class="btn btn-primary">Поехали</button>
+            <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $("#Tr").find("td.o").each(function () {
+        var $this = $(this);
+        $this.children("div").css("min-height", $this.height());
+    });
+</script>
+</div>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span6">
+                &copy; <a href="http://romakhin.ru/" rel="nofollow">Дмитрий Ромахин</a>
+                2008&ndash;2017                <br/>
+                <a href="/site/help">Справка</a> |
+                <a href="/blog?topic=65">Техподдержка</a> |
+                <a href="mailto:abuse@translate.kursomir.ru?subj=%2Fbook%2F39%2F142">Abuse</a> |
+                <a href="mailto:translate@kursomir.ru">E-mail для справок</a> |
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&locale=ru"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']]
+        },
+        asciimath2jax: {
+            delimiters: [['``', '``']]
+        }
+    });
+</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('a.tooltip').tooltip({'placement':'bottom'});
+jQuery('a[rel="popover"]').popover();
+jQuery('#yw0 .alert').alert();
+});
+/*]]>*/
+</script>
+</body>
+</html>

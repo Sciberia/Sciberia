@@ -1,0 +1,60 @@
+﻿Производная $\sin x$, алгебраическое доказательство
+
+Конкретная формула производной говорит нам, как брать производную определённой функции: если $f(x) = x^n$, то $f'(x) = nx^{n-1}$. Сейчас мы вычислим формулу производной для функции $\sin x$.
+
+Начнём с определения производной:
+$$\frac{d}{dx} \, \sin x = \lim_{\Delta x \to 0} \frac{\sin (x+\Delta x)− \sin (x)}{\Delta x}$$
+
+Вы можете помнить формулу синуса суммы углов: $$\sin (a + b) = \sin (a) \cos (b) + \sin (b) \cos (a)$$
+
+Это позволяет нам отделить $x$ от $\Delta x$ следующим образом:
+$$\frac{d}{dx} \, \sin x = \lim_{\Delta x \to 0} \frac{\sin (x) \cos (\Delta x) + \cos (x) \sin (\Delta x)− \sin (x)}{\Delta x}$$
+
+Мы можем упростить это выражение, используя некоторые базовые факты из алгебры:
+$$
+\begin{align}
+\frac{d}{dx} \, \sin x &=  \lim_{\Delta x\to0} \left[\frac{\sin (x) \cos (\Delta x) − \sin (x)}{\Delta x} + \frac{\cos (x) \sin (\Delta x)}{\Delta x} \right] \\
+&= \lim_{\Delta x\to0}\left[\frac{\sin (x) (\cos (\Delta x) − 1)}{\Delta x} + \frac{\cos (x) \sin (\Delta x)}{\Delta x} \right] \\
+&= \lim_{\Delta x\to0}\left[\sin (x) \frac{\cos (\Delta x) − 1}{\Delta x} + \cos (x) \frac{\sin (\Delta x)}{\Delta x} \right]
+\end{align}
+$$
+$$
+\frac{d}{dx} \, \sin x = \lim_{\Delta x\to0} \sin (x) \frac{\cos (\Delta x) − 1}{\Delta x} + \lim_{\Delta x\to0} \cos (x) \frac{\sin (\Delta x)}{\Delta x}
+$$
+
+Теперь мы имеем две знакомые функции – $– \sin x$ и $\cos x$ – и две слишком уродливые, чтобы иметь с ними дело. Дроби могут быть знакомы из нашего разговора об устранимых разрывах.
+$$\lim_{\Delta x\to0} \frac{\cos \Delta x − 1}{\Delta x} = 0$$
+$$\lim_{\Delta x\to0} \frac{\sin \Delta x}{\Delta x} = 1$$
+
+Используя эти (ещё не доказанные) факты, $$\frac{d}{dx} \, \sin x = \lim_{\Delta x\to0} \sin (x) \frac{\cos (\Delta x) − 1}{\Delta x} + \lim_{\Delta x\to0} \cos (x) \frac{\sin (\Delta x)}{\Delta x}$$ упрощается до $\sin x \cdot 0$ + $\cos x \cdot 1 = \cos x$.
+
+Заключаем, что $\frac{d}{dx}\;\sin x = \cos x$.
+
+Производная $\cos x$.
+
+Какова же определённая формула для производной $\cos x$?
+
+Это вычисление очень похоже на вычисление производной $\sin x$. Если вы застряли на каком-то из его шагов, это может помочь вам вернуться и пересмотреть соответствующий шаг.
+
+Как и в вычислении $\sin x$, начнём с определения производной:
+$$\frac{d}{dx}\; \cos x = \lim_{Δx→0} \frac{\cos(x + Δx) − \cos(x)}{Δx}$$
+
+Используем формулу для суммы углов $\cos(a+b) = \cos(a)\cos(b)-\sin(a)\sin(b)$ и упрощаем:
+$$ \frac{d}{dx}\;\cos x = \lim_{Δx→0} \frac{\cos x \cos Δx - \sin x \sin Δx − \cos x}{Δx} = \\ \lim_{Δx→0} \left[\frac{\cos x \cos Δx − \cos x}{Δx}+\frac{-\sin x \sin Δx}{Δx}\right] = \\ \lim_{Δx→0} \left[\frac{\cos x(\cos Δx - 1)}{Δx}+\frac{(-\sin x) \sin Δx}{Δx}\right] = \\ \lim_{Δx→0} \left[\cos(x)\frac{\cos(Δx)-1}{Δx}+(-\sin(x))\frac{\sin(Δx)}{Δx}\right] $$
+
+Ещё раз используем следующие (недоказанные) факты:
+$$\lim_{Δx→0} \frac{\cosΔx-1}{Δx} = 0$$
+$$\lim_{Δx→0} \frac{\sin Δx}{Δx} = 1$$
+
+И заключаем:
+$$\frac{d}{dx}\;\cos x = \lim_{Δx→0}\cos(x)\frac{\cos(Δx)-1}{Δx}+\lim_{Δx→0}(-\sin(x))\frac{\sin(Δx)}{Δx}=\cos x \cdot 0 + (-\sin x) \cdot 1$$
+$$\frac{d}{dx}\;\cos x = -\sin x$$
+
+Внимание! Этот перевод, возможно, ещё не готов.
+Его статус: перевод редактируется
+
+Переведено на Нотабеноиде
+http://translate.kursomir.ru/book/39/131
+
+Переводчики: Keyten
+

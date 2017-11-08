@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="/css/v3.1.css?3" />
+<link rel="stylesheet" type="text/css" href="/css/translate-1.css?5" />
+<link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css?1" />
+<style type="text/css">
+/*<![CDATA[*/
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+body, label, input, button, select, textarea {
+	font-size: 13px;
+	line-height: 18px;
+}
+#chat-box {
+	height: 300px;
+}.comments .comment .meta, .comments .comment .meta a, .translator .info, .translator .info a { color: #bbb; }
+.comments .comment:hover .meta, .comments .comment:hover .meta a, .translator tr:hover .info, .translator tr:hover .info a { color: #888; }
+/*]]>*/
+</style>
+<script type="text/javascript" src="/assets/bbeb3eca/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/6b5c0e82/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/global.js?16"></script>
+<script type="text/javascript" src="/js/user.js?3"></script>
+<script type="text/javascript" src="/js/chat.js?3"></script>
+<script type="text/javascript" src="/js/translate-1.js?11"></script>
+<script type="text/javascript" src="/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="/js/jquery.elastic.mod.js"></script>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.min.js?1"></script>
+<script type="text/javascript" src="/js/ff_comments.js?3"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var User = new CUser({id: 76, login: 'Keyten'});
+
+var Book = new CBook({
+	id: 39,
+	owner_id: 67,
+	facecontrol: 1,
+	s_lang: 2,
+	t_lang: 1,
+	n_verses: 2492,
+	n_vars: 1286,
+	d_vars: 1282,
+	typ: 'A',
+	s_title: '18.01SC Single Variable Calculus',
+	t_title: '18.01SC Анализ функций одной переменной',
+	membership: {status: 1}
+});
+
+var Chap = {
+	id: 138,
+	book_id: 39,
+	n_verses: 24,
+	n_vars: 24,
+	d_vars: 24,
+	title: '14. Examples of Implicit Differentiation / Примеры производной неявной функции',
+	ac_read: '',
+	ac_gen: '',
+	ac_rate: '',
+	ac_comment: '',
+	ac_tr: '',
+};
+
+/*]]>*/
+</script>
+<title>Перевод 18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной: 14. Examples of Implicit Differentiation / Примеры производной неявной функции :: КУРСОМИР.ПЕРЕВОДЫ</title>
+    <meta name="description" content="Коллективные переводы субтитров и книжек"/>
+    <meta name="language" content="ru"/>
+    <meta name="keywords"
+          content="перевод, translation, коллективный перевод, кино с субтитрами, кино по-английски с русскими субтитрами, кино по-немецки с русскими субтитрами, кино по-испански с русскими субтитрами, примеры перевода, краудсорсинг, crowdsourcing, нотабеноид"/>
+    <link rel='icon' href='/i/favicon.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='/i/favicon.ico' type='image/x-icon'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE]>
+    <script type="text/javascript" src="/js/jquery.input-placeholder.js"></script>
+    <link rel='stylesheet' href="/css/jquery.input-placeholder.css"/>
+    <script type="text/javascript">
+        $(function () {
+            $('input[placeholder]').inputDefault();
+        });
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container-fluid" style="background-color:#fff;">
+        <a href="/" id="header-logo">
+            <img src="/i/logo.png" width="124" height="130"
+                 style="padding-top: 50px;"
+                 alt="КУРСОМИР.ПЕРЕВОДЫ"
+                 title="3.3"/>
+        </a>
+        <nav>
+            <ul id="header-menu">
+                <li><a href="/catalog/1">ВИДЕО</a></li>
+                <li><a href="/catalog/2">ТЕКСТЫ</a></li>
+                <li><a href="/users">ПЕРЕВОДЧИКИ</a></li>
+                <li><a href="/blog">БЛОГ</a></li>
+                <li><a href="/announces">АНОНСЫ</a></li>
+                <li class="search">
+                    <form class="form-search" method="get" action="/search">
+                                                <input type="hidden" name="from" value="header">
+                        <input type="text" name="t" class="input-medium search-query span3"
+                               placeholder="Вы что-то потеряли?"
+                               title="Кстати, отсюда можно найти и переводчика, если собаку (@), а потом сразу его ник."/>
+                        <input type="submit" value="&raquo;" class="btn" style="border-radius: 20px;"/>
+                    </form>
+                </li>
+            </ul>
+            <ul id="header-submenu">
+                                    <li>
+                        <a href="/users/76" accesskey="i">
+                            <strong>Keyten</strong>
+                            Всё о вас
+                        </a>
+                    </li>
+                    <li id="hm-c">
+                        <a href="/my/comments" accesskey="c">
+                            <strong>Обсуждения  <b></b></strong>
+                            Места, где вы общались
+                        </a>
+                    </li>
+                    <li id="hm-n">
+                        <a href="/my/notices" accesskey="n">
+                            <strong>Оповещения  <b></b></strong>
+                            События для вас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#bookmarks" accesskey="b">
+                            <strong>Закладки</strong>
+                            На память
+                        </a>
+                    </li>
+                    <li><a href="/book/0/edit"><strong>Создать</strong> Перевод</a></li>
+                    <li><a href="/register/settings"><strong>Настройки</strong> Профиля</a></li>
+                    <li><a href="/register/logout"><strong>Выход</strong> До свидания :(</a></li>
+                            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <div id="bookmarks" class="modal hide">
+        <div class="modal-header" style='padding-bottom:0;'>
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Закладки</h3>
+            <div class="btn-toolbar">
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-sort">
+                    <button class="btn btn-mini" data-v="1" title="Сортировка по алфавиту">
+                        <i class="icon-text-height"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="2" title="Сортировка по вашей активности">
+                        <i class="icon-fire"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="3" title="Сортировка по времени вступления в перевод">
+                        <i class="icon-time"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="5" title="Сортировка по времени добавления закладки">
+                        <i class="icon-shopping-cart"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="4" title="Сортировка по готовности перевода">%</button>
+                    <button class="btn btn-mini" data-v="0" title="Ваша сортировка (таскайте закладки мышкой)">
+                        <i class="icon-random"></i>
+                    </button>
+                </div>
+
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-title">
+                    <button class="btn btn-mini" data-v="s" title="Показывать названия на языке оригинала">О</button>
+                    <button class="btn btn-mini" data-v="t" title="Показывать названия на языке перевода">П</button>
+                </div>
+                                <div class="btn-group pull-right">
+                    <button class="btn btn-mini" title="Удалить" id="bookmarks-tb-rm">
+                        <i class="icon-remove"></i>
+                    </button>
+                    <button class="btn btn-mini" title="Редактировать" id="bookmarks-tb-ed">
+                        <i class="icon-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body" style="max-height:350px">
+            <p class='loading'>минуточку...</p>
+        </div>
+    </div>
+
+
+<div class="container-fluid">
+    <div id="yw0"></div>
+<style type="text/css">
+        .translator.has-best td.t .best .text {
+        background-image: url(/i/corner-gray-t-r.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    </style>
+
+<h1><a href='/book/39'>18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной</a>: 14. Examples of Implicit Differentiation / Примеры производной неявной функции</h1>
+
+<div id="tb-main">
+    <div>
+        <div class='group'><a
+                href="/book/39/138/go?nach=prev&ord=14"
+                title="Предыдущая глава"><i class="i icon-arrow-left"></i></a></div>
+
+        <div class="tb-index btn-group">
+            <a href="/book/39" class="btn btn-small"><i class="icon-list"></i> Оглавление</a>
+            <a class="btn btn-small dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+            <ul class="dropdown-menu" id="tb-chapter-list">
+                <li><a href="/book/39/members">Переводчики</a></li>
+                <li><a href="/book/39/blog">Блог</a></li>
+            </ul>
+        </div>
+
+        <div class='group'><a
+                href="/book/39/138/go?nach=next&ord=14"
+                title="Следующая глава"><i class="i icon-arrow-right"></i></a></div>
+
+        <div class="btn-group">
+                            <button type="button" class="btn btn-small tb-chat" title="Ctrl + ~"><i class="icon-bullhorn"></i> Чат
+                </button>
+            
+            <a href="#" class="btn btn-small tb-dict" accesskey="V"><i class="icon-book"></i> Словарь</a>
+
+            <div id="tb-filter">
+                <form method="get" class="form-inline" action="/book/39/138">
+                    <ul class='options'>
+                        <li><label><input type='radio' name='show' value='1' /> <a href='?show=1'>Непереведённое</a></label></li><li><label><input type='radio' name='show' value='7' /> <a href='?show=7'>С 2 и более версиями перевода</a></label></li><li><label><input type='radio' name='show' value='3' /> <a href='?show=3'>С комментариями</a></label></li><li><label><input type='radio' name='show' value='4' /> <a href='?show=4'>С новыми комментариями</a></label></li><li><label><input type='radio' name='show' value='2' />  <input type='text' name='show_user' placeholder='От переводчика' class='span3' value='' title='Ctrl+I: вставить ваш ник' /></label></li><li><label><input type='radio' name='show' value='5' />  <input type='text' name='to' placeholder='Оригинал содержит' class='span3' value='' /></label></li><li><label><input type='radio' name='show' value='6' />  <input type='text' name='tt' placeholder='Перевод содержит' class='span3' value='' /></label></li>                    </ul>
+                    <button type="submit" class="btn btn-mini btn-primary">Показать</button>
+                    <a href="/book/39/138"
+                       class="btn btn-mini">Сбросить всё</a>
+                </form>
+            </div>
+
+            <a href='#' class='btn btn-small tb-filter' accesskey='F'><i class='icon-filter'></i> Фильтр</a>        </div>
+
+        
+        
+
+        <div class="group">
+            <a href="/book/39/138/switchiface"><i class="icon-thumbs-down" title="Старый	интерфейс"></i></a>
+        </div>
+
+        <div class="tb-progress group"></div>
+
+            </div>
+</div>
+
+<div class="clear"></div>
+
+<table id="Tr" class="translator has-best translator-oe-hide">
+    <thead>
+    <tr>
+                    <th></th>        <th>
+            Английский оригинал
+        </th>
+                    <th></th>        <th>
+            Перевод на русский        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id='o41404'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Slope of a line tangent to a circle – direct version</p><p class='info'><a href='/book/39/138/41404#1' class='ord'>#1</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23974' class='u75'><p class='text'>Угловой коэффициент касательной к окружности - прямая версия.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 14:10</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41405'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>A circle of radius $1$ centered at the origin consists of all points $(x, y)$ for which $x^2 + y^2 = 1$. This equation does not describe a function of $x$ (i.e. it cannot be written in the form $y = f(x)$).</p><p class='info'><a href='/book/39/138/41405#2' class='ord'>#2</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23963' class='u75'><p class='text'>Окружность радиуса 1 с центром в начале координат состоит из набора точек $(x,y)$, удовлетворяющих равенству $x^2+y^2=1$. Это равенство не описывает функцию (т. е. не может быть записано в виде $y=f(x)$).</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 13:25</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41406'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Indeed, any vertical line drawn through the interior of the circle meets the circle in two points — every $x$ has two corresponding $y$ values.</p><p class='info'><a href='/book/39/138/41406#3' class='ord'>#3</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23964' class='u75'><p class='text'>Более того, любая вертикальная линия, проведенная внутри окружности, пересечет её в двух точках - каждому значению $x$ соответствует два значения $y$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 13:31</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41407'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Let’s see what goes wrong if we attempt to solve the equation of a circle for $y$ in terms of $x$.<br />
+\begin{align}<br />
+x^2 + y^2 &amp;= 1 \\<br />
+x^2 + y^2 − x^2 &amp;= 1 − x^2 \\<br />
+y^2 &amp;= 1 − x^2 \\<br />
+y &amp;= \pm \sqrt{1 − x^2}<br />
+\end{align}</p><p class='info'><a href='/book/39/138/41407#4' class='ord'>#4</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23965' class='u75'><p class='text'>Давайте посмотрим, что пойдет не так, если мы попытаемся решить уравнение окружности для $у$<br />
+отностительно переменной $x$.<br />
+\begin{align}<br />
+x^2 + y^2 &amp;= 1 \\<br />
+x^2 + y^2 - x^2 &amp;= 1 - x^2  \\<br />
+y^2 &amp;= 1 - x^2 \\<br />
+y &amp;= \pm \sqrt{1 - x^2 } \\<br />
+\end{align}</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 13:35</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41408'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This still isn’t a function because we get two choices for $y$ — positive or negative.</p><p class='info'><a href='/book/39/138/41408#5' class='ord'>#5</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23966' class='u75'><p class='text'>Это все еще не функция, потому что одному значению $x$ соответствует два значения $y$ - положительное и отрицательное.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 13:39</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41409'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>However, we do get a function if we look just at the positive case (i.e. at just the top half of the circle), and we can then find $\frac{dy}{dx}$, which will be the slope of a line tangent to the top half of the circle.</p><p class='info'><a href='/book/39/138/41409#6' class='ord'>#6</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23971' class='u75'><p class='text'>Однако, мы получим функцию, если только возьмем положительную часть (т. е. верхнюю часть окружности), и мы можем найти $\frac{dy}{dx}$, которая будет являться угловым коэффициентом касательной на верхней половине окружности.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 14:08</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41410'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>To compute this derivative, we first convert the square root into a fractional exponent so that we can use the rule from the previous example.<br />
+$$y = \sqrt{1 − x^2} = (1 − x^2)^{1/2}$$</p><p class='info'><a href='/book/39/138/41410#7' class='ord'>#7</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23967' class='u75'><p class='text'>Чтобы вычислить производную, сначала мы преобразуем квадратный корень в дробную степень, затем мы можем использовать правило из предыдущего примера.<br />
+$$ y = \sqrt{1 − x^2} = (1 − x^2)^{1/2} $$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 13:47</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41411'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Next, we need to use the chain rule to differentiate $y = (1 − x^2)^{1/2}$.</p><p class='info'><a href='/book/39/138/41411#8' class='ord'>#8</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23968' class='u75'><p class='text'>Потом, нам нужно использовать цепное правило для дифференцирования $y=(1-x^2)^{1/2}$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 13:48</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41412'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The outside function is $u^{1/2}$ and the inside function is $1 − x^2$, so the chain rule tells us that<br />
+$$\frac{dy}{dx} = \frac{dy}{du} \frac{du}{dx}.$$<br />
+$$\frac{dy}{dx} = \frac{1}{2} u^{-1/2} \cdot (-2x) = -x \cdot (1 - x^2)^{1/2} = \frac{-x}{\sqrt{1 - x^2}}.$$</p><p class='info'><a href='/book/39/138/41412#9' class='ord'>#9</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23969' class='u75'><p class='text'>Внешняя функция - $u^{1/2}$, внутренняя функция - $(1-x^2)$, так что цепное правило говорит нам, что<br />
+$$\frac{dy}{dx} = \frac{dy}{du} \frac{du}{dx}.$$<br />
+<br />
+$$\frac{dy}{dx} = \frac{1}{2} u^{-1/2} \cdot (-2x) = -x \cdot (1 - x^2)^{1/2} = \frac{-x}{\sqrt{1 - x^2}}.$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 13:51</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41413'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>If we want, we can use the fact that $y = \sqrt{1 − x^2}$ to rewrite this as $y' = −x/y$.</p><p class='info'><a href='/book/39/138/41413#10' class='ord'>#10</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23970' class='u75'><p class='text'>Если мы хотим, то можем использовать тот факт что $y = <br />
+\sqrt{1-x^2}$, чтобы переписать производную как $y' = -x/y$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 13:56</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41414'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We conclude that the slope of the line tangent to a point $(x, y)$ on the top half of the unit circle is $−x/y$.</p><p class='info'><a href='/book/39/138/41414#11' class='ord'>#11</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23972' class='u75'><p class='text'>Итак, мы показали, что угловой коэффициент касательной в точке $(x,y)$ на верхней половине окружности равен $-x/y$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 14:09</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41415'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Slope of a line tangent to a circle — implicit version</p><p class='info'><a href='/book/39/138/41415#12' class='ord'>#12</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23973' class='u75'><p class='text'>Угловой коэффициент касательной к окружности - неявная версия.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 14:10</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41416'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We just finished calculating the slope of the line tangent to a point $(x, y)$ on the top half of the unit circle.</p><p class='info'><a href='/book/39/138/41416#13' class='ord'>#13</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23975' class='u75'><p class='text'>Мы только что закончили расчет углового коэффициента касательной в точке $(x,y)$ в верхней половине окружности.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 14:11</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41417'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In this calculation we started by solving the equation $x^2 + y^2 = 1$ for $y$, chose one “branch” of the solution to work with, then used the chain rule, the power rule and some algebra of exponents to compute the derivative $\frac{dy}{dx} = − \frac{x}{y}$.</p><p class='info'><a href='/book/39/138/41417#14' class='ord'>#14</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23976' class='u75'><p class='text'>В этом расчете мы начали решать уравнение $x^2+y^2=1$ для $y$, выбрав одну &quot;ветвь&quot; решения для работы, затем использовали цепное правило, степенное правило и немного алгебры степеней для вычисления производной $\frac{dy}{dx} = -\frac{x}{y}$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 14:14</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41418'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We’ll now see how we could have used implicit differentiation to do the same calculation much more easily. In fact, we’ll find the slope of a line tangent to any point on the unit circle.</p><p class='info'><a href='/book/39/138/41418#15' class='ord'>#15</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23977' class='u75'><p class='text'>Сейчас мы увидим как можно вычислить производную гораздо быстрее, используя неявное дифференцирование. На самом деле, мы найдем угловой коэффициент касательной в любой точке окружности.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 14:16</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41419'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We don’t need to solve for $y$ — we can just apply the operator $\frac{d}{dx}$ to both sides of the original equation:<br />
+\begin{align}<br />
+x^2 + y^2 &amp;= 1 \\<br />
+\frac{d}{dx} (x^2 + y^2) &amp;= \frac{d}{dx} (1) \\<br />
+\frac{d}{dx} (x^2) + \frac{d}{dx} (y^2) &amp;= 0<br />
+\end{align}</p><p class='info'><a href='/book/39/138/41419#16' class='ord'>#16</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23978' class='u75'><p class='text'>Нам не нужно решать уравнение для y - мы просто применим оператор $\frac{d}{dx}$ для обеих сторон оригинального выражения:<br />
+\begin{align} <br />
+x^2 + y^2 &amp;= 1 \\ <br />
+\frac{d}{dx} (x^2 + y^2) &amp;= \frac{d}{dx} (1) \\ <br />
+\frac{d}{dx} (x^2) + \frac{d}{dx} (y^2) &amp;= 0 <br />
+\end{align}</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 14:18</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41420'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We can easily take the derivative of the first term. For the second term, applying the chain rule with the inside function $y$ and outside function $u^2$ gives us:<br />
+\begin{align}<br />
+2x + 2y \frac{dy}{dx} &amp;= 0 \\<br />
+2y \frac{dy}{dx} &amp;= −2x \\<br />
+\frac{dy}{dx} &amp;= −\frac{x}{y} \\<br />
+\end{align}</p><p class='info'><a href='/book/39/138/41420#17' class='ord'>#17</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23979' class='u75'><p class='text'>Мы можем легко вычислить производную первой части. Для второй части мы используем цепное правило с внутренней функцией $y$ и внешней функцией $u^2$ и это нам даст:<br />
+\begin{align} <br />
+2x + 2y \frac{dy}{dx} &amp;= 0 \\ <br />
+2y \frac{dy}{dx} &amp;= −2x \\ <br />
+\frac{dy}{dx} &amp;= −\frac{x}{y} \\ <br />
+\end{align}</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 14:20</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41421'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This is the same answer, but we didn’t have to restrict ourselves to just the top half of the circle or use any square roots. Implicit differentiation made this calculation much easier.</p><p class='info'><a href='/book/39/138/41421#18' class='ord'>#18</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23980' class='u75'><p class='text'>Это тот же самый ответ, но мы не ограничивали себя только верхней половиной окружности или использованием любых квадратных корней. Неявное дифференцирование сделало эти вычисления гораздо легче.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 14:22</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41422'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Implicit Differentiation Example</p><p class='info'><a href='/book/39/138/41422#19' class='ord'>#19</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23981' class='u75'><p class='text'>Пример неявного дифференцирования</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 14:23</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41423'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>How would we find $y' = \frac{dy}{dx}$ if $y^4 + x y^2 − 2 = 0$?</p><p class='info'><a href='/book/39/138/41423#20' class='ord'>#20</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23982' class='u75'><p class='text'>Как мы найдем $y' = \frac{dy}{dx}$ если $y^4 + x y^2 − 2 = 0$ ?</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 14:23</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41424'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We could use a trick to solve this explicitly — think of the above equation as a quadratic equation in the variable $y^2$ then apply the quadratic formula:<br />
+\begin{align}<br />
+y^2 &amp;= \frac{−x \pm \sqrt{x^2 + 8}}{2}, \\<br />
+&amp;\textrm{ so} \\<br />
+y &amp;= \pm \sqrt{\frac{-x \pm \sqrt{x^2 + 8}}{2}}.<br />
+\end{align}</p><p class='info'><a href='/book/39/138/41424#21' class='ord'>#21</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23983' class='u75'><p class='text'>Мы могли бы использовать трюк для явного решения - положить выражение выше квадратным уравнением с переменной $y^2$ и затем использовали формулу для решения квадратного уравнения.<br />
+\begin{align} <br />
+y^2 &amp;= \frac{−x \pm \sqrt{x^2 + 8}}{2}, \\ <br />
+&amp;\textrm{ так что} \\ <br />
+y &amp;= \pm \sqrt{\frac{-x \pm \sqrt{x^2 + 8}}{2}}. <br />
+\end{align}</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 14:26</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41425'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Since we see $\pm$ twice in this equation, there are four possible branches to consider. This means that to be thorough we’d want to compute four different derivatives. This is a lot of work.</p><p class='info'><a href='/book/39/138/41425#22' class='ord'>#22</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23984' class='u75'><p class='text'>С того момента, как мы увидели $\pm$ в этом уравнении, здесь имеется четыре возможных варианта для обсуждения. Это значит , что нужно тщательно посчитать четыре разных производных. Это большой кусок работы.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 14:29</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41426'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Instead, we can compute $\frac{dy}{dx}$ using implicit differentiation. As always, we start by applying $\frac{d}{dx}$ to both sides:<br />
+\begin{align}<br />
+\frac{d}{dx} (y^4 + x y^2 - 2) &amp;= \frac{d}{dx} 0 \\<br />
+\frac{d}{dx} (y^4) + \frac{d}{dx} (xy^2) - \frac{d}{dx} 2 &amp;= 0 \\<br />
+4y^3 \frac{dy}{dx} + (y^2 + x \cdot 2y \frac{dy}{dx}) - 0 &amp;= 0 \\<br />
+4 y^3 \frac{dy}{dx} + 2 xy \frac{dy}{dx} &amp;= -y^2 \\<br />
+(4 y^3 + 2 xy) \frac{dy}{dx} &amp;= -y^2 \\<br />
+\frac{dy}{dx} &amp;= \frac{-y^2}{4y^3 + 2xy}<br />
+\end{align}</p><p class='info'><a href='/book/39/138/41426#23' class='ord'>#23</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23985' class='u75'><p class='text'>Вместо этого, мы можем посчитать $\frac{dy}{dx}$ используя неявное дифференцирование. Как всегда, мы начнем с применения $\frac{dy}{dx}$  к двум сторонам выражения:<br />
+\begin{align} <br />
+\frac{d}{dx} (y^4 + x y^2 - 2) &amp;= \frac{d}{dx} 0 \\ <br />
+\frac{d}{dx} (y^4) + \frac{d}{dx} (xy^2) - \frac{d}{dx} 2 &amp;= 0 \\ <br />
+4y^3 \frac{dy}{dx} + (y^2 + x \cdot 2y \frac{dy}{dx}) - 0 &amp;= 0 \\ <br />
+4 y^3 \frac{dy}{dx} + 2 xy \frac{dy}{dx} &amp;= -y^2 \\ <br />
+(4 y^3 + 2 xy) \frac{dy}{dx} &amp;= -y^2 \\ <br />
+\frac{dy}{dx} &amp;= \frac{-y^2}{4y^3 + 2xy} <br />
+\end{align}</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 14:30</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o41427'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In lecture Professor Jerison used the shorthand $y'$ for the derivative; here we use $\frac{dy}{dx}$ to make it clear that we are differentiating with respect to $x$.</p><p class='info'><a href='/book/39/138/41427#24' class='ord'>#24</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t23986' class='u75'><p class='text'>В лекции профессора Джерисон использовалась краткая запись $y'$ для производной; здесь мы используем $\frac{dy}{dx}$ для того, чтобы было понятно, что мы дифференцируем относительно переменной $x$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 15.07.16 в 14:33</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+    </tbody>
+</table>
+
+<div id="pages-bottom">
+    </div>
+
+
+<div id="tr-sidebar">
+    <div id="dict" class='has-edit'>
+        <div id="dict-search">
+            <input type="text" placeholder="Поиск по словарю" class="search"/>
+            <a href="#" class="b"><i class="i icon-remove-sign"></i></a>
+        </div>
+        <div id="dict-body">
+            <div id="dict-body-content">
+                Минутку...
+            </div>
+        </div>
+                    <div id="dict-add">
+                <form method="post" action="/book/39/dict">
+                    <input type="text" name="term" placeholder="Оригинал"/>
+                    <input type="text" name="descr" placeholder="Перевод"/>
+                    <button type="submit" class="btn btn-mini btn-primary">Добавить</button>
+                    <button type="button" class="btn btn-mini cancel">Отмена</button>
+                </form>
+            </div>
+            <div id="dict-tools">
+                <i class="icon-plus"></i> <a href="#" class="add">Добавить слово</a>
+            </div>
+                    </div>
+</div>
+
+
+<div id="renum-modal" class="modal hide">
+    <form method="post" class="form-inline" action="/book/39/138/renum">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Перенумеровать субтитры</h3>
+        </div>
+        <div class="modal-body">
+            Номер субтитра, серая циферка рядом с его таймингом, в сущности, ни на что не влияет, субтитры сортируются
+            по времени.
+            Если вы добавляете новый титр, его номер может выбиваться из плавного течения номеров. Этот инструмент
+            расставит всем
+            титрам номера в хронологическом порядке.
+        </div>
+        <div class="modal-footer">
+            <input type="hidden" name="mode" value="1"/>
+            <button type="submit" class="btn btn-primary">Поехали</button>
+            <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $("#Tr").find("td.o").each(function () {
+        var $this = $(this);
+        $this.children("div").css("min-height", $this.height());
+    });
+</script>
+</div>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span6">
+                &copy; <a href="http://romakhin.ru/" rel="nofollow">Дмитрий Ромахин</a>
+                2008&ndash;2017                <br/>
+                <a href="/site/help">Справка</a> |
+                <a href="/blog?topic=65">Техподдержка</a> |
+                <a href="mailto:abuse@translate.kursomir.ru?subj=%2Fbook%2F39%2F138">Abuse</a> |
+                <a href="mailto:translate@kursomir.ru">E-mail для справок</a> |
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&locale=ru"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']]
+        },
+        asciimath2jax: {
+            delimiters: [['``', '``']]
+        }
+    });
+</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('a.tooltip').tooltip({'placement':'bottom'});
+jQuery('a[rel="popover"]').popover();
+jQuery('#yw0 .alert').alert();
+});
+/*]]>*/
+</script>
+</body>
+</html>

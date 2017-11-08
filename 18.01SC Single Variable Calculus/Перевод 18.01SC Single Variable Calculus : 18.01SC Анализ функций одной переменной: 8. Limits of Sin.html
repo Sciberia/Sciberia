@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="/css/v3.1.css?3" />
+<link rel="stylesheet" type="text/css" href="/css/translate-1.css?5" />
+<link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css?1" />
+<style type="text/css">
+/*<![CDATA[*/
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+body, label, input, button, select, textarea {
+	font-size: 13px;
+	line-height: 18px;
+}
+#chat-box {
+	height: 300px;
+}.comments .comment .meta, .comments .comment .meta a, .translator .info, .translator .info a { color: #bbb; }
+.comments .comment:hover .meta, .comments .comment:hover .meta a, .translator tr:hover .info, .translator tr:hover .info a { color: #888; }
+/*]]>*/
+</style>
+<script type="text/javascript" src="/assets/bbeb3eca/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/6b5c0e82/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/global.js?16"></script>
+<script type="text/javascript" src="/js/user.js?3"></script>
+<script type="text/javascript" src="/js/chat.js?3"></script>
+<script type="text/javascript" src="/js/translate-1.js?11"></script>
+<script type="text/javascript" src="/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="/js/jquery.elastic.mod.js"></script>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.min.js?1"></script>
+<script type="text/javascript" src="/js/ff_comments.js?3"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var User = new CUser({id: 76, login: 'Keyten'});
+
+var Book = new CBook({
+	id: 39,
+	owner_id: 67,
+	facecontrol: 1,
+	s_lang: 2,
+	t_lang: 1,
+	n_verses: 2492,
+	n_vars: 1286,
+	d_vars: 1282,
+	typ: 'A',
+	s_title: '18.01SC Single Variable Calculus',
+	t_title: '18.01SC Анализ функций одной переменной',
+	membership: {status: 1}
+});
+
+var Chap = {
+	id: 132,
+	book_id: 39,
+	n_verses: 62,
+	n_vars: 62,
+	d_vars: 62,
+	title: '8. Limits of Sine and Cosine / Пределы с синусом и косинусом',
+	ac_read: '',
+	ac_gen: '',
+	ac_rate: '',
+	ac_comment: '',
+	ac_tr: '',
+};
+
+/*]]>*/
+</script>
+<title>Перевод 18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной: 8. Limits of Sine and Cosine / Пределы с синусом и косинусом :: КУРСОМИР.ПЕРЕВОДЫ</title>
+    <meta name="description" content="Коллективные переводы субтитров и книжек"/>
+    <meta name="language" content="ru"/>
+    <meta name="keywords"
+          content="перевод, translation, коллективный перевод, кино с субтитрами, кино по-английски с русскими субтитрами, кино по-немецки с русскими субтитрами, кино по-испански с русскими субтитрами, примеры перевода, краудсорсинг, crowdsourcing, нотабеноид"/>
+    <link rel='icon' href='/i/favicon.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='/i/favicon.ico' type='image/x-icon'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE]>
+    <script type="text/javascript" src="/js/jquery.input-placeholder.js"></script>
+    <link rel='stylesheet' href="/css/jquery.input-placeholder.css"/>
+    <script type="text/javascript">
+        $(function () {
+            $('input[placeholder]').inputDefault();
+        });
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container-fluid" style="background-color:#fff;">
+        <a href="/" id="header-logo">
+            <img src="/i/logo.png" width="124" height="130"
+                 style="padding-top: 50px;"
+                 alt="КУРСОМИР.ПЕРЕВОДЫ"
+                 title="3.3"/>
+        </a>
+        <nav>
+            <ul id="header-menu">
+                <li><a href="/catalog/1">ВИДЕО</a></li>
+                <li><a href="/catalog/2">ТЕКСТЫ</a></li>
+                <li><a href="/users">ПЕРЕВОДЧИКИ</a></li>
+                <li><a href="/blog">БЛОГ</a></li>
+                <li><a href="/announces">АНОНСЫ</a></li>
+                <li class="search">
+                    <form class="form-search" method="get" action="/search">
+                                                <input type="hidden" name="from" value="header">
+                        <input type="text" name="t" class="input-medium search-query span3"
+                               placeholder="Вы что-то потеряли?"
+                               title="Кстати, отсюда можно найти и переводчика, если собаку (@), а потом сразу его ник."/>
+                        <input type="submit" value="&raquo;" class="btn" style="border-radius: 20px;"/>
+                    </form>
+                </li>
+            </ul>
+            <ul id="header-submenu">
+                                    <li>
+                        <a href="/users/76" accesskey="i">
+                            <strong>Keyten</strong>
+                            Всё о вас
+                        </a>
+                    </li>
+                    <li id="hm-c">
+                        <a href="/my/comments" accesskey="c">
+                            <strong>Обсуждения  <b></b></strong>
+                            Места, где вы общались
+                        </a>
+                    </li>
+                    <li id="hm-n">
+                        <a href="/my/notices" accesskey="n">
+                            <strong>Оповещения  <b></b></strong>
+                            События для вас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#bookmarks" accesskey="b">
+                            <strong>Закладки</strong>
+                            На память
+                        </a>
+                    </li>
+                    <li><a href="/book/0/edit"><strong>Создать</strong> Перевод</a></li>
+                    <li><a href="/register/settings"><strong>Настройки</strong> Профиля</a></li>
+                    <li><a href="/register/logout"><strong>Выход</strong> До свидания :(</a></li>
+                            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <div id="bookmarks" class="modal hide">
+        <div class="modal-header" style='padding-bottom:0;'>
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Закладки</h3>
+            <div class="btn-toolbar">
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-sort">
+                    <button class="btn btn-mini" data-v="1" title="Сортировка по алфавиту">
+                        <i class="icon-text-height"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="2" title="Сортировка по вашей активности">
+                        <i class="icon-fire"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="3" title="Сортировка по времени вступления в перевод">
+                        <i class="icon-time"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="5" title="Сортировка по времени добавления закладки">
+                        <i class="icon-shopping-cart"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="4" title="Сортировка по готовности перевода">%</button>
+                    <button class="btn btn-mini" data-v="0" title="Ваша сортировка (таскайте закладки мышкой)">
+                        <i class="icon-random"></i>
+                    </button>
+                </div>
+
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-title">
+                    <button class="btn btn-mini" data-v="s" title="Показывать названия на языке оригинала">О</button>
+                    <button class="btn btn-mini" data-v="t" title="Показывать названия на языке перевода">П</button>
+                </div>
+                                <div class="btn-group pull-right">
+                    <button class="btn btn-mini" title="Удалить" id="bookmarks-tb-rm">
+                        <i class="icon-remove"></i>
+                    </button>
+                    <button class="btn btn-mini" title="Редактировать" id="bookmarks-tb-ed">
+                        <i class="icon-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body" style="max-height:350px">
+            <p class='loading'>минуточку...</p>
+        </div>
+    </div>
+
+
+<div class="container-fluid">
+    <div id="yw0"></div>
+<style type="text/css">
+        .translator.has-best td.t .best .text {
+        background-image: url(/i/corner-gray-t-r.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    </style>
+
+<h1><a href='/book/39'>18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной</a>: 8. Limits of Sine and Cosine / Пределы с синусом и косинусом</h1>
+
+<div id="tb-main">
+    <div>
+        <div class='group'><a
+                href="/book/39/132/go?nach=prev&ord=8"
+                title="Предыдущая глава"><i class="i icon-arrow-left"></i></a></div>
+
+        <div class="tb-index btn-group">
+            <a href="/book/39" class="btn btn-small"><i class="icon-list"></i> Оглавление</a>
+            <a class="btn btn-small dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+            <ul class="dropdown-menu" id="tb-chapter-list">
+                <li><a href="/book/39/members">Переводчики</a></li>
+                <li><a href="/book/39/blog">Блог</a></li>
+            </ul>
+        </div>
+
+        <div class='group'><a
+                href="/book/39/132/go?nach=next&ord=8"
+                title="Следующая глава"><i class="i icon-arrow-right"></i></a></div>
+
+        <div class="btn-group">
+                            <button type="button" class="btn btn-small tb-chat" title="Ctrl + ~"><i class="icon-bullhorn"></i> Чат
+                </button>
+            
+            <a href="#" class="btn btn-small tb-dict" accesskey="V"><i class="icon-book"></i> Словарь</a>
+
+            <div id="tb-filter">
+                <form method="get" class="form-inline" action="/book/39/132">
+                    <ul class='options'>
+                        <li><label><input type='radio' name='show' value='1' /> <a href='?show=1'>Непереведённое</a></label></li><li><label><input type='radio' name='show' value='7' /> <a href='?show=7'>С 2 и более версиями перевода</a></label></li><li><label><input type='radio' name='show' value='3' /> <a href='?show=3'>С комментариями</a></label></li><li><label><input type='radio' name='show' value='4' /> <a href='?show=4'>С новыми комментариями</a></label></li><li><label><input type='radio' name='show' value='2' />  <input type='text' name='show_user' placeholder='От переводчика' class='span3' value='' title='Ctrl+I: вставить ваш ник' /></label></li><li><label><input type='radio' name='show' value='5' />  <input type='text' name='to' placeholder='Оригинал содержит' class='span3' value='' /></label></li><li><label><input type='radio' name='show' value='6' />  <input type='text' name='tt' placeholder='Перевод содержит' class='span3' value='' /></label></li>                    </ul>
+                    <button type="submit" class="btn btn-mini btn-primary">Показать</button>
+                    <a href="/book/39/132"
+                       class="btn btn-mini">Сбросить всё</a>
+                </form>
+            </div>
+
+            <a href='#' class='btn btn-small tb-filter' accesskey='F'><i class='icon-filter'></i> Фильтр</a>        </div>
+
+        
+        
+
+        <div class="group">
+            <a href="/book/39/132/switchiface"><i class="icon-thumbs-down" title="Старый	интерфейс"></i></a>
+        </div>
+
+        <div class="tb-progress group"></div>
+
+        <div class='chic-pages'><span>&larr;</span><div class='blur left'></div> <ul class='selectable'><li class='active'><input type='text' name='Orig_page' value='1' accesskey='g' /></li><li><a href='?Orig_page=2'>2</a></li></ul> <div class='blur right'></div><a href='?Orig_page=2' class='pseudo' title='На следующую страницу'>&rarr;</a></div>    </div>
+</div>
+
+<div class="clear"></div>
+
+<table id="Tr" class="translator has-best translator-oe-hide">
+    <thead>
+    <tr>
+                    <th></th>        <th>
+            Английский оригинал
+        </th>
+                    <th></th>        <th>
+            Перевод на русский        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id='o33771'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Limit of $\frac{\sin x}{x}$</p><p class='info'><a href='/book/39/132/33771#1' class='ord'>#1</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t751' class='u76'><p class='text'>Предел $\frac{\sin x}x$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.05.16 в 10:54</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33772'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In order to compute specific formulas for the derivatives of $\sin (x)$ and $\cos (x)$, we needed to understand the behavior of $\frac{\sin (x)}{x}$ near $x = 0$ (property B). In his lecture, Professor Jerison uses the definition of $\sin (θ)$ as the $y$-coordinate of a point on the unit circle to prove that $$\lim_{\theta \to 0} \frac{\sin (\theta)}{\theta} = 1$$</p><p class='info'><a href='/book/39/132/33772#2' class='ord'>#2</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t752' class='u76'><p class='text'>Вычисляя формулы для производных $\sin x$ и $\cos x$, нам понадобилось знать поведение $\frac{\sin x}x$ вблизи $x=0$ (свойство B). В своей лекции профессор Джерисон использует определение $\sin θ$ как координаты $y$ точки на тригонометрической окружности, чтобы доказать, что<br />
+$$\lim_{θ \to 0} \frac{\sin θ}θ = 1$$ </p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.05.16 в 10:56</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33773'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We switch from using $x$ to using $θ$ because we want to start thinking about the sine function as describing a ratio of sides in the triangle shown in Figure 1.</p><p class='info'><a href='/book/39/132/33773#3' class='ord'>#3</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t756' class='u76'><p class='text'>Мы перешли от $x$ к $θ$, поскольку мы хотим думать о синусе как об отношении сторон треугольника, показанного на рисунке 1.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.05.16 в 11:01</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33774'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The variable we’re interested in is an angle, not a horizontal position, so we discuss $\frac{\sin (\theta)}{\theta}$ rather than $\frac{\sin (x)}{x}$.</p><p class='info'><a href='/book/39/132/33774#4' class='ord'>#4</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t757' class='u76'><p class='text'>Интересная нам переменная - это угол, а не горизонтальная координата, так что лучше использовать $\frac{\sin θ}θ$, а не $\frac{\sin x}x$.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.05.16 в 11:02</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33775'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: A circle of radius $1$ with an arc of angle $\theta$</p><p class='info'><a href='/book/39/132/33775#5' class='ord'>#5</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t753' class='u76'><p class='text'>Рис. 1. Круг радиуса $1$ с дугой угла $\theta$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.05.16 в 10:57</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33776'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Our argument depends on the fact that when the radius of the circle shown in Figure 1 is $1$, $\theta$ is the length of the highlighted arc. This is true when the angle $\theta$ is described in radians but NOT when it is measured in degrees.</p><p class='info'><a href='/book/39/132/33776#6' class='ord'>#6</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t760' class='u76'><p class='text'>Наш аргумент зависит от факта, что, когда радиус круга, показанного на рисунке 1, равен 1, θ равно длине выделенной дуги. Это так, когда угол θ описывается в радианах, однако совершенно НЕ верно для градусов.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.05.16 в 11:16</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33777'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Also, since the radius of the circle is $1$, $\sin (\theta) = \frac{\textrm{|opposite|}}{\textrm{|hypotenuse|}}$ equals the length of the edge indicated (the hypotenuse has length $1$).</p><p class='info'><a href='/book/39/132/33777#7' class='ord'>#7</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t758' class='u76'><p class='text'>Также, поскольку радиус круга - 1, $\sin θ = \frac{\text{противолежащая}}{\text{гипотенуза}}$ равен длине противолежащей (длина гипотенузы - 1).</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.05.16 в 11:07</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33778'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In other words, ${\sin(\theta)}/{\theta}$ is the ratio of edge length to arc length. When $θ = \pi / 2$ rad, $\sin(\theta) = 1$ and $\sin(\theta)/\theta = 2/\pi \cong 2/3$. When $\theta = \pi / 4$ rad, $\sin(\theta) = \sqrt{2}/2$ and $\sin(\theta)/\theta = 2\sqrt{2}/\pi \cong 9/10$. What will happen to the value of $\sin(\theta)/\theta$ as the value of $\theta$ gets closer and closer to $0$ radians?</p><p class='info'><a href='/book/39/132/33778#8' class='ord'>#8</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t759' class='u76'><p class='text'>Другими словами, $\frac{\sin θ}θ$ - отношение длины стороны к длине дуги. Когда $θ = \frac\pi 2$ (радиан), $\sin θ = 1$, и $\frac{\sin θ}θ = \frac2\pi \approx \frac23$. Когда $θ = \frac\pi 4$ (радиан), $\sin θ = \frac{\sqrt 2}2$ и $\frac{\sin θ}θ = \frac{2\sqrt 2}\pi \approx \frac9{10}$. Что произойдёт со значением $\frac{\sin θ}θ$, когда $θ$ будет всё ближе и ближе к 0 радиан?</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.05.16 в 11:09</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33779'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We see from Figure 2 that as $\theta$ shrinks, the length $\sin (\theta)$ of the segment gets closer and closer to the length $\theta$ of the curved arc. We conclude that as $\theta \to 0$, $\frac{\sin \theta}{\theta} \to 1$. In other words, $$\lim_{x \to 0} \frac{\sin (x)}{x} = 1$$</p><p class='info'><a href='/book/39/132/33779#9' class='ord'>#9</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t761' class='u76'><p class='text'>Мы видим из рисунка 2, что $θ$ сокращается, а длина сегмента $\sin θ$ становится всё ближе и ближе к длине $θ$ дуги. Мы заключаем, что, когда $θ \to 0$, $\frac{\sin θ}θ \to 1$. Другими словами,<br />
+$$\lim_{x \to 0} \frac{\sin x}x = 1$$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.05.16 в 11:18</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33780'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This technique of comparing very short segments of curves to straight line segments is a powerful and important one in calculus; it is used several times in this lecture.</p><p class='info'><a href='/book/39/132/33780#10' class='ord'>#10</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t762' class='u76'><p class='text'>Эта техника сравнения очень коротких частей кривых с прямыми отрезками - очень мощное и важное средство анализа; оно используется несколько раз в этой лекции.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.05.16 в 11:21</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33781'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Limit of $\frac{1- \cos x}{x}$</p><p class='info'><a href='/book/39/132/33781#11' class='ord'>#11</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t754' class='u76'><p class='text'>Предел $\frac{1-\cos x}x$</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.05.16 в 10:58</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33782'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>While calculating the derivatives of $\cos (x)$ and $\sin (x)$, Professor Jerison said that $$\lim_{\theta \to 0} \frac{1- \cos θ}{θ} = 0$$. This is true, but in order to be certain that our derivative formulas are correct we should understand why it’s true.</p><p class='info'><a href='/book/39/132/33782#12' class='ord'>#12</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t755' class='u76'><p class='text'>При вычислении производных $\cos x$ и $\sin x$, профессор Джерисон сказал, что:<br />
+$$\lim_{θ\to 0} \frac{1-\cos θ}θ =0$$<br />
+Это и в самом деле так, но, чтобы убедиться, что наши формулы производных верны, нам стоит понять, почему это так.</p><p class='info'><a href='/users/76' class='user'>Keyten</a> <i class='i icon-flag'></i> 3.05.16 в 11:00</p><div class='rating x'><a href='#' class='base current '>0</a></div><div class='tools'><a href='#' class='edit'><i class='i icon-edit'></i></a><a href='#' class='rm'><i class='i icon-remove'></i></a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33783'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>As in the discussion of $\sin (\theta)/\theta$, our explanation involves looking at a diagram of the unit circle and comparing an arc with length $\theta$ to a straight line segment. (Remember that $\theta$ is measured in radians!) As shown in Figure 1, the vertical distance between the endpoints of the arc is $\cos \theta$, and the horizontal distance between the ends of the arc is $1 − \cos \theta$.</p><p class='info'><a href='/book/39/132/33783#13' class='ord'>#13</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1932' class='u70'><p class='text'>Как и в обсуждении отношения $\frac{\sin(\theta)}{\theta}$, наше объяснение базируется на рассмотрении графика единичной окружности и дуги на ней, величины $\theta$, ограничивающей угловой сегмент. (Следует помнить, что $\theta$ измеряется в радианах!). Как показано на рисунке 1, вертикальная составляющая конечной точки дуги есть $\cos(\theta)$, а горизонтальная - $1 - \cos(\theta)$.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 21:30</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33784'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: Same figure as for $\frac{\sin x}{x}$ except that the horizontal distance between the edge of the triangle and the perimeter of the circle is marked.</p><p class='info'><a href='/book/39/132/33784#14' class='ord'>#14</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2128' class='u67'><p class='text'>Тот же рисунок, что и для $\frac{\sin x}{x}$, с разницей лишь в том, что на нем отмечено расстояние по горизонтали между углом треугольника и окружностью.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 14:57</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33785'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>From Fig. 2 we can see that as $\theta \to 0$, the horizontal distance $1 − \cos \theta$ between endpoints of the arc (what Professor Jerison calls “the gap”) gets much smaller than the length $\theta$ of the arc. Hence, $\frac{1 - \cos \theta}{\theta} \to 1$.</p><p class='info'><a href='/book/39/132/33785#15' class='ord'>#15</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2129' class='u67'><p class='text'>Из рис. 2 мы видим, что когда $\theta \to 0$, горизонтальное расстояние $1 - \cos \theta$ между крайними точками дуги (что профессор Джерисон называет «зазором») становится все меньше и меньше, чем длина дуги $\theta$. Значит, $\frac{1 - \cos \theta}{\theta} \to 1$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 15:04</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33786'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>If you find this hard to believe it may be helpful to use a calculator to verify that if $x$ is small, $1 − \cos x$ is much smaller. You might also study the graph of $y = 1 − \cos x$ near $x = 0$ or use a web application to compare the distance $1 − \cos \theta$ to the arc length $\theta$ for very small angles $\theta$.</p><p class='info'><a href='/book/39/132/33786#16' class='ord'>#16</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1934' class='u70'><p class='text'>Если вам тяжело в это поверить, то может быть полезно проверить на калькуляторе, что если $x$ мало, то $1-\cos(x)$ будет меньше, чем $x$. Так же вы можете проанализировать график $y=1-\cos(x)$ вблизи точки $x = 0$ или использовать веб-приложение для сравнения величин $1-\cos(\theta)$ с $\theta$ для очень маленьких углов $\theta$.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 21:35</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63477'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 2: The sector in Fig. 1 as $\theta$ becomes very small</p><p class='info'><a href='/book/39/132/63477#17' class='ord'>#17</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2131' class='u67'><p class='text'>Рис. 2. Сектор из рис.1 при очень маленьком $\theta$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 15:11</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33787'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Questions and Answers</p><p class='info'><a href='/book/39/132/33787#18' class='ord'>#18</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1933' class='u70'><p class='text'>Вопросы и ответы</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 21:32</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33788'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>It’s difficult to visualize the relationship between the arc length $\theta$ and the segment length $1 − \cos (\theta)$ in the geometric argument that: $$\lim_{\theta \to 0} \frac{1 - \cos (\theta)}{\theta}$$</p><p class='info'><a href='/book/39/132/33788#19' class='ord'>#19</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1935' class='u70'><p class='text'>Довольно тяжело представить отношение дуги длины $\theta$ к сегменту длины $1-\cos(\theta)$ если $\theta$ стремиться к нулю: $$\lim_{\theta \to 0} \frac{1-\cos \theta}{\theta} =0$$</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 21:36</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33789'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Professor Jerison spends ten minutes answering student questions and clarifying his argument.</p><p class='info'><a href='/book/39/132/33789#20' class='ord'>#20</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1936' class='u70'><p class='text'>Профессор Джерисон отвечает на вопросы студентов в течении 10 минут и уточняет свое доказательство.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 21:39</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33790'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Doesn’t $\theta$ also tend to $0$?</p><p class='info'><a href='/book/39/132/33790#21' class='ord'>#21</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2130' class='u67'><p class='text'>Правда ли, что $\theta$ также стремится к $0$?</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 15:05</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33791'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Yes. Whenever we take a derivative we’re dividing by a quantity that tends to zero. The quantity $\lim_{x \to 0} \frac{1 - \cos(\theta)}{\theta}$ happens to be the derivative of $\cos \theta$ evaluated at zero. It should not surprise us that this ratio tends to zero divided by zero.</p><p class='info'><a href='/book/39/132/33791#22' class='ord'>#22</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2133' class='u67'><p class='text'>Да. Всякий раз, когда мы берем производную, мы делим на величину, которая стремится к нулю. Предел $\lim_\limits{\theta \to 0} \frac{1 - \cos \theta}{\theta}$ оказывается равным значению производной $\cos \theta$ в нуле. Нас уже не должно удивлять, что это отношение приближается к нулю, деленному на нуль.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 15:22</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33828'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>What we’re interested in is that as $\theta$ goes to zero the straight line approximating the arc with length $\theta$ becomes much longer than the ”gap” of length $1 − \cos \theta$.</p><p class='info'><a href='/book/39/132/33828#23' class='ord'>#23</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2134' class='u67'><p class='text'>Что нас интересует, так это то, что при $\theta$ стремящимся к нулю,     прямая, приближающая дугу длиной $\theta$, становится гораздо длиннее, чем «зазор» длиной $1 - \cos \theta$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 15:27</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33792'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>As the angle $\theta$ decreases and we “zoom in”, it turns out that the ratio between the size of the “gap” and the length of the “bowstring” gets smaller and smaller – the gap shrinks faster than the bowstring. So, as the measure of angle $\theta$ approaches $0$, the ratio $\frac{1 - \cos(\theta)}{\theta}$ also approaches $0$.</p><p class='info'><a href='/book/39/132/33792#24' class='ord'>#24</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2137' class='u67'><p class='text'>Если при уменьшающемся $\theta$ мы приблизим рисунок, окажется, что отношение между размером «зазора» и длиной арки становится все меньше и меньше — зазор уменьшается быстрее арки. Так что, когда $\theta$ приближается к нулю, отношение $\frac{1 - \cos \theta}{\theta}$ также приближается к нулю.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 15:52</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33793'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In the example of sin θ/θ we were comparing two quantities that were about the same size and which approached zero at approximately the same rate, so their ratio approached 1.</p><p class='info'><a href='/book/39/132/33793#25' class='ord'>#25</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2138' class='u67'><p class='text'>В этом примере с $\frac{\sin \theta}{\theta}$ мы сравнивали две величины примерно одного размера, которые стремятся к нули с почти одинаковой скоростью, поэтому их отношение стремится к $1$.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 15:56</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33794'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Where is the Stata Center?</p><p class='info'><a href='/book/39/132/33794#26' class='ord'>#26</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2135' class='u67'><p class='text'>Где находится Стейта-центр?</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 15:29</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33795'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The Stata Center is a building at MIT that is approximately 100 meters away from the hall in which this lecture is given.</p><p class='info'><a href='/book/39/132/33795#27' class='ord'>#27</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2127' class='u67'><p class='text'>Центр имени Рея и Марии Стейта — это здание в MIT, которое находится приблизительно в 100 метрах от аудитории, в которой проходит леция.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 3:11</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='icon-comment-new'></i> <b class='n'>+1</b></a></td></tr>
+<tr id='o33796'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Is $\frac{\cos \theta - 1}{\theta}$ the same as $\frac{1 - cos(\theta)}{\theta}$?</p><p class='info'><a href='/book/39/132/33796#28' class='ord'>#28</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2136' class='u67'><p class='text'>Верное ли, что $\frac{\cos \theta - 1}{\theta}$ то же самое, что $\frac{1 - \cos(\theta)}{\theta}$?</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 15:46</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63478'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>$\frac{\cos\theta - 1}{\theta}$ is the negative of $\frac{1 - \cos(\theta)}{\theta}$.<br />
+$$- \frac{1 - \cos(\theta)}{\theta} = \frac{-1 + \cos(\theta)}{\theta} = \frac{\cos\theta - 1}{\theta}$$</p><p class='info'><a href='/book/39/132/63478#29' class='ord'>#29</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2139' class='u67'><p class='text'>$\frac{\cos\theta - 1}{\theta}$ — это $\frac{1 - \cos(\theta)}{\theta}$ c другим знаком.<br />
+$$- \frac{1 - \cos(\theta)}{\theta} = \frac{-1 + \cos(\theta)}{\theta} = \frac{\cos\theta - 1}{\theta}$$</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 15:59</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33797'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>What do you mean by “arc length”?</p><p class='info'><a href='/book/39/132/33797#30' class='ord'>#30</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1946' class='u70'><p class='text'>Что вы имеете ввиду под «длина дуги»?</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 21:56</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33798'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The arc in question is the portion of the unit circle swept out by the angle θ. Its arc length is its length.</p><p class='info'><a href='/book/39/132/33798#31' class='ord'>#31</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1947' class='u70'><p class='text'>Дуга это часть единичной окружности заметающая угол $\theta$. Это и есть длина дуги.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 22:08</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33799'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Why is its length θ?</p><p class='info'><a href='/book/39/132/33799#32' class='ord'>#32</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2126' class='u67'><p class='text'>Почему эта длина равна $\theta$?</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 2:59</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33800'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Because we are measuring the angle θ in radians and because the radius of the circle has length 1, the length of the arc swept out by θ will equal the angle θ.</p><p class='info'><a href='/book/39/132/33800#33' class='ord'>#33</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1948' class='u70'><p class='text'>Потому что мы измеряем угол $\theta$ в радианах, а радиус окружности единичный, поэтому дуга заметает угол $\theta$, что эквивалентно углу $\theta$.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 22:10</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33801'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This is especially important in the discussion of $\frac{\sin \theta}{\theta}$. If we were measuring $\theta$ in degrees, for example, we would have to compute the arc length before we could compare it to the vertical distance $\sin \theta$. The arc length only equals $\theta$ when $\theta$ is measured in radians.</p><p class='info'><a href='/book/39/132/33801#34' class='ord'>#34</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1949' class='u70'><p class='text'>Это было особенно важно в обсуждении отношения $\frac{\sin \theta}{\theta}$. Если бы мы, например, измеряли $\theta$ в градусах, то нам следовало бы сперва вычислить длину дуги, перед тем как сравнивать ее с величиной $\sin(\theta)$. Длина дуги равна $\theta$ только тогда, когда $\theta$ измеряется в радианах.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 22:14</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33802'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The best way to measure $\theta$ in this calculation is by length along the unit circle, which is what radians are. Unfortunately, we won’t see a proof of this until near the end of the course.</p><p class='info'><a href='/book/39/132/33802#35' class='ord'>#35</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2132' class='u67'><p class='text'>В наших выкладках, самый лучший способ измерять $\theta$ — это измерять длину дуги на единичной окружности, что есть радианы. К сожалению, мы увидим объяснение этого факта только к концу курса.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 15:16</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33803'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Why is the length of the radius equal to $1$?</p><p class='info'><a href='/book/39/132/33803#36' class='ord'>#36</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1950' class='u70'><p class='text'>Почему радиус окружности равен $1$?</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 22:22</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33804'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>When working with trig functions like $\cos (x)$ it’s extremely useful to think about a circle with radius $1$ centered at the point $(0, 0)$ because a point $(x, y)$ at angle $\theta$ on the circle will have coordinates $(\cos \theta,\sin \theta)$.</p><p class='info'><a href='/book/39/132/33804#37' class='ord'>#37</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1951' class='u70'><p class='text'>Когда оперируешь тригонометрическими функциями такими как $\cos(x)$ очень полезно использовать окружность радиуса 1 с центром в начале координат, потому что точка $(x, y)$ на окружности под углом $\theta$ имеет координаты $(\cos \theta, \sin \theta)$.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 22:25</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33805'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The radius shown on the blackboard looks like it’s more than one unit long because we “zoomed in” on it as $\theta$ became too small to see.</p><p class='info'><a href='/book/39/132/33805#38' class='ord'>#38</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2140' class='u67'><p class='text'>Радиус окружности, изображенный на доске, кажется больше единичного, поскольку мы «приближаем» рисунок, когда $\theta$ становится слишком маленьким для рассмотрения.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 16:03</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33806'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>I’m having trouble visualizing how $\frac{1 - \cos(\theta)}{\theta} \to 0$.</p><p class='info'><a href='/book/39/132/33806#39' class='ord'>#39</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1943' class='u70'><p class='text'>Я не могу представить себе предел $\frac{1-\cos(\theta)}{\theta}$ при $\theta \to 0$</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 21:54</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33807'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>You are probably not the only one.</p><p class='info'><a href='/book/39/132/33807#40' class='ord'>#40</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1944' class='u70'><p class='text'>Вы в этом не одиноки.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 21:54</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33808'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>First, visualize angle $\theta$ getting smaller and smaller.</p><p class='info'><a href='/book/39/132/33808#41' class='ord'>#41</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1945' class='u70'><p class='text'>Во-первых, представьте себе постоянно уменьшающийся $\theta$.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 21:55</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33809'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>When $\theta$ is very, very small, we can’t see what’s going on unless we “blow up” or “zoom in on” the picture. (In fact, if we let $\theta$ decrease all the way to $0$, the triangle collapses and $frac{1− \cos(\theta)}{\theta} = \frac{0}{0}$. That’s why we have to use a limit.)</p><p class='info'><a href='/book/39/132/33809#42' class='ord'>#42</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2141' class='u67'><p class='text'>Когда $\theta$ становится очень, очень маленьким, мы не сможем увидеть, что происходит, до тех пор, пока мы не приблизим картинку (по факту, если мы дадим $\theta$ уменьшится совсем до нуля, треугольник стянется и $\frac{1 - \cos \theta}{\theta} = \frac{0}{0}$; поэтому мы и используем предел).</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 16:14</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33810'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>To estimate the value of $\frac{1−cos(\theta)}{\theta}$ as $\theta$ shrinks, we need to look at geometric interpretations of both the numerator $(1 − \cos \theta)$ and the denominator $\theta$ and compare them.</p><p class='info'><a href='/book/39/132/33810#43' class='ord'>#43</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2142' class='u67'><p class='text'>Чтобы оценить значение $\frac{1−cos(\theta)}{\theta}$ когда $\theta$ уменьшается, нам нужно посмотреть на геометрическую интерпретацию как числителя $(1 − \cos \theta)$, так и знаменателя $\theta$, и сравнить их.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 16:19</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33811'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The numerator is the length of the tiny “gap” and the denominator is half the length of the “bow string”. From the picture, we see that the gap is much shorter than the bow string when $\theta$ is small.</p><p class='info'><a href='/book/39/132/33811#44' class='ord'>#44</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2143' class='u67'><p class='text'>Числитель — это длина очень маленького «зазора», а знаменатель — половина длины арки. Из рисунка мы можем увидеть, что зазор гораздо короче, чем арка, когда величина $\theta$ маленькая.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 16:22</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33812'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>As $\theta$ shrinks, we zoom in further, the bow of the circular arc gets closer and closer to the bow string, and so the gap gets smaller and smaller while the bow  string appears to stay the same length. So the ratio of the size of the gap to the length of the bow string gets smaller and smaller, approaching zero.</p><p class='info'><a href='/book/39/132/33812#45' class='ord'>#45</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2145' class='u67'><p class='text'>Когда $\theta$ уменьшается и мы приближаем картинку, арка становится все ближе и ближе к прямой, при этом не меняясь в размерах, а зазор становится все меньше и меньше. Так что отношение размера зазора к длине арки становится меньше и меньше приближаясь к нулю.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 16:27</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33813'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Not only does the size of the gap go to zero, it goes to zero faster than the length of the bow string does.</p><p class='info'><a href='/book/39/132/33813#46' class='ord'>#46</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t2144' class='u67'><p class='text'>Размер зазора не просто стремится к нулю, он делает это быстрее, чем длина арки.</p><p class='info'><a href='/users/67' class='user'>efiminem</a> <i class='i icon-flag'></i> 15.05.16 в 16:24</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33814'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>A geometric proof that the derivative of $\sin x$ is $\cos x$.</p><p class='info'><a href='/book/39/132/33814#47' class='ord'>#47</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1941' class='u70'><p class='text'>Геометрическое доказательство $(\sin(x))' = \cos(x)$.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 21:50</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33815'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>At the start of the lecture we saw an algebraic proof that the derivative of $\sin x$ is $\cos x$. While this proof was perfectly valid, it was somewhat abstract – it did not make use of the definition of the sine function.</p><p class='info'><a href='/book/39/132/33815#48' class='ord'>#48</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1942' class='u70'><p class='text'>В начале лекции мы увидели алгебраическое доказательство того, что производная синуса есть косинус. Это строгое и абстрактное доказательство - не использовалось определение функции синуса.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 21:53</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33816'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The proof that $\lim_\limits{\theta \to 0} \frac{\sin \theta}{\theta} = 1$ did use the unit circle definition of the sine of an angle. It also showed that when $x = 0$ the derivative of $\sin x$ is $1$: $$<br />
+\begin{align}<br />
+\frac{d}{dx} \sin(x)|_{x=0} &amp;= \lim_{\Delta x \to 0} \frac{\sin(0+\Delta x) - \sin 0}{\Delta x} \\<br />
+&amp;=\lim_{\Delta x \to 0} \frac{\sin \Delta x - 0}{\Delta x} \\<br />
+&amp;= \lim_{\Delta x \to 0} \frac{\sin \Delta x}{\Delta x} \\<br />
+&amp;= 1<br />
+\end{align}<br />
+$$</p><p class='info'><a href='/book/39/132/33816#49' class='ord'>#49</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1940' class='u70'><p class='text'>При доказательстве того,что $\lim_\limits{\theta \to 0} \frac{\sin \theta}{\theta} = 1$ использовалось определение единичной окружности для синуса угла. Так же показано, что когда $x = 0$ производная $\sin(x)$ равна $1$: $$<br />
+\begin{align}<br />
+\frac{d}{dx} \sin(x)|_{x=0} &amp;= \lim_{\Delta x \to 0} \frac{\sin(0+\Delta x) - \sin 0}{\Delta x} \\<br />
+&amp;=\lim_{\Delta x \to 0} \frac{\sin \Delta x - 0}{\Delta x} \\<br />
+&amp;= \lim_{\Delta x \to 0} \frac{\sin \Delta x}{\Delta x} \\<br />
+&amp;= 1<br />
+\end{align}<br />
+$$</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 21:49</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33817'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We’ll now prove that the derivative of $\sin \theta$ is $\cos \theta$ directly from the definition of the sine function as the ratio $\frac{|\textrm{opposite}|}{|\textrm{hypotenuse}|}$ of the side lengths of a right triangle.</p><p class='info'><a href='/book/39/132/33817#50' class='ord'>#50</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t1939' class='u70'><p class='text'>Только что мы доказали что производная $\sin(\theta)$ есть $\cos(\theta)$ непосредственно из определения функции синуса как отношения противоположной стороны прямоугольника к его гипотенузе.</p><p class='info'><a href='/users/70' class='user'>madphys</a> <i class='i icon-flag'></i> 12.05.16 в 21:44</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+    </tbody>
+</table>
+
+<div id="pages-bottom">
+    <p class='n'><a href='?Orig_page=2'>Следующая страница &rarr;</a></p></div>
+
+
+<div id="tr-sidebar">
+    <div id="dict" class='has-edit'>
+        <div id="dict-search">
+            <input type="text" placeholder="Поиск по словарю" class="search"/>
+            <a href="#" class="b"><i class="i icon-remove-sign"></i></a>
+        </div>
+        <div id="dict-body">
+            <div id="dict-body-content">
+                Минутку...
+            </div>
+        </div>
+                    <div id="dict-add">
+                <form method="post" action="/book/39/dict">
+                    <input type="text" name="term" placeholder="Оригинал"/>
+                    <input type="text" name="descr" placeholder="Перевод"/>
+                    <button type="submit" class="btn btn-mini btn-primary">Добавить</button>
+                    <button type="button" class="btn btn-mini cancel">Отмена</button>
+                </form>
+            </div>
+            <div id="dict-tools">
+                <i class="icon-plus"></i> <a href="#" class="add">Добавить слово</a>
+            </div>
+                    </div>
+</div>
+
+
+<div id="renum-modal" class="modal hide">
+    <form method="post" class="form-inline" action="/book/39/132/renum">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Перенумеровать субтитры</h3>
+        </div>
+        <div class="modal-body">
+            Номер субтитра, серая циферка рядом с его таймингом, в сущности, ни на что не влияет, субтитры сортируются
+            по времени.
+            Если вы добавляете новый титр, его номер может выбиваться из плавного течения номеров. Этот инструмент
+            расставит всем
+            титрам номера в хронологическом порядке.
+        </div>
+        <div class="modal-footer">
+            <input type="hidden" name="mode" value="1"/>
+            <button type="submit" class="btn btn-primary">Поехали</button>
+            <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $("#Tr").find("td.o").each(function () {
+        var $this = $(this);
+        $this.children("div").css("min-height", $this.height());
+    });
+</script>
+</div>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span6">
+                &copy; <a href="http://romakhin.ru/" rel="nofollow">Дмитрий Ромахин</a>
+                2008&ndash;2017                <br/>
+                <a href="/site/help">Справка</a> |
+                <a href="/blog?topic=65">Техподдержка</a> |
+                <a href="mailto:abuse@translate.kursomir.ru?subj=%2Fbook%2F39%2F132">Abuse</a> |
+                <a href="mailto:translate@kursomir.ru">E-mail для справок</a> |
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&locale=ru"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']]
+        },
+        asciimath2jax: {
+            delimiters: [['``', '``']]
+        }
+    });
+</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('a.tooltip').tooltip({'placement':'bottom'});
+jQuery('a[rel="popover"]').popover();
+jQuery('#yw0 .alert').alert();
+});
+/*]]>*/
+</script>
+</body>
+</html>

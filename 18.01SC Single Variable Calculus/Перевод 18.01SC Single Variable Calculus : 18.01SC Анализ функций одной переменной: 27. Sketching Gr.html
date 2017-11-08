@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="/css/v3.1.css?3" />
+<link rel="stylesheet" type="text/css" href="/css/translate-1.css?5" />
+<link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css?1" />
+<style type="text/css">
+/*<![CDATA[*/
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+body, label, input, button, select, textarea {
+	font-size: 13px;
+	line-height: 18px;
+}
+#chat-box {
+	height: 300px;
+}.comments .comment .meta, .comments .comment .meta a, .translator .info, .translator .info a { color: #bbb; }
+.comments .comment:hover .meta, .comments .comment:hover .meta a, .translator tr:hover .info, .translator tr:hover .info a { color: #888; }
+/*]]>*/
+</style>
+<script type="text/javascript" src="/assets/bbeb3eca/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/6b5c0e82/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/global.js?16"></script>
+<script type="text/javascript" src="/js/user.js?3"></script>
+<script type="text/javascript" src="/js/chat.js?3"></script>
+<script type="text/javascript" src="/js/translate-1.js?11"></script>
+<script type="text/javascript" src="/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="/js/jquery.elastic.mod.js"></script>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.min.js?1"></script>
+<script type="text/javascript" src="/js/ff_comments.js?3"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var User = new CUser({id: 76, login: 'Keyten'});
+
+var Book = new CBook({
+	id: 39,
+	owner_id: 67,
+	facecontrol: 1,
+	s_lang: 2,
+	t_lang: 1,
+	n_verses: 2492,
+	n_vars: 1286,
+	d_vars: 1282,
+	typ: 'A',
+	s_title: '18.01SC Single Variable Calculus',
+	t_title: '18.01SC Анализ функций одной переменной',
+	membership: {status: 1}
+});
+
+var Chap = {
+	id: 149,
+	book_id: 39,
+	n_verses: 88,
+	n_vars: 88,
+	d_vars: 88,
+	title: '27. Sketching Graphs I - Polynomials and Rational Functions / Построение графиков I - многочлены и рациональные функции ',
+	ac_read: '',
+	ac_gen: '',
+	ac_rate: '',
+	ac_comment: '',
+	ac_tr: '',
+};
+
+/*]]>*/
+</script>
+<title>Перевод 18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной: 27. Sketching Graphs I - Polynomials and Rational Functions / Построение графиков I - многочлены и рациональные функции  :: КУРСОМИР.ПЕРЕВОДЫ</title>
+    <meta name="description" content="Коллективные переводы субтитров и книжек"/>
+    <meta name="language" content="ru"/>
+    <meta name="keywords"
+          content="перевод, translation, коллективный перевод, кино с субтитрами, кино по-английски с русскими субтитрами, кино по-немецки с русскими субтитрами, кино по-испански с русскими субтитрами, примеры перевода, краудсорсинг, crowdsourcing, нотабеноид"/>
+    <link rel='icon' href='/i/favicon.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='/i/favicon.ico' type='image/x-icon'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE]>
+    <script type="text/javascript" src="/js/jquery.input-placeholder.js"></script>
+    <link rel='stylesheet' href="/css/jquery.input-placeholder.css"/>
+    <script type="text/javascript">
+        $(function () {
+            $('input[placeholder]').inputDefault();
+        });
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container-fluid" style="background-color:#fff;">
+        <a href="/" id="header-logo">
+            <img src="/i/logo.png" width="124" height="130"
+                 style="padding-top: 50px;"
+                 alt="КУРСОМИР.ПЕРЕВОДЫ"
+                 title="3.3"/>
+        </a>
+        <nav>
+            <ul id="header-menu">
+                <li><a href="/catalog/1">ВИДЕО</a></li>
+                <li><a href="/catalog/2">ТЕКСТЫ</a></li>
+                <li><a href="/users">ПЕРЕВОДЧИКИ</a></li>
+                <li><a href="/blog">БЛОГ</a></li>
+                <li><a href="/announces">АНОНСЫ</a></li>
+                <li class="search">
+                    <form class="form-search" method="get" action="/search">
+                                                <input type="hidden" name="from" value="header">
+                        <input type="text" name="t" class="input-medium search-query span3"
+                               placeholder="Ищете что-нибудь?"
+                               title="Кстати, отсюда можно найти и переводчика, если собаку (@), а потом сразу его ник."/>
+                        <input type="submit" value="&raquo;" class="btn" style="border-radius: 20px;"/>
+                    </form>
+                </li>
+            </ul>
+            <ul id="header-submenu">
+                                    <li>
+                        <a href="/users/76" accesskey="i">
+                            <strong>Keyten</strong>
+                            Всё о вас
+                        </a>
+                    </li>
+                    <li id="hm-c">
+                        <a href="/my/comments" accesskey="c">
+                            <strong>Обсуждения  <b></b></strong>
+                            Места, где вы общались
+                        </a>
+                    </li>
+                    <li id="hm-n">
+                        <a href="/my/notices" accesskey="n">
+                            <strong>Оповещения  <b></b></strong>
+                            События для вас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#bookmarks" accesskey="b">
+                            <strong>Закладки</strong>
+                            На память
+                        </a>
+                    </li>
+                    <li><a href="/book/0/edit"><strong>Создать</strong> Перевод</a></li>
+                    <li><a href="/register/settings"><strong>Настройки</strong> Профиля</a></li>
+                    <li><a href="/register/logout"><strong>Выход</strong> До свидания :(</a></li>
+                            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <div id="bookmarks" class="modal hide">
+        <div class="modal-header" style='padding-bottom:0;'>
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Закладки</h3>
+            <div class="btn-toolbar">
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-sort">
+                    <button class="btn btn-mini" data-v="1" title="Сортировка по алфавиту">
+                        <i class="icon-text-height"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="2" title="Сортировка по вашей активности">
+                        <i class="icon-fire"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="3" title="Сортировка по времени вступления в перевод">
+                        <i class="icon-time"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="5" title="Сортировка по времени добавления закладки">
+                        <i class="icon-shopping-cart"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="4" title="Сортировка по готовности перевода">%</button>
+                    <button class="btn btn-mini" data-v="0" title="Ваша сортировка (таскайте закладки мышкой)">
+                        <i class="icon-random"></i>
+                    </button>
+                </div>
+
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-title">
+                    <button class="btn btn-mini" data-v="s" title="Показывать названия на языке оригинала">О</button>
+                    <button class="btn btn-mini" data-v="t" title="Показывать названия на языке перевода">П</button>
+                </div>
+                                <div class="btn-group pull-right">
+                    <button class="btn btn-mini" title="Удалить" id="bookmarks-tb-rm">
+                        <i class="icon-remove"></i>
+                    </button>
+                    <button class="btn btn-mini" title="Редактировать" id="bookmarks-tb-ed">
+                        <i class="icon-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body" style="max-height:350px">
+            <p class='loading'>минуточку...</p>
+        </div>
+    </div>
+
+
+<div class="container-fluid">
+    <div id="yw0"></div>
+<style type="text/css">
+        .translator.has-best td.t .best .text {
+        background-image: url(/i/corner-gray-t-r.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    </style>
+
+<h1><a href='/book/39'>18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной</a>: 27. Sketching Graphs I - Polynomials and Rational Functions / Построение графиков I - многочлены и рациональные функции </h1>
+
+<div id="tb-main">
+    <div>
+        <div class='group'><a
+                href="/book/39/149/go?nach=prev&ord=25"
+                title="Предыдущая глава"><i class="i icon-arrow-left"></i></a></div>
+
+        <div class="tb-index btn-group">
+            <a href="/book/39" class="btn btn-small"><i class="icon-list"></i> Оглавление</a>
+            <a class="btn btn-small dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+            <ul class="dropdown-menu" id="tb-chapter-list">
+                <li><a href="/book/39/members">Переводчики</a></li>
+                <li><a href="/book/39/blog">Блог</a></li>
+            </ul>
+        </div>
+
+        <div class='group'><a
+                href="/book/39/149/go?nach=next&ord=25"
+                title="Следующая глава"><i class="i icon-arrow-right"></i></a></div>
+
+        <div class="btn-group">
+                            <button type="button" class="btn btn-small tb-chat" title="Ctrl + ~"><i class="icon-bullhorn"></i> Чат
+                </button>
+            
+            <a href="#" class="btn btn-small tb-dict" accesskey="V"><i class="icon-book"></i> Словарь</a>
+
+            <div id="tb-filter">
+                <form method="get" class="form-inline" action="/book/39/149">
+                    <ul class='options'>
+                        <li><label><input type='radio' name='show' value='1' /> <a href='?show=1'>Непереведённое</a></label></li><li><label><input type='radio' name='show' value='7' /> <a href='?show=7'>С 2 и более версиями перевода</a></label></li><li><label><input type='radio' name='show' value='3' /> <a href='?show=3'>С комментариями</a></label></li><li><label><input type='radio' name='show' value='4' /> <a href='?show=4'>С новыми комментариями</a></label></li><li><label><input type='radio' name='show' value='2' />  <input type='text' name='show_user' placeholder='От переводчика' class='span3' value='' title='Ctrl+I: вставить ваш ник' /></label></li><li><label><input type='radio' name='show' value='5' />  <input type='text' name='to' placeholder='Оригинал содержит' class='span3' value='' /></label></li><li><label><input type='radio' name='show' value='6' />  <input type='text' name='tt' placeholder='Перевод содержит' class='span3' value='' /></label></li>                    </ul>
+                    <button type="submit" class="btn btn-mini btn-primary">Показать</button>
+                    <a href="/book/39/149"
+                       class="btn btn-mini">Сбросить всё</a>
+                </form>
+            </div>
+
+            <a href='#' class='btn btn-small tb-filter' accesskey='F'><i class='icon-filter'></i> Фильтр</a>        </div>
+
+        
+        
+
+        <div class="group">
+            <a href="/book/39/149/switchiface"><i class="icon-thumbs-down" title="Старый	интерфейс"></i></a>
+        </div>
+
+        <div class="tb-progress group"></div>
+
+        <div class='chic-pages'><span>&larr;</span><div class='blur left'></div> <ul class='selectable'><li class='active'><input type='text' name='Orig_page' value='1' accesskey='g' /></li><li><a href='?Orig_page=2'>2</a></li></ul> <div class='blur right'></div><a href='?Orig_page=2' class='pseudo' title='На следующую страницу'>&rarr;</a></div>    </div>
+</div>
+
+<div class="clear"></div>
+
+<table id="Tr" class="translator has-best translator-oe-hide">
+    <thead>
+    <tr>
+                    <th></th>        <th>
+            Английский оригинал
+        </th>
+                    <th></th>        <th>
+            Перевод на русский        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id='o63626'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Introduction to Curve Sketching</p><p class='info'><a href='/book/39/149/63626#1' class='ord'>#1</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29492' class='u75'><p class='text'>Введение в построение кривых</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 20:05</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63627'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Goal: To draw the graph of f using information about whether f' and f'' are<br />
+  positive or negative. We want the graph to be qualitatively correct, but not<br />
+  necessarily to scale.</p><p class='info'><a href='/book/39/149/63627#2' class='ord'>#2</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29493' class='u75'><p class='text'>Цель: Нарисовать график функции f, используя информацию о том, что функции f' и f'' положительны или отрицательны. Мы хотим нарисовать график качественно, но при этом масштаб нам не важен.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 20:07</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63628'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>WARNING: Don’t abandon your precalculus skills and common sense —<br />
+  you already know a lot about graphing functions; calculus just fills in the gaps.</p><p class='info'><a href='/book/39/149/63628#3' class='ord'>#3</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29494' class='u75'><p class='text'>ВНИМАНИЕ: Не оставляйте школьные знания математики и здравый смысл в стороне - вы уже многое знаете о построении графиков; анализ лишь восполнит пробелы.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 20:09</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63629'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The first principle is that if f' is positive, then f is increasing. In other<br />
+  words, if the tangent line is pointing up then the function is going up too.</p><p class='info'><a href='/book/39/149/63629#4' class='ord'>#4</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29495' class='u75'><p class='text'>Первый принцип гласит, что если f' положительная, то f возрастает. Другими словами, если касательная указывает вверх, то и функция растет вверж тоже.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 20:10</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63630'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Similarly, if the derivative of f is negative then f is decreasing.</p><p class='info'><a href='/book/39/149/63630#5' class='ord'>#5</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29496' class='u75'><p class='text'>Так же, если производная от f отрицательна, то f - убывающая.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 20:10</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63631'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The second principle is just a second order effect of the same type. If f'' is<br />
+  positive, that means that f' is increasing. This is just the first principle applied<br />
+  to the second derivative; f'' is the derivative of f'.</p><p class='info'><a href='/book/39/149/63631#6' class='ord'>#6</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29497' class='u75'><p class='text'>Второй принцип аналогичен первому, только связан с второй производной. Если f'' положительная, это значит, что f' возрастает. То есть это первый принцип, примененный ко второй производной; ведь f'' - это производная от f'.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 20:38</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63632'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1 shows the graph of a function for which the second derivative is<br />
+  positive.</p><p class='info'><a href='/book/39/149/63632#7' class='ord'>#7</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29498' class='u75'><p class='text'>На рисунке 1 показан график функции, для которой вторая производная положительна.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 20:39</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63633'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>You can see from the tangent lines sketched on the graph that their<br />
+  slopes increase from negative on the left to positive on the right. We say that<br />
+  curves with this shape are concave up.</p><p class='info'><a href='/book/39/149/63633#8' class='ord'>#8</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29499' class='u75'><p class='text'>Вы можете увидеть, что наклон касательной к графику функции возрастает с отрицательных значений слева до положительных справа. Мы говорим, что кривая графика выпуклая вниз.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 20:41</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63634'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Similarly, if f'' &lt; 0 then f' is decreasing and the graph of f is concave down.</p><p class='info'><a href='/book/39/149/63634#9' class='ord'>#9</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29500' class='u75'><p class='text'>Так же, если f'' &lt; 0, то f' убывает и график функции f является выпуклым вверх.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 20:42</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63635'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: f is concave-up. The slope increases from negative to positive as x<br />
+  increases.</p><p class='info'><a href='/book/39/149/63635#10' class='ord'>#10</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29501' class='u75'><p class='text'>Рисунок 1: f выпуклая вниз. Наклон касательной увеличивается с отрицательного до положительно, так как x возрастает.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 20:43</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63636'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Curve Sketching Example 1</p><p class='info'><a href='/book/39/149/63636#11' class='ord'>#11</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29502' class='u75'><p class='text'>Пример черчения кривой #1</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 20:43</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63637'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Example 1: Sketch the graph of f(x) = 3x − x3.</p><p class='info'><a href='/book/39/149/63637#12' class='ord'>#12</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29503' class='u75'><p class='text'>Пример 1: Начертить график f(x) = 3x - x^3</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 20:44</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63638'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>First we note that:<br />
+  f'(x) = 3 − 3x2 = 3(1 − x)(1 + x)</p><p class='info'><a href='/book/39/149/63638#13' class='ord'>#13</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29504' class='u75'><p class='text'>Для начала вычислим:<br />
+f'(x) = 3 - 3*x^2 = 3*(1-x)*(1+x)</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 20:44</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63639'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We can see that if −1 &lt; x &lt; 1, both (1 − x) and (1 + x) are positive, so f'(x)<br />
+  must also be positive, so f is increasing (by our first principle.)</p><p class='info'><a href='/book/39/149/63639#14' class='ord'>#14</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29505' class='u75'><p class='text'>Мы можем увидеть, что если -1 &lt; x &lt; 1, то (1 - x) и (1 + x) - положительны, значит f'(x) тоже должна быть положительна, значит f возрастает (по первому принципу).</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 20:46</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63640'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>When x &gt; 1, f'(x) &lt; 0 and f is decreasing. When x &lt; −1, then (1 − x) is<br />
+  positive and (1 + x) is negative, so f'(x) = 3(1 − x)(1 + x) is negative and f is<br />
+  decreasing.</p><p class='info'><a href='/book/39/149/63640#15' class='ord'>#15</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29506' class='u75'><p class='text'>Когда x &gt; 1, f'(x) &lt; 0 и f убывает. Когда x &lt; -1, тогда (1 - x) - положительно и (1 + x) - отрицательно, значит f'(x) = 3*(1 - x) * (1 + x) отрицательная и f убывает.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 20:48</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63641'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: Turning points of f(x) = 3x − x3.</p><p class='info'><a href='/book/39/149/63641#16' class='ord'>#16</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29507' class='u75'><p class='text'>Рисунок 1: Поворотная точка графика f(x) = 3x - x^3.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 20:57</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63642'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We get a rough schematic of the graph of the function by drawing a number<br />
+  line at the bottom of our page as shown in Figure 1.</p><p class='info'><a href='/book/39/149/63642#17' class='ord'>#17</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29508' class='u75'><p class='text'>Мы получаем грубую схему графика функции, рисуя линии в нижней части страницы, как показано на рисунке 1.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 20:58</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63643'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Above the interval from negative infinity to −1, draw a diagonal line slanting down and to the right —<br />
+  this is one of the intervals on which f is decreasing.</p><p class='info'><a href='/book/39/149/63643#18' class='ord'>#18</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29509' class='u75'><p class='text'>На интервале от минус бесконечности до -1 нарисуйте диагональную линию наискось вниз и вправо - это один из интервалов, где f убывает.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:00</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63644'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Above the interval from −1 to 1 draw a line slanting up and to the right — f is increasing.</p><p class='info'><a href='/book/39/149/63644#19' class='ord'>#19</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29510' class='u75'><p class='text'>На интервале от -1 до 1 нарисуйте линию, скашивающуюся вверх и вправо - f возрастает.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:00</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63645'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Finally, draw a line slanting down and to the right above the interval from 1 to positive infinity.</p><p class='info'><a href='/book/39/149/63645#20' class='ord'>#20</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29511' class='u75'><p class='text'>В конце, нарисуйте линию, скашивающуюся вниз и вправо на интервале от 1 до бесконечности.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:01</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63646'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The resulting zigzag gives us an idea of what an accurately drawn graph might look like.</p><p class='info'><a href='/book/39/149/63646#21' class='ord'>#21</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29512' class='u75'><p class='text'>Конечный зигзаг дает нам идею, как точно нарисованный график может выглядеть.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:02</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63647'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We immediately notice two important features of the function lie at the<br />
+  points where the graph changes direction. These places where the derivative<br />
+  changes sign are turning points in the graph.</p><p class='info'><a href='/book/39/149/63647#22' class='ord'>#22</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29513' class='u75'><p class='text'>Мы немедленно заметили две важные вещи в точках функции, где она меняет свое направления. Это места, где производная меняет знак, являются поворотными точками графика функции.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:04</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63648'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Definition: If f'(x0) = 0, we call x0 a critical point and y0 = f(x0) is a<br />
+  critical value of f.</p><p class='info'><a href='/book/39/149/63648#23' class='ord'>#23</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29514' class='u75'><p class='text'>Определение: Если f'(x_0) = 0, мы называем x_0 критической точкой и y_0 = f(x_0) - критическим значением функции f.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:05</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63649'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Our next step in understanding the graph of f(x) is to plot the critical<br />
+  points and values of f. The critical points are x = 1 and x = −1; these are<br />
+  the values of x for which (x − 1) and (x + 1) are zero. The critical values are<br />
+  f(1) = 3 · 1 − 13 = 2 and f(−1) = 3 · (−1) − (−1)3 = −2.</p><p class='info'><a href='/book/39/149/63649#24' class='ord'>#24</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29515' class='u75'><p class='text'>Наш следующий шаг состоит в понимании, что график функции f(x) - это черчение критических точек и значений функции f. Критическими точками являются x = 1 и x = -1; это значения x, для которых (x - 1) и (x + 1) равны нулю. Критическими значениями являются f(1) = 3*1 - 1^3 = 2 и f(-1) = 3*(-1) - (-1)^3 = -2.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:08</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63650'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We plot the two points (−1, −2) and (1, 2), which we know are on the graph<br />
+  of f.</p><p class='info'><a href='/book/39/149/63650#25' class='ord'>#25</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29516' class='u75'><p class='text'>Мы начертим две точки (-1, -2) и (1, 2), о которых мы знаем, что они лежат на графике f.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:09</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63651'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Because we know where f' is positive and where it is negative, we also know that the graph decreases to (−1, −2) and then starts to increase and that it increases toward (1, 2) and then starts to decrease.</p><p class='info'><a href='/book/39/149/63651#26' class='ord'>#26</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29517' class='u75'><p class='text'>Так как мы знаем, где f' положительна и где отрицательна, мы также знаем, что график убывает к (-1, -2), затем начинает возрастать до (1, 2), и потом снова начинает убывать.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:10</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63652'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In other words, the graph is shaped like a smile near (−1, −2) and like a frown near (1, 2). (We could also learn this from the second derivative.)</p><p class='info'><a href='/book/39/149/63652#27' class='ord'>#27</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29518' class='u75'><p class='text'>Другими словами, график похож на улыбку около точки (-1, -2) и похож хмурую гримасу возле (1, 2). (Мы можем это узнать с помощью второй производной).</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:12</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63653'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>If we notice that f(0) = 0, we can now guess what the entire graph might look like but we still don’t know for sure how far it decreases or increases to the left and right.</p><p class='info'><a href='/book/39/149/63653#28' class='ord'>#28</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29519' class='u75'><p class='text'>Если мы заметим, что f(0) = 0, мы можем сейчас угадать, как может выглядеть график функции в целом, но мы все еще не знаем точно, как далеко он возрастает или убывает слева и справа соответственно.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:14</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63654'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We can also notice that because all the powers of x are odd, the function f<br />
+  is odd; f(−x) = 3(−x) − (−x)3 = −3x + x3 = −f(x).</p><p class='info'><a href='/book/39/149/63654#29' class='ord'>#29</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29520' class='u75'><p class='text'>Мы также можем заметить, что все степени x нечетны, а это значит, что f - нечетная; f(-x) = 3*(-x) - (-x)^3 = -3*x + x^3 = -f(x).</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:16</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63655'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This means that if we can graph the function accurately for x &gt; 0 we can reflect the graph across the<br />
+  y-axis to get a graph of the entire function.</p><p class='info'><a href='/book/39/149/63655#30' class='ord'>#30</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29521' class='u75'><p class='text'>Это значит, что если мы нарисуем график аккуратно для x &gt; 0, мы можем отразить его относительно оси Oy, чтобы получить полный график функции.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:17</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63656'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>In general, you should use precalculus skills to get information like f(0) = 0<br />
+  or “f is odd” as much as you can.</p><p class='info'><a href='/book/39/149/63656#31' class='ord'>#31</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29522' class='u75'><p class='text'>В общем, вы можете использовать школьную математику, чтобы получить информации типа f(0) = 0 или &quot;f - нечетная&quot; как можно больше.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:18</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63657'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The final detail we need to worry about is what happens at the “ends” of the<br />
+  graph.</p><p class='info'><a href='/book/39/149/63657#32' class='ord'>#32</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29523' class='u75'><p class='text'>Последняя деталь, в которой мы нуждаемся - что же случится на &quot;концах&quot; графика.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:19</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63658'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This topic is often neglected, but if you’re using a graphing calculator or computer this can be the hardest part of understanding the graph of a function.</p><p class='info'><a href='/book/39/149/63658#33' class='ord'>#33</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29524' class='u75'><p class='text'>Эта тема зачастую упускается, но если вы используете графический калькулятор или компьютер, то это может быть самой сложной частью в понимании графиков функций.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:20</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63659'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We want to know what happens as x → ∞ and as x → −∞. As x → ∞,<br />
+  the value of −x3 grows very rapidly while the value of 3x is much smaller.</p><p class='info'><a href='/book/39/149/63659#34' class='ord'>#34</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29525' class='u75'><p class='text'>Мы хотим знать, что получается при x -&gt; \Inf и при x -&gt; -\Inf. Когда x -&gt; \Inf, значение -x^3 растет очень быстро, а 3*x еще достаточно мало.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:21</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63660'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>So:<br />
+  f(x) ≈ −x3 → −∞ as x → ∞.<br />
+  Similarly,<br />
+  f(x) ≈ x3 → ∞ as x → −∞</p><p class='info'><a href='/book/39/149/63660#35' class='ord'>#35</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29526' class='u75'><p class='text'>Так имеем:<br />
+f(x) ~~ -x^3 -&gt; -\Inf при x -&gt; \Inf<br />
+Аналогично<br />
+f(x) ~~ -x^3 -&gt; \Inf при x -&gt; -\Inf</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:22</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63661'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We now know how far f(x) increases or decreases as x → ±∞ — it goes off<br />
+  toward infinity rather than, say, hugging the x-axis.</p><p class='info'><a href='/book/39/149/63661#36' class='ord'>#36</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29527' class='u75'><p class='text'>Сейчас мы знаем как далеко f(x) возрастает или убывает при x -&gt; \plusminus \Inf - она уходит к бесконечности вместо того, чтобы, например, обнять ось Ox.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:23</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63662'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We now know a lot about the shape of the graph, but we can learn a little<br />
+  bit more about it by looking at the second derivative f''(x) = −6x.</p><p class='info'><a href='/book/39/149/63662#37' class='ord'>#37</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29528' class='u75'><p class='text'>Сейчас мы знаем многое о форме графика, но мы можем узнать еще немножко о графике, глядя на вторую производную f''(x) = -6*x.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:25</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63663'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>From this we learn that f''(x) &lt; 0 when x &gt; 0 and f''(x) &gt; 0 when x &lt; 0, so the graph is<br />
+  concave down to the right of the y-axis and concave up on the left.</p><p class='info'><a href='/book/39/149/63663#38' class='ord'>#38</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29529' class='u75'><p class='text'>Отсюда мы изучим что f''(x) &lt; 0, когда x &gt; 0 и f''(x) &gt; 0, когда x &lt; 0, так что график выпуклый вверх справа от оси Oy и выпуклый вниз слева.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:28</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63664'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The value x = 0 is of interest not only because f(0) = 0 but also because it is an inflection<br />
+  point — a value x0 for which f''(x0) = 0.</p><p class='info'><a href='/book/39/149/63664#39' class='ord'>#39</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29530' class='u75'><p class='text'>Значение x = 0 интересно не только тем, что f(0) = 0, но и тем, что оно является точкой перегиба - значение x_0, для которого f''(x_0) = 0.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:29</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63665'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We can now combine everything we’ve learned to get something like the<br />
+  graph shown in Figure 2.</p><p class='info'><a href='/book/39/149/63665#40' class='ord'>#40</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29531' class='u75'><p class='text'>Сейчас мы можем скомбинировать все, что мы изучили, чтобы получить что-то похожее, что изображено на графике из рисунка 2.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:31</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63666'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 2: Sketch of the function y = 3x − x3.</p><p class='info'><a href='/book/39/149/63666#41' class='ord'>#41</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29532' class='u75'><p class='text'>Рисунок 2: Набросок функции y = 3*x - x^3.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:31</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63667'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Question: What if the graph had a sharp point like the one in the schematic?</p><p class='info'><a href='/book/39/149/63667#42' class='ord'>#42</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29533' class='u75'><p class='text'>Вопрос: Что если график имеет острую точку, такую как на схеме.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:32</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63668'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Answer: Points like that aren’t called critical points, but they are very<br />
+  important. We’ll talk about them later.</p><p class='info'><a href='/book/39/149/63668#43' class='ord'>#43</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29534' class='u75'><p class='text'>Ответ: Такие точки не называются критическими, но они очень важны. Мы поговорим о них позже.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:33</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63669'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Graph Sketching Example</p><p class='info'><a href='/book/39/149/63669#44' class='ord'>#44</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29535' class='u75'><p class='text'>Пример рисования графика</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:33</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63670'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Example: Sketch the graph of f(x) = x+1/x+2 .</p><p class='info'><a href='/book/39/149/63670#45' class='ord'>#45</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29536' class='u75'><p class='text'>Пример: Нарисовать график функции f(x) = (x+1)/(x+2)</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:34</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63671'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>What does the derivative of this function tell us about its graph? To save<br />
+  time, I’ll tell you that<br />
+  f'(x) = 1/(x + 2)2</p><p class='info'><a href='/book/39/149/63671#46' class='ord'>#46</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29537' class='u75'><p class='text'>Что скажет производная функции о её графике? Чтобы сэкономить время, я скажу вам, что:<br />
+f'(x) = 1/(x+2)^2</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:35</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63672'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The special thing about this example is that f'(x) = 0, i.e. there are no<br />
+  values of x0 for which f(x0) = 0 and there are no critical points.</p><p class='info'><a href='/book/39/149/63672#47' class='ord'>#47</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29538' class='u75'><p class='text'>Особенностью этого примера является то, что f'(x) \ne 0, то есть нет таких точек x_0, для которых f(x_0) = 0 и нет критических точек.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:37</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63673'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>If you’ve been trained that the first step in sketching graphs is to find out where the derivative<br />
+  is zero, you might be tempted to give up at this point.</p><p class='info'><a href='/book/39/149/63673#48' class='ord'>#48</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29539' class='u75'><p class='text'>Если вы тренировались так, что первым шагом в рисовании графиков у вас явлется нахождение нулей производной, вы можете искуситься возможностью сдаться на этом месте.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:39</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63674'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>But we’re not going to give up — can you think of anything you’d like to try here?</p><p class='info'><a href='/book/39/149/63674#49' class='ord'>#49</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29540' class='u75'><p class='text'>Но мы не собираемся сдаваться - можете ли вы подумать о том, чтобы попробовать что-нибудь другое здесь?</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:41</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o63675'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Student: Find values of x where f is undefined.</p><p class='info'><a href='/book/39/149/63675#50' class='ord'>#50</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t29541' class='u75'><p class='text'>Студент: Найти значения x, где функция f - неопределена.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 11.09.16 в 21:42</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+    </tbody>
+</table>
+
+<div id="pages-bottom">
+    <p class='n'><a href='?Orig_page=2'>Следующая страница &rarr;</a></p></div>
+
+
+<div id="tr-sidebar">
+    <div id="dict" class='has-edit'>
+        <div id="dict-search">
+            <input type="text" placeholder="Поиск по словарю" class="search"/>
+            <a href="#" class="b"><i class="i icon-remove-sign"></i></a>
+        </div>
+        <div id="dict-body">
+            <div id="dict-body-content">
+                Минутку...
+            </div>
+        </div>
+                    <div id="dict-add">
+                <form method="post" action="/book/39/dict">
+                    <input type="text" name="term" placeholder="Оригинал"/>
+                    <input type="text" name="descr" placeholder="Перевод"/>
+                    <button type="submit" class="btn btn-mini btn-primary">Добавить</button>
+                    <button type="button" class="btn btn-mini cancel">Отмена</button>
+                </form>
+            </div>
+            <div id="dict-tools">
+                <i class="icon-plus"></i> <a href="#" class="add">Добавить слово</a>
+            </div>
+                    </div>
+</div>
+
+
+<div id="renum-modal" class="modal hide">
+    <form method="post" class="form-inline" action="/book/39/149/renum">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Перенумеровать субтитры</h3>
+        </div>
+        <div class="modal-body">
+            Номер субтитра, серая циферка рядом с его таймингом, в сущности, ни на что не влияет, субтитры сортируются
+            по времени.
+            Если вы добавляете новый титр, его номер может выбиваться из плавного течения номеров. Этот инструмент
+            расставит всем
+            титрам номера в хронологическом порядке.
+        </div>
+        <div class="modal-footer">
+            <input type="hidden" name="mode" value="1"/>
+            <button type="submit" class="btn btn-primary">Поехали</button>
+            <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $("#Tr").find("td.o").each(function () {
+        var $this = $(this);
+        $this.children("div").css("min-height", $this.height());
+    });
+</script>
+</div>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span6">
+                &copy; <a href="http://romakhin.ru/" rel="nofollow">Дмитрий Ромахин</a>
+                2008&ndash;2017                <br/>
+                <a href="/site/help">Справка</a> |
+                <a href="/blog?topic=65">Техподдержка</a> |
+                <a href="mailto:abuse@translate.kursomir.ru?subj=%2Fbook%2F39%2F149">Abuse</a> |
+                <a href="mailto:translate@kursomir.ru">E-mail для справок</a> |
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&locale=ru"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']]
+        },
+        asciimath2jax: {
+            delimiters: [['``', '``']]
+        }
+    });
+</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('a.tooltip').tooltip({'placement':'bottom'});
+jQuery('a[rel="popover"]').popover();
+jQuery('#yw0 .alert').alert();
+});
+/*]]>*/
+</script>
+</body>
+</html>

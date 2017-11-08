@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="/assets/6b5c0e82/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="/css/v3.1.css?3" />
+<link rel="stylesheet" type="text/css" href="/css/translate-1.css?5" />
+<link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css?1" />
+<style type="text/css">
+/*<![CDATA[*/
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+body, label, input, button, select, textarea {
+	font-size: 13px;
+	line-height: 18px;
+}
+#chat-box {
+	height: 300px;
+}.comments .comment .meta, .comments .comment .meta a, .translator .info, .translator .info a { color: #bbb; }
+.comments .comment:hover .meta, .comments .comment:hover .meta a, .translator tr:hover .info, .translator tr:hover .info a { color: #888; }
+/*]]>*/
+</style>
+<script type="text/javascript" src="/assets/bbeb3eca/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/6b5c0e82/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/global.js?16"></script>
+<script type="text/javascript" src="/js/user.js?3"></script>
+<script type="text/javascript" src="/js/chat.js?3"></script>
+<script type="text/javascript" src="/js/translate-1.js?11"></script>
+<script type="text/javascript" src="/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="/js/jquery.elastic.mod.js"></script>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.min.js?1"></script>
+<script type="text/javascript" src="/js/ff_comments.js?3"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var User = new CUser({id: 76, login: 'Keyten'});
+
+var Book = new CBook({
+	id: 39,
+	owner_id: 67,
+	facecontrol: 1,
+	s_lang: 2,
+	t_lang: 1,
+	n_verses: 2492,
+	n_vars: 1286,
+	d_vars: 1282,
+	typ: 'A',
+	s_title: '18.01SC Single Variable Calculus',
+	t_title: '18.01SC Анализ функций одной переменной',
+	membership: {status: 1}
+});
+
+var Chap = {
+	id: 141,
+	book_id: 39,
+	n_verses: 56,
+	n_vars: 56,
+	d_vars: 56,
+	title: '17. The Exponential Function, its Derivative, and its Inverse / Экспонента: ее производная и обратная функция',
+	ac_read: '',
+	ac_gen: '',
+	ac_rate: '',
+	ac_comment: '',
+	ac_tr: '',
+};
+
+/*]]>*/
+</script>
+<title>Перевод 18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной: 17. The Exponential Function, its Derivative, and its Inverse / Экспонента: ее производная и обратная функция :: КУРСОМИР.ПЕРЕВОДЫ</title>
+    <meta name="description" content="Коллективные переводы субтитров и книжек"/>
+    <meta name="language" content="ru"/>
+    <meta name="keywords"
+          content="перевод, translation, коллективный перевод, кино с субтитрами, кино по-английски с русскими субтитрами, кино по-немецки с русскими субтитрами, кино по-испански с русскими субтитрами, примеры перевода, краудсорсинг, crowdsourcing, нотабеноид"/>
+    <link rel='icon' href='/i/favicon.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='/i/favicon.ico' type='image/x-icon'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE]>
+    <script type="text/javascript" src="/js/jquery.input-placeholder.js"></script>
+    <link rel='stylesheet' href="/css/jquery.input-placeholder.css"/>
+    <script type="text/javascript">
+        $(function () {
+            $('input[placeholder]').inputDefault();
+        });
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container-fluid" style="background-color:#fff;">
+        <a href="/" id="header-logo">
+            <img src="/i/logo.png" width="124" height="130"
+                 style="padding-top: 50px;"
+                 alt="КУРСОМИР.ПЕРЕВОДЫ"
+                 title="3.3"/>
+        </a>
+        <nav>
+            <ul id="header-menu">
+                <li><a href="/catalog/1">ВИДЕО</a></li>
+                <li><a href="/catalog/2">ТЕКСТЫ</a></li>
+                <li><a href="/users">ПЕРЕВОДЧИКИ</a></li>
+                <li><a href="/blog">БЛОГ</a></li>
+                <li><a href="/announces">АНОНСЫ</a></li>
+                <li class="search">
+                    <form class="form-search" method="get" action="/search">
+                                                <input type="hidden" name="from" value="header">
+                        <input type="text" name="t" class="input-medium search-query span3"
+                               placeholder="Вы что-то потеряли?"
+                               title="Кстати, отсюда можно найти и переводчика, если собаку (@), а потом сразу его ник."/>
+                        <input type="submit" value="&raquo;" class="btn" style="border-radius: 20px;"/>
+                    </form>
+                </li>
+            </ul>
+            <ul id="header-submenu">
+                                    <li>
+                        <a href="/users/76" accesskey="i">
+                            <strong>Keyten</strong>
+                            Всё о вас
+                        </a>
+                    </li>
+                    <li id="hm-c">
+                        <a href="/my/comments" accesskey="c">
+                            <strong>Обсуждения  <b></b></strong>
+                            Места, где вы общались
+                        </a>
+                    </li>
+                    <li id="hm-n">
+                        <a href="/my/notices" accesskey="n">
+                            <strong>Оповещения  <b></b></strong>
+                            События для вас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#bookmarks" accesskey="b">
+                            <strong>Закладки</strong>
+                            На память
+                        </a>
+                    </li>
+                    <li><a href="/book/0/edit"><strong>Создать</strong> Перевод</a></li>
+                    <li><a href="/register/settings"><strong>Настройки</strong> Профиля</a></li>
+                    <li><a href="/register/logout"><strong>Выход</strong> До свидания :(</a></li>
+                            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <div id="bookmarks" class="modal hide">
+        <div class="modal-header" style='padding-bottom:0;'>
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Закладки</h3>
+            <div class="btn-toolbar">
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-sort">
+                    <button class="btn btn-mini" data-v="1" title="Сортировка по алфавиту">
+                        <i class="icon-text-height"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="2" title="Сортировка по вашей активности">
+                        <i class="icon-fire"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="3" title="Сортировка по времени вступления в перевод">
+                        <i class="icon-time"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="5" title="Сортировка по времени добавления закладки">
+                        <i class="icon-shopping-cart"></i>
+                    </button>
+                    <button class="btn btn-mini" data-v="4" title="Сортировка по готовности перевода">%</button>
+                    <button class="btn btn-mini" data-v="0" title="Ваша сортировка (таскайте закладки мышкой)">
+                        <i class="icon-random"></i>
+                    </button>
+                </div>
+
+                <div class="btn-group" data-toggle="buttons-radio" id="bookmarks-tb-title">
+                    <button class="btn btn-mini" data-v="s" title="Показывать названия на языке оригинала">О</button>
+                    <button class="btn btn-mini" data-v="t" title="Показывать названия на языке перевода">П</button>
+                </div>
+                                <div class="btn-group pull-right">
+                    <button class="btn btn-mini" title="Удалить" id="bookmarks-tb-rm">
+                        <i class="icon-remove"></i>
+                    </button>
+                    <button class="btn btn-mini" title="Редактировать" id="bookmarks-tb-ed">
+                        <i class="icon-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body" style="max-height:350px">
+            <p class='loading'>минуточку...</p>
+        </div>
+    </div>
+
+
+<div class="container-fluid">
+    <div id="yw0"></div>
+<style type="text/css">
+        .translator.has-best td.t .best .text {
+        background-image: url(/i/corner-gray-t-r.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    </style>
+
+<h1><a href='/book/39'>18.01SC Single Variable Calculus / 18.01SC Анализ функций одной переменной</a>: 17. The Exponential Function, its Derivative, and its Inverse / Экспонента: ее производная и обратная функция</h1>
+
+<div id="tb-main">
+    <div>
+        <div class='group'><a
+                href="/book/39/141/go?nach=prev&ord=17"
+                title="Предыдущая глава"><i class="i icon-arrow-left"></i></a></div>
+
+        <div class="tb-index btn-group">
+            <a href="/book/39" class="btn btn-small"><i class="icon-list"></i> Оглавление</a>
+            <a class="btn btn-small dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+            <ul class="dropdown-menu" id="tb-chapter-list">
+                <li><a href="/book/39/members">Переводчики</a></li>
+                <li><a href="/book/39/blog">Блог</a></li>
+            </ul>
+        </div>
+
+        <div class='group'><a
+                href="/book/39/141/go?nach=next&ord=17"
+                title="Следующая глава"><i class="i icon-arrow-right"></i></a></div>
+
+        <div class="btn-group">
+                            <button type="button" class="btn btn-small tb-chat" title="Ctrl + ~"><i class="icon-bullhorn"></i> Чат
+                </button>
+            
+            <a href="#" class="btn btn-small tb-dict" accesskey="V"><i class="icon-book"></i> Словарь</a>
+
+            <div id="tb-filter">
+                <form method="get" class="form-inline" action="/book/39/141">
+                    <ul class='options'>
+                        <li><label><input type='radio' name='show' value='1' /> <a href='?show=1'>Непереведённое</a></label></li><li><label><input type='radio' name='show' value='7' /> <a href='?show=7'>С 2 и более версиями перевода</a></label></li><li><label><input type='radio' name='show' value='3' /> <a href='?show=3'>С комментариями</a></label></li><li><label><input type='radio' name='show' value='4' /> <a href='?show=4'>С новыми комментариями</a></label></li><li><label><input type='radio' name='show' value='2' />  <input type='text' name='show_user' placeholder='От переводчика' class='span3' value='' title='Ctrl+I: вставить ваш ник' /></label></li><li><label><input type='radio' name='show' value='5' />  <input type='text' name='to' placeholder='Оригинал содержит' class='span3' value='' /></label></li><li><label><input type='radio' name='show' value='6' />  <input type='text' name='tt' placeholder='Перевод содержит' class='span3' value='' /></label></li>                    </ul>
+                    <button type="submit" class="btn btn-mini btn-primary">Показать</button>
+                    <a href="/book/39/141"
+                       class="btn btn-mini">Сбросить всё</a>
+                </form>
+            </div>
+
+            <a href='#' class='btn btn-small tb-filter' accesskey='F'><i class='icon-filter'></i> Фильтр</a>        </div>
+
+        
+        
+
+        <div class="group">
+            <a href="/book/39/141/switchiface"><i class="icon-thumbs-down" title="Старый	интерфейс"></i></a>
+        </div>
+
+        <div class="tb-progress group"></div>
+
+        <div class='chic-pages'><span>&larr;</span><div class='blur left'></div> <ul class='selectable'><li class='active'><input type='text' name='Orig_page' value='1' accesskey='g' /></li><li><a href='?Orig_page=2'>2</a></li></ul> <div class='blur right'></div><a href='?Orig_page=2' class='pseudo' title='На следующую страницу'>&rarr;</a></div>    </div>
+</div>
+
+<div class="clear"></div>
+
+<table id="Tr" class="translator has-best translator-oe-hide">
+    <thead>
+    <tr>
+                    <th></th>        <th>
+            Английский оригинал
+        </th>
+                    <th></th>        <th>
+            Перевод на русский        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id='o33948'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Definition of $e$</p><p class='info'><a href='/book/39/141/33948#1' class='ord'>#1</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24697' class='u75'><p class='text'>Определение $e$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 18:55</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33949'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Recall that: $$M(a) = \lim_{\Delta x \to 0} \frac{a^{\Delta x}  − 1}{\Delta x}$$ is the value for which $\frac{d}{dx} a^x = M(a) a^x$, the value of the derivative of $a^x$ when $x = 0$, and the slope of the graph of $y = a^x$ at $x = 0$.</p><p class='info'><a href='/book/39/141/33949#2' class='ord'>#2</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24698' class='u75'><p class='text'>Вспомним, что:<br />
+$$ M(a) = \lim_{\Delta x \to 0} \frac{a^{\Delta x}  − 1}{\Delta x} $$<br />
+является значением, для которого $\frac{d}{dx} a^x = M(a) a^x$, значение производной $a^x$ когда $x = 0$, и касательная к графику $y = a^x$ в точке $ x = 0 $.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 18:57</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33950'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We need to know what $M(a)$ is in order to find out what the derivative of $a^x$ is.</p><p class='info'><a href='/book/39/141/33950#3' class='ord'>#3</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24699' class='u75'><p class='text'>Нам нужно знать, что $M(a)$ необходимо найти, чтобы получить производную от $a^x$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 18:59</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33951'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>It turns out that the easiest way to understand $M(a)$ is to give up trying to calculate it and to define e as the number such that $M(e) = 1$.</p><p class='info'><a href='/book/39/141/33951#4' class='ord'>#4</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24700' class='u75'><p class='text'>Оказывается, что самый простой путь понять, что за функция $M(a)$, это сдаться в попытках вычислить его и определить число e такое, что $M(e) = 1$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 19:01</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33952'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Leaving aside the question of whether such a number $e$ exists, let’s discuss what such a number would do for us. Since $M(e) = 1$,  $$\frac{d}{dx} e^x = e^x.$$</p><p class='info'><a href='/book/39/141/33952#5' class='ord'>#5</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24701' class='u75'><p class='text'>Оставив в стороне вопрос о существовании числа $e$, давайте поговорим о том, что это число может сделать для нас. Считая $M(e) = 1$, имеем:<br />
+$$ \frac{d}{dx}e^x = e^x $$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 19:03</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33953'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This is an incredibly important formula and is the only thing we’ve said so far this lecture that you need to memorize. Also, the slope of the tangent line to $y = e^x$ at $x = 0$ has slope $1$. You can confirm this by plugging $x = 0$ into $\frac{d}{dx} e^x = e^x$.</p><p class='info'><a href='/book/39/141/33953#6' class='ord'>#6</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24702' class='u75'><p class='text'>Это невероятно важная формула и её нужно запомнить необходимо. Также, касательная к $y = e^x$ в точке $x = 0$ имеет коэффициент $1$. Вы можете убедиться в этом, подставив $x = 0$ в $\frac{d}{dx}e^x = e^x$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 19:05</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33954'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>But we still don’t know what $e$ is, or even if there is such a number. How do we know that there is any number $a$ for which the slope of the tangent line to $y = a^x$ is $1$ when $x = 0$?</p><p class='info'><a href='/book/39/141/33954#7' class='ord'>#7</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24703' class='u75'><p class='text'>Но мы до сих пор не знаем что есть $e$, является ли оно числом. Как мы узнаем, что есть число $a$, для которого угловой коэффициент касательной к $y = a^x$ будет равен 1 в точке $x = 0$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 19:08</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33955'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>First notice that as the base $a$ increases, the graph of $y = a^x$ gets steeper.</p><p class='info'><a href='/book/39/141/33955#8' class='ord'>#8</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24704' class='u75'><p class='text'>Сначала обратим внимание когда основание $a$ увеличивается, то график $y = a^x$ становится круче.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 19:09</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33956'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Is the slope ever $1$?</p><p class='info'><a href='/book/39/141/33956#9' class='ord'>#9</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24705' class='u75'><p class='text'>Всегда ли коэффициент равен 1?</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 19:10</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33957'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>If $a = 1$, $a^x = 1$ for all $x$ and the slope of the tangent line to the (very simple) graph at $x = 0$ is $0$. Although we may not be able to compute the slope exactly, we can use secant lines to estimate the slope $M(a)$ for $a = 2$ and $a = 4$ geometrically.</p><p class='info'><a href='/book/39/141/33957#10' class='ord'>#10</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24706' class='u75'><p class='text'>Если $a = 1$, то $a^x = 1$ для всех $x$ и касательная к (очень простому) графику в точке $x = 0$ равна 0. Хотя мы не можем вычислить касательную точно, мы должны использовать секущие для оценки касательных к $M(a)$ для $a = 2$ и $a = 4$ геометрически.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 19:12</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33958'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Look at the graph of $2^x$ in Fig. 1. The secant line from $(0, 1)$ to $(1, 2)$ of the graph $y = 2^x$ has slope $1$. We can see from the picture that the slope of $y = 2^x$ at $x = 0$ is less than the slope of this secant line: $M(2) &lt; 1$ (see Fig. 1).</p><p class='info'><a href='/book/39/141/33958#11' class='ord'>#11</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24710' class='u75'><p class='text'>Посмотрите на график $2^x$ на рис. 1. Секущая от $(0,1)$ до $(1,2)$ к графику $y=2^x$ имеет угловой коэффициент, равный 1. Мы можем увидеть на рисунке, что угловой коэффициент касательной к $y=2^x$ в точке $x=0$ меньше углового коэффициента секущей: $M(2) &lt; 1$ (смотри рис. 1)</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:09</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33959'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Next, look at the graph of $4^x$ in Fig. 2. The secant line from $(−\frac{1}{2}, \frac{1}{2})$ to $(1, 0)$ on the graph of $y = 4^x$ has slope $1$. We see that the slope of $y = 4^x$ at $x = 0$ is greater than the slope of the secant, so $M(4) &gt; 1$ (see Fig. 2).</p><p class='info'><a href='/book/39/141/33959#12' class='ord'>#12</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24711' class='u75'><p class='text'>Дальше, давайте посмотрим на график функции $y=4^x$ на рис 2. Секущая от $(-\frac{1}{2}, \frac{1}{2})$ до $(1,0)$ к графику $y=4^x$ имеет угловой коэффициент, равный 1. Мы видим, что угловой коэффициент к $y = 4^x$ в точке $x = 0$ больше чем угловой коэффицент секущей, так что $M(4) &gt; 1$ (смотри рис. 2).</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:13</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33960'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Assuming our function $M$ is continuous, we conclude that somewhere in between $2$ and $4$ there is a base whose slope at $x = 0$ is $1$.</p><p class='info'><a href='/book/39/141/33960#13' class='ord'>#13</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24712' class='u75'><p class='text'>Принимая во внимание, что наша функция $M$ непрерывная, мы заключим, что где-то между 2 и 4 имеется функция, у которой угловой коэффициент касательной в точке $x = 0$ будет равен 1.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:16</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33961'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Thus we can define $e$ to be the unique number such that $$M(e) = 1$$ or, to put it another way, $$\lim_{h \to 0} \frac{e^h - 1}{h} = 1$$ or, to put it yet another way, $$\frac{d}{dx} (e^x) = 1\quad \textrm{at} \quad x = 0.$$</p><p class='info'><a href='/book/39/141/33961#14' class='ord'>#14</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24713' class='u75'><p class='text'>Таким образом, мы можем определить $e$ как уникальное число, для которого:<br />
+$$M(e) = 1$$<br />
+или говоря по-другому:<br />
+$$\lim_{h \to 0} \frac{e^h - 1}{h} = 1$$<br />
+или в другом варианте:<br />
+$$\frac{d}{dx} (e^x) = 1\quad \textrm{в точке} \quad x = 0.$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:24</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33962'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 1: Slope $M(2) &lt; 1$</p><p class='info'><a href='/book/39/141/33962#15' class='ord'>#15</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24714' class='u75'><p class='text'>Рисунок 1: Угловой коэффициент касательной к $M(2) &lt; 1$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:24</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33963'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Another way to convince ourselves that $e$ must exist is to start with the graph of $f(x) = 2^x$ (recalling that $M(2) &lt; 1$) and think about the function $f(kx) = 2^{kx}$.</p><p class='info'><a href='/book/39/141/33963#16' class='ord'>#16</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24715' class='u75'><p class='text'>Еще один способ убедиться, что $e$ должно существовать, это начать с графика $f(x) = 2^x$ (вспоминая, что $M(2) &lt; 1$) и подумать о функции $f(kx) = 2^{kx}$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:26</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33964'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>As $k$ increases, the graph of $y = f(kx)$ is compressed horizontally and the slope of the tangent line to the graph of $y = f(x)$ continuously grows steeper. </p><p class='info'><a href='/book/39/141/33964#17' class='ord'>#17</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24716' class='u75'><p class='text'>Когда $k$ растет, график $y=f(kx)$ сжимается горизонтально и угловой коэффициент касательной к графику $y=f(x)$ непрерывно становится круче.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:28</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o96537'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>So, for some value of $k$ between $1$ and $2$, the slope of that tangent line must be $1$. So $e$ exists and is between $2^1 = 2$ and $2^2 = 4$.</p><p class='info'><a href='/book/39/141/96537#18' class='ord'>#18</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24717' class='u75'><p class='text'>Итак, для некоторых значений $k$ между $1$ и $2$, угловой коэффициент касательной должен быть равен $1$. Значит $e$ существует и находится между $2^1 = 2$ и $2^2 = 4$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:30</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33965'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Figure 2: Slope $M(4) &gt; 1$</p><p class='info'><a href='/book/39/141/33965#19' class='ord'>#19</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24718' class='u75'><p class='text'>Рисунок 2: Угловой коэффициент касательной к $M(4) &gt; 1$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:30</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33966'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Natural log (inverse function of $e^x$)</p><p class='info'><a href='/book/39/141/33966#20' class='ord'>#20</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24719' class='u75'><p class='text'>Натуральный логарифм (функция, обратная к $e^x$)</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:31</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33967'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Recall that: $$M(a) = \lim_{\Delta x \to 0} \frac{a^{\Delta x}  − 1}{\Delta x}$$ is the value for which $\frac{d}{dx} a^x = M(a)a^x$, the value of the derivative of $a^x$ when $x = 0$, and the slope of the graph of $y = a^x$ at $x = 0$.</p><p class='info'><a href='/book/39/141/33967#21' class='ord'>#21</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24720' class='u75'><p class='text'>Вспоминая, что:<br />
+$$ M(a) = \lim_{\Delta x \to 0} \frac{a^{\Delta x}  − 1}{\Delta x}  $$<br />
+это значение, для которого $ \frac{d}{dx} a^x = M(a)a^x $, значение производной равно $a^x$ в точке $x =0$, и касательная к графику $y=a^x$ в точке $x=0$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:34</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33968'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>To understand $M(a)$ better, we study the natural log function $\ln (x)$, which is the inverse of the function $e^x$. This function is defined as follows:<br />
+$$\textrm{If} \;\; y = e^x,\;\; \textrm{then} \;\; \ln (y) = x$$ or $$\textrm{If} \;\;w = \ln (x),\;\; \textrm{then} \;\; e^w = x.$$</p><p class='info'><a href='/book/39/141/33968#22' class='ord'>#22</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24721' class='u75'><p class='text'>Чтобы понять $M(a)$ получше, мы изучим функцию натурального логарифма, которая является функцией, обратной к $e^x$. Эта функция определяется как:<br />
+$$\textrm{Если} \;\; y = e^x,\;\; \textrm{то} \;\; \ln (y) = x $$<br />
+или<br />
+$$ \textrm{Если} \;\;w = \ln (x),\;\; \textrm{то} \;\; e^w = x. $$.<br />
+</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:37</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33969'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Before we go any further, let’s review some properties of this function:<br />
+\begin{align*}<br />
+\ln (x_1 x_2) = \ln &amp;x_1 + \ln x_2 \\[4pt]<br />
+\ln 1 &amp;= 0 \\[2pt]<br />
+\ln e &amp;= 1<br />
+\end{align*}</p><p class='info'><a href='/book/39/141/33969#23' class='ord'>#23</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24722' class='u75'><p class='text'>Прежде чем мы пойдем дальше, рассмотрим некоторые свойства этой функции:<br />
+$$ \begin{align*} <br />
+\ln (x_1 x_2) = \ln &amp;x_1 + \ln x_2 \\[4pt] <br />
+\ln 1 &amp;= 0 \\[2pt] <br />
+\ln e &amp;= 1 <br />
+\end{align*}<br />
+$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:38</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33970'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>These can be derived from the definition of $\ln x$ as the inverse of the function $e^x$, the definition of $e$, and the rules of exponents we reviewed at the start of lecture.</p><p class='info'><a href='/book/39/141/33970#24' class='ord'>#24</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24723' class='u75'><p class='text'>Они могут быть наследованы из определения $\ln x$ как функции, обратной к $e^x$, определения числа $e$ и правил степеней, рассмотренных в начале лекции.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:39</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33971'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We can also figure out what the graph of $\ln x$ must look like. We know roughly what the graph of $e^x$ looks like, and the graph of $\ln x$ is just the reflection of that graph across the line $y = x$. Try sketching the graph of $\ln x$ yourself.</p><p class='info'><a href='/book/39/141/33971#25' class='ord'>#25</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24724' class='u75'><p class='text'>Мы можем понять, как график $\ln x$ должен выглядеть. Мы знаем, как приблизительно знаем, как выглядит график $e^x$ и график функции $\ln x$ является просто его отражением относительно прямой $y = x$. Попробуйте нарисовать график $\ln x$ самостоятельно.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:42</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33972'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>You should notice the following important facts about the graph of $\ln x$.</p><p class='info'><a href='/book/39/141/33972#26' class='ord'>#26</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24725' class='u75'><p class='text'>Вы должны обратить внимание на следующие важные факты о графике $\ln x$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:43</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33973'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Since $e^x$ is always positive, the domain (set of possible inputs) of $\ln x$ includes only the positive numbers.</p><p class='info'><a href='/book/39/141/33973#27' class='ord'>#27</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24726' class='u75'><p class='text'>Так как $e^x$ всегда положительная, область определения $\ln x$ включает только положительные числа.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:48</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33974'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The entire graph of $\ln x$ lies to the right of the $y$-axis.</p><p class='info'><a href='/book/39/141/33974#28' class='ord'>#28</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24727' class='u75'><p class='text'>Весь график $\ln x$ лежит справа от оси $Oy$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:48</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33975'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Since $e^0 = 1$, $\ln 1 = 0$ and the graph of $\ln x$ goes through the point $(1, 0)$.</p><p class='info'><a href='/book/39/141/33975#29' class='ord'>#29</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24728' class='u75'><p class='text'>Так как $e^0 = 1$, то $\ln 1 = 0$ и график $\ln x$ проходит через точку $(1,0)$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:50</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33976'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>And finally, since the slope of the tangent line to $y = e^x$ is $1$ where the graph crosses the $y$-axis, the slope of the graph of $y = \ln x$ must be $1/1 = 1$ where the graph crosses the $x$-axis.</p><p class='info'><a href='/book/39/141/33976#30' class='ord'>#30</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24729' class='u75'><p class='text'>И наконец, так как угловой коэффициент касательной к $y=e^x$ равен $1$, когда график пересекает ось $Oy$, то касательная к графику $y= \ln x$ должная быть $1/1 = 1$ и пересекать ось $Ox$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:52</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33977'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We know that $\frac{d}{dx} e^x = e^x$. To find $\frac{d}{dx} \ln x$ we’ll use implicit differentiation as we did in previous lectures.</p><p class='info'><a href='/book/39/141/33977#31' class='ord'>#31</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24730' class='u75'><p class='text'>Мы знаем, что $\frac{d}{dx}e^x=e^x$. Чтобы найти $\frac{d}{dx}\ln x$, мы используем неявное дифференцирование как мы и делали в предыдущих лекциях.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:53</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33978'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We start with $\omega = \ln (x)$ and compute $\frac{d\omega}{dx} = \frac{d}{dx} \ln x$. We don’t have a good way to do this directly, but since $\omega = \ln (x)$, we know $e^{\omega} = e^{\ln (x)} = x$.</p><p class='info'><a href='/book/39/141/33978#32' class='ord'>#32</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24731' class='u75'><p class='text'>Мы начнем с $\omega = \ln(x)$ и вычислим $\frac{d\omega}{dx}=\frac{d}{dx}\ln x$. У нас нет хорошего способа сделать это напрямую, но так как $\omega = \ln(x)$, мы знаем, что $e^{\omega} = e^{\ln(x)} = x$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:56</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33979'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We now use implicit differentiation to take the derivative of both sides of this equation.<br />
+\begin{align*}<br />
+\frac{d}{dx} (e^{\omega}) &amp;= \frac{d}{dx} (x) \\[2pt]<br />
+\frac{d}{d\omega} (e^{\omega}) \frac{d\omega}{dx} &amp;= 1 \\[2pt]<br />
+e^{\omega} \frac{d\omega}{dx} &amp;= 1 \\[2pt]<br />
+\frac{d\omega}{dx} &amp;= \frac{1}{e^{\omega}} = \frac{1}{x}.<br />
+\end{align*}</p><p class='info'><a href='/book/39/141/33979#33' class='ord'>#33</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24732' class='u75'><p class='text'>Теперь мы можем использовать неявное дифференцирование для того, чотбы взять производную от обеих частей выражения.<br />
+\begin{align*} <br />
+\frac{d}{dx} (e^{\omega}) &amp;= \frac{d}{dx} (x) \\[2pt] <br />
+\frac{d}{d\omega} (e^{\omega}) \frac{d\omega}{dx} &amp;= 1 \\[2pt] <br />
+e^{\omega} \frac{d\omega}{dx} &amp;= 1 \\[2pt] <br />
+\frac{d\omega}{dx} &amp;= \frac{1}{e^{\omega}} = \frac{1}{x}. <br />
+\end{align*}</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:57</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33980'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>So $$\frac{d}{dx} (\ln (x)) = \frac{1}{x}.$$<br />
+This is another formula worth memorizing.</p><p class='info'><a href='/book/39/141/33980#34' class='ord'>#34</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24733' class='u75'><p class='text'>Так что<br />
+$$ \frac{d}{dx} (\ln (x)) = \frac{1}{x}.  $$<br />
+Это еще одна формула, которую необходимо запомнить.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 18.07.16 в 23:59</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33981'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>$\displaystyle{ \frac{d}{dx} a^x}$?</p><p class='info'><a href='/book/39/141/33981#35' class='ord'>#35</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24734' class='u75'><p class='text'>$$ \frac{d}{dx} a^x$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 0:00</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33982'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>We now want to learn to differentiate any exponential $a^x$. There are two roughly equivalent methods we can use:</p><p class='info'><a href='/book/39/141/33982#36' class='ord'>#36</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24735' class='u75'><p class='text'>Сейчас мы хотим научиться дифференцировать любую экспоненциальную функцию $a^x$. Есть два приблизительных метода, которые мы можем использовать:</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 0:01</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33983'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Method 1: Convert $a^x$ to something with base $e$ and use the chain rule.</p><p class='info'><a href='/book/39/141/33983#37' class='ord'>#37</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24736' class='u75'><p class='text'>Метод 1: Преобразовать $a^x$ к чему-нибудь с основанием $e$ и использовать цепное правило.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 0:02</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33984'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Because $\ln x$ is the inverse function to $e^x$ we can rewrite $a$ as $e^{\ln (a)}$. Thus: $$a^x = \left( e^{\ln (a)} \right)^x = e^{x \ln(a)}.$$</p><p class='info'><a href='/book/39/141/33984#38' class='ord'>#38</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24737' class='u75'><p class='text'>Так как $\ln x$ является обратной функцией к $e^x$, мы можем переписать $a$ как $e^{\ln(a)}$. Таким образом: <br />
+$$ a^x = \left( e^{\ln (a)} \right)^x = e^{x \ln(a)}. $$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 0:04</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33985'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>That looks like it might be tricky to differentiate.</p><p class='info'><a href='/book/39/141/33985#39' class='ord'>#39</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24738' class='u75'><p class='text'>Это выглядит сложным в дифференцировании.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 0:04</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33987'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Let’s work up to it:<br />
+\begin{align*}<br />
+\frac{d}{dx} e^x &amp;= e^x \\[2pt]<br />
+\frac{d}{dx} e^{3x} &amp;= 3 e^{3x} \quad \textrm{(by the chain rule)}<br />
+\end{align*}</p><p class='info'><a href='/book/39/141/33987#41' class='ord'>#41</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24739' class='u75'><p class='text'>Давайте поработаем с этим:<br />
+$$<br />
+\begin{align*} <br />
+\frac{d}{dx} e^x &amp;= e^x \\[2pt] <br />
+\frac{d}{dx} e^{3x} &amp;= 3 e^{3x} \quad \textrm{(по цепному правилу)} <br />
+\end{align*}<br />
+$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 0:05</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33988'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Remember, $\ln (a)$ is just a constant like $3$, not a variable. Therefore:<br />
+\begin{align*}<br />
+\frac{d}{dx} e^{(\ln a) x} &amp;= (\ln a) e^{(\ln a) x} \\[2pt]<br />
+&amp;\:\textrm{or} \\[2pt]<br />
+\frac{d}{dx} a^x &amp;= (\ln a) a^x<br />
+\end{align*}</p><p class='info'><a href='/book/39/141/33988#42' class='ord'>#42</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24740' class='u75'><p class='text'>Помните, $\ln(a)$ - это всего лишь константа, как и число $3$, не переменная. Поэтому:<br />
+$$<br />
+\begin{align*} <br />
+\frac{d}{dx} e^{(\ln a) x} &amp;= (\ln a) e^{(\ln a) x} \\[2pt] <br />
+&amp;\:\textrm{или} \\[2pt] <br />
+\frac{d}{dx} a^x &amp;= (\ln a) a^x <br />
+\end{align*}<br />
+$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 0:06</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33989'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This is a common type of calculation; you should practice it until you are comfortable with it. You may either memorize formulas for $\frac{d}{dx} e^{kx}$ and $\frac{d}{dx} a^x$ or re-derive them every time you need them.</p><p class='info'><a href='/book/39/141/33989#43' class='ord'>#43</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24741' class='u75'><p class='text'>Это общий тип вычислений; вы можете попрактиковаться с ним, пока не станете уверены в нем. Вы можете запомнить формулы для $\frac{d}{dx}e^{kx}$ и $\frac{d}{dx}a^{x}$ и взять от них производные всякий раз, когда это необходимо.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 0:08</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33990'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Recall that $\displaystyle{ \frac{d}{dx} a^x = M(a) \cdot a^x}$. So finally we know the value of $M(a)$: $$M(a) = \ln (a).$$</p><p class='info'><a href='/book/39/141/33990#44' class='ord'>#44</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24742' class='u75'><p class='text'>Вспомним, что $\frac{d}{dx}a^x=M(a) \dot a^x$. В конце мы знаем значение $M(a)$:<br />
+$$ M(a) = \ln (a) $$.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 0:10</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o96538'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>The Most Natural Logarithmic Function</p><p class='info'><a href='/book/39/141/96538#45' class='ord'>#45</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24743' class='u75'><p class='text'>Самая натуральная логарифмическая функция.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 0:11</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33991'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>At times in your life you might find yourself tempted to use logarithmic functions with bases other than $e$; for example, $\log_2 n$ or $log_{10} r$. We claim that $\ln x$, the natural logarithm or $\log$ base $e$, is the most natural choice of logarithmic function.</p><p class='info'><a href='/book/39/141/33991#46' class='ord'>#46</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24744' class='u75'><p class='text'>Порой в жизни вы может искуситься использовать логарифмические функции с основаниями, отличными от $e$; например $\log_{2} n $ или $\log_{10} r $. Мы утверждаем, что $\ln x$, натуральный логарифм или логарифм от основания $e$, самый натуральный выбор для логарифмической функции.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 0:14</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33992'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>Today’s example is from the field of economics. Imagine that the price of a stock you own goes down by a dollar; how does that affect you?</p><p class='info'><a href='/book/39/141/33992#47' class='ord'>#47</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24745' class='u75'><p class='text'>Сегодняшний пример будет из экономики. Представьте, что цены на ваши акции упали на доллар; как это повлияет на вас?</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 0:16</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33993'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>That depends on a lot of things. In particular, it depends on whether the original stock price was a dollar or a hundred dollars.</p><p class='info'><a href='/book/39/141/33993#48' class='ord'>#48</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24746' class='u75'><p class='text'>Это зависит от многих вещей. В частности, это зависит от того, была ли начальная цена акции один доллар или сто.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 0:17</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33994'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>As another example, at the time this lecture was given the London Exchange FTSE index had closed down $27.9\textrm{ points}. This statistic is almost meaningless unless you know the actual total of the index, which was $6\,432$ at the time.</p><p class='info'><a href='/book/39/141/33994#49' class='ord'>#49</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24747' class='u75'><p class='text'>В качестве другого примера, на момент этой лекции индекс Лондонской биржи FTSE упал на $27.9$ пунктов. Это несет не больше смысла, если вы не знаете его реальное значение, которое было равно $6432$ на текущий момент.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 0:25</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33995'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>A more meaningful statistic is the change in the price divided by the price: $$\frac{\Delta p}{p} = \frac{27.9}{6432} \approx 0.43\%.$</p><p class='info'><a href='/book/39/141/33995#50' class='ord'>#50</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24748' class='u75'><p class='text'>Статистически более значимое является изменение цены, деленное на саму цену: <br />
+$$<br />
+\frac{\Delta p}{p} = \frac{27.9}{6432} \approx 0.43 \% .<br />
+$$</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 0:27</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+<tr id='o33996'><td class='b'><a href='#'><i class='i icon-star-empty'></i></a></td><td class='o'><div><p class='text'>This tells us that the FTSE index dropped by $0.43\%$ of its total value today.</p><p class='info'><a href='/book/39/141/33996#51' class='ord'>#51</a></p></div></td><td class='u'><a href='#'><i class='i icon-arrow-right'></i></a></td><td class='t'><div id='t24749' class='u75'><p class='text'>Это говорит нам, что индекс FTSE упал на $0.43 \%$ от сегодняшней общей цены.</p><p class='info'><a href='/users/75' class='user'>tsobako</a> <i class='i icon-flag'></i> 19.07.16 в 0:28</p><div class='rating'><a href='#' class='pane vote pos'><b>+</b></a><a href='#' class='base current '>0</a></div></div>
+</td><td class='c'><a href='#'><i class='i icon-comment-empty'></i></a></td></tr>
+    </tbody>
+</table>
+
+<div id="pages-bottom">
+    <p class='n'><a href='?Orig_page=2'>Следующая страница &rarr;</a></p></div>
+
+
+<div id="tr-sidebar">
+    <div id="dict" class='has-edit'>
+        <div id="dict-search">
+            <input type="text" placeholder="Поиск по словарю" class="search"/>
+            <a href="#" class="b"><i class="i icon-remove-sign"></i></a>
+        </div>
+        <div id="dict-body">
+            <div id="dict-body-content">
+                Минутку...
+            </div>
+        </div>
+                    <div id="dict-add">
+                <form method="post" action="/book/39/dict">
+                    <input type="text" name="term" placeholder="Оригинал"/>
+                    <input type="text" name="descr" placeholder="Перевод"/>
+                    <button type="submit" class="btn btn-mini btn-primary">Добавить</button>
+                    <button type="button" class="btn btn-mini cancel">Отмена</button>
+                </form>
+            </div>
+            <div id="dict-tools">
+                <i class="icon-plus"></i> <a href="#" class="add">Добавить слово</a>
+            </div>
+                    </div>
+</div>
+
+
+<div id="renum-modal" class="modal hide">
+    <form method="post" class="form-inline" action="/book/39/141/renum">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Перенумеровать субтитры</h3>
+        </div>
+        <div class="modal-body">
+            Номер субтитра, серая циферка рядом с его таймингом, в сущности, ни на что не влияет, субтитры сортируются
+            по времени.
+            Если вы добавляете новый титр, его номер может выбиваться из плавного течения номеров. Этот инструмент
+            расставит всем
+            титрам номера в хронологическом порядке.
+        </div>
+        <div class="modal-footer">
+            <input type="hidden" name="mode" value="1"/>
+            <button type="submit" class="btn btn-primary">Поехали</button>
+            <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $("#Tr").find("td.o").each(function () {
+        var $this = $(this);
+        $this.children("div").css("min-height", $this.height());
+    });
+</script>
+</div>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span6">
+                &copy; <a href="http://romakhin.ru/" rel="nofollow">Дмитрий Ромахин</a>
+                2008&ndash;2017                <br/>
+                <a href="/site/help">Справка</a> |
+                <a href="/blog?topic=65">Техподдержка</a> |
+                <a href="mailto:abuse@translate.kursomir.ru?subj=%2Fbook%2F39%2F141">Abuse</a> |
+                <a href="mailto:translate@kursomir.ru">E-mail для справок</a> |
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&locale=ru"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']]
+        },
+        asciimath2jax: {
+            delimiters: [['``', '``']]
+        }
+    });
+</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('a.tooltip').tooltip({'placement':'bottom'});
+jQuery('a[rel="popover"]').popover();
+jQuery('#yw0 .alert').alert();
+});
+/*]]>*/
+</script>
+</body>
+</html>
