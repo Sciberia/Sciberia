@@ -1,0 +1,4658 @@
+﻿1
+00:00:04,370 --> 00:00:10,730
+Так. Давайте начнём... Добрый вечер, приветствую вас на GV311.
+
+2
+00:00:10,730 --> 00:00:15,200
+Это первая, а если точнее - вводная неделя. Меня зовут Тони Трэверс,
+
+3
+00:00:15,200 --> 00:00:20,810
+я профессор на факультете Государственного управления, ответственный за курс GV311.
+
+4
+00:00:20,810 --> 00:00:24,709
+Пожалуй, перед началом стоит объяснить несколько вещей. У нас здесь стоят
+
+5
+00:00:24,710 --> 00:00:30,320
+камеры, которые позволят нам записать этот курс в более высоком качестве
+
+6
+00:00:30,320 --> 00:00:35,540
+по сравнению с тем, что мы имеем для других лекций.
+
+7
+00:00:35,540 --> 00:00:39,620
+И затем мы это смонтируем и выложим. Так что вы при желании можете
+
+8
+00:00:39,620 --> 00:00:43,669
+задавать вопросы, их мы тоже заснимем.
+
+9
+00:00:43,670 --> 00:00:48,469
+Вы также сможете найти эти лекции в Интернете и в...
+
+10
+00:00:48,469 --> 00:00:52,159
+т.е. просто в Интернете, и посмотреть их записи через некоторое время
+
+11
+00:00:52,159 --> 00:00:53,359
+после лекций.
+
+12
+00:00:53,359 --> 00:00:57,140
+Также в прошлом году мы разрешили посещать лекции людям не из университета,
+
+13
+00:00:57,140 --> 00:01:01,460
+и я заметил, что сегодня несколько таких людей здесь присутствуют.
+
+14
+00:01:01,460 --> 00:01:09,200
+А теперь не могли бы ребята с курса GV311 поднять руки,
+
+15
+00:01:09,200 --> 00:01:11,240
+чтобы не беспокоить остальных. Ага.
+
+16
+00:01:11,240 --> 00:01:17,750
+Хорошо...достаточно. Сейчас просто скажите свои имена
+
+17
+00:01:17,750 --> 00:01:21,200
+Это наша первая встреча
+
+18
+00:01:21,200 --> 00:01:24,440
+classes, will also then have a sense of who you are as well.
+
+19
+00:01:24,440 --> 00:01:25,190
+С ним вы увидитесь в пятницу.
+
+20
+00:01:25,190 --> 00:01:28,190
+Возможно, вы с ним уже знакомы.
+
+21
+00:01:28,190 --> 00:01:36,259
+Именааа
+
+22
+00:01:36,840 --> 00:01:42,479
+Имяяя
+
+23
+00:01:42,479 --> 00:01:47,520
+Продолжим (Хорошо) (Прекрасно)
+
+24
+00:01:47,520 --> 00:01:51,869
+what I want to do this week, anyways, just to introduce the course. This is like a
+
+25
+00:01:51,869 --> 00:01:56,549
+way of explaining what's going to be in the course over the coming...
+
+26
+00:01:57,119 --> 00:02:00,600
+Yes, sorry?
+
+27
+00:02:00,600 --> 00:02:06,568
+Yes, is that...my hope that's not a problem. And no, they will be every week, not just
+
+28
+00:02:06,569 --> 00:02:09,989
+this week. And that means you can watch them again.
+
+29
+00:02:10,649 --> 00:02:14,910
+We've got...I say it, embarrass my colleagues, slightly higher production
+
+30
+00:02:14,910 --> 00:02:17,400
+values than on the lecture capture, I hope.
+
+31
+00:02:17,400 --> 00:02:20,548
+Certainly it was the last year.
+
+32
+00:02:20,549 --> 00:02:25,440
+Anyway, what I want to do this week is simply to introduce the course. I'm very happy
+
+33
+00:02:25,440 --> 00:02:30,300
+if you want to ask a question or one or two points, and what I'm going to say,
+
+34
+00:02:30,300 --> 00:02:33,239
+well, pause where you could, join in,
+
+35
+00:02:34,170 --> 00:02:38,970
+make a comment, whatever. But I just want to go through what will be in the course
+
+36
+00:02:38,970 --> 00:02:44,130
+over the next 19 weeks. We've got 19 weeks straight - mixture of...I'll be doing
+
+37
+00:02:44,130 --> 00:02:48,000
+some of these lectures, we've got guest lectures for most of the other weeks,
+
+38
+00:02:48,000 --> 00:02:52,620
+and then we'll have a revision slot at the beginning of the summer term.
+
+39
+00:02:52,620 --> 00:03:00,300
+The purpose of the course is to provide an analytical understanding of
+
+40
+00:03:00,300 --> 00:03:05,400
+the following things, aspects of the principles that underpin
+
+41
+00:03:05,400 --> 00:03:10,919
+British government and politics;
+
+42
+00:03:10,919 --> 00:03:14,100
+political parties, elections and representation;
+
+43
+00:03:14,100 --> 00:03:17,578
+the origins and operations of the institutions of British government -
+
+44
+00:03:17,579 --> 00:03:22,410
+any of these you will doubtless of...studied before, but we will take out of it
+
+45
+00:03:22,410 --> 00:03:27,269
+further, I hope. Some modern historical developments. How - you'll see I'll go
+
+46
+00:03:27,269 --> 00:03:31,380
+through this in a bit more detail in a minute - how the institutions of
+
+47
+00:03:31,380 --> 00:03:37,560
+government evolved. We'll be looking at the Judiciary and the court system;
+
+48
+00:03:38,160 --> 00:03:46,290
+the policy-making process; public finance, including taxation and expenditure;
+
+49
+00:03:47,319 --> 00:03:53,180
+and, of course, criticisms of all the above and at proposals for reform.
+
+50
+00:03:53,920 --> 00:03:58,869
+So that's very broadly what the lectures will be covering. Some two lectures will
+
+51
+00:03:58,870 --> 00:04:02,829
+cover some of these topics, one in other cases. There are things I haven't listed here,
+
+52
+00:04:02,829 --> 00:04:10,510
+some other themes. We'll be looking at party politics, Professor Patrick Dunleavy.
+
+53
+00:04:10,510 --> 00:04:13,959
+We will do this: the decline of mass party memberships and
+
+54
+00:04:13,959 --> 00:04:20,790
+Britain's move to a multi-party system - just before Christmas. And then the role of
+
+55
+00:04:20,790 --> 00:04:23,680
+the media - looking at the traditional media vs. the new media and their
+
+56
+00:04:23,680 --> 00:04:28,300
+impact within British politics. Also at ownership and regulation, their impacts
+
+57
+00:04:28,300 --> 00:04:34,240
+on political life. We'll have a couple of weeks on accountability and financial
+
+58
+00:04:34,240 --> 00:04:40,300
+responsibility looking at Select Committees, Parliament's more general role
+
+59
+00:04:40,300 --> 00:04:44,739
+in scrutinizing the Executive, and at possible roles and
+
+60
+00:04:44,740 --> 00:04:50,259
+improvements of this system. And then last but not least...well, actually, not quite
+
+61
+00:04:50,259 --> 00:04:55,659
+last...nearly last but not least - British government's relations with Europe.
+
+62
+00:04:55,659 --> 00:04:59,530
+We can't live without relationship that Britain appears to have
+
+63
+00:04:59,530 --> 00:05:06,969
+with Europe, and also at the spectrum from the federalism that
+
+64
+00:05:06,970 --> 00:05:11,259
+some EU countries appear to own versus the threat of withdrawal, which is Britain's
+
+65
+00:05:11,259 --> 00:05:16,600
+counter to that. And in fact beyond this because it seemed to be an appropriate thing.
+
+66
+00:05:16,600 --> 00:05:22,659
+The last lecture of next term, that is just in march, we will look at
+
+67
+00:05:22,659 --> 00:05:26,469
+the British general elections' past, because if you think about it that
+
+68
+00:05:26,470 --> 00:05:30,950
+lecture will run in March, just before the general election.
+
+69
+00:05:30,950 --> 00:05:35,570
+We have Professor Vernon Bogdanor, the great
+
+70
+00:05:35,570 --> 00:05:39,830
+constitutional expert, will come and talk to us about that in March. So that will be
+
+71
+00:05:39,830 --> 00:05:45,409
+a good lecture to end the series with. What I want to do this
+
+72
+00:05:45,410 --> 00:05:49,910
+evening is just to run through a number of these things one by one.
+
+73
+00:05:49,910 --> 00:05:53,330
+I'd be very happy if you want to, you know, ask a question,
+
+74
+00:05:53,330 --> 00:05:57,500
+join in, don't feel you have to, and, of course, some of these issues will be
+
+75
+00:05:57,500 --> 00:06:01,460
+picked up in classes and in more detail in the weeks ahead, so this is very much
+
+76
+00:06:01,460 --> 00:06:08,180
+an attempt to encapsulate everything that will be seen in the coming weeks.
+
+77
+00:06:08,180 --> 00:06:11,630
+So, I want this week to introduce a number of themes that we'll meet
+
+78
+00:06:11,630 --> 00:06:12,350
+in the weeks ahead.
+
+79
+00:06:12,350 --> 00:06:17,990
+British constitution or the lack of it, Parliament and the Executive, the Civil Service,
+
+80
+00:06:17,990 --> 00:06:25,910
+the Welfare State, Human Rights and British variants on Human Rights,
+
+81
+00:06:25,910 --> 00:06:30,680
+local government and centralization, devolution which has been obviously
+
+82
+00:06:30,680 --> 00:06:34,400
+a very big and hugely important issue recently.
+
+83
+00:06:34,550 --> 00:06:38,120
+You know what's interesting about the whole Scottish referendum debate,
+
+84
+00:06:38,120 --> 00:06:42,200
+which also a bit more in a moment, is that rather in the way
+
+85
+00:06:42,200 --> 00:06:48,349
+the economic crisis back in 2008 had the effect, as far as I could see,
+
+86
+00:06:48,350 --> 00:06:52,400
+of a mass public education in economics and economic theory
+
+87
+00:06:52,400 --> 00:06:53,239
+very quickly,
+
+88
+00:06:53,240 --> 00:06:58,700
+the Scottish referendum had, I think, an analogous effect in terms of teaching people
+
+89
+00:06:58,700 --> 00:07:02,420
+about the British constitution, or more to the point, about the lack of
+
+90
+00:07:02,420 --> 00:07:07,670
+a written constitution and, indeed, about the begging questions about the
+
+91
+00:07:07,670 --> 00:07:13,130
+federal nature of Britain. In a country that isn't a federal country, if that
+
+92
+00:07:13,130 --> 00:07:16,460
+doesn't sound too complicated. I mean, you know. Back to the number of serious
+
+93
+00:07:16,460 --> 00:07:20,630
+questions which we can look at in the coming weeks. And then, of course,
+
+94
+00:07:20,630 --> 00:07:24,680
+very briefly I want to turn to Britain and Europe. This is not everything you'll be doing
+
+95
+00:07:24,680 --> 00:07:26,440
+in the weeks ahead, just a taste of, really.
+
+96
+00:07:26,440 --> 00:07:34,450
+So if I can just begin with the Constitution, and as I'm sure you're all
+
+97
+00:07:34,450 --> 00:07:39,580
+aware Britain has a long evolved system of government and politics, I should have
+
+98
+00:07:39,580 --> 00:07:43,630
+added these slides as all others will be made available to your on Moodle,
+
+99
+00:07:43,630 --> 00:07:45,100
+so don't feel you have to write them all down, should you wish to.
+
+100
+00:07:45,100 --> 00:07:50,950
+A long evolved...a system of government and politics with
+
+101
+00:07:50,950 --> 00:07:56,200
+no written Constitution. We don't have a formal written Constitution.
+
+102
+00:07:56,200 --> 00:07:58,630
+Very few countries...of which this is true.
+
+103
+00:07:58,630 --> 00:08:04,540
+Notably, New Zealand and Israel, it's also true of them. But of course we do have
+
+104
+00:08:04,540 --> 00:08:13,960
+a large number of ad hoc, we have legislation, judicial precedents in the courts,
+
+105
+00:08:13,960 --> 00:08:17,919
+so it isn't as if there aren't constitutional principles underlying the way
+
+106
+00:08:18,430 --> 00:08:23,830
+Britain governs itself, but we do not have a codified Constitution.
+
+107
+00:08:23,830 --> 00:08:28,990
+And, of course, there are a number of commentators - actually,
+
+108
+00:08:28,990 --> 00:08:29,650
+a very large number,
+
+109
+00:08:29,650 --> 00:08:34,597
+many based within the school - who believe we should have a written Constitution in the UK.
+
+110
+00:08:34,599 --> 00:08:42,640
+We also have a series of institutions which have evolved out of antiquity.
+
+111
+00:08:42,640 --> 00:08:46,330
+Most obviously - the head of state,
+
+112
+00:08:46,330 --> 00:08:52,150
+the monarchy. Unusual...not unique in Europe by any means, but a head of state
+
+113
+00:08:52,150 --> 00:08:56,200
+who is a monarch, a system that has been handed down over,
+
+114
+00:08:56,920 --> 00:09:01,900
+well then you're where you start, over a thousand years and, of course,
+
+115
+00:09:01,900 --> 00:09:03,189
+a very powerful
+
+116
+00:09:03,190 --> 00:09:08,800
+monarchical based head of state which has remained its popularity.
+
+117
+00:09:08,800 --> 00:09:13,810
+Partly because, of course, it is cut off from formal power - doesn't mean it doesn't have
+
+118
+00:09:13,810 --> 00:09:18,250
+an influence, but cut off from formal governmental power allowing it
+
+119
+00:09:18,250 --> 00:09:23,470
+most of the time to remain above formal government,
+
+120
+00:09:23,470 --> 00:09:28,870
+and therefore has none of the disadvantages of the unpopularity
+
+121
+00:09:28,870 --> 00:09:31,450
+that politicians can court.
+
+122
+00:09:31,450 --> 00:09:34,450
+We also have a second chamber - the House of Lords,
+
+123
+00:09:35,290 --> 00:09:39,370
+what in other countries might be a Senate, which itself is constituted in
+
+124
+00:09:39,370 --> 00:09:41,140
+a very unusual way.
+
+125
+00:09:41,140 --> 00:09:48,130
+It has its origins like the monarchy...back in the mists of time;
+
+126
+00:09:48,130 --> 00:09:52,990
+has its origins in the aristocracy, in a particular form of...government
+
+127
+00:09:52,990 --> 00:09:58,480
+that involved in Britain getting on for a thousand years ago, but where today...
+
+128
+00:09:58,480 --> 00:10:03,100
+what is left the House of Lords does look unusual by international standards.
+
+129
+00:10:03,100 --> 00:10:06,280
+So it's a legislative chamber.
+
+130
+00:10:06,280 --> 00:10:10,689
+It can...legislation goes through the House of Lords as well as the House of Commons,
+
+131
+00:10:10,690 --> 00:10:15,940
+but in doing so there are checks written into the House of Lords,
+
+132
+00:10:15,940 --> 00:10:20,830
+for example, it can't vote on money bills and it can only delay bills, it cannot
+
+133
+00:10:20,830 --> 00:10:25,390
+permanently vote them down. The constitution of the Lords is remarkable
+
+134
+00:10:25,390 --> 00:10:30,459
+in the sense that it's now an extraordinary mixture of the hereditary
+
+135
+00:10:30,459 --> 00:10:34,300
+peers, who until the nineteen fifties were the only ones, so people were only in by birth,
+
+136
+00:10:34,300 --> 00:10:39,819
+and now have been added to them life-peers in very large number -
+
+137
+00:10:39,820 --> 00:10:47,950
+it's over a thousand of them in total now. But the remaining 92 hereditary peers -
+
+138
+00:10:47,950 --> 00:10:54,250
+think about this - when one of their...they were left after some reforms
+
+139
+00:10:54,250 --> 00:11:00,670
+Labour government pushed through between 1997 and 2010. And for the remaining hereditaries,
+
+140
+00:11:01,600 --> 00:11:05,380
+of course, they sit in party groups, and when the very small groups -
+
+141
+00:11:05,380 --> 00:11:10,839
+liberal democrats and labor - when one of their members dies then there's a by-election
+
+142
+00:11:10,839 --> 00:11:15,670
+for the remaining ones to choose another one who must be a hereditary peer.
+
+143
+00:11:15,670 --> 00:11:19,959
+So, you know, by the great standards of global democracy this is unusual, I think
+
+144
+00:11:19,959 --> 00:11:24,729
+we can agree, but it's the way the House of Lords operates.
+
+145
+00:11:24,730 --> 00:11:28,360
+That's our second chamber and in many ways - I don't want to be over critical of it,
+
+146
+00:11:28,360 --> 00:11:31,450
+because in many ways it has a distance, it's not elected,
+
+147
+00:11:31,450 --> 00:11:35,200
+therefore it has a bit of distance and can occasionally discuss issues that
+
+148
+00:11:35,200 --> 00:11:38,920
+the Commons find too hard to discuss.
+
+149
+00:11:38,920 --> 00:11:43,640
+So there's been a debate in the House of Lords recently about a bill
+
+150
+00:11:43,640 --> 00:11:48,560
+concerning assisted dying which, I think, is the kind of bill only the Lord's
+
+151
+00:11:48,560 --> 00:11:53,390
+would really try with that degree of seriousness to look at,
+
+152
+00:11:53,390 --> 00:11:54,710
+as the Commons find it too difficult.
+
+153
+00:11:54,710 --> 00:12:01,190
+So an extraordinary second chamber, because we have no formal separation of
+
+154
+00:12:01,190 --> 00:12:06,170
+powers in this country between the Legislature and the Executive.
+
+155
+00:12:06,170 --> 00:12:10,610
+Indeed, the Executive - Prime Minister and the Cabinet are derived from
+
+156
+00:12:10,610 --> 00:12:11,930
+the Legislature.
+
+157
+00:12:11,930 --> 00:12:14,870
+This is not the way it's done in many countries that have a formal separation
+
+158
+00:12:14,870 --> 00:12:24,800
+between these things, between these two parts of the state. And, of course, until very recently
+
+159
+00:12:24,800 --> 00:12:29,330
+the Judiciary were also appointed by the Executive will be it in
+
+160
+00:12:29,330 --> 00:12:33,920
+a slightly complicated way that has been reformed. We'll hear more about that from
+
+161
+00:12:33,920 --> 00:12:41,209
+Professor Conor Gearty later this term or early next term soon.
+
+162
+00:12:41,210 --> 00:12:44,630
+And as I hinted a moment ago, on top of all of this
+
+163
+00:12:44,630 --> 00:12:50,990
+inherited and evolved governmental arrangement - took a thousand years of it -
+
+164
+00:12:50,990 --> 00:12:54,200
+we now have Scotland and Wales, and I'll say a bit more about this in a moment,
+
+165
+00:12:55,100 --> 00:13:01,160
+operating as if they were fed parts of the federal system. So Scotland now
+
+166
+00:13:01,160 --> 00:13:06,800
+in many ways and soon will have the powers of an American state or a German land,
+
+167
+00:13:06,800 --> 00:13:12,560
+and yet it's actually exists purely at the whim of the House of Commons,
+
+168
+00:13:12,560 --> 00:13:17,540
+and it will be possible for Parliament to stop Scottish devolution tomorrow.
+
+169
+00:13:17,540 --> 00:13:21,770
+They would do that it would be impossible, but nevertheless we
+
+170
+00:13:21,770 --> 00:13:25,579
+have an increasingly federal system of government in a country without the Constitution,
+
+171
+00:13:25,580 --> 00:13:29,300
+which isn't any way a federal country, we're a unitary state.
+
+172
+00:13:29,300 --> 00:13:36,170
+There we have some pictures just to light relief at this point and two aspects,
+
+173
+00:13:36,170 --> 00:13:41,270
+here is a very glorious picture there of the Queen at the State Opening of Parliament.
+
+174
+00:13:41,270 --> 00:13:46,310
+This brings together the House of Lords, all those peers in there Herman,
+
+175
+00:13:46,310 --> 00:13:51,709
+and the Queen, and Prince Philip sitting on that splendid gold throne.
+
+176
+00:13:51,710 --> 00:13:52,680
+This is the House of Lords,
+
+177
+00:13:52,680 --> 00:13:59,760
+was not bombed between 1939 - 1945, while the House of Commons was.
+
+178
+00:13:59,760 --> 00:14:03,510
+And so this looks as it was built in the 19th century. This is a very grand event when
+
+179
+00:14:03,510 --> 00:14:07,560
+the Queen sits on the throne and reads the government's legislation out.
+
+180
+00:14:07,560 --> 00:14:11,219
+It's amazing, it is lucky, I suppose, that she doesn't have to show emotion,
+
+181
+00:14:11,220 --> 00:14:16,230
+because she read it out whoever's in government, whatever the legislation is - straight.
+
+182
+00:14:16,230 --> 00:14:21,720
+And this, of course, is the Prime Minister and the leader of the Opposition being attending -
+
+183
+00:14:21,720 --> 00:14:24,750
+and many of you will...certainly, you've seen this
+
+184
+00:14:24,750 --> 00:14:32,400
+if you live in Britain, will know that the House of Commons is summoned each year
+
+185
+00:14:32,400 --> 00:14:37,920
+to come to stand at the bar in the House of Lords, bar is not a bar.
+
+186
+00:14:37,920 --> 00:14:45,870
+It is a bar of that kind, where Black Rod goes to the Commons and invites
+
+187
+00:14:45,870 --> 00:14:49,800
+the House of Commons to attend the Lords and there
+
+188
+00:14:49,800 --> 00:14:53,430
+listen to the Queen's speech, the government speech really, and get this
+
+189
+00:14:53,430 --> 00:14:56,430
+extraordinary picture of the Prime Minister and the leader of the Opposition
+
+190
+00:14:56,430 --> 00:15:01,109
+attempting to make small talk to each other, and the Liberal Democrat leader
+
+191
+00:15:01,110 --> 00:15:04,170
+who is actually in the Government, of course, at the moment, just behind doing the same
+
+192
+00:15:04,170 --> 00:15:06,660
+with Harriet Harman, the Labor deputy leader.
+
+193
+00:15:06,660 --> 00:15:10,949
+So this sort of brings together the Queen...
+
+194
+00:15:11,550 --> 00:15:15,890
+this is the day in the year when...all of this sort of process comes
+
+195
+00:15:15,890 --> 00:15:18,690
+together, because it's these people really - the House of Commons - who have
+
+196
+00:15:18,690 --> 00:15:24,390
+the power and all of this is to varying degrees less powerful but parts of the system.
+
+197
+00:15:24,390 --> 00:15:31,290
+Now, in Martin Loughlin, Professor Loughlin it will be speaking later this term.
+
+198
+00:15:32,459 --> 00:15:37,199
+He wrote a book, a very short guide, a very useful book: this short guide to the British
+
+199
+00:15:37,200 --> 00:15:41,790
+constitution published very recently in which he said it might be the case that
+
+200
+00:15:41,790 --> 00:15:45,420
+"the British way of muddling through is best suited to the challenges ahead".
+
+201
+00:15:45,420 --> 00:15:48,449
+It's the classic argument for muddling through the British constitution.
+
+202
+00:15:49,140 --> 00:15:52,140
+Lots of people in the British governmental system like it.
+
+203
+00:15:52,140 --> 00:15:56,100
+"This, though, will never satisfy constitutional modernizers",
+
+204
+00:15:56,100 --> 00:15:57,310
+of whom were also a large number.
+
+205
+00:15:57,310 --> 00:16:02,680
+"If Britain is a democracy in which power is exercised in the name of the people,
+
+206
+00:16:02,680 --> 00:16:06,430
+can the crown still offer an adequate symbol of state?
+
+207
+00:16:06,940 --> 00:16:10,660
+This is precisely the question which is now to be tested in a referendum" - this
+
+208
+00:16:10,660 --> 00:16:14,290
+was written before the referendum - "on independence for Scotland
+
+209
+00:16:14,290 --> 00:16:16,180
+scheduled for autumn 2014.
+
+210
+00:16:16,180 --> 00:16:22,239
+The Treaty of Lisbon of 2009, it might be noted, requires the EU
+
+211
+00:16:22,240 --> 00:16:26,260
+to respect the 'constitutional identity' of its member states. But do the British
+
+212
+00:16:26,260 --> 00:16:31,450
+still possess the confidence to specify that identity?" It's a good question and
+
+213
+00:16:31,450 --> 00:16:37,120
+it was backed, I think, by the Scottish referendum. I think it did back that question.
+
+214
+00:16:37,120 --> 00:16:41,500
+We'll hear more about that in the weeks and months ahead, I am sure.
+
+215
+00:16:41,500 --> 00:16:45,699
+So I think this backs the challenge - we don't have to answer this today,
+
+216
+00:16:45,700 --> 00:16:49,930
+I just thought some...good sort of think about this: "Should Britain move to
+
+217
+00:16:49,930 --> 00:16:54,670
+a written constitution, make its remaining unelected State offices
+
+218
+00:16:54,670 --> 00:16:58,270
+fully democratic" - if you think about that, that's quite radical in the context of
+
+219
+00:16:58,270 --> 00:17:00,430
+what was up there just now -
+
+220
+00:17:00,430 --> 00:17:05,829
+"and, more importantly, creating a 'constitutional identity' for the country?"
+
+221
+00:17:05,829 --> 00:17:10,358
+And "has the Scottish referendum and the outcome of that made this more urgent?"
+
+222
+00:17:11,470 --> 00:17:16,990
+So just pause on that thought. Talk more about this with Martin Loughlin and others
+
+223
+00:17:16,990 --> 00:17:24,520
+in the weeks ahead. Feel free if you want to chip in, the same thing about this at any point.
+
+224
+00:17:25,358 --> 00:17:32,500
+Now, moving on to Parliament and the Executive. "As government has become
+
+225
+00:17:32,500 --> 00:17:35,350
+bigger and more complex"...
+
+226
+00:17:35,350 --> 00:17:39,730
+Sorry, a bigger and more complex activity - with my note - "and prime ministers have
+
+227
+00:17:39,730 --> 00:17:44,200
+become more 'presidential', Parliament has, arguably, become less important".
+
+228
+00:17:44,200 --> 00:17:47,260
+We'll hear from Professor George Jones about this. He's written
+
+229
+00:17:47,260 --> 00:17:51,820
+a book about prime ministers and, I think, that's his view very broadly,
+
+230
+00:17:51,820 --> 00:17:57,340
+but for him to say that. And certainly for any of you who've watched or will now watch
+
+231
+00:17:57,340 --> 00:18:01,389
+British politics, you'll see that the media concentrate relentlessly on David Cameron,
+
+232
+00:18:01,390 --> 00:18:05,440
+the Prime Minister, Ed Miliband, the Leader of the Opposition, Nick Clegg,
+
+233
+00:18:05,440 --> 00:18:09,250
+the Leader of the Liberal Democrats, much in view this week at the Lib Dem's Conference
+
+234
+00:18:09,250 --> 00:18:15,970
+in Glasgow, and, of course, on Alex Salmond, the Scottish First Minister,
+
+235
+00:18:15,970 --> 00:18:23,230
+and ever more Sir Boris Johnson, the Mayor of London, our Mayor of London here,
+
+236
+00:18:23,230 --> 00:18:24,520
+in the fair capital.
+
+237
+00:18:24,520 --> 00:18:30,160
+And these people do get an extraordinary amount of coverage and publicity
+
+238
+00:18:30,160 --> 00:18:35,860
+compared with many other parliamentarians in need other parts of
+
+239
+00:18:35,860 --> 00:18:37,330
+the political system.
+
+240
+00:18:37,330 --> 00:18:42,700
+Britain has a very nationalized...national media which reinforces this.
+
+241
+00:18:42,700 --> 00:18:46,810
+Members of Parliament, of the whom there are six hundred and fifty - a large number
+
+242
+00:18:46,810 --> 00:18:51,250
+by international standards - have to spend more and more time with their
+
+243
+00:18:51,250 --> 00:18:55,600
+constituents' problems. This is an element of something I'm going to talk about in a moment.
+
+244
+00:18:55,600 --> 00:18:58,659
+Britain is a centralized country, that's more power has been
+
+245
+00:18:58,660 --> 00:19:00,490
+drawn to the center.
+
+246
+00:19:00,490 --> 00:19:05,770
+It's often the case that constituents - that's any of us, who live in the
+
+247
+00:19:05,770 --> 00:19:10,900
+constituency and we all do within the UK - have to go more often and nod to their
+
+248
+00:19:10,900 --> 00:19:11,379
+members of Parliament.
+
+249
+00:19:11,380 --> 00:19:15,670
+If, for example, they've got a problem...if you had a problem with a visa or with your housing,
+
+250
+00:19:15,670 --> 00:19:19,630
+then go to the MPs. And that means members of parliament now have
+
+251
+00:19:19,630 --> 00:19:26,590
+huge amounts of constituency work to do, they hold surgeries. And this means that
+
+252
+00:19:26,590 --> 00:19:30,850
+as they get more power, local government has declined,
+
+253
+00:19:30,850 --> 00:19:32,439
+I'll say a bit more about that in a moment.
+
+254
+00:19:32,440 --> 00:19:35,950
+Leaving members of Parliament looking more and more locally at their constituents
+
+255
+00:19:35,950 --> 00:19:39,550
+while these cabinet ministers, Prime Minister leave the Opposition,
+
+256
+00:19:39,550 --> 00:19:44,800
+Prime Minister's Question Time are what most people see as politics.
+
+257
+00:19:44,800 --> 00:19:48,100
+That, I think, backs the interesting question of whether this has something to do
+
+258
+00:19:48,100 --> 00:19:54,310
+with the often discussed disconnect between most people's lives and politics.
+
+259
+00:19:54,310 --> 00:19:59,770
+Politics, as seen only on the television, is clearly disconnected.
+
+260
+00:19:59,770 --> 00:20:04,450
+It's more like a film in some ways than a real thing.
+
+261
+00:20:04,450 --> 00:20:07,900
+If you know...if you were living in Switzerland with cantons and very local politics,
+
+262
+00:20:08,679 --> 00:20:13,779
+you might well see things differently. However, and it is quite a significant however,
+
+263
+00:20:13,779 --> 00:20:19,359
+more recently Select Committees, which are subgroups of the House of Commons,
+
+264
+00:20:19,359 --> 00:20:25,590
+Committees which have a membership...which reflects the membership of the House of
+
+265
+00:20:25,590 --> 00:20:31,599
+Commons by party and have committee chairs who also reflect the balance of
+
+266
+00:20:31,599 --> 00:20:35,830
+the whole House of Commons - so you get a number of Labor chairs even though
+
+267
+00:20:35,830 --> 00:20:38,168
+the Labour Party's in opposition.
+
+268
+00:20:38,169 --> 00:20:42,460
+They have undoubtedly been able to provide Parliament with teeth.
+
+269
+00:20:42,460 --> 00:20:47,649
+If you look on the excellent no-hard-to-find Parliament website, just a wonderful
+
+270
+00:20:47,649 --> 00:20:52,330
+archive of Select Committee's hearings, you will see a number of Select Committees
+
+271
+00:20:52,330 --> 00:20:57,699
+digging their teeth into public officials who, they think, have not done the right thing,
+
+272
+00:20:58,690 --> 00:21:01,960
+broadcasters who they...you might say it's a bit sort of
+
+273
+00:21:01,960 --> 00:21:07,989
+overtheatrical sometimes, but it undoubtedly has been...has seen a rise of the Select Committee
+
+274
+00:21:07,989 --> 00:21:13,809
+and, with it, their chairs as public figures.
+
+275
+00:21:13,809 --> 00:21:19,779
+And many Select Committee chairs these days are more visible in public life than junior ministers.
+
+276
+00:21:19,779 --> 00:21:26,589
+And that is a big change. Here's an example. That's what most people would
+
+277
+00:21:26,589 --> 00:21:28,989
+think of as politics - Prime Minister's Question Time,
+
+278
+00:21:28,989 --> 00:21:34,299
+soundbite on the nine o'clock news. Here we've got David Cameron, looks as if
+
+279
+00:21:34,299 --> 00:21:37,839
+he's having fun at the Labour Party's expenses - he often does.
+
+280
+00:21:37,839 --> 00:21:41,139
+There they all sit looking rather glum over there:
+
+281
+00:21:41,139 --> 00:21:47,559
+Sadiq Khan, Alan Johnson, Ed Miliband and Harriet Harman.
+
+282
+00:21:47,559 --> 00:21:51,460
+This is a very typical tableau and you can see it the other way around
+
+283
+00:21:51,460 --> 00:21:55,809
+some of the time, obviously. But here, now,
+
+284
+00:21:55,809 --> 00:21:59,139
+even if know who this one...this is Mrs. Hodge. Anybody know Mrs. Hodge?
+
+285
+00:21:59,139 --> 00:22:01,599
+She's the chair...Mrs. Hodge...Yes, you?
+
+286
+00:22:01,599 --> 00:22:06,759
+MP for Barking, very good, well done. Now...quite a lot of people
+
+287
+00:22:06,759 --> 00:22:10,290
+know Mrs. Hodge. And Mrs. Hodges is chair of the Public Accounts Committee.
+
+288
+00:22:10,629 --> 00:22:14,439
+She's a Labour MP. This is the most powerful Select Committee in the House of Commons.
+
+289
+00:22:14,440 --> 00:22:19,629
+It is backed up by the National Audit Office which is
+
+290
+00:22:20,210 --> 00:22:24,800
+a proper Department, which is then parliamentary institution, not a
+
+291
+00:22:24,800 --> 00:22:30,200
+government institution. And Mrs. Hodge has really made a real name for herself
+
+292
+00:22:30,200 --> 00:22:34,850
+in holding public servants, particularly those who spend large amounts of public money,
+
+293
+00:22:34,850 --> 00:22:39,530
+to account. And again, National Audit Office reports and
+
+294
+00:22:39,530 --> 00:22:43,820
+Public Accounts Committee reports are a wonderful source, along with the House of Commons
+
+295
+00:22:43,820 --> 00:22:48,139
+library notes, if you really want something that's a good source for essays.
+
+296
+00:22:48,140 --> 00:22:54,320
+And they're a great source of information about contemporary politics.
+
+297
+00:22:54,320 --> 00:22:58,460
+and I think Mrs. Hodge, but other Select Committee chairs as well
+
+298
+00:22:58,460 --> 00:23:02,600
+have done exactly the same thing and retiree, who chairs the Treasury Select Committee,
+
+299
+00:23:02,600 --> 00:23:08,300
+is a conservative, John Whittingdale at the Media Select Committee, Keith Vaz - the
+
+300
+00:23:08,300 --> 00:23:12,379
+Home Affairs Committee. You'll see all of them now holding the Government
+
+301
+00:23:12,380 --> 00:23:14,390
+to account in a way that wasn't true
+
+302
+00:23:14,390 --> 00:23:17,870
+anything like is true in the past, and that's partly because Select Committee chairs
+
+303
+00:23:17,870 --> 00:23:22,669
+and members are now elected by MPs themselves. They're not simply
+
+304
+00:23:22,670 --> 00:23:24,950
+appointed by their own parties' authorities and whips.
+
+305
+00:23:24,950 --> 00:23:32,150
+Now, the influence of Select Committee, this is just a
+
+306
+00:23:32,150 --> 00:23:38,300
+quote from a book, sort of book, by Meg Russell and another...
+
+307
+00:23:38,300 --> 00:23:43,610
+published in 2011 which says: "Recent years have been characterised by scepticism -
+
+308
+00:23:43,610 --> 00:23:46,729
+sometimes verging on cynicism - about the effectiveness of the British House of Commons.
+
+309
+00:23:46,730 --> 00:23:50,630
+Particularly during the time of large government majorities following
+
+310
+00:23:50,630 --> 00:23:56,600
+the 1997 and 2001 elections, MPs came to be characterised as 'poodles'",
+
+311
+00:23:56,600 --> 00:24:01,459
+there's a viewer long memories, you remember, MPs...Labour MPs, at the time it was
+
+312
+00:24:01,460 --> 00:24:05,450
+popularly imagined...Had pages that told them what to do,
+
+313
+00:24:05,450 --> 00:24:08,660
+and there was a lot of stuff in the media about this at the time.
+
+314
+00:24:08,660 --> 00:24:12,380
+"Doubt was expressed about the extent to which the Commons could have a genuine impact on
+
+315
+00:24:12,380 --> 00:24:16,550
+government policy. And this was reinforced by the fact that during Tony Blair's premiership
+
+316
+00:24:16,550 --> 00:24:19,850
+the Government was defeated only four times in the House of Commons.
+
+317
+00:24:20,690 --> 00:24:24,200
+However  - point I was making a moment ago - Select Committees are taken
+
+318
+00:24:24,200 --> 00:24:27,860
+increasingly seriously by government, and have become an established and respected
+
+319
+00:24:27,860 --> 00:24:29,510
+part of the system".
+
+320
+00:24:29,510 --> 00:24:31,100
+So, in the unwritten British constitutional arrangements,
+
+321
+00:24:31,100 --> 00:24:36,260
+here we have a check and a balance really,
+
+322
+00:24:36,260 --> 00:24:43,220
+the evolution of a new check and balance on the relatively powerful Executive.
+
+323
+00:24:43,220 --> 00:24:49,160
+And we'll hear more about this in a couple of lectures next term, including from
+
+324
+00:24:49,160 --> 00:24:55,130
+Mrs. Hodge's Deputy - he's a conservative who will be giving a lecture next term.
+
+325
+00:24:55,670 --> 00:25:00,950
+Now, the challenge here, it seems to me, is "should Parliament be given greater
+
+326
+00:25:00,950 --> 00:25:05,900
+powers to act as a 'check' on the Executive, for example, by increased
+
+327
+00:25:05,900 --> 00:25:08,600
+support for the Opposition?" The Opposition...and when you are in
+
+328
+00:25:08,600 --> 00:25:13,100
+government you've got whole of the Civil Service working for you. In Opposition
+
+329
+00:25:13,100 --> 00:25:17,629
+you've got a little bit of money which is made available from public
+
+330
+00:25:17,630 --> 00:25:21,830
+purse to support a tiny research team, but that's about it
+
+331
+00:25:22,340 --> 00:25:28,159
+and anything you can raise privately. So the Government has much more capacity.
+
+332
+00:25:28,160 --> 00:25:31,760
+So more support, perhaps, for the Opposition, more for Committees -
+
+333
+00:25:31,760 --> 00:25:35,750
+though Mrs. Hodge's Committee, the PAC, has the National Audit Office behind it,
+
+334
+00:25:35,750 --> 00:25:39,530
+other Select Committees have one or two advisors and some Clark, who are very good,
+
+335
+00:25:39,530 --> 00:25:43,190
+but it's not exactly like congressional committees in the United States
+
+336
+00:25:43,190 --> 00:25:47,150
+which have big teams supporting their members in a way that would be
+
+337
+00:25:47,150 --> 00:25:53,690
+unthinkable in the historically slightly more relaxed House of Commons.
+
+338
+00:25:53,690 --> 00:25:56,420
+Should individual MPs have more support?
+
+339
+00:25:56,420 --> 00:26:02,180
+They now have enormous local post bags and constituency work, and the more
+
+340
+00:26:02,180 --> 00:26:06,170
+they have of that, less support they got - less support...in relation to
+
+341
+00:26:06,170 --> 00:26:10,940
+what they need - the less time they have to spend doing that other job,
+
+342
+00:26:10,940 --> 00:26:16,400
+because their job is to be a representative in Parliament, but they are there,
+
+343
+00:26:16,400 --> 00:26:20,270
+in Parliament, just as much to be in Parliament as to be back in the constituency.
+
+344
+00:26:20,270 --> 00:26:24,830
+They tend to spend about half the week in each.
+
+345
+00:26:24,830 --> 00:26:28,520
+So, you know, should there be greater powers to act as a check on the Executive
+
+346
+00:26:28,520 --> 00:26:32,900
+in this rather centralized constitution-free system?
+
+347
+00:26:35,420 --> 00:26:41,510
+The Civil Service. You'll be hearing from Professor Kate Jenkins, who's sitting here,
+
+348
+00:26:41,510 --> 00:26:44,150
+about the Civil Service in a few weeks time.
+
+349
+00:26:44,150 --> 00:26:49,970
+"Britain has developed a large, politically independent civil service"...
+
+350
+00:26:49,970 --> 00:26:53,450
+this is one of the first places in the world to do this, to move away from cronyism and
+
+351
+00:26:53,450 --> 00:26:59,450
+appointing people's friends to having entry exams and appointment by merit
+
+352
+00:26:59,450 --> 00:27:04,400
+to run the business of government. In this system - I think it's fair to say
+
+353
+00:27:04,400 --> 00:27:08,780
+until very recently, in the still a struggle about this - "'Generalised' competence has been prized
+
+354
+00:27:08,780 --> 00:27:14,149
+over professional skills". So, accountants and economist, for example,
+
+355
+00:27:14,150 --> 00:27:17,360
+not very highly treasured in government traditionally,
+
+356
+00:27:17,360 --> 00:27:22,100
+were as those with a rounded understanding of the world, with general skills,
+
+357
+00:27:22,100 --> 00:27:28,400
+who can move one department to another much more prized.
+
+358
+00:27:28,400 --> 00:27:29,510
+Though, in fairness to the Civil Service,
+
+359
+00:27:29,510 --> 00:27:33,740
+it has been struggling in recent years with how to balance getting more of these experts in
+
+360
+00:27:33,740 --> 00:27:37,820
+without losing the generalized skills and in fairness there is a need, I think, for a balance.
+
+361
+00:27:37,820 --> 00:27:43,550
+"Cabinet ministers have increasingly appointed 'SPADs' - 'special advisors'.
+
+362
+00:27:43,550 --> 00:27:48,169
+Many of you may have met special advisors. They are an interesting breed
+
+363
+00:27:48,170 --> 00:27:56,390
+that allows ministers to bring people into the Department
+
+364
+00:27:56,390 --> 00:27:59,000
+and then have them in their outer office,
+
+365
+00:27:59,000 --> 00:28:04,250
+you know, as a sort of direct political contact, working with the civil servants
+
+366
+00:28:04,250 --> 00:28:08,210
+who are still non-political, of course, delivering the government's objectives,
+
+367
+00:28:08,210 --> 00:28:12,140
+but in a non-political way, but with these special advisors in the outer office.
+
+368
+00:28:12,140 --> 00:28:16,400
+Now, sometimes these relationships work really-really well,
+
+369
+00:28:16,400 --> 00:28:21,500
+and sometimes they work really-really badly, depending on how sensitive the special advisors are
+
+370
+00:28:21,500 --> 00:28:26,840
+and how much the minute civil servants feel their world is being intruded on
+
+371
+00:28:26,840 --> 00:28:31,459
+by these special advisors.
+
+372
+00:28:31,460 --> 00:28:35,240
+"Some ministers would like to move towards having senior officials who are appointed by the Government of the day".
+
+373
+00:28:35,240 --> 00:28:38,360
+And, indeed, it's fascinating. There was a story in The Financial Times
+
+374
+00:28:38,360 --> 00:28:40,219
+this morning,
+
+375
+00:28:40,220 --> 00:28:45,450
+pointing out how Michael Gove, who used to be the Education Secretary
+
+376
+00:28:45,450 --> 00:28:50,190
+and now has a new role in the Government as the Leader of the House...
+
+377
+00:28:50,940 --> 00:28:55,710
+Chief Whip, sorry. I've got him confusing with William Hague. Chief Whip, thank you.
+
+378
+00:28:55,710 --> 00:28:56,429
+Chief Whip.
+
+379
+00:28:56,429 --> 00:29:00,929
+He has started to attend the weekly meetings of the Permanent Secretaries.
+
+380
+00:29:00,929 --> 00:29:04,740
+Now, this is a very big and unusual step,
+
+381
+00:29:04,740 --> 00:29:08,909
+not much liked by the civil servants. Thank you for the Chief...He's indeed the Chief Whip.
+
+382
+00:29:08,909 --> 00:29:13,380
+And that seems somebody who is the Government's business manager.
+
+383
+00:29:13,380 --> 00:29:19,800
+Attending the meetings of civil servants is a big and unusual change to have occurred.
+
+384
+00:29:19,710 --> 00:29:25,620
+Now, "the civil service can be seen as lacking in management, financial and other expertise",
+
+385
+00:29:25,620 --> 00:29:30,360
+but in fairness to it,
+
+386
+00:29:30,360 --> 00:29:37,289
+its skills as a permanent government, or permanent deliverer of government,
+
+387
+00:29:37,289 --> 00:29:42,960
+and its lack of political bias are clearly enormously important to the operation
+
+388
+00:29:42,960 --> 00:29:45,360
+of the state, and there are trade-offs here.
+
+389
+00:29:45,360 --> 00:29:53,428
+This is the head of the... it's the Cabinet's Office...Cabinet Secretary
+
+390
+00:29:53,429 --> 00:29:57,480
+Sir Jeremy Heywood, stepping out of a car - lots of pictures of him on the Internet
+
+391
+00:29:57,480 --> 00:29:59,250
+stepping out of the car for some reason -
+
+392
+00:29:59,250 --> 00:30:04,409
+going into Downing Street, it would appear. And this, of course, here, is
+
+393
+00:30:04,409 --> 00:30:07,860
+the fictitious account of life inside government, if any of you have ever seen
+
+394
+00:30:07,860 --> 00:30:08,879
+"The thick of it".
+
+395
+00:30:08,880 --> 00:30:11,940
+I thought of playing a clip, but I couldn't find one
+
+396
+00:30:11,940 --> 00:30:14,000
+that I could respectably play.
+
+397
+00:30:14,000 --> 00:30:17,810
+So I didn't, but you can find them. There was a particularly good one,
+
+398
+00:30:17,810 --> 00:30:22,520
+when I was looking for this photograph, of 'life imitating art' on the BBC website.
+
+399
+00:30:22,520 --> 00:30:27,290
+It's a BBC clip on YouTube, available through YouTube, which shows
+
+400
+00:30:27,290 --> 00:30:30,980
+how things that happened in "The thick of it" then happened in real life soon after.
+
+401
+00:30:31,520 --> 00:30:36,980
+So...and, of course, "The Thick of it", although having Doctor Who
+
+402
+00:30:36,980 --> 00:30:41,900
+in the front of the picture as well to make it seem
+more odd-looking,
+
+403
+00:30:41,900 --> 00:30:45,320
+"The Thick of it", although, of course, a satirical take on government.
+
+404
+00:30:45,320 --> 00:30:48,830
+I think you'd find very few people in government who didn't think it had a vestige,
+
+405
+00:30:48,830 --> 00:30:54,530
+a tiny element of certain elements of the way both the previous Labour Government
+
+406
+00:30:54,530 --> 00:30:58,940
+and then the current Conservative Lib Dem coalition operate.
+
+407
+00:30:58,940 --> 00:31:03,590
+Perhaps, in different ways. This was a bit more 'shouty', and the early days of
+
+408
+00:31:03,590 --> 00:31:07,669
+"The Thick of it" under the coalition were a bit more 'new age', but there was a definite...
+
+409
+00:31:08,660 --> 00:31:11,570
+I'm not saying you should watch it to learn British government and politics,
+
+410
+00:31:11,570 --> 00:31:18,200
+but I'm not saying you shouldn't watch either. Now, just to take on this issue
+
+411
+00:31:18,200 --> 00:31:22,100
+from the Institute for Public Policy Research who published a long report on
+
+412
+00:31:22,100 --> 00:31:26,660
+this last year, made recommendations for reform. And I'm not saying he's aright,
+
+413
+00:31:26,660 --> 00:31:33,830
+there're just examples of what a commentator, an external commentator, might say.
+
+414
+00:31:33,830 --> 00:31:36,649
+You know that we should "give the prime minister the power to appoint permanent secretaries,
+
+415
+00:31:37,430 --> 00:31:40,790
+but without politicising the civil service". You can see in that comment
+
+416
+00:31:40,790 --> 00:31:46,190
+there is a paradox, really. Having...your obviously permanent secretaries
+
+417
+00:31:46,190 --> 00:31:50,900
+whom the Government of the day wants to work with, but if they're appointed by the Government,
+
+418
+00:31:50,900 --> 00:31:54,350
+there is a risk of politicization. "Providing secretaries of state and ministers
+
+419
+00:31:54,350 --> 00:31:57,620
+who run their own departments with an extended office of
+
+420
+00:31:57,620 --> 00:32:02,360
+ministerial staff that they personally appoint" - we're in the same territory here -
+
+421
+00:32:02,360 --> 00:32:06,409
+"and who work directly on their behalf in the department". And what you can see here
+
+422
+00:32:06,410 --> 00:32:11,990
+is the tension between the traditional British way of doing things
+
+423
+00:32:11,990 --> 00:32:17,210
+and a sort of cabin air, an american-style government, of a kind that
+
+424
+00:32:17,210 --> 00:32:20,100
+looks fine works right therem, but it's very different from
+
+425
+00:32:20,100 --> 00:32:24,149
+the traditions that Britain has operated with the independent Civil Service,
+
+426
+00:32:24,150 --> 00:32:27,150
+the Executive taken out of the Legislature.
+
+427
+00:32:29,700 --> 00:32:32,189
+They propose "strengthening the role of the head of the civil service to hold
+
+428
+00:32:32,190 --> 00:32:36,929
+permanent secretaries to account". The current head of the civil service,
+
+429
+00:32:36,929 --> 00:32:41,700
+who is not Sir Jeremy Heywood, as recently as just about to step down,
+
+430
+00:32:41,700 --> 00:32:45,330
+gave a very interesting speech at the Institute for Government,
+
+431
+00:32:45,330 --> 00:32:49,139
+which is available on their website, about his efforts to help
+
+432
+00:32:49,140 --> 00:32:51,690
+to hold secretaries to account, if you want to follow that up.
+
+433
+00:32:51,690 --> 00:32:56,520
+The IPPR suggested "introducing fixed-term, four-year contracts
+
+434
+00:32:56,520 --> 00:32:58,490
+for new permanent secretaries" -
+
+435
+00:32:58,490 --> 00:33:00,750
+these are the people at the top of each department, I should've added.
+
+436
+00:33:00,750 --> 00:33:03,900
+"Strengthening the external accountability of civil servants in key operational roles" -
+
+437
+00:33:05,520 --> 00:33:09,418
+that's what Mrs. Hodge has been doing. And then, of course, "enabling the civil service
+
+438
+00:33:09,419 --> 00:33:13,679
+to better support opposition parties - again controversial - by allowing officials
+
+439
+00:33:13,679 --> 00:33:18,419
+to be seconded into opposition parties to help them with policy development".
+
+440
+00:33:18,419 --> 00:33:22,980
+So all of these ideas are perfectly sensible, but once you say them
+
+441
+00:33:22,980 --> 00:33:24,630
+they do tend to,
+
+442
+00:33:24,630 --> 00:33:28,919
+I think, infringe the way many traditional civil servants and, indeed, non-traditional,
+
+443
+00:33:28,919 --> 00:33:33,900
+but extensible servants would imagine their world working,
+
+444
+00:33:33,900 --> 00:33:38,610
+but they may be things that would improve the operation of government
+
+445
+00:33:38,610 --> 00:33:39,840
+and, indeed, the civil service.
+
+446
+00:33:39,840 --> 00:33:44,820
+So the challenge here, it seems to me, is: "Has the time come to move to
+
+447
+00:33:44,820 --> 00:33:52,168
+a politically-appointed civil service of people with professional expertise?"
+
+448
+00:33:52,169 --> 00:33:55,500
+It'd be a very different kind of civil service. Possibly better, possibly not.
+
+449
+00:33:56,390 --> 00:33:59,390
+Something we can talk about in the weeks ahead.
+
+450
+00:34:02,100 --> 00:34:06,929
+The Welfare State. We all know about Britain's Welfare State,
+
+451
+00:34:06,929 --> 00:34:11,219
+many European step countries and, indeed, others have either an extent
+
+452
+00:34:11,219 --> 00:34:12,118
+or developing Welfare State.
+
+453
+00:34:12,119 --> 00:34:16,739
+"Britain has developed a very large set of welfare services, - which we call 'Welfare State' -,
+
+454
+00:34:16,739 --> 00:34:22,168
+in the years since 1945". The development of a National Health Service,
+
+455
+00:34:22,168 --> 00:34:28,500
+education for all, social housing,
+
+456
+00:34:28,500 --> 00:34:33,690
+a range of services where there's a social element in the provision.
+
+457
+00:34:33,690 --> 00:34:37,379
+This 'Welfare State' now appears to face a number of challenges,
+
+458
+00:34:38,340 --> 00:34:42,899
+not the least of which is: "Will the public pay the taxes sufficient to fund
+
+459
+00:34:42,899 --> 00:34:44,668
+a full welfare state?"
+
+460
+00:34:44,668 --> 00:34:48,870
+Any of you watching the party conferences recently, you will see this debate
+
+461
+00:34:48,870 --> 00:34:54,299
+subliminally there all the time. Famously, Leader of the Opposition,
+
+462
+00:34:54,300 --> 00:34:58,470
+you remember this, neglected to talk about the deficit,
+
+463
+00:34:58,470 --> 00:35:02,459
+Britain's large deficit, but the Conservatives have been criticized subsequently
+
+464
+00:35:02,460 --> 00:35:07,200
+for promising tax cuts the time when Britain is indeed still running
+
+465
+00:35:07,200 --> 00:35:09,180
+a very large deficit.
+
+466
+00:35:09,180 --> 00:35:13,919
+The difficulty for all parties is that they've got themselves into a sort of fixed system,
+
+467
+00:35:13,920 --> 00:35:18,630
+like a weather system where the taxes...
+
+468
+00:35:18,630 --> 00:35:23,280
+it appears, they are willing to charge more to make people pay...are less than
+
+469
+00:35:23,280 --> 00:35:27,150
+the scale of the state that people want. And I'll show you a chart about this in a moment.
+
+470
+00:35:28,500 --> 00:35:33,600
+Beyond that we are a consumer society, it's a cliche, but you know what we mean,
+
+471
+00:35:33,600 --> 00:35:37,320
+we want to consume things, people understand their rights and those rights are
+
+472
+00:35:37,320 --> 00:35:42,510
+a long way away from the ideas that underlay, for example, the National Health Service
+
+473
+00:35:42,510 --> 00:35:44,430
+back in the forties.
+
+474
+00:35:44,430 --> 00:35:48,419
+I don't think when the NHS was created an iron better from a great
+
+475
+00:35:48,420 --> 00:35:53,460
+Labour politician created it, that he or anybody else thought that people would
+
+476
+00:35:53,460 --> 00:35:59,700
+feel they had the right to demand every new drug that came on the market
+
+477
+00:35:59,700 --> 00:36:04,529
+or very expensive new drugs. Now, all of us in the room can sympathize with people who feel that
+
+478
+00:36:04,530 --> 00:36:09,600
+if they are a relative is ill that they should be able to get a new drug
+
+479
+00:36:09,600 --> 00:36:15,600
+from a system that's free at the point of use, but, clearly, there isn't
+
+480
+00:36:15,600 --> 00:36:21,779
+limitless money and consumer attitudes to what we consume may have made
+
+481
+00:36:21,780 --> 00:36:24,750
+running the Welfare State more difficult than it once was.
+
+482
+00:36:25,800 --> 00:36:31,590
+Some households, it has been argued, have become 'dependent' on the state.
+
+483
+00:36:31,590 --> 00:36:37,290
+If you look at the scale of what the Beveridge report, the great 1942 report,
+
+484
+00:36:37,290 --> 00:36:39,820
+that proposed the creation of Welfare State,
+
+485
+00:36:39,820 --> 00:36:45,280
+the minimal level of unemployment pay and other benefits that it proposed, compared with
+
+486
+00:36:45,280 --> 00:36:50,320
+the scale of welfare today, as of today, the welfare budget, pensions and
+
+487
+00:36:50,320 --> 00:36:53,890
+all others cost more than 200 billion pounds in the United Kingdom.
+
+488
+00:36:54,700 --> 00:37:02,950
+That is a very significant sum of money for a 1.5 trillion, so 1600 billion, economy.
+
+489
+00:37:02,950 --> 00:37:09,640
+So it's 200 out of 1600. And there are those who believe that
+
+490
+00:37:09,640 --> 00:37:15,670
+households in some cases have become 'dependent' on the state. And, of course,
+
+491
+00:37:15,670 --> 00:37:18,610
+over-all the state...the whole of the Welfare State has grown substantially,
+
+492
+00:37:18,610 --> 00:37:23,740
+not only social security, but the National Health Service, schools, housing
+
+493
+00:37:23,740 --> 00:37:25,509
+and more besides.
+
+494
+00:37:25,510 --> 00:37:33,130
+Now, this is a classic 1940s style cartoon
+
+495
+00:37:33,910 --> 00:37:41,230
+showing Beveridge attempting to slay the five great evils that he saw lying...
+
+496
+00:37:41,230 --> 00:37:46,960
+It's interesting how creative British public servants were
+
+497
+00:37:46,960 --> 00:37:51,340
+during the Second World War, coming up with a series of reports and proposals for legislation
+
+498
+00:37:51,340 --> 00:37:56,380
+to change the way the country ran, partly because of the cooperation
+
+499
+00:37:56,380 --> 00:38:01,870
+and nationalization that have gone on during that very Second World War.
+
+500
+00:38:01,870 --> 00:38:07,330
+So: Want, Ignorance, Disease, Squalor, Idleness - these great evils
+
+501
+00:38:07,330 --> 00:38:09,730
+that were to be slayed by the Welfare State.
+
+502
+00:38:09,730 --> 00:38:15,520
+More recently the current Secretary of State, Iain Duncan Smith, you'll see him in the news,
+
+503
+00:38:15,520 --> 00:38:19,840
+is trying to introduce a radical new reform to bring many of the welfare benefits,
+
+504
+00:38:19,840 --> 00:38:24,430
+other than pensions, together into a universal credit and in attempt,
+
+505
+00:38:24,430 --> 00:38:28,779
+in his view, to reduce dependency - and it's not as if the Labour Party
+
+506
+00:38:28,780 --> 00:38:34,150
+hasn't brought me support at these, so, you know, reduce dependency, but also
+
+507
+00:38:34,150 --> 00:38:38,350
+to remove perverse incentives, kind of incentives that have existed where
+
+508
+00:38:38,350 --> 00:38:42,490
+people who receive benefits find that as they earn money and come off benefits
+
+509
+00:38:42,490 --> 00:38:45,900
+they become worse off.
+
+510
+00:38:45,100 --> 00:38:50,410
+So, in fairness to Iain Duncan Smith the objective is clearly one that
+
+511
+00:38:50,410 --> 00:38:52,460
+many people might support,
+
+512
+00:38:52,460 --> 00:38:57,260
+but crucially is very difficult to introduce because of the computer systems and
+
+513
+00:38:57,260 --> 00:39:01,730
+moving from one system to another and the changes in treatment of
+
+514
+00:39:01,730 --> 00:39:08,839
+individuals as that happens. In a book written by another LSE professor,
+
+515
+00:39:08,839 --> 00:39:12,529
+not certainly one who's speaking in this course, but one of his books will be
+
+516
+00:39:12,530 --> 00:39:17,480
+on the reading list, called "Understanding the Finance of Welfare" Howard Glennerster
+
+517
+00:39:17,480 --> 00:39:22,460
+has written. This is a very interesting up some, it seems to me, of the problem
+
+518
+00:39:22,460 --> 00:39:27,680
+that the free at the point of delivery Welfare State offers any society.
+
+519
+00:39:27,680 --> 00:39:30,830
+"Users of public services seem increasingly dissatisfied,
+
+520
+00:39:30,830 --> 00:39:35,240
+despite the fact that the quality of services has improved since 1950.
+
+521
+00:39:35,240 --> 00:39:40,520
+The level of consumer expectations seems to be rising faster. Discontent may be
+
+522
+00:39:40,520 --> 00:39:44,390
+put down to a malevolent press or professions who continuously talk of
+
+523
+00:39:44,390 --> 00:39:49,980
+'crisis' as a way of gaining more resources from the Chancellor.
+
+524
+00:39:49,990 --> 00:39:50,540
+The NHS, of course, has been in 'crisis'
+
+525
+00:39:50,540 --> 00:39:53,270
+ever since it was created", - and, indeed, it's certainly in the square bracket,
+
+526
+00:39:53,270 --> 00:39:54,680
+certainly as today,
+
+527
+00:39:54,680 --> 00:39:58,580
+according to the media this morning. "However, there is a more structural explanation
+
+528
+00:39:58,580 --> 00:40:06,440
+for this continuing dilemma. Claus Offe, a German Marxist sociologist,
+
+529
+00:40:06,440 --> 00:40:10,220
+comes closest to capturing it, although there is
+
+530
+00:40:10,220 --> 00:40:15,439
+an equivalent New Right explanation. In a pure market economy the price mechanism
+
+531
+00:40:15,440 --> 00:40:21,470
+manages individuals' expectations. They may desire a Mercedes or
+
+532
+00:40:21,470 --> 00:40:25,730
+a holiday in the Bahamas but they know their capacity to afford such luxuries
+
+533
+00:40:25,730 --> 00:40:30,680
+is determined by their own worth in the labor market. They do not blame the government.
+
+534
+00:40:30,680 --> 00:40:35,899
+In health and education, where no prices is charged,
+
+535
+00:40:35,900 --> 00:40:41,000
+expectations are not managed downwards by the market. Supply and demand have to be managed
+
+536
+00:40:41,000 --> 00:40:46,580
+by the political process. [We need to consider] the way in which scarce resources
+
+537
+00:40:46,580 --> 00:40:52,400
+are managed and allocated in a non-market system. The dilemmas should not
+
+538
+00:40:52,400 --> 00:40:55,550
+blind us to the fact that all scarce resources have to be rationed".
+
+539
+00:40:56,200 --> 00:41:01,210
+And if you look at an institution that many of you who live in Britain
+
+540
+00:41:01,210 --> 00:41:01,990
+will know - NICE,
+
+541
+00:41:01,990 --> 00:41:07,290
+which is the National Institute for Clinical Excellence, I think it's changed
+
+542
+00:41:07,300 --> 00:41:09,579
+its name, but near enough NICE,
+
+543
+00:41:09,579 --> 00:41:14,710
+they have had the problem for some years now trying to ration the use of drugs,
+
+544
+00:41:14,710 --> 00:41:20,740
+prescribed drugs in the NHS. And once you start talking about rationing,
+
+545
+00:41:20,740 --> 00:41:25,779
+many politicians run away, don't like to talk about rationing.
+
+546
+00:41:25,780 --> 00:41:26,650
+But if you think about it,
+
+547
+00:41:26,650 --> 00:41:30,849
+the NHS has to ration health resources. There isn't a limitless
+
+548
+00:41:30,849 --> 00:41:34,630
+supply of doctors, nurses and pharmaceuticals.
+
+549
+00:41:34,630 --> 00:41:41,619
+It is all about rationing, and politics is how that has to be done.
+
+550
+00:41:41,619 --> 00:41:45,100
+Here's the chart I promised. This is my favorite chart at the moment. This is produced by
+
+551
+00:41:45,100 --> 00:41:50,440
+the Office for Budget Responsibility, an excellent organization with an excellent website,
+
+552
+00:41:50,440 --> 00:41:56,260
+which produces independent economic forecasts and measures of
+
+553
+00:41:56,260 --> 00:42:00,640
+public expenditures. Just wonderful. And the top line there shows public expenditure
+
+554
+00:42:00,640 --> 00:42:05,920
+as a proportion of GDP in the United Kingdom since 1978-1979,
+
+555
+00:42:05,920 --> 00:42:09,670
+it's the dark line you can see it at the top there.
+
+556
+00:42:09,670 --> 00:42:15,339
+the lighter line which is generally
+below it is government revenues that tax
+
+557
+00:42:15,339 --> 00:42:19,660
+take and every time the dark line is
+above the light line
+
+558
+00:42:19,660 --> 00:42:23,980
+there's a deficit in the very very
+occasional times when the light line is
+
+559
+00:42:23,980 --> 00:42:26,170
+above the dark line there's a surplus
+
+560
+00:42:26,170 --> 00:42:30,819
+so at all times the one who bit the dark
+lines above the light line the
+
+561
+00:42:30,819 --> 00:42:34,600
+government national the national debt is
+rising and of course has been rising
+
+562
+00:42:34,600 --> 00:42:39,400
+substantially the dotted line marks
+broadly where we are today just was
+
+563
+00:42:39,400 --> 00:42:40,990
+slightly this way now
+
+564
+00:42:40,990 --> 00:42:47,319
+and as you can see and what we face is a
+substantial further fall in public
+
+565
+00:42:47,319 --> 00:42:52,509
+expenditure as a proportion of GDP up to
+the point the deficit is eradicated
+
+566
+00:42:53,440 --> 00:42:58,630
+but more interesting that is the if you
+look at the smooth average of the lower
+
+567
+00:42:58,630 --> 00:43:02,440
+line the government receipts line from
+1992 today
+
+568
+00:43:02,950 --> 00:43:06,980
+it's never got above thirty eight
+percent of gdp
+
+569
+00:43:06,990 --> 00:43:07,550
+so no government in
+
+570
+00:43:07,550 --> 00:43:13,910
+united kingdom has put taxes up about
+thirty-eight percent of GDP ever in any
+
+571
+00:43:13,910 --> 00:43:17,450
+year since 1990
+
+572
+00:43:17,450 --> 00:43:22,250
+that's nearly quarter of a century if
+you listen to the narrative of politics
+
+573
+00:43:22,250 --> 00:43:25,670
+no desire to put taxes up on most people
+
+574
+00:43:25,670 --> 00:43:29,120
+site designed to put them up on the rich
+but not on everybody else
+
+575
+00:43:29,120 --> 00:43:34,250
+the rich sadly are not large enough in
+number to change that line much there
+
+576
+00:43:34,250 --> 00:43:38,300
+for Britain has stalled attractive so
+we're not unique in this but Britain is
+
+577
+00:43:38,300 --> 00:43:44,600
+now trapped in the position of wanting
+to have in effect but it simply Sweden
+
+578
+00:43:44,600 --> 00:43:49,520
+or Frances public sector with America's
+taxes and that's what this chart shows
+
+579
+00:43:49,520 --> 00:43:52,610
+we want a big estate and what then
+
+580
+00:43:52,610 --> 00:43:59,120
+some politicians are able to convince us
+to pay and that is a real problem
+
+581
+00:43:59,120 --> 00:44:04,690
+because within the expenditure line
+health and welfare is growing so
+
+582
+00:44:04,700 --> 00:44:07,430
+everything else is having to shrink
+defense shrunk local government
+
+583
+00:44:07,430 --> 00:44:12,410
+shrinking police and fire shrinking big
+issues will come back to those i'll be
+
+584
+00:44:12,410 --> 00:44:14,299
+talking about that in a few weeks time
+
+585
+00:44:14,300 --> 00:44:19,220
+so how could the government changed the
+welfare state and Institute ensure it
+
+586
+00:44:19,220 --> 00:44:24,490
+was sustainable just to ration resources
+but also that this did not generate
+
+587
+00:44:24,500 --> 00:44:29,630
+unintended consequences and I think the
+only answer to that is to put up taxes
+
+588
+00:44:29,630 --> 00:44:33,800
+are not advocating putting up taxes i'm
+just saying that unless we are to have
+
+589
+00:44:33,800 --> 00:44:36,500
+much more rationing in the welfare state
+
+590
+00:44:36,500 --> 00:44:40,400
+we are going to need to put taxes up and
+it taxes don't go up as a share of the
+
+591
+00:44:40,400 --> 00:44:41,180
+economy
+
+592
+00:44:41,180 --> 00:44:45,140
+then we will see substantially more
+rationing the story in The Independent
+
+593
+00:44:45,140 --> 00:44:50,600
+today the independent newspaper saying
+that it may be that the one on one of
+
+594
+00:44:50,600 --> 00:44:54,110
+the professional organizations saying it
+may be necessary to charge people
+
+595
+00:44:54,110 --> 00:44:55,550
+hospital fees
+
+596
+00:44:55,550 --> 00:44:59,840
+sorry hotel fees for staying in
+hospitals and that will get more debates
+
+597
+00:44:59,840 --> 00:45:03,320
+of that kind in the coming months and
+years
+
+598
+00:45:03,320 --> 00:45:08,570
+europe this is not quite as random as on
+
+599
+00:45:08,570 --> 00:45:11,510
+I mean this is with them sort of moving
+through the weeks of lectures quickly
+
+600
+00:45:11,510 --> 00:45:13,170
+here in summary
+
+601
+00:45:13,170 --> 00:45:19,530
+europe now Europe's been an
+extraordinarily potent issue dominating
+
+602
+00:45:19,530 --> 00:45:24,000
+British government and politics for 30
+or 40 years now
+
+603
+00:45:24,540 --> 00:45:29,690
+Britain joined the UN the seventies had
+a referendum in 1975 about whether we
+
+604
+00:45:29,690 --> 00:45:30,540
+should stay in or not
+
+605
+00:45:30,540 --> 00:45:35,250
+and of course many of you will be aware
+that a number of British politicians and
+
+606
+00:45:35,250 --> 00:45:41,609
+indeed an entire new insurgent political
+party a lobbying hard for Britain
+
+607
+00:45:41,609 --> 00:45:47,400
+radically to change its relationship
+with Europe broadly defined
+
+608
+00:45:47,400 --> 00:45:53,250
+now what we're going to look at within
+this course is both your as an issue of
+
+609
+00:45:53,250 --> 00:45:58,470
+Rights and the cute part of the
+judiciary and the court system but also
+
+610
+00:45:58,470 --> 00:46:05,549
+Europe as the European Union remembering
+of course and this is rarely . really
+
+611
+00:46:05,549 --> 00:46:10,799
+made in public discourse that of course
+the human rights issue and the European
+
+612
+00:46:10,799 --> 00:46:14,250
+Court of Human Rights is nothing to do
+with the EU there listening to the
+
+613
+00:46:14,250 --> 00:46:19,589
+debate on these things be hard to
+differentiate them most of the time now
+
+614
+00:46:19,589 --> 00:46:26,279
+. professor conjugate he will talk about
+the judiciary and rights and the British
+
+615
+00:46:26,280 --> 00:46:29,970
+approach to rights but in summary the
+way
+
+616
+00:46:30,480 --> 00:46:35,430
+Britain has a . Britain has done is to
+adopt as a number of countries have the
+
+617
+00:46:35,430 --> 00:46:40,379
+many of the elements of the European
+Convention on Human Rights they've been
+
+618
+00:46:40,380 --> 00:46:45,960
+incorporated by convention into our and
+other countries legal systems either
+
+619
+00:46:45,960 --> 00:46:50,400
+through constitutional provision or by
+statute we don't have a constitution
+
+620
+00:46:50,400 --> 00:46:56,990
+after all or through judicial processes
+and then the European Court of Human
+
+621
+00:46:56,990 --> 00:47:02,609
+Rights which is not as I stress part of
+the European Union it his cases that are
+
+622
+00:47:02,609 --> 00:47:04,710
+alleged to contravene the country
+
+623
+00:47:04,710 --> 00:47:09,590
+the convention the court cases cases are
+heard in the UK course in other
+
+624
+00:47:09,590 --> 00:47:13,790
+countries cause we can in the end be
+appealed to the european court of human
+
+625
+00:47:13,790 --> 00:47:15,890
+rights now
+
+626
+00:47:15,890 --> 00:47:20,250
+again those of you who watched the news
+carefully will know there's a number of
+
+627
+00:47:20,250 --> 00:47:23,800
+high-profile cases often though not
+exclusive
+
+628
+00:47:23,800 --> 00:47:26,800
+only involving terrorism suspects
+
+629
+00:47:27,370 --> 00:47:32,799
+not only that and occasionally people
+have broken the law have ended up in the
+
+630
+00:47:32,800 --> 00:47:37,840
+european court of human rights and cause
+not in significant aggravation to some
+
+631
+00:47:37,840 --> 00:47:42,700
+British politicians as a result of that
+the conservatives that their party
+
+632
+00:47:42,700 --> 00:47:47,200
+conference recently proposed to repeal
+the Human Rights Act 1998 which was the
+
+633
+00:47:47,200 --> 00:47:52,600
+law that by which the Labour government
+of the time incorporated provisions of
+
+634
+00:47:52,600 --> 00:47:55,240
+the European Convention into British law
+
+635
+00:47:55,240 --> 00:48:01,509
+so that's how this was done and instead
+to produce a bill of rights
+
+636
+00:48:01,510 --> 00:48:05,350
+this would be in effect to create
+something that sounded a bit more
+
+637
+00:48:05,350 --> 00:48:11,410
+English a bill of rights and 16 18 and
+going back to history and trying to
+
+638
+00:48:11,410 --> 00:48:17,589
+escape in part from the european
+convention on human rights but
+
+639
+00:48:17,590 --> 00:48:20,890
+particularly actually not that but from
+the court
+
+640
+00:48:20,890 --> 00:48:27,400
+I just thought a cartoon on this
+occasion and I like this color I mean
+
+641
+00:48:27,400 --> 00:48:33,280
+this is see it is such a relief to dicks
+the human rights court and get back to
+
+642
+00:48:33,280 --> 00:48:38,680
+common sense is what the caption is on
+this particular cartoon from The Daily
+
+643
+00:48:38,680 --> 00:48:45,339
+Telegraph last week and clearly that is
+the sense that if we you know that among
+
+644
+00:48:45,340 --> 00:48:48,400
+many politicians are not only in the
+conservative party if only we could
+
+645
+00:48:48,400 --> 00:48:51,200
+control our own
+
+646
+00:48:51,200 --> 00:48:54,410
+the decisions of not this controller
+decisions of the courts would have all
+
+647
+00:48:54,410 --> 00:49:00,170
+these case with cases were decided by
+British judges you get common sense i
+
+648
+00:49:00,170 --> 00:49:06,829
+think that's the sort of prevailing
+feeling now would repealing the Human
+
+649
+00:49:06,829 --> 00:49:11,329
+Rights Act 1998 really make a difference
+unless the UK withdrew from the
+
+650
+00:49:11,329 --> 00:49:17,240
+convention system under which the
+European confirm convention operates ,
+
+651
+00:49:17,240 --> 00:49:22,640
+Garrity will be speaking to you later on
+in the course I think argues not in ddr
+
+652
+00:49:22,640 --> 00:49:29,990
+give not in the Guardian a few days ago
+and and you might want to argue analyzed
+
+653
+00:49:29,990 --> 00:49:30,680
+you know I think so
+
+654
+00:49:30,680 --> 00:49:33,859
+it's a moot point we don't have a
+different view on this as to whether
+
+655
+00:49:33,859 --> 00:49:42,200
+it's a good or a bad thing that there is
+a European long stop influencing British
+
+656
+00:49:42,200 --> 00:49:49,460
+law acting as a sort of and an
+internationally based appeal court for
+
+657
+00:49:49,460 --> 00:49:53,780
+perceived or real in justices with in
+this country
+
+658
+00:49:53,780 --> 00:49:57,619
+now people have different views on that
+and we'll hear from the about that from
+
+659
+00:49:57,619 --> 00:50:05,750
+congregating in his lecture local
+government local government and
+
+660
+00:50:05,750 --> 00:50:10,369
+centralization as I said much earlier on
+britain's a unitary and not a federal
+
+661
+00:50:10,369 --> 00:50:15,589
+state with no written constitution this
+makes it very easy for national
+
+662
+00:50:15,589 --> 00:50:21,259
+governments of any party to pass laws
+that affect the powers of sub national
+
+663
+00:50:21,260 --> 00:50:22,990
+government
+
+664
+00:50:22,990 --> 00:50:27,140
+now interestingly that has led to the
+creation of devolved scottish and welsh
+
+665
+00:50:27,140 --> 00:50:30,259
+and Northern Irish assemblies
+
+666
+00:50:30,260 --> 00:50:34,310
+but within England and indeed separately
+in each of those countries local
+
+667
+00:50:34,310 --> 00:50:39,890
+government has actually become less
+powerful written is a highly centralized
+
+668
+00:50:39,890 --> 00:50:45,490
+country particularly and then if you
+look at the share of taxes and political
+
+669
+00:50:45,500 --> 00:50:50,300
+control that are held at Westminster for
+England separately in Edinburgh
+
+670
+00:50:50,300 --> 00:50:53,780
+cardiff and north Belfast for the other
+three parts of the UK
+
+671
+00:50:54,530 --> 00:50:58,700
+ninety-five percent of all the taxes in
+the United Kingdom are set by the
+
+672
+00:50:58,700 --> 00:50:59,450
+Chancellor
+
+673
+00:50:59,450 --> 00:51:05,330
+exchequer if you look at the OECD
+statistics beautifully laid out in
+
+674
+00:51:05,330 --> 00:51:07,490
+fabulous charts
+
+675
+00:51:07,490 --> 00:51:10,669
+so you can see how Britain compares with
+other UK compares with other countries
+
+676
+00:51:10,670 --> 00:51:14,660
+in oecd you'll find that this is a very
+low percentage
+
+677
+00:51:15,290 --> 00:51:20,660
+indeed and indeed as the other the five
+percent which is a local property tax is
+
+678
+00:51:20,660 --> 00:51:22,310
+frozen and cat
+
+679
+00:51:22,310 --> 00:51:26,870
+it's really a hundred percent so here we
+are in a large mature democracy with a
+
+680
+00:51:26,870 --> 00:51:31,190
+hundred percent of all the taxes that by
+national government very very unusual as
+
+681
+00:51:31,190 --> 00:51:36,950
+oecd helpfully shows England's had known
+to meet devolution even though England
+
+682
+00:51:36,950 --> 00:51:39,259
+the country of 52 million people
+
+683
+00:51:39,260 --> 00:51:42,770
+scotland five Wales three northern
+ireland one and a half million people
+
+684
+00:51:42,770 --> 00:51:47,900
+know d evolution within England Labour
+government did try a referendum in the
+
+685
+00:51:47,900 --> 00:51:52,700
+Northeast to introduce devolved regional
+government there in 2004
+
+686
+00:51:52,700 --> 00:51:57,379
+but the powers on offer was so modest
+that the North people of the north east
+
+687
+00:51:57,380 --> 00:52:02,480
+they might be with good reason rejected
+it so what we have seen laterally is new
+
+688
+00:52:02,480 --> 00:52:07,340
+forms of local governance emerging
+efforts to sort of get around this city
+
+689
+00:52:07,340 --> 00:52:13,490
+regional level in other sub - Allah
+units that are not quite new government
+
+690
+00:52:13,490 --> 00:52:22,100
+units but do provide an opportunity for
+some more effective operation as an
+
+691
+00:52:22,100 --> 00:52:29,509
+area-wide of the one local authority
+practice and Wilson writing about local
+
+692
+00:52:29,510 --> 00:52:32,960
+democracy and local government say
+there's a vital element of the
+
+693
+00:52:32,960 --> 00:52:36,710
+constitutional makes the local element
+has withered and his danger of
+
+694
+00:52:36,710 --> 00:52:40,100
+disappearing altogether even more
+pessimistic and I was just then the
+
+695
+00:52:40,100 --> 00:52:42,410
+centralization many services
+
+696
+00:52:42,410 --> 00:52:47,890
+the circumvention of local government
+and the diminution of local politics of
+
+697
+00:52:47,900 --> 00:52:51,380
+all compounded to foster a democracy
+that increasingly north and belittles
+
+698
+00:52:51,380 --> 00:52:56,840
+all things local which gives excessive
+emphasis and national politics going
+
+699
+00:52:56,840 --> 00:53:00,890
+back to the pictures and some of the
+points I made earlier the persistently
+
+700
+00:53:00,890 --> 00:53:05,150
+low turnout at local elections and the
+tendency for them to be used as
+
+701
+00:53:05,150 --> 00:53:09,809
+indicators of National Party preferences
+are symptomatic of this trend
+
+702
+00:53:09,809 --> 00:53:14,400
+the practice and habits of democracy at
+the local level which remains the
+
+703
+00:53:14,400 --> 00:53:19,709
+foundation of our national democratic
+culture are in retreat and in fact this
+
+704
+00:53:19,709 --> 00:53:24,808
+is quoted in the prep by practicing
+Muslim but it's the forward by Sir Simon
+
+705
+00:53:24,809 --> 00:53:31,499
+Jenkins great columnist in the Guardian
+in his forward to that a book
+
+706
+00:53:31,499 --> 00:53:34,828
+I think that's pretty fair comment but
+we can talk about that in the weeks
+
+707
+00:53:34,829 --> 00:53:39,239
+ahead here the challenges does the
+centralization of power in England
+
+708
+00:53:39,239 --> 00:53:45,509
+weekend local government in ways which
+in turn undermine local politics and
+
+709
+00:53:45,509 --> 00:53:48,900
+thus the basis for the national
+political parties and that's a very if
+
+710
+00:53:48,900 --> 00:53:50,699
+you think about it an interesting
+question
+
+711
+00:53:50,699 --> 00:53:55,499
+all politics is local not my original
+idea an American politician said that
+
+712
+00:53:55,499 --> 00:54:03,749
+all politics is local and the truth is
+if local government erodes and inroads
+
+713
+00:54:03,749 --> 00:54:07,589
+we're with the basis of national
+politics be all members of parliament
+
+714
+00:54:07,589 --> 00:54:12,479
+are selected by local party members
+local party members
+
+715
+00:54:12,479 --> 00:54:16,780
+look to local government many of them
+are counselors and without that local
+
+716
+00:54:16,790 --> 00:54:20,900
+government functioning healthfully how
+would the parties survive they're
+
+717
+00:54:20,900 --> 00:54:21,449
+already shrinking
+
+718
+00:54:21,449 --> 00:54:25,190
+how would they survive without that
+local unit of government so there is a
+
+719
+00:54:25,190 --> 00:54:33,419
+link between local government and
+politics and national politics evolution
+
+720
+00:54:33,420 --> 00:54:36,420
+and I've touched on this already
+
+721
+00:54:37,790 --> 00:54:41,699
+stockland whales have been given their
+own Parliament and government
+
+722
+00:54:42,809 --> 00:54:47,849
+this was a radical change and I said it
+was a we can discuss we will discuss
+
+723
+00:54:47,849 --> 00:54:53,249
+further into the course how this
+happened is very centralized state the
+
+724
+00:54:53,249 --> 00:54:58,859
+United Kingdom suddenly after 1997 with
+the advent of the Labour government then
+
+725
+00:54:58,859 --> 00:55:04,199
+dissolving power to Scotland and Wales
+number of reasons for this
+
+726
+00:55:04,199 --> 00:55:08,400
+it had been tried earlier in fact in the
+nineteen seventies not and had been
+
+727
+00:55:08,400 --> 00:55:16,920
+rejected just and we well it's so i
+should say was rejected in Wales but not
+
+728
+00:55:16,920 --> 00:55:19,600
+in Scotland but i was going to explain
+when we get there
+
+729
+00:55:19,600 --> 00:55:23,170
+I didn't want to get really go all the
+way back through nineteen nineteen
+
+730
+00:55:23,170 --> 00:55:25,330
+seventy-nine again
+
+731
+00:55:25,330 --> 00:55:29,770
+so but there was a threshold i think was
+the point there was the threshold at the
+
+732
+00:55:29,770 --> 00:55:33,280
+time and that's that was very nearly an
+issue the other week of course there was
+
+733
+00:55:33,280 --> 00:55:38,110
+a threshold above which the Scots would
+have had to get to trigger the
+
+734
+00:55:38,110 --> 00:55:40,810
+devolution that was proposed in the late
+seventies
+
+735
+00:55:40,810 --> 00:55:46,960
+so virtually all domestic policy is now
+handled by edinburgh and Cardiff
+
+736
+00:55:46,960 --> 00:55:51,370
+edinburgh and carted now have
+extraordinary person indeed Belfast
+
+737
+00:55:51,370 --> 00:55:55,390
+Northern Irish the Northern Irish
+assembly Northern Ireland Assembly has
+
+738
+00:55:55,390 --> 00:56:00,879
+analogous and significant powers which
+given the extraordinary history of
+
+739
+00:56:00,880 --> 00:56:06,340
+Northern Ireland just shows you how
+radically things have changed their that
+
+740
+00:56:06,340 --> 00:56:11,500
+has been devolution to northern ireland
+assembly which is not available within
+
+741
+00:56:11,500 --> 00:56:15,610
+England and that is a real signal that
+our northern ireland has moved on
+
+742
+00:56:17,170 --> 00:56:22,210
+major taxation powers are to be handed
+over to Scotland following the 2014
+
+743
+00:56:22,210 --> 00:56:25,420
+referendum those of you watching the
+referendum within the last few weeks
+
+744
+00:56:25,420 --> 00:56:31,300
+we've seen golden brown our former prime
+minister suddenly appearing as a great
+
+745
+00:56:31,300 --> 00:56:36,580
+hero of the No campaign would appear to
+offer on behalf of the labor
+
+746
+00:56:36,580 --> 00:56:41,770
+conservative and liberal democrat
+parties much greater taxation power for
+
+747
+00:56:41,770 --> 00:56:48,220
+Scotland power to borrow money welfare
+freedom freedom to operate well for part
+
+748
+00:56:48,220 --> 00:56:52,390
+of the welfare system much more radical
+even then the Scots had already been
+
+749
+00:56:52,390 --> 00:56:53,440
+offered
+
+750
+00:56:53,440 --> 00:56:59,110
+so what the Scots are going to get is
+the thing that was originally refused to
+
+751
+00:56:59,110 --> 00:57:03,580
+them in the questions on the ballot
+paper sort of devo max option as it was
+
+752
+00:57:03,580 --> 00:57:06,790
+called which will make Scotland in my
+view
+
+753
+00:57:06,790 --> 00:57:12,900
+akin to a federal unit within a federal
+state but because we're not a federal
+
+754
+00:57:12,100 --> 00:57:17,590
+state as i said earlier but the Scots
+will have very significant autonomy
+
+755
+00:57:17,590 --> 00:57:23,230
+including crucially not only budgeting
+autonomy but now tax-raising powers as
+
+756
+00:57:23,230 --> 00:57:23,920
+well
+
+757
+00:57:23,920 --> 00:57:27,670
+started conservative leader came up with
+the most radical suggestion
+
+758
+00:57:27,670 --> 00:57:29,990
+intriguingly to develop all income
+
+759
+00:57:29,990 --> 00:57:35,209
+tax to Scotland the whole income tax and
+that would make it a very very developed
+
+760
+00:57:35,210 --> 00:57:38,900
+system indeed and we were still with us
+we're now in the process of the
+
+761
+00:57:38,900 --> 00:57:45,680
+Westminster system having to decide
+exactly what it now offers scotland on
+
+762
+00:57:45,680 --> 00:57:49,190
+the back of this wails of course we'll
+ask for something similar Wells is
+
+763
+00:57:49,190 --> 00:57:54,530
+already been promised tax-raising powers
+but you can see that on the belt back of
+
+764
+00:57:54,530 --> 00:57:58,490
+whatever Scotland is now given wales
+which is in a slightly different
+
+765
+00:57:58,490 --> 00:58:03,169
+situation because it's a less affluent
+country in terms of its tax raising
+
+766
+00:58:03,170 --> 00:58:08,810
+capacity but the world will similarly be
+offered at least some form of the local
+
+767
+00:58:08,810 --> 00:58:11,330
+income tax and other tax raising powers
+
+768
+00:58:11,330 --> 00:58:18,410
+so how do we create this federal default
+system of countries as nations within
+
+769
+00:58:18,410 --> 00:58:23,149
+the united kingdom when the UK isn't a
+federal state and more than that was
+
+770
+00:58:23,150 --> 00:58:29,930
+about England England is 50 to 60
+seconds of in terms of population and
+
+771
+00:58:29,930 --> 00:58:32,359
+GDP of the United Kingdom
+
+772
+00:58:32,360 --> 00:58:36,590
+professor John Curtis the great several
+logical expert from strathclyde
+
+773
+00:58:36,590 --> 00:58:37,670
+university
+
+774
+00:58:37,670 --> 00:58:42,230
+I remember speaking at a lecture in
+London about five years ago long before
+
+775
+00:58:42,230 --> 00:58:49,190
+all this was going on making the point
+that the only way for a country united
+
+776
+00:58:49,190 --> 00:58:53,540
+kingdom which consists of one country
+which has 52 million people in it
+
+777
+00:58:53,540 --> 00:58:56,690
+one with 51 with three and one and one
+and a half the anyway that can hold
+
+778
+00:58:56,690 --> 00:58:59,570
+together is if it's some level
+
+779
+00:58:59,570 --> 00:59:05,630
+the Scots the Welsh in the Northern
+Irish have more power than their numbers
+
+780
+00:59:05,630 --> 00:59:08,450
+suggest to try to balance hours
+
+781
+00:59:08,450 --> 00:59:13,310
+the imbalance that would otherwise occur
+with England being so dominant an
+
+782
+00:59:13,310 --> 00:59:14,450
+interesting idea
+
+783
+00:59:14,450 --> 00:59:18,589
+I credited to him and happy and I
+remember that correctly but it's a good
+
+784
+00:59:18,590 --> 00:59:19,490
+idea
+
+785
+00:59:19,490 --> 00:59:22,850
+and so in in recent times Scotland
+
+786
+00:59:22,850 --> 00:59:27,680
+after all has high levels of public
+expenditures in England sodas well so
+
+787
+00:59:27,680 --> 00:59:31,460
+there's Northern Ireland they have more
+representation in Parliament of Scotland
+
+788
+00:59:31,460 --> 00:59:35,630
+and of course their own government as
+wales and northern ireland do
+
+789
+00:59:35,630 --> 00:59:40,880
+perhaps that's an essential condition
+for allowing the united kingdom to
+
+790
+00:59:40,880 --> 00:59:43,690
+continue but that begs the
+
+791
+00:59:43,690 --> 00:59:46,999
+certain of what happens if you did give
+and this is being discussed as we speak
+
+792
+00:59:46,999 --> 00:59:51,410
+England greater autonomy there are
+conservative and other MPs who think
+
+793
+00:59:51,410 --> 00:59:58,160
+England should have its own Parliament
+with its own ministers with the first
+
+794
+00:59:58,160 --> 01:00:02,629
+minutes in English First Minister
+perhaps like the Scottish First Minister
+
+795
+01:00:02,630 --> 01:00:04,339
+we you know then
+
+796
+01:00:04,339 --> 01:00:06,650
+then the budget of the English
+government will be bigger than the
+
+797
+01:00:06,650 --> 01:00:10,940
+remaining UK government and that would
+be a bit lopsided win it a bit like as
+
+798
+01:00:10,940 --> 01:00:15,739
+if California were I don't know bigger
+than had a bigger budget than the UK US
+
+799
+01:00:15,739 --> 01:00:19,640
+federal government or something like
+that doesn't kind of makes sense if you
+
+800
+01:00:19,640 --> 01:00:20,930
+sort of think it through
+
+801
+01:00:20,930 --> 01:00:25,368
+so what will come out of all of this I
+suspect though this will happen during
+
+802
+01:00:25,369 --> 01:00:32,890
+the course of our lectures so this will
+be in real time is a another British
+
+803
+01:00:32,890 --> 01:00:37,609
+constitutional fudge of some kind it'll
+be a mixture of some British vote
+
+804
+01:00:37,609 --> 01:00:42,199
+english votes for some English laws or
+parts of that but probably not an
+
+805
+01:00:42,199 --> 01:00:46,390
+english parliament but we'll see these
+debates will be going on in real time
+
+806
+01:00:46,390 --> 01:00:53,150
+around us a cheery picture here before
+the referendum actually of the Prime
+
+807
+01:00:53,150 --> 01:00:55,969
+Minister meeting the First Minister
+about social said the first minister
+
+808
+01:00:55,969 --> 01:00:58,670
+meets the prime minister would have been
+more accurate in which side of the
+
+809
+01:00:58,670 --> 01:01:02,930
+understanding of the handsome matter of
+Scotland behind them
+
+810
+01:01:03,440 --> 01:01:12,109
+this was at the point where they decided
+to hold the referendum and these are two
+
+811
+01:01:12,109 --> 01:01:15,140
+quotes which I won't read out now
+because we're running short while we
+
+812
+01:01:15,140 --> 01:01:20,779
+were beginning to run towards 615 but
+this is really the SNP's arguments
+
+813
+01:01:20,779 --> 01:01:29,209
+distilled here for Scott them becoming
+an independent nation and the UK
+
+814
+01:01:29,209 --> 01:01:36,490
+government's arguments for maintaining
+the partnership better together within
+
+815
+01:01:36,490 --> 01:01:40,519
+never elected from professor Jim
+gallaher about this
+
+816
+01:01:40,519 --> 01:01:44,319
+who took part in this campaign I think
+he was actually involved in a
+
+817
+01:01:44,320 --> 01:01:48,340
+no personal secret here on the No
+campaign but he will give a very
+
+818
+01:01:48,340 --> 01:01:54,130
+independent view of this I'm sure as he
+did when he spoke last year so
+
+819
+01:01:54,130 --> 01:01:58,750
+fascinating on it for me and if any of
+you for me
+
+820
+01:01:58,750 --> 01:02:01,330
+anybody get voted in this referendum
+either way just as a matter of interest
+
+821
+01:02:01,330 --> 01:02:04,330
+now I'm not Scottish
+
+822
+01:02:04,330 --> 01:02:12,279
+i was born in wales as it happens but as
+a UK voter i found this referendum the
+
+823
+01:02:12,280 --> 01:02:17,200
+most exciting election in my life more
+than general elections and then if any
+
+824
+01:02:17,200 --> 01:02:18,940
+of you shared that view
+
+825
+01:02:18,940 --> 01:02:22,000
+so even if you weren't Scottish or
+voting in the scottish referendum
+
+826
+01:02:22,780 --> 01:02:27,160
+it was never the less than a real
+electrifying act activity and as the
+
+827
+01:02:27,160 --> 01:02:30,819
+early mentioned professor Curtis said it
+another seminar here a few weeks ago
+
+828
+01:02:31,450 --> 01:02:39,819
+why was the turnout so high we'll simply
+because the result massive 85% turn
+
+829
+01:02:39,820 --> 01:02:45,520
+ninety seven percent registered votes an
+extraordinary and an extraordinary
+
+830
+01:02:45,520 --> 01:02:50,230
+election and the result mattered and I'm
+afraid the implications this is turning
+
+831
+01:02:50,230 --> 01:02:53,740
+out to lower in other elections because
+people think they don't matter that the
+
+832
+01:02:53,740 --> 01:03:01,290
+tragic the other side of that tragic
+coin so challenge was it good or bad for
+
+833
+01:03:01,300 --> 01:03:06,880
+Scotland and in what ways that it did
+not vote for independence this is
+
+834
+01:03:06,880 --> 01:03:10,300
+something the Scots and the remainder of
+the UK
+
+835
+01:03:10,300 --> 01:03:14,170
+I think we'll debate for a long time to
+come they may want to have another go at
+
+836
+01:03:14,170 --> 01:03:14,440
+it
+
+837
+01:03:14,440 --> 01:03:18,490
+that's not relaxed possibility out
+depends what the UK government now
+
+838
+01:03:18,490 --> 01:03:20,529
+offers them and how that system works
+
+839
+01:03:20,530 --> 01:03:25,900
+thereafter will it be like Quebec where
+there was a second reference and we'll
+
+840
+01:03:25,900 --> 01:03:28,450
+whatever comes out of this be good or
+bad for England more powerful Scotland
+
+841
+01:03:28,450 --> 01:03:30,910
+more powerful Wales more powerful
+Northern Ireland
+
+842
+01:03:30,910 --> 01:03:34,839
+what will the English get out of this
+the English who are this large majority
+
+843
+01:03:34,840 --> 01:03:41,650
+you generally don't desert themselves
+but who may be about to some extent by
+
+844
+01:03:41,650 --> 01:03:43,750
+the English do it now
+
+845
+01:03:43,750 --> 01:03:51,460
+written in Europe as i said earlier know
+it know a few more vexed over the long
+
+846
+01:03:51,460 --> 01:03:51,970
+term
+
+847
+01:03:51,970 --> 01:03:55,240
+then Britain's relationship with Europe
+
+848
+01:03:55,780 --> 01:04:01,000
+it's a complex relationship and often a
+different one
+
+849
+01:04:01,660 --> 01:04:06,970
+Britain had an in-out referendum soon
+after we joined in nineteen having not
+
+850
+01:04:06,970 --> 01:04:12,220
+join the European Community originally
+then joined late and had a referendum
+
+851
+01:04:12,220 --> 01:04:23,200
+soon after to decide whether or not we
+should stay in the EU euro skepticism
+
+852
+01:04:23,770 --> 01:04:28,509
+we had a lot more of this from Simon
+Hicks next term drives a number of
+
+853
+01:04:28,510 --> 01:04:32,800
+conservative and you keep politicians as
+a significant fringe the Conservative
+
+854
+01:04:32,800 --> 01:04:38,980
+Party the whole of you keep an insurgent
+party within the UK mainstream and to be
+
+855
+01:04:38,980 --> 01:04:43,570
+fair some labor ones as any one party
+and advertising it i'm just saying is
+
+856
+01:04:43,570 --> 01:04:49,390
+the matter of fact one party that is now
+four square pro-eu pro Europe would
+
+857
+01:04:49,390 --> 01:04:53,259
+broaden it and that's the liberal
+democrats they
+
+858
+01:04:53,260 --> 01:04:56,230
+that's a one they've got a number of
+things where they are unique and this is
+
+859
+01:04:56,230 --> 01:05:01,839
+one of them the lib dems are a
+pro-european party labor some way back
+
+860
+01:05:01,839 --> 01:05:05,770
+across the spectrum the conservative
+some way from them and you get well
+
+861
+01:05:05,770 --> 01:05:08,290
+beyond them on some kind of spectrum
+
+862
+01:05:08,290 --> 01:05:17,410
+that's fair to all concerned it's hard
+not to be aware of the fact that the
+
+863
+01:05:17,410 --> 01:05:23,200
+United the British media are often
+highly critical of the EU and other
+
+864
+01:05:23,200 --> 01:05:26,950
+European institutions whether or not
+they're part of the EU
+
+865
+01:05:27,580 --> 01:05:33,279
+maybe if you'll be aware of the endless
+fabled stories about some you know still
+
+866
+01:05:33,280 --> 01:05:38,109
+need to have on straight bananas and all
+of this nonsense that gets in the media
+
+867
+01:05:38,109 --> 01:05:45,790
+from time to time and all of that sort
+of stuff there's a lot of it but public
+
+868
+01:05:45,790 --> 01:05:49,600
+opinion is regularly split
+
+869
+01:05:49,600 --> 01:05:53,799
+actually it's generally in favor it
+pushed generally push decision will
+
+870
+01:05:53,800 --> 01:05:59,710
+generally say that people on balance
+would like to stay in the e u-- of
+
+871
+01:05:59,710 --> 01:06:04,119
+course though we now operate in the
+world where the Conservative Party in
+
+872
+01:06:04,119 --> 01:06:04,650
+particular
+
+873
+01:06:04,650 --> 01:06:08,990
+and you kept by the Conservatives are
+committed but if they win the next
+
+874
+01:06:08,990 --> 01:06:11,970
+general election outright the election
+next year they'd hold an in-out
+
+875
+01:06:11,970 --> 01:06:18,240
+referendum as to whether UK should stay
+there will be it on terms that would
+
+876
+01:06:18,240 --> 01:06:23,729
+have been renegotiated by david cameron
+by the Conservatives in the meantime you
+
+877
+01:06:23,730 --> 01:06:25,740
+keep just wants an in-out referendum
+
+878
+01:06:25,740 --> 01:06:28,979
+- I think in fairness to them just to
+argue to leave
+
+879
+01:06:28,980 --> 01:06:32,990
+Labour's position is more nuanced
+Liberal Democrats I think they're
+
+880
+01:06:32,990 --> 01:06:35,369
+discussing whether or not they should
+have a referendum or should support the
+
+881
+01:06:35,369 --> 01:06:39,779
+idea of a referendum because frankly
+whether you believe in staying in all
+
+882
+01:06:39,779 --> 01:06:44,670
+going getting out a referendum could be
+seen at least for a while as clearing
+
+883
+01:06:44,670 --> 01:06:45,510
+the air
+
+884
+01:06:45,510 --> 01:06:48,779
+so where the are on either side of the
+argument you might think that's just
+
+885
+01:06:48,779 --> 01:06:51,240
+stop the argument for a bit
+
+886
+01:06:51,240 --> 01:06:57,930
+whether it would or not is another
+matter but clearly we may well face a
+
+887
+01:06:57,930 --> 01:07:02,129
+referendum within the next two years and
+what the scottish referendum tells us
+
+888
+01:07:02,130 --> 01:07:03,450
+three years
+
+889
+01:07:03,450 --> 01:07:08,250
+what the scottish referendum tells us is
+that there are consequences consequences
+
+890
+01:07:08,250 --> 01:07:13,950
+in terms of the instability or the
+perceived instability of the country's
+
+891
+01:07:13,950 --> 01:07:18,750
+political and financial institutions
+whether it's fair or not you could see
+
+892
+01:07:18,750 --> 01:07:22,799
+from the latter days of the scottish
+referendum when it was thought that it
+
+893
+01:07:22,799 --> 01:07:28,200
+was possible to scotts would vote yes to
+leave the UK that you know he suddenly
+
+894
+01:07:28,200 --> 01:07:31,770
+started hearing about banks thinking of
+moving their headquarters and less
+
+895
+01:07:31,770 --> 01:07:36,290
+investment and all sorts of you know
+fires of Hades pouring down if this
+
+896
+01:07:36,290 --> 01:07:36,869
+happened
+
+897
+01:07:36,869 --> 01:07:41,339
+now whether it would have been like that
+will never neck but all i can say is
+
+898
+01:07:41,339 --> 01:07:45,900
+that on the basis of that experience
+when this debate happens about Brittany
+
+899
+01:07:45,900 --> 01:07:50,549
+you it's hard not to believe will get
+the same kind of it all go to the dogs
+
+900
+01:07:50,549 --> 01:07:54,509
+or the work won't go to the dogs kind of
+debate so it'll be a really I think the
+
+901
+01:07:54,510 --> 01:07:59,130
+scottish referendum absolutely important
+vital in its own right was also
+
+902
+01:07:59,130 --> 01:08:04,829
+revealing in what it tells us about how
+and a referendum on britain's staying in
+
+903
+01:08:04,829 --> 01:08:11,490
+or leaving the EU might turn out so many
+good pictures when you come to look at
+
+904
+01:08:11,490 --> 01:08:12,600
+Britain Europe
+
+905
+01:08:12,600 --> 01:08:19,680
+available this is a classic of President
+meter on mrs. Thatcher probably looking
+
+906
+01:08:19,680 --> 01:08:23,370
+the other way to talk to somebody going
+cropped like this it simply looks like a
+
+907
+01:08:23,370 --> 01:08:26,790
+metaphor for everything to do with
+Britain's relationships with was not
+
+908
+01:08:26,790 --> 01:08:30,149
+only Europe also France I'm afraid but
+there we are
+
+909
+01:08:31,500 --> 01:08:38,399
+and it is just one of them it is an
+undying issue in British politics with
+
+910
+01:08:38,399 --> 01:08:43,500
+here to that we have two lectures on
+this from Simon Hicks press X next term
+
+911
+01:08:44,100 --> 01:08:49,200
+now this is what David Cameron thinks
+the choice is and he is an interesting
+
+912
+01:08:49,200 --> 01:08:51,779
+position because he's placed himself
+
+913
+01:08:51,779 --> 01:08:57,120
+I think that somebody who would want to
+vote to stay in the EU but is also the
+
+914
+01:08:57,120 --> 01:09:00,779
+person whose party includes many people
+want to leave it and who has to
+
+915
+01:09:00,779 --> 01:09:05,399
+negotiate if there is this in out
+referendum and he still Prime Minister
+
+916
+01:09:05,399 --> 01:09:09,330
+with Europe which I have to say doesn't
+show that much sign and wanting to make
+
+917
+01:09:09,330 --> 01:09:14,430
+life easy for the British well let's see
+what he said at Bloomberg 18 months ago
+
+918
+01:09:14,430 --> 01:09:19,350
+a real choice between leaving or being
+part of a new settlement in which
+
+919
+01:09:19,350 --> 01:09:23,700
+Britain shapes and respect the rules of
+the single market that is protected by
+
+920
+01:09:23,689 --> 01:09:29,549
+fair safeguards and free of the spurious
+regulation bananas which damages that I
+
+921
+01:09:29,550 --> 01:09:31,290
+added that obviously damages
+
+922
+01:09:31,290 --> 01:09:36,240
+Europe's competitiveness choice between
+leaving or being part of a new
+
+923
+01:09:36,240 --> 01:09:39,990
+settlement in which Britain is at the
+forefront of collective action on issues
+
+924
+01:09:39,990 --> 01:09:44,580
+like foreign policy and trade and where
+we where we leave the door firmly open
+
+925
+01:09:44,580 --> 01:09:49,559
+to new members a new settlement subject
+to the democratic legitimacy and
+
+926
+01:09:49,560 --> 01:09:53,729
+accountability of national parliaments
+where member states combined inflexible
+
+927
+01:09:53,729 --> 01:09:58,190
+cooperation respecting national
+differences not always trying to
+
+928
+01:09:58,200 --> 01:10:02,430
+eliminate them in which we approved that
+some powers can in fact be returned to
+
+929
+01:10:02,430 --> 01:10:06,810
+member states the british want to
+repatriate powers most other countries
+
+930
+01:10:06,810 --> 01:10:09,660
+particularly France and Germany want to
+do the opposite
+
+931
+01:10:09,660 --> 01:10:13,500
+in other words a settlement which would
+be entirely in keeping with the mission
+
+932
+01:10:13,500 --> 01:10:18,360
+for an updated European Union i have
+described today more flexible more
+
+933
+01:10:18,360 --> 01:10:22,500
+adaptable more open fit for the
+challenges of the modern age and to
+
+934
+01:10:22,500 --> 01:10:25,620
+those who say a new settlement can't be
+negotiated
+
+935
+01:10:25,620 --> 01:10:29,400
+i would say listen to the views of other
+parties in our European countries
+
+936
+01:10:29,400 --> 01:10:34,920
+arguing for powers to flow back to
+European states well I'm not absolutely
+
+937
+01:10:34,920 --> 01:10:39,960
+sure the core countries are some of the
+others might be but of course beyond
+
+938
+01:10:39,960 --> 01:10:40,740
+this
+
+939
+01:10:40,740 --> 01:10:45,420
+what's further added since he made this
+speech really to the pecan see of this
+
+940
+01:10:45,420 --> 01:10:50,970
+whole debate is the question of
+immigration immigration in unprompted
+
+941
+01:10:50,970 --> 01:10:53,970
+opinion polling in Britain
+
+942
+01:10:54,630 --> 01:10:59,370
+Maury does regular one . unprompted has
+done it for years unprompted questions
+
+943
+01:10:59,370 --> 01:11:02,280
+what do you think of the most important
+issues in Britain today
+
+944
+01:11:02,280 --> 01:11:06,570
+number one is immigration the
+Conservatives when they were in
+
+945
+01:11:06,570 --> 01:11:10,950
+opposition and that conservatively done
+coalition have brought down or sought to
+
+946
+01:11:10,950 --> 01:11:16,500
+bring down the level of immigration from
+outside the EU but of course within the
+
+947
+01:11:16,500 --> 01:11:16,740
+EU
+
+948
+01:11:16,740 --> 01:11:20,400
+there is free movement of labour that's
+how it works
+
+949
+01:11:20,400 --> 01:11:25,320
+free movement of capital and labor and
+so as immigration from outside the US
+
+950
+01:11:25,320 --> 01:11:30,690
+decline immigration from inside the EU
+has gone up and this means that from mr
+
+951
+01:11:30,690 --> 01:11:33,690
+cameron and for other British
+politicians it would be so different for
+
+952
+01:11:33,690 --> 01:11:41,910
+the Labour Party frankly they face the
+problem that the EU su is tangled up
+
+953
+01:11:41,910 --> 01:11:47,340
+with immigration which is a much more
+salient and potent issue even the europe
+
+954
+01:11:47,340 --> 01:11:52,620
+are arguably and so when it comes to
+these renegotiations and it's not really
+
+955
+01:11:52,620 --> 01:11:57,570
+mentioned in this long quote the idea
+that you know he says in this speech and
+
+956
+01:11:57,570 --> 01:12:01,620
+the door firm the open to new members
+are not absolutely sure to be the door
+
+957
+01:12:01,620 --> 01:12:05,990
+firmly open to new members with the
+right to move backwards and forwards
+
+958
+01:12:05,100 --> 01:12:07,710
+across international boundaries but
+we'll see
+
+959
+01:12:07,710 --> 01:12:11,940
+very complicated issue with the cut with
+the Prime Minister right at the heart of
+
+960
+01:12:11,940 --> 01:12:13,200
+it
+
+961
+01:12:13,200 --> 01:12:19,440
+so the big issues it seems to me with
+Europe is what are the issues and
+
+962
+01:12:19,440 --> 01:12:24,300
+history because history in this that lie
+believe beneath Britain strained
+
+963
+01:12:24,300 --> 01:12:28,950
+relationship with the EU and my tree
+negotiation and an in-out referendum
+
+964
+01:12:28,950 --> 01:12:34,940
+finally sort things out well as I mean
+if i can offer a personal view here
+
+965
+01:12:34,940 --> 01:12:38,780
+no I should be doing this too often I
+doubt it will ever be finally in British
+
+966
+01:12:38,780 --> 01:12:42,410
+Britain's case even if the were
+referendum it's hard to believe it would
+
+967
+01:12:42,410 --> 01:12:50,719
+be finally and this is just one of those
+recurring questions which will probably
+
+968
+01:12:50,719 --> 01:12:53,930
+stay with Britain for a long time to
+come
+
+969
+01:12:53,930 --> 01:13:01,760
+whether or not there is such a
+referendum now just finally this is by
+
+970
+01:13:01,760 --> 01:13:07,520
+no means a lot of a full list but you
+know in looking ahead to the coming year
+
+971
+01:13:07,520 --> 01:13:11,449
+some of the essays that will need to be
+written so on
+
+972
+01:13:11,449 --> 01:13:18,919
+there are so many institutions and other
+rock
+
+973
+01:13:18,920 --> 01:13:22,700
+not all these all institutions in
+various ways but all of them are
+
+974
+01:13:22,700 --> 01:13:25,670
+relevant and are being reformed the
+heart of the British constitution
+
+975
+01:13:25,670 --> 01:13:30,830
+permanently in flux the lib dems are
+discussing it and on and off at their
+
+976
+01:13:30,830 --> 01:13:37,160
+party comes up in glasgow the role of
+the monic regularly disgusting as play
+
+977
+01:13:37,160 --> 01:13:42,440
+showing in the West End about the
+imagined early days of King Charles the
+
+978
+01:13:42,440 --> 01:13:46,339
+third the role of the monarch
+permanently under debate
+
+979
+01:13:47,600 --> 01:13:50,900
+perhaps less so with the current Queen
+as head of state but it's always an
+
+980
+01:13:50,900 --> 01:13:52,190
+issue for some people
+
+981
+01:13:52,190 --> 01:13:57,379
+House of Lords very much more as an
+issue of current debate should it be
+
+982
+01:13:57,380 --> 01:14:01,280
+reformed think overwhelmingly there's a
+belief that should the difficulty is
+
+983
+01:14:01,280 --> 01:14:05,210
+nobody can think of a an option that
+everybody would agree with and therefore
+
+984
+01:14:05,210 --> 01:14:07,100
+it's hard to do anything
+
+985
+01:14:07,100 --> 01:14:11,330
+House of Commons number of reforms would
+be made to the business practices of the
+
+986
+01:14:11,330 --> 01:14:14,690
+House of Commons but not much more than
+that you know
+
+987
+01:14:14,690 --> 01:14:18,199
+could it operate on more modern
+procedures well yes
+
+988
+01:14:18,199 --> 01:14:23,360
+the British legislation that legislative
+processes which I'm touched on at all
+
+989
+01:14:23,360 --> 01:14:27,469
+today are complex of there are many
+countries we have many more acts of
+
+990
+01:14:27,469 --> 01:14:29,300
+parliament and we once did
+
+991
+01:14:29,300 --> 01:14:33,770
+and the process itself has been
+regularly criticized for being not only
+
+992
+01:14:33,770 --> 01:14:36,620
+obscure but often rushed
+
+993
+01:14:36,620 --> 01:14:41,660
+we now have new processes like the
+consideration draft bills and lots of
+
+994
+01:14:41,660 --> 01:14:42,980
+things going on there
+
+995
+01:14:42,980 --> 01:14:47,599
+select committees we talked about the
+major political parties what we have you
+
+996
+01:14:47,600 --> 01:14:48,160
+know the
+
+997
+01:14:48,160 --> 01:14:52,300
+served to party the Labour Party in the
+liberal democrats are all in there vary
+
+998
+01:14:52,300 --> 01:14:55,270
+in their way and if you see this in the
+current opinion polls they are all
+
+999
+01:14:55,270 --> 01:15:00,460
+unpopular at the same time it's very
+unusual to have your three traditional
+
+1000
+01:15:00,460 --> 01:15:03,640
+major parties unpopular the same time
+
+1001
+01:15:04,780 --> 01:15:08,800
+normally you get the government and
+popular in the opposition's popular well
+
+1002
+01:15:08,800 --> 01:15:11,410
+actually all three are in the polls at
+the moment
+
+1003
+01:15:11,410 --> 01:15:15,580
+that's partly because there are
+insurgent parties particularly you Kip
+
+1004
+01:15:15,580 --> 01:15:19,720
+but also here in there the greens
+
+1005
+01:15:20,260 --> 01:15:24,100
+so you keep to the right of these three
+
+1006
+01:15:24,100 --> 01:15:28,120
+the Greens to the left of these three
+interesting to wonder if they were a
+
+1007
+01:15:28,120 --> 01:15:32,559
+Labour government will find out that
+before the end of the academic year just
+
+1008
+01:15:32,560 --> 01:15:36,550
+you know whether the if there were a
+Labour government whether the Greens
+
+1009
+01:15:36,550 --> 01:15:41,890
+would become a party a bigger party of
+protest if the lib dems didn't fulfill
+
+1010
+01:15:41,890 --> 01:15:48,820
+that protest the pope didn't have that
+job at the time manifestos well we'll be
+
+1011
+01:15:48,820 --> 01:15:52,990
+running into manifesto season the
+textual analysis and manifestos and what
+
+1012
+01:15:52,990 --> 01:15:55,750
+politics government then do with them
+always interesting
+
+1013
+01:15:55,750 --> 01:16:00,670
+lobbyists we've had in the last year
+legislation to try to curtail the
+
+1014
+01:16:00,670 --> 01:16:02,650
+activities of lobbyists
+
+1015
+01:16:02,650 --> 01:16:05,950
+there are many like many many lobbyists
+out there now and I don't just mean
+
+1016
+01:16:05,950 --> 01:16:09,880
+lobbying company's most big companies
+have their own in-house lobbyists
+
+1017
+01:16:09,880 --> 01:16:13,690
+there are many companies that do this
+some of you may want to go work in such
+
+1018
+01:16:13,690 --> 01:16:17,559
+companies in years ahead they are an
+important element in the political
+
+1019
+01:16:17,560 --> 01:16:22,270
+system and have many interesting people
+working in them
+
+1020
+01:16:22,270 --> 01:16:26,830
+elections turn out and voting school has
+a week the NRC government department has
+
+1021
+01:16:26,830 --> 01:16:30,280
+initiative running on this and we will
+be i should say in the run-up to the
+
+1022
+01:16:30,280 --> 01:16:34,870
+general election doing a lot more many
+more activities including a conference
+
+1023
+01:16:34,870 --> 01:16:39,910
+on the general election our March friday
+the thirteenth of March
+
+1024
+01:16:39,910 --> 01:16:44,950
+just remember that date friday the 13th
+one else next year and
+
+1025
+01:16:45,690 --> 01:16:50,250
+and we will be doing more on opinion
+polls &amp; posters there's more opinion
+
+1026
+01:16:50,250 --> 01:16:52,440
+polls at any time in history
+
+1027
+01:16:52,440 --> 01:16:55,710
+London has great access to the opinion
+polls &amp; posters
+
+1028
+01:16:55,710 --> 01:17:00,780
+the school has good relations with them
+they are an opportunity for his or civil
+
+1029
+01:17:00,780 --> 01:17:01,469
+service
+
+1030
+01:17:01,469 --> 01:17:08,130
+Downing Street in the Treasury all
+subject to so near permanent debate
+
+1031
+01:17:08,130 --> 01:17:11,880
+about whether they should change and be
+reformed didn't up talk much about
+
+1032
+01:17:11,880 --> 01:17:13,320
+Downing Street today
+
+1033
+01:17:13,320 --> 01:17:16,889
+large books are written by just about
+the not only about the day-to-day
+
+1034
+01:17:16,890 --> 01:17:20,670
+workings of Downing Street but some
+people about the layout of desks and
+
+1035
+01:17:20,670 --> 01:17:26,190
+doors in Downing Street how these things
+matter to the way power is used in the
+
+1036
+01:17:26,190 --> 01:17:33,239
+british political system and the
+Treasury the all-powerful Treasury at
+
+1037
+01:17:33,239 --> 01:17:38,549
+the top of the uk's finance ministry and
+then finally the sub-national
+
+1038
+01:17:38,550 --> 01:17:43,920
+institutions not by any means last but
+not least which we touched on already
+
+1039
+01:17:43,920 --> 01:17:49,260
+including in London with its
+extraordinary Merrill system led by
+
+1040
+01:17:49,260 --> 01:17:54,120
+boris johnson recently selected to
+become a parliamentary candidate in the
+
+1041
+01:17:54,120 --> 01:17:59,190
+next general election and then of course
+London is the British capital of think
+
+1042
+01:17:59,190 --> 01:18:02,309
+tanks those of you might just make a
+suggestion
+
+1043
+01:18:02,310 --> 01:18:06,719
+want to meet large numbers of
+interesting people in the evenings for
+
+1044
+01:18:06,719 --> 01:18:13,739
+free and debate all sorts of issues
+there are dozens of think tanks within
+
+1045
+01:18:13,739 --> 01:18:17,730
+two miles of here all of whom would love
+to see you for their events you know the
+
+1046
+01:18:17,730 --> 01:18:22,349
+IPPR Policy Exchange social market
+foundation center for social justice
+
+1047
+01:18:22,350 --> 01:18:25,410
+compasses loads and loads of them
+
+1048
+01:18:25,410 --> 01:18:31,410
+I'd avail yourself of them but crucially
+they too are a subject worthy of study
+
+1049
+01:18:31,410 --> 01:18:32,910
+in their own right
+
+1050
+01:18:32,910 --> 01:18:36,389
+their influence on politics these days
+very important
+
+1051
+01:18:36,930 --> 01:18:42,510
+next week which will be the first
+lecture in the series will hear about
+
+1052
+01:18:42,510 --> 01:18:46,590
+the philosophical influences and the
+history of ideas from Professor Paul
+
+1053
+01:18:46,590 --> 01:18:49,590
+Kelly and talk about this today at all
+
+1054
+01:18:49,590 --> 01:18:53,430
+this will give us an introduction to the
+philosophy and ideas that underpin
+
+1055
+01:18:53,430 --> 01:18:56,550
+British politics government and its
+constitutional development
+
+1056
+01:18:57,500 --> 01:19:01,550
+and also looking at some of the recent
+in contemporary influences on today's
+
+1057
+01:19:01,550 --> 01:19:03,260
+political leaders
+
+1058
+01:19:03,270 --> 01:19:05,760
+Переведено на Нотабеноиде
+http://translate.kursomir.ru/book/134/818
+
+1059
+01:19:05,770 --> 01:19:06,760
+Переводчики: romaraute, annasvetlova
+
